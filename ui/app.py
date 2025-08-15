@@ -400,9 +400,64 @@ def main():
     # Header
     st.title("📝 Op-Ed Analyzer")
     
-    # Check if we're in analysis mode (session state indicates analysis has started)
-    analysis_started = any(key in st.session_state and st.session_state[key] is not None 
-                          for key in ['all_claims', 'coherence_results', 'fact_checks', 'documents'])
+    # Check if we're in demo mode (using preloaded cache data)
+    demo_mode = True
+    cache_hash = "5a1ccfd92f5c"
+    
+    if demo_mode:
+        # Load demo data from preloaded cache
+        cache_dir = Path("data/cache") / cache_hash
+        if cache_dir.exists():
+            # Load all claims from cache
+            claims_dir = cache_dir / "claims"
+            if claims_dir.exists():
+                all_claims = []
+                for claim_file in claims_dir.glob("*.json"):
+                    claims_data = json.loads(claim_file.read_text())
+                    all_claims.extend([ExtractedClaim(**claim) for claim in claims_data])
+                
+                if all_claims:
+                    # Store in session state
+                    st.session_state.all_claims = all_claims
+                    # Create mock documents structure for compatibility
+                    docs_by_id = {}
+                    for claim in all_claims:
+                        if claim.doc_id not in docs_by_id:
+                            docs_by_id[claim.doc_id] = claim.document_text
+                    
+                    documents = [{"id": doc_id, "text": text} for doc_id, text in docs_by_id.items()]
+                    st.session_state.documents = documents
+                    st.session_state.num_docs = len(documents)
+                    st.session_state.claims_per_doc = len([c for c in all_claims if c.doc_id == documents[0]["id"]])
+                    
+                    # Load coherence results
+                    coherence_dir = cache_dir / "coherence"
+                    if coherence_dir.exists():
+                        coherence_results = []
+                        for coherence_file in coherence_dir.glob("*.json"):
+                            coherence_data = json.loads(coherence_file.read_text())
+                            from claim_coherence import ClaimCoherence
+                            coherence_results.append(ClaimCoherence(**coherence_data))
+                        st.session_state.coherence_results = coherence_results
+                    
+                    # Load fact checks
+                    fact_checks_dir = cache_dir / "fact_checks"
+                    if fact_checks_dir.exists():
+                        fact_checks = []
+                        for fact_check_file in fact_checks_dir.glob("*.json"):
+                            fact_check_data = json.loads(fact_check_file.read_text())
+                            from external_fact_checking import FactCheck
+                            fact_checks.append(FactCheck(**fact_check_data))
+                        st.session_state.fact_checks = fact_checks
+                    
+                    st.info("🎬 Demo Mode: Showing preloaded analysis results")
+        
+        # Skip the input interface and go straight to analysis display
+        analysis_started = True
+    else:
+        # Check if we're in analysis mode (session state indicates analysis has started)
+        analysis_started = any(key in st.session_state and st.session_state[key] is not None 
+                              for key in ['all_claims', 'coherence_results', 'fact_checks', 'documents'])
     
     if not analysis_started:
         # Debug hash loading option
