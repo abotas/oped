@@ -10,7 +10,7 @@ from cache_utils import generate_unified_hash_from_config
 from models import ExtractedClaim
 
 load_dotenv()
-client = OpenAI()
+client = None
 
 # Configuration
 MAX_WORKERS = 4
