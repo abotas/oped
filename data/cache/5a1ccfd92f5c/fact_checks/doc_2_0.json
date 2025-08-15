@@ -1,0 +1,8 @@
+{
+  "doc_id": "doc_2",
+  "claim_idx": 0,
+  "claim": "Artificial intelligence will not replace humans; despite evangelists' predictions, it will function primarily as a complementary tool that augments human capabilities rather than surpassing or supplanting them.",
+  "veracity": 55,
+  "explanation": "Rigorous studies show generative AI often augments workers\u2014raising productivity in randomized experiments and field settings\u2014rather than fully replacing them. ([science.org](https://www.science.org/doi/abs/10.1126/science.adh2586?af=R&utm_source=chatgpt.com), [nber.org](https://www.nber.org/papers/w31161?utm_source=chatgpt.com)) Major economic analyses, however, estimate very large exposure of jobs to AI in advanced economies and warn that some roles may shrink or disappear, implying meaningful substitution alongside complementarity. ([imf.org](https://www.imf.org/en/Blogs/Articles/2024/01/14/ai-will-transform-the-global-economy-lets-make-sure-it-benefits-humanity?utm_source=chatgpt.com), [elibrary.imf.org](https://www.elibrary.imf.org/view/journals/006/2024/001/article-A001-en.xml?utm_source=chatgpt.com)) The International Labour Organization likewise concludes the dominant effect is likely augmentation of tasks, not wholesale job loss, especially in the near term. ([dev.ilo.org](https://www.dev.ilo.org/publications/generative-ai-and-jobs-global-analysis-potential-effects-job-quantity-and?utm_source=chatgpt.com)) Given this mix of evidence, the claim\u2019s \u201cprimarily complementary\u201d framing is plausible, but the absolute \u201cwill not replace humans\u201d overstates the case, so overall accuracy is mixed.",
+  "sources": []
+}

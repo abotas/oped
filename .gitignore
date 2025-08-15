@@ -12,4 +12,7 @@ wheels/
 .env
 CLAUDE.md
 
-data/
+data/*
+!data/cache/
+data/cache/*
+!data/cache/5a1ccfd92f5c/

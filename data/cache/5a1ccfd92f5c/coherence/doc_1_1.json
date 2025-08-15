@@ -1,0 +1,44 @@
+[
+  {
+    "claim_i_idx": 1,
+    "claim_j_idx": 0,
+    "delta_prob": 0.8,
+    "reasoning": "A asserts rapid capability growth and integration plus easier centralization, implying fast acceleration of research, AI agents in decisions, and durable power concentration."
+  },
+  {
+    "claim_i_idx": 1,
+    "claim_j_idx": 2,
+    "delta_prob": 0.5,
+    "reasoning": "A stresses the need to proactively build detection/coordination systems, making it more plausible that AI, if timely developed, can enable safer governance."
+  },
+  {
+    "claim_i_idx": 1,
+    "claim_j_idx": 3,
+    "delta_prob": 0.8,
+    "reasoning": "A\u2019s diagnosis supports a balanced, multi\u2011track approach: deploy safety/epistemic/coordination tech, steer away from risky agents, and improve early decisions."
+  },
+  {
+    "claim_i_idx": 1,
+    "claim_j_idx": 4,
+    "delta_prob": -0.5,
+    "reasoning": "A allows for loss of human control or AI\u2011run futures, contradicting the view that AI will mainly complement rather than supplant."
+  },
+  {
+    "claim_i_idx": 1,
+    "claim_j_idx": 5,
+    "delta_prob": 0.0,
+    "reasoning": "A\u2019s risks don\u2019t depend on AI replicating human consciousness or \u2018essential aspects\u2019; powerful non\u2011conscious systems can still create the cited dangers."
+  },
+  {
+    "claim_i_idx": 1,
+    "claim_j_idx": 6,
+    "delta_prob": 0.0,
+    "reasoning": "A is about systemic risk, not short\u2011run productivity evidence; both can coexist, so it neither supports nor undercuts the 2023\u201324 findings."
+  },
+  {
+    "claim_i_idx": 1,
+    "claim_j_idx": 7,
+    "delta_prob": -0.6,
+    "reasoning": "A emphasizes elevated pathways to catastrophe or lasting control loss absent strong coordination, reducing the likelihood of a net positive global impact."
+  }
+]

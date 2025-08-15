@@ -1,0 +1,44 @@
+[
+  {
+    "claim_i_idx": 3,
+    "claim_j_idx": 0,
+    "delta_prob": 0.5,
+    "reasoning": "A treats fast-scaling AI as transformative, raising risks of agentic systems and power centralization, implying acceleration, AI-integrated decision-making, and easier centralization are plausible."
+  },
+  {
+    "claim_i_idx": 3,
+    "claim_j_idx": 1,
+    "delta_prob": 1.0,
+    "reasoning": "A explicitly frames a present 'crucible' with heightened misalignment/geopolitical risk and calls for detection/coordination to prevent unilateral high\u2011risk actions."
+  },
+  {
+    "claim_i_idx": 3,
+    "claim_j_idx": 2,
+    "delta_prob": 0.8,
+    "reasoning": "A advocates building AI-enabled epistemic tools, coordination mechanisms, and democratic oversight\u2014presuming AI can substantially improve governance if developed/deployed in time."
+  },
+  {
+    "claim_i_idx": 3,
+    "claim_j_idx": 4,
+    "delta_prob": -0.3,
+    "reasoning": "A warns about dangerous agentic designs and potential loss of control, undercutting a confident claim that AI will mainly remain complementary and not replace/supplant humans."
+  },
+  {
+    "claim_i_idx": 3,
+    "claim_j_idx": 5,
+    "delta_prob": -0.1,
+    "reasoning": "A is pragmatic about powerful, potentially agentic AI; it neither assumes nor denies consciousness, slightly weakening claims that AI cannot replicate essential mental aspects."
+  },
+  {
+    "claim_i_idx": 3,
+    "claim_j_idx": 6,
+    "delta_prob": 0.4,
+    "reasoning": "A emphasizes raising the floor via widespread epistemic tools and adoption, consistent with evidence of productivity gains and disproportionate benefits for less\u2011skilled users."
+  },
+  {
+    "claim_i_idx": 3,
+    "claim_j_idx": 7,
+    "delta_prob": -0.1,
+    "reasoning": "A highlights substantial downside risks and need for deliberate safeguards; a net\u2011positive outcome depends on successful execution, so optimism is only slightly supported."
+  }
+]

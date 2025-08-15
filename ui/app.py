@@ -407,8 +407,25 @@ def main():
     if not analysis_started:
         # Debug hash loading option
         with st.expander("🔍 Debug: Load from Cache Hash", expanded=False):
-            cache_hash = st.text_input("Paste cache hash to load existing analysis", placeholder="e.g., a1b2c3d4e5f6")
-            if st.button("Load from Hash", disabled=not cache_hash.strip()):
+            # Get available cache hashes
+            cache_dir = Path("data/cache")
+            available_hashes = []
+            if cache_dir.exists():
+                available_hashes = [d.name for d in cache_dir.iterdir() if d.is_dir()]
+            
+            if available_hashes:
+                cache_hash = st.selectbox(
+                    "Select cache hash to load existing analysis",
+                    options=[""] + available_hashes,
+                    format_func=lambda x: "Choose a hash..." if x == "" else x
+                )
+                load_button_disabled = not cache_hash
+            else:
+                st.info("No cached analyses found")
+                cache_hash = ""
+                load_button_disabled = True
+            
+            if st.button("Load from Hash", disabled=load_button_disabled):
                 # Try to load data from the provided hash
                 cache_dir = Path("data/cache") / cache_hash.strip()
                 if cache_dir.exists():

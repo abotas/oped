@@ -1,0 +1,44 @@
+[
+  {
+    "claim_i_idx": 2,
+    "claim_j_idx": 0,
+    "delta_prob": 0.4,
+    "reasoning": "If AI can deliver strong governance capabilities, it likely reflects broad transformative power, including rapid capability scaling and AI-integrated decision-making; centralization becoming easier is plausible but not entailed."
+  },
+  {
+    "claim_i_idx": 2,
+    "claim_j_idx": 1,
+    "delta_prob": 0.5,
+    "reasoning": "The 'if developed and deployed in time' condition implies a high-stakes, time-sensitive period where risks rise unless proactive detection and coordination systems are built."
+  },
+  {
+    "claim_i_idx": 2,
+    "claim_j_idx": 3,
+    "delta_prob": 0.6,
+    "reasoning": "Claim A implies value in building epistemic/coordination tools, oversight systems, and defenses, and in steering deployment\u2014supporting a balanced, multi-track strategy."
+  },
+  {
+    "claim_i_idx": 2,
+    "claim_j_idx": 4,
+    "delta_prob": -0.3,
+    "reasoning": "If AI can shoulder key governance capabilities, it likely surpasses humans on important tasks, making a purely complementary, non-replacing role less likely."
+  },
+  {
+    "claim_i_idx": 2,
+    "claim_j_idx": 5,
+    "delta_prob": 0.0,
+    "reasoning": "AI enabling safe governance does not address whether AI replicates human consciousness or essential mental aspects; compatibility either way."
+  },
+  {
+    "claim_i_idx": 2,
+    "claim_j_idx": 6,
+    "delta_prob": 0.3,
+    "reasoning": "If AI enhances forecasting and information navigation, it plausibly boosts productivity and access, consistent with early evidence of large gains for broader users."
+  },
+  {
+    "claim_i_idx": 2,
+    "claim_j_idx": 7,
+    "delta_prob": 0.4,
+    "reasoning": "AI enabling safer, more cooperative politics raises the odds of net positive impact, though it does not strongly support the claim about humans shifting to 'distinctively human' pursuits due to AI\u2019s limitations."
+  }
+]
