@@ -397,8 +397,43 @@ def create_coherence_matrix(coherence_results, claims, all_claims, full_coherenc
     return fig
 
 def main():
-    # Header
-    st.title("📝 Op-Ed Analyzer")
+    # Header with Example button
+    col1, col2 = st.columns([4, 1])
+    with col1:
+        st.title("📝 Op-Ed Analyzer")
+    with col2:
+        # Add spacing to align with title
+        st.markdown("<div style='height: 20px'></div>", unsafe_allow_html=True)
+        if st.button("📚 Example", help="Owen Crucible + David Brooks AI is so great", use_container_width=True):
+            # Load the specific cached analysis
+            cache_hash = "5a1ccfd92f5c"
+            cache_dir = Path("data/cache") / cache_hash
+            if cache_dir.exists():
+                # Try to load claims first to get document info
+                claims_dir = cache_dir / "claims"
+                if claims_dir.exists():
+                    # Load all claims from cache
+                    all_claims = []
+                    for claim_file in claims_dir.glob("*.json"):
+                        claims_data = json.loads(claim_file.read_text())
+                        all_claims.extend([ExtractedClaim(**claim) for claim in claims_data])
+                    
+                    if all_claims:
+                        # Store in session state
+                        st.session_state.all_claims = all_claims
+                        # Create mock documents structure for compatibility
+                        docs_by_id = {}
+                        for claim in all_claims:
+                            if claim.doc_id not in docs_by_id:
+                                docs_by_id[claim.doc_id] = claim.document_text
+                        
+                        documents = [{"id": doc_id, "text": text} for doc_id, text in docs_by_id.items()]
+                        st.session_state.documents = documents
+                        st.session_state.num_docs = len(documents)
+                        st.session_state.claims_per_doc = len([c for c in all_claims if c.doc_id == documents[0]["id"]])
+                        
+                        st.success(f"✅ Loaded example analysis")
+                        st.rerun()
     
     # Check if we're in analysis mode (session state indicates analysis has started)
     analysis_started = any(key in st.session_state and st.session_state[key] is not None 
