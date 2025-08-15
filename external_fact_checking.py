@@ -6,7 +6,8 @@ from pydantic import BaseModel
 from pathlib import Path
 import hashlib
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from claim_extractor import ExtractedClaim
+from models import ExtractedClaim
+from cache_utils import generate_unified_hash_from_config
 
 client = OpenAI()
 MAX_WORKERS = 4
@@ -32,8 +33,15 @@ or after the JSON object: {{"veracity": "int", "explanation": "str"}}. Here is t
 """
 
 
-def _check_single_claim(claim: ExtractedClaim) -> FactCheck:
+def _check_single_claim(claim: ExtractedClaim, cache_dir: Path) -> FactCheck:
     """Check a single claim against external sources. Used for multithreading."""
+    # Check if this claim's fact check is already cached
+    claim_cache_file = cache_dir / f"{claim.doc_id}_{claim.claim_idx}.json"
+    if claim_cache_file.exists():
+        print(f"  Loading cached: {claim.doc_id}[{claim.claim_idx}]")
+        cached_data = json.loads(claim_cache_file.read_text())
+        return FactCheck(**cached_data)
+    
     # Use GPT-5 with web search capability using responses API
     response = client.responses.create(
         model="gpt-5",
@@ -52,47 +60,48 @@ def _check_single_claim(claim: ExtractedClaim) -> FactCheck:
         sources=[]  # GPT-5 web search preview doesn't return sources in the same format
     )
     
+    # Save this claim's fact check immediately
+    claim_cache_file.write_text(json.dumps(fact_check.model_dump(), indent=2))
+    print(f"  Checked and saved: {claim.doc_id}[{claim.claim_idx}]")
+    
     return fact_check
 
 
-def check_facts(claims: list[ExtractedClaim]) -> list[FactCheck]:
+def check_facts(claims: list[ExtractedClaim], documents: list[dict], claims_per_doc: int) -> list[FactCheck]:
     """Check claims against external sources for accuracy.
     
     Args:
         claims: List of ExtractedClaim objects to verify
+        documents: Original document configuration (for consistent hashing)
+        claims_per_doc: Number of claims per document (for consistent hashing)
         
     Returns:
         List of FactCheck objects with veracity scores
     """
-    # Generate cache key from claims
-    claims_text = "\n".join([f"{c.claim_idx}:{c.claim}" for c in claims])
-    claims_hash = hashlib.sha256(claims_text.encode()).hexdigest()[:12]
+    # Generate unified cache key using same method as claim extraction
+    unified_hash = generate_unified_hash_from_config(documents, claims_per_doc)
     
-    # Check cache
-    cache_dir = Path("data/cache/fact_checks")
+    # Setup cache directory for this set of claims
+    cache_dir = Path("data/cache") / unified_hash / "fact_checks"
     cache_dir.mkdir(parents=True, exist_ok=True)
-    cache_file = cache_dir / f"{claims_hash}.json"
     
-    if cache_file.exists():
-        print(f"Loading cached fact checks for hash {claims_hash}")
-        fact_check_data = json.loads(cache_file.read_text())
-        return [FactCheck(**item) for item in fact_check_data]
-    
-    print(f"Fact-checking {len(claims)} claims using {MAX_WORKERS} workers")
+    print(f"Fact-checking {len(claims)} claims using hash {unified_hash} and {MAX_WORKERS} workers")
+    print(f"Cache directory: {cache_dir}")
+    fact_checks = []
     
     # Process claims in parallel
     with ThreadPoolExecutor(max_workers=min(MAX_WORKERS, len(claims))) as executor:
-        futures = [executor.submit(_check_single_claim, claim) for claim in claims]
-        fact_checks = []
+        futures = [executor.submit(_check_single_claim, claim, cache_dir) for claim in claims]
         
-        for i, future in enumerate(as_completed(futures)):
+        completed = 0
+        for future in as_completed(futures):
             fact_check = future.result()
             fact_checks.append(fact_check)
-            print(f"  Completed {i+1}/{len(claims)} claims")
+            completed += 1
+            if completed % 5 == 0 or completed == len(claims):
+                print(f"  Progress: {completed}/{len(claims)} claims checked")
     
-    # Cache results
-    cache_file.write_text(json.dumps([fc.model_dump() for fc in fact_checks], indent=2))
-    print(f"Checked {len(fact_checks)} claims, cached to {cache_file}")
+    print(f"Checked {len(fact_checks)} claims")
     
     return fact_checks
 
@@ -122,15 +131,15 @@ def get_fact_check_summary(fact_checks: list[FactCheck]) -> dict:
     # Sort by veracity
     sorted_checks = sorted(fact_checks, key=lambda x: x.veracity, reverse=True)
     
-    # Most accurate claims (veracity >= 80)
+    # Most accurate claims (top 3, regardless of absolute score)
     summary["most_accurate_claims"] = [
         {
             "claim": fc.claim,
             "veracity": fc.veracity,
             "explanation": fc.explanation
         }
-        for fc in sorted_checks if fc.veracity >= 80
-    ][:3]
+        for fc in sorted_checks[:3]  # Top 3 items (highest scores)
+    ]
     
     # Least accurate claims (bottom 3, regardless of absolute score)
     summary["least_accurate_claims"] = [

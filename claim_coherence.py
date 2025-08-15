@@ -6,7 +6,8 @@ from pydantic import BaseModel
 from pathlib import Path
 import hashlib
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from claim_extractor import ExtractedClaim
+from models import ExtractedClaim
+from cache_utils import generate_unified_hash_from_config
 
 client = OpenAI()
 MAX_WORKERS = 4
@@ -45,9 +46,16 @@ ONLY return the JSON array without markdown or extra text:
 """
 
 
-def _analyze_single_claim(work_item: tuple) -> list[ClaimCoherence]:
+def _analyze_single_claim(work_item: tuple, cache_dir: Path) -> list[ClaimCoherence]:
     """Analyze how one claim affects all others. Used for multithreading."""
-    i, claim_i, other_claims_text = work_item
+    i, claim_i, other_claims_text, other_claims = work_item
+    
+    # Check if this claim's analysis is already cached
+    claim_cache_file = cache_dir / f"{claim_i.doc_id}_{claim_i.claim_idx}.json"
+    if claim_cache_file.exists():
+        print(f"  Loading cached: {claim_i.doc_id}[{claim_i.claim_idx}]")
+        cached_data = json.loads(claim_cache_file.read_text())
+        return [ClaimCoherence(**item) for item in cached_data]
     
     response = client.chat.completions.create(
         model="gpt-5",
@@ -70,45 +78,53 @@ def _analyze_single_claim(work_item: tuple) -> list[ClaimCoherence]:
     relationships = json.loads(raw_content)
     claim_results = []
     
+    # Create mapping from LLM's sequential indices to original claim indices
+    llm_to_original_idx = []
+    for j in range(len(other_claims) + 1):  # +1 for the original claims count
+        if j < i:
+            llm_to_original_idx.append(j)  # Claims before claim_i keep their original index
+        elif j > i:
+            llm_to_original_idx.append(j)  # Claims after claim_i keep their original index
+        # Skip j == i since that's the claim being analyzed
+    
     for rel in relationships:
-        # Adjust index to account for skipped claim_i
-        actual_j_idx = rel["claim_idx"]
-        if actual_j_idx >= i:
-            actual_j_idx += 1
+        # Map LLM's sequential index to original claim index
+        llm_idx = rel["claim_idx"]
+        if 0 <= llm_idx < len(llm_to_original_idx):
+            actual_j_idx = llm_to_original_idx[llm_idx]
             
-        coherence = ClaimCoherence(
-            claim_i_idx=i,
-            claim_j_idx=actual_j_idx,
-            delta_prob=float(rel["delta_prob"]),
-            reasoning=rel["reasoning"]
-        )
-        claim_results.append(coherence)
+            coherence = ClaimCoherence(
+                claim_i_idx=i,
+                claim_j_idx=actual_j_idx,
+                delta_prob=float(rel["delta_prob"]),
+                reasoning=rel["reasoning"]
+            )
+            claim_results.append(coherence)
+    
+    # Save this claim's results immediately
+    claim_cache_file.write_text(json.dumps([c.model_dump() for c in claim_results], indent=2))
+    print(f"  Analyzed and saved: {claim_i.doc_id}[{claim_i.claim_idx}]")
     
     return claim_results
 
 
-def analyze_coherence(claims: list[ExtractedClaim]) -> list[ClaimCoherence]:
+def analyze_coherence(claims: list[ExtractedClaim], documents: list[dict], claims_per_doc: int) -> list[ClaimCoherence]:
     """Analyze coherence between claims - how each claim affects others' likelihood.
     
     Args:
         claims: List of ExtractedClaim objects to analyze
+        documents: Original document configuration (for consistent hashing)
+        claims_per_doc: Number of claims per document (for consistent hashing)
         
     Returns:
         List of ClaimCoherence objects showing relationships
     """
-    # Generate cache key from claims
-    claims_text = "\n".join([f"{c.claim_idx}:{c.claim}" for c in claims])
-    claims_hash = hashlib.sha256(claims_text.encode()).hexdigest()[:12]
+    # Generate unified cache key using same method as claim extraction
+    unified_hash = generate_unified_hash_from_config(documents, claims_per_doc)
     
-    # Check cache
-    cache_dir = Path("data/cache/coherence")
+    # Setup cache directory for this set of claims
+    cache_dir = Path("data/cache") / unified_hash / "coherence"
     cache_dir.mkdir(parents=True, exist_ok=True)
-    cache_file = cache_dir / f"{claims_hash}.json"
-    
-    if cache_file.exists():
-        print(f"Loading cached coherence analysis for hash {claims_hash}")
-        coherence_data = json.loads(cache_file.read_text())
-        return [ClaimCoherence(**item) for item in coherence_data]
     
     print(f"Analyzing coherence for {len(claims)} claims using {MAX_WORKERS} workers")
     coherence_results = []
@@ -116,31 +132,32 @@ def analyze_coherence(claims: list[ExtractedClaim]) -> list[ClaimCoherence]:
     # Create work items for each claim
     work_items = []
     for i, claim_i in enumerate(claims):
-        # Prepare other claims for analysis
+        # Prepare other claims for analysis (use sequential indices for LLM)
+        other_claims = [claim_j for j, claim_j in enumerate(claims) if j != i]
         other_claims_text = "\n".join([
-            f"{j}. {claim_j.claim}"
-            for j, claim_j in enumerate(claims)
-            if j != i
+            f"{idx}. {claim.claim}"
+            for idx, claim in enumerate(other_claims)
         ])
         
         # Skip if no other claims
         if not other_claims_text:
             continue
         
-        work_items.append((i, claim_i, other_claims_text))
+        work_items.append((i, claim_i, other_claims_text, other_claims))
     
     # Process claims in parallel
     with ThreadPoolExecutor(max_workers=min(MAX_WORKERS, len(work_items))) as executor:
-        futures = [executor.submit(_analyze_single_claim, work_item) for work_item in work_items]
+        futures = [executor.submit(_analyze_single_claim, work_item, cache_dir) for work_item in work_items]
         
-        for i, future in enumerate(as_completed(futures)):
+        completed = 0
+        for future in as_completed(futures):
             claim_relationships = future.result()
             coherence_results.extend(claim_relationships)
-            print(f"  Completed {i+1}/{len(work_items)} claims")
+            completed += 1
+            if completed % 5 == 0 or completed == len(work_items):
+                print(f"  Progress: {completed}/{len(work_items)} claims processed")
     
-    # Cache results
-    cache_file.write_text(json.dumps([c.model_dump() for c in coherence_results], indent=2))
-    print(f"Analyzed {len(coherence_results)} claim relationships, cached to {cache_file}")
+    print(f"Analyzed {len(coherence_results)} claim relationships")
     
     return coherence_results
 

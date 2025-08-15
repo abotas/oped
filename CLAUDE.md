@@ -12,3 +12,4 @@ To orient read @README.md
 - If you're creating a new file, before starting to code think critically about what interfaces make the most sense with the existing code base. Keep things as simple as possible.
 - You may drive-by simplify if you notice opportunities, but only for true, small simplifications
 - gpt5 is out do not switch me back to gpt4o gpt5 is better and cheaper
+- do not test streamlit by launching it. it's ok to not test it unless you have a really good idea for how to do it easily without spending API credits or writing tons of code.
