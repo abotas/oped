@@ -1,0 +1,188 @@
+[
+  {
+    "claim_i_idx": 3,
+    "claim_j_idx": 0,
+    "delta_prob": 0.6,
+    "reasoning": "A emphasizes urgency and precaution given non-trivial near-term risk, which raises the plausibility that humanity is racing toward dangerous AGI/ASI and that urgent attention is warranted."
+  },
+  {
+    "claim_i_idx": 3,
+    "claim_j_idx": 1,
+    "delta_prob": 0.6,
+    "reasoning": "A's point that regulation and treaties take years strengthens the case for multilateral governance and limits on unilateral AGI power to avoid catastrophic abuse."
+  },
+  {
+    "claim_i_idx": 3,
+    "claim_j_idx": 2,
+    "delta_prob": 0.5,
+    "reasoning": "A rejects waiting for certainty and thus undermines dismissive sceptical arguments, increasing the weight of empirical capability trends as relevant to x-risk."
+  },
+  {
+    "claim_i_idx": 3,
+    "claim_j_idx": 4,
+    "delta_prob": 0.4,
+    "reasoning": "A's precautionary rationale increases the credibility of concerns that corporate incentives could motivate unsafe deployment and hence justify regulatory intervention."
+  },
+  {
+    "claim_i_idx": 3,
+    "claim_j_idx": 5,
+    "delta_prob": 0.5,
+    "reasoning": "A's call for democratic, timely safeguards aligns with the view that open-sourcing is not an unambiguous safety strategy and governance should guide openness."
+  },
+  {
+    "claim_i_idx": 3,
+    "claim_j_idx": 6,
+    "delta_prob": 0.5,
+    "reasoning": "Because A stresses starting international and hardware-related governance early, it raises the likelihood that such measures are important despite verification difficulties and need defense\u2011in\u2011depth."
+  },
+  {
+    "claim_i_idx": 3,
+    "claim_j_idx": 7,
+    "delta_prob": 0.9,
+    "reasoning": "A essentially embodies the precautionary principle given non-trivial extinction risk, directly supporting the claim that policy should act despite uncertainty and non-negligible expected losses."
+  },
+  {
+    "claim_i_idx": 3,
+    "claim_j_idx": 8,
+    "delta_prob": 0.2,
+    "reasoning": "A allows for nearer\u2011term arrival but does not assert takeoff has started, so it slightly increases plausibility of an ongoing rapid takeoff but doesn't strongly support the stronger 'past event horizon' claim."
+  },
+  {
+    "claim_i_idx": 3,
+    "claim_j_idx": 9,
+    "delta_prob": 0.2,
+    "reasoning": "A is neutral on benefits but by advocating safe, timely action it modestly increases the plausibility that AI could be harnessed for large gains if governed well."
+  },
+  {
+    "claim_i_idx": 3,
+    "claim_j_idx": 10,
+    "delta_prob": 0.4,
+    "reasoning": "A's concern about possible earlier arrival makes self\u2011reinforcing feedback loops (recursive improvement, funding flywheels) more salient as mechanisms for rapid acceleration."
+  },
+  {
+    "claim_i_idx": 3,
+    "claim_j_idx": 11,
+    "delta_prob": 0.5,
+    "reasoning": "A's insistence on acting now because AGI could arrive sooner raises the credibility of near\u2011term milestone scenarios and motivates taking those timelines seriously."
+  },
+  {
+    "claim_i_idx": 3,
+    "claim_j_idx": 12,
+    "delta_prob": 0.3,
+    "reasoning": "A supports preparing for large societal change and governance challenges, modestly increasing the chance that the 2030s will be markedly different if intelligence/energy become abundant."
+  },
+  {
+    "claim_i_idx": 3,
+    "claim_j_idx": 13,
+    "delta_prob": 0.6,
+    "reasoning": "A's emphasis on early safety work makes the claim that alignment must be solved before safe, widely available superintelligence more compelling."
+  },
+  {
+    "claim_i_idx": 3,
+    "claim_j_idx": 14,
+    "delta_prob": 0.3,
+    "reasoning": "A's urgency modestly raises the plausibility that economic scaling/cost trends will drive rapid impact, but it doesn't provide new technical/economic evidence."
+  },
+  {
+    "claim_i_idx": 3,
+    "claim_j_idx": 15,
+    "delta_prob": 0.7,
+    "reasoning": "A directly endorses the importance of public policy and governance now, increasing confidence that policy choices will materially affect outcomes and must be balanced with other values."
+  },
+  {
+    "claim_i_idx": 3,
+    "claim_j_idx": 16,
+    "delta_prob": 0.2,
+    "reasoning": "A is agnostic about the magnitude of benefits but by stressing early safety it slightly raises the plausibility that powerful, aligned AI could produce large gains."
+  },
+  {
+    "claim_i_idx": 3,
+    "claim_j_idx": 17,
+    "delta_prob": 0.6,
+    "reasoning": "A frames risk mitigation as instrumental and time\u2011sensitive, supporting the idea that our actions now can substantially change the odds of a positive future."
+  },
+  {
+    "claim_i_idx": 3,
+    "claim_j_idx": 18,
+    "delta_prob": 0.6,
+    "reasoning": "A's call to invest in safety today increases the likelihood that interpretability is a high\u2011priority, time\u2011sensitive mitigation that should be matured before deployment."
+  },
+  {
+    "claim_i_idx": 3,
+    "claim_j_idx": 19,
+    "delta_prob": 0.2,
+    "reasoning": "A supports scaling interpretability work but does not directly bear on its tractability; thus it slightly increases the prior that interpretability is worth pursuing."
+  },
+  {
+    "claim_i_idx": 3,
+    "claim_j_idx": 20,
+    "delta_prob": 0.6,
+    "reasoning": "A's emphasis on early multilateral governance and precautions raises the plausibility that AI could empower both democracies and autocracies and that proactive democratic coordination is needed."
+  },
+  {
+    "claim_i_idx": 3,
+    "claim_j_idx": 21,
+    "delta_prob": 0.2,
+    "reasoning": "A makes rapid, high\u2011leverage scientific acceleration a more salient risk/benefit pathway to plan for, but it doesn't directly increase technical likelihood of AI becoming a virtual scientist."
+  },
+  {
+    "claim_i_idx": 3,
+    "claim_j_idx": 22,
+    "delta_prob": 0.1,
+    "reasoning": "A favors precaution but doesn't alter the technical/physical constraints on deployment much, so it only slightly shifts probability toward acknowledging bottlenecks and complementary factors."
+  },
+  {
+    "claim_i_idx": 3,
+    "claim_j_idx": 23,
+    "delta_prob": 0.7,
+    "reasoning": "A argues laws and export controls take time, so it strongly supports policy measures like scaling interpretability, transparency requirements, and targeted export controls to buy time."
+  },
+  {
+    "claim_i_idx": 3,
+    "claim_j_idx": 24,
+    "delta_prob": 0.3,
+    "reasoning": "A strengthens concern about concentrating power and the need for governance, but it does not by itself validate open\u2011sourcing as the primary remedy, so net positive but modest."
+  },
+  {
+    "claim_i_idx": 3,
+    "claim_j_idx": 25,
+    "delta_prob": 0.0,
+    "reasoning": "A's meta\u2011policy point about timing and precaution is neutral with respect to the technical claim about autoregressive LLMs lacking key components of intelligence."
+  },
+  {
+    "claim_i_idx": 3,
+    "claim_j_idx": 26,
+    "delta_prob": 0.0,
+    "reasoning": "A does not address the technical necessity of sensory grounding for human\u2011like intelligence, so it has no material effect on this claim's likelihood."
+  },
+  {
+    "claim_i_idx": 3,
+    "claim_j_idx": 27,
+    "delta_prob": 0.0,
+    "reasoning": "A is policy\u2011oriented and does not affect the technical plausibility of JEPAs as a path to world models."
+  },
+  {
+    "claim_i_idx": 3,
+    "claim_j_idx": 28,
+    "delta_prob": 0.0,
+    "reasoning": "A does not change the technical assessment of autoregressive generation versus alternative architectures, so it leaves this claim unchanged."
+  },
+  {
+    "claim_i_idx": 3,
+    "claim_j_idx": 29,
+    "delta_prob": -0.5,
+    "reasoning": "A explicitly cautions that uncertainty is not a reason to delay because AGI could arrive sooner, which undermines confidence in gradualist/doomer\u2011dismissive arguments and makes rapid/abrupt scenarios more plausible."
+  },
+  {
+    "claim_i_idx": 3,
+    "claim_j_idx": 30,
+    "delta_prob": 0.0,
+    "reasoning": "A's precautionary stance doesn't favor one technical training paradigm over another and so doesn't alter the likelihood of RL being primary or secondary."
+  },
+  {
+    "claim_i_idx": 3,
+    "claim_j_idx": 31,
+    "delta_prob": 0.2,
+    "reasoning": "A's pragmatic push to start safety work now modestly favors the view that safety will be an iterative engineering effort rather than a single, provable fix."
+  }
+]

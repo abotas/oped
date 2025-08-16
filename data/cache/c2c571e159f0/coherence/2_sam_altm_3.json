@@ -1,0 +1,188 @@
+[
+  {
+    "claim_i_idx": 11,
+    "claim_j_idx": 0,
+    "delta_prob": 0.6,
+    "reasoning": "Near-term capabilities increase the plausibility of an accelerating race toward AGI/ASI and therefore raise urgency about lack of reliable alignment methods and risks from incompatible goals."
+  },
+  {
+    "claim_i_idx": 11,
+    "claim_j_idx": 1,
+    "delta_prob": 0.6,
+    "reasoning": "Faster arrival of powerful systems strengthens the case that unilateral control is dangerous and that multilateral governance/coordination is urgently needed."
+  },
+  {
+    "claim_i_idx": 11,
+    "claim_j_idx": 2,
+    "delta_prob": 0.7,
+    "reasoning": "Empirical, near-term capability milestones make arguments that focus on demonstrated capabilities (rather than hand-wavy scepticism) more compelling for x-risk assessment."
+  },
+  {
+    "claim_i_idx": 11,
+    "claim_j_idx": 3,
+    "delta_prob": 0.7,
+    "reasoning": "If transformative systems could arrive within a few years, starting regulation and safety work now becomes much more necessary given long lead times for institutions and laws."
+  },
+  {
+    "claim_i_idx": 11,
+    "claim_j_idx": 4,
+    "delta_prob": 0.5,
+    "reasoning": "Rapid capability development increases the incentives and opportunities for firms to cut corners or prioritize deployment/profit over safety, making corporate incentive concerns more salient."
+  },
+  {
+    "claim_i_idx": 11,
+    "claim_j_idx": 5,
+    "delta_prob": 0.4,
+    "reasoning": "Near-term powerful models raise the stakes of openness decisions\u2014open-sourcing would accelerate misuse\u2014so openness ceases to be a simple unambiguous safety strategy."
+  },
+  {
+    "claim_i_idx": 11,
+    "claim_j_idx": 6,
+    "delta_prob": 0.5,
+    "reasoning": "Fast capability timelines make international treaties and hardware controls more necessary as tools to reduce GCR, while also highlighting verification and circumvention challenges."
+  },
+  {
+    "claim_i_idx": 11,
+    "claim_j_idx": 7,
+    "delta_prob": 0.6,
+    "reasoning": "Short timelines implied by Claim A increase the expected value of precautionary policies and make non-negligible extinction-risk estimates more policy-relevant."
+  },
+  {
+    "claim_i_idx": 11,
+    "claim_j_idx": 8,
+    "delta_prob": 0.3,
+    "reasoning": "Claim A implies takeoff momentum in the near term, which modestly supports the view that we're already in an accelerating phase, though it doesn't prove an irreversible event horizon."
+  },
+  {
+    "claim_i_idx": 11,
+    "claim_j_idx": 9,
+    "delta_prob": 0.6,
+    "reasoning": "If systems can produce novel scientific insights by 2026 and operate in the real world by 2027, the likelihood of large productivity and quality-of-life gains rises substantially."
+  },
+  {
+    "claim_i_idx": 11,
+    "claim_j_idx": 10,
+    "delta_prob": 0.6,
+    "reasoning": "Early agentic systems and real\u2011world robots make self-reinforcing feedback loops (AI accelerating AI, economic flywheels, automated scaling) more plausible and impactful."
+  },
+  {
+    "claim_i_idx": 11,
+    "claim_j_idx": 12,
+    "delta_prob": 0.6,
+    "reasoning": "Projected near-term transformative milestones support the view that the 2030s will be substantially different, while still leaving room for continuity in many everyday activities."
+  },
+  {
+    "claim_i_idx": 11,
+    "claim_j_idx": 13,
+    "delta_prob": 0.4,
+    "reasoning": "Faster arrival of powerful systems increases the importance of solving alignment before wide cheap deployment, though the claim's normative ordering isn't strictly deduced from timelines alone."
+  },
+  {
+    "claim_i_idx": 11,
+    "claim_j_idx": 14,
+    "delta_prob": 0.5,
+    "reasoning": "Rapid capability gains are consistent with scaling-related economic patterns (improving cost-per-use, nonlinear social value), making those economic observations more relevant."
+  },
+  {
+    "claim_i_idx": 11,
+    "claim_j_idx": 15,
+    "delta_prob": 0.5,
+    "reasoning": "Near-term disruptive change raises the importance of public policy, governance and thoughtful distribution of access and empowerment to manage societal impacts."
+  },
+  {
+    "claim_i_idx": 11,
+    "claim_j_idx": 16,
+    "delta_prob": 0.6,
+    "reasoning": "If powerful, multimodal, autonomous systems arrive soon, the prospect that aligned AI could compress decades of progress into years becomes materially more plausible."
+  },
+  {
+    "claim_i_idx": 11,
+    "claim_j_idx": 17,
+    "delta_prob": 0.5,
+    "reasoning": "Fast trajectories imply our technical and policy choices will materially affect outcomes, strengthening the instrumental argument for prioritizing risk mitigation."
+  },
+  {
+    "claim_i_idx": 11,
+    "claim_j_idx": 18,
+    "delta_prob": 0.7,
+    "reasoning": "Claim A's near-term deployment timeline makes the interpretability-vs-capability race acute: interpretability maturing in 5\u201310 years becomes much more consequential."
+  },
+  {
+    "claim_i_idx": 11,
+    "claim_j_idx": 19,
+    "delta_prob": 0.1,
+    "reasoning": "While rapid capabilities increase demand and funding for interpretability, Claim A does not directly validate the tractability claim\u2014only modestly raises its practical importance."
+  },
+  {
+    "claim_i_idx": 11,
+    "claim_j_idx": 20,
+    "delta_prob": 0.4,
+    "reasoning": "Near-term, powerful, widely usable AI increases dual-use risks and the chance that regimes (democratic or authoritarian) will leverage AI for control or advantage, making proactive democratic strategies more important."
+  },
+  {
+    "claim_i_idx": 11,
+    "claim_j_idx": 21,
+    "delta_prob": 0.6,
+    "reasoning": "Claim A explicitly forecasts AI systems generating scientific insights, which directly supports the claim that AI can act as a virtual scientist and accelerate invention rates."
+  },
+  {
+    "claim_i_idx": 11,
+    "claim_j_idx": 22,
+    "delta_prob": 0.3,
+    "reasoning": "Fast capability gains make deployment more likely, but real-world constraints still matter; Claim A raises both potential and the need to study marginal returns and complementary bottlenecks."
+  },
+  {
+    "claim_i_idx": 11,
+    "claim_j_idx": 23,
+    "delta_prob": 0.6,
+    "reasoning": "If transformative systems loom soon, scaling interpretability, transparency, and targeted export controls become more plausible and urgent policy levers to buy time."
+  },
+  {
+    "claim_i_idx": 11,
+    "claim_j_idx": 24,
+    "delta_prob": 0.3,
+    "reasoning": "Rapid capability development concentrated in a few firms increases concentration risks, but the proposed remedy (open\u2011sourcing) is contentious and its effectiveness is ambiguous, so effect is modestly positive."
+  },
+  {
+    "claim_i_idx": 11,
+    "claim_j_idx": 25,
+    "delta_prob": 0.4,
+    "reasoning": "Near-term success of agents and embodied systems suggests that architectures beyond pure autoregressive LLMs (multimodal, interactive) will be important, supporting the critique of token-only approaches."
+  },
+  {
+    "claim_i_idx": 11,
+    "claim_j_idx": 26,
+    "delta_prob": 0.4,
+    "reasoning": "Robots and real\u2011world tasks imply that high-bandwidth sensory grounding matters for human-like capabilities, increasing the plausibility of grounding being essential."
+  },
+  {
+    "claim_i_idx": 11,
+    "claim_j_idx": 27,
+    "delta_prob": 0.2,
+    "reasoning": "Claim A's timeline makes alternative architectures for learning world models more likely to matter, modestly boosting the plausibility that JEPA-like methods will be important."
+  },
+  {
+    "claim_i_idx": 11,
+    "claim_j_idx": 28,
+    "delta_prob": 0.3,
+    "reasoning": "If robust long-horizon reasoning and low-hallucination performance are needed for 2026\u201327 capabilities, this strengthens the case that next-token autoregression alone is insufficient and new architectures will be required."
+  },
+  {
+    "claim_i_idx": 11,
+    "claim_j_idx": 29,
+    "delta_prob": 0.4,
+    "reasoning": "A sequence of milestones across years makes a gradual, iterative progress narrative more consistent with reality and somewhat less consistent with an instantaneous catastrophic one-off takeover."
+  },
+  {
+    "claim_i_idx": 11,
+    "claim_j_idx": 30,
+    "delta_prob": 0.2,
+    "reasoning": "Claim A's emphasis on rapid, general capabilities increases interest in sample-efficient, self-supervised pipelines and reduces the likelihood that RL-heavy approaches are the sole path."
+  },
+  {
+    "claim_i_idx": 11,
+    "claim_j_idx": 31,
+    "delta_prob": 0.4,
+    "reasoning": "Near-term deployment of powerful systems favors viewing safety as an iterative engineering process with progressive guardrails rather than a single provable fix."
+  }
+]

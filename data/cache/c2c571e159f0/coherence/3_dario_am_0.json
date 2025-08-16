@@ -1,0 +1,188 @@
+[
+  {
+    "claim_i_idx": 16,
+    "claim_j_idx": 0,
+    "delta_prob": 0.8,
+    "reasoning": "If powerful, AGI\u2011class systems exist or are imminent, that directly makes the \u2018\u2018racing\u2019\u2019 narrative and urgent alignment concerns much more likely \u2014 the stake and time pressure rise sharply."
+  },
+  {
+    "claim_i_idx": 16,
+    "claim_j_idx": 1,
+    "delta_prob": 0.6,
+    "reasoning": "Existence of very powerful AI increases the harm from unilateral control, so political/institutional coordination failure becomes a substantially more important and likely threat."
+  },
+  {
+    "claim_i_idx": 16,
+    "claim_j_idx": 2,
+    "delta_prob": 1.0,
+    "reasoning": "A true Claim A is direct empirical evidence that sceptical counters about impossibility or centuries\u2011away timelines are misleading \u2014 it shows such capabilities are achievable in short order."
+  },
+  {
+    "claim_i_idx": 16,
+    "claim_j_idx": 3,
+    "delta_prob": 0.7,
+    "reasoning": "If powerful AI can appear and have rapid impact, uncertainty about timelines is no excuse to delay regulation; the lead time for institutions makes precautionary action more necessary."
+  },
+  {
+    "claim_i_idx": 16,
+    "claim_j_idx": 4,
+    "delta_prob": 0.6,
+    "reasoning": "Powerful commercially valuable systems magnify corporate incentives to deploy fast; Claim A makes it more likely companies will face strong conflicting incentives against safety."
+  },
+  {
+    "claim_i_idx": 16,
+    "claim_j_idx": 5,
+    "delta_prob": 0.5,
+    "reasoning": "Powerful AGI increases both the research benefits and the misuse risks of open\u2011sourcing, so the claim that openness is not an unambiguous safety strategy becomes more plausible."
+  },
+  {
+    "claim_i_idx": 16,
+    "claim_j_idx": 6,
+    "delta_prob": 0.5,
+    "reasoning": "If these systems can have huge global effects, international/hardware governance becomes more important \u2014 and the practical verification/circumvention challenges described become more salient."
+  },
+  {
+    "claim_i_idx": 16,
+    "claim_j_idx": 7,
+    "delta_prob": 0.7,
+    "reasoning": "A demonstrably powerful AI raises the expected value of catastrophic outcomes, strengthening the case that precautionary investment and policy are warranted despite uncertainty."
+  },
+  {
+    "claim_i_idx": 16,
+    "claim_j_idx": 8,
+    "delta_prob": 0.6,
+    "reasoning": "Claim A (rapidly transformative AI) supports the idea that a takeoff is underway or imminent and that many technical barriers have been overcome, increasing plausibility of the \u2018\u2018event horizon\u2019\u2019 view."
+  },
+  {
+    "claim_i_idx": 16,
+    "claim_j_idx": 9,
+    "delta_prob": 1.0,
+    "reasoning": "Claim A explicitly states transformative positive outcomes if aligned; its truth directly raises the probability that AI can produce very large quality\u2011of\u2011life gains."
+  },
+  {
+    "claim_i_idx": 16,
+    "claim_j_idx": 10,
+    "delta_prob": 0.6,
+    "reasoning": "Powerful, automatable AI that can run in parallel and improve research makes self\u2011reinforcing feedback loops and rapid capability acceleration considerably more likely."
+  },
+  {
+    "claim_i_idx": 16,
+    "claim_j_idx": 11,
+    "delta_prob": 0.5,
+    "reasoning": "If powerful, multimodal, autonomous systems are real, near\u2011term milestones like cognitive agents transforming work and scientific insight generation become more plausible."
+  },
+  {
+    "claim_i_idx": 16,
+    "claim_j_idx": 12,
+    "delta_prob": 0.5,
+    "reasoning": "A true Claim A implies large changes are possible by the 2030s; that makes the claim of major societal difference (given governance) more likely while not eliminating continuity in everyday life."
+  },
+  {
+    "claim_i_idx": 16,
+    "claim_j_idx": 13,
+    "delta_prob": 0.6,
+    "reasoning": "If superintelligence can generate large impacts, robust alignment becomes an even clearer prerequisite before broad cheap deployment, increasing this claim's plausibility."
+  },
+  {
+    "claim_i_idx": 16,
+    "claim_j_idx": 14,
+    "delta_prob": 0.4,
+    "reasoning": "The economic scaling observations are supported indirectly by rapid capability emergence: scaling laws and falling costs become more consequential, though exact magnitudes are uncertain."
+  },
+  {
+    "claim_i_idx": 16,
+    "claim_j_idx": 15,
+    "delta_prob": 0.6,
+    "reasoning": "A powerful AI amplifies societal stakes, so public policy, governance and distributional choices become more central to outcomes \u2014 increasing the claim's likelihood."
+  },
+  {
+    "claim_i_idx": 16,
+    "claim_j_idx": 17,
+    "delta_prob": 0.6,
+    "reasoning": "If AI can materially determine whether a radically positive future occurs, the instrumental argument for focusing on risks becomes stronger and more salient."
+  },
+  {
+    "claim_i_idx": 16,
+    "claim_j_idx": 18,
+    "delta_prob": 0.6,
+    "reasoning": "Claim A makes a time\u2011sensitive interpretability race more urgent \u2014 if transformative systems can appear soon, delaying mechanistic tools increases danger of deployment without detection of failure modes."
+  },
+  {
+    "claim_i_idx": 16,
+    "claim_j_idx": 19,
+    "delta_prob": 0.3,
+    "reasoning": "Powerful AI raises the value of interpretability and makes progress more likely to be pursued, modestly increasing the plausibility that interpretability is tractable though tractability is not guaranteed."
+  },
+  {
+    "claim_i_idx": 16,
+    "claim_j_idx": 20,
+    "delta_prob": 0.6,
+    "reasoning": "A true Claim A emphasizes dual\u2011use risks: powerful AI can aid both democracies and autocracies, increasing plausibility that proactive democratic coordination is required."
+  },
+  {
+    "claim_i_idx": 16,
+    "claim_j_idx": 21,
+    "delta_prob": 0.8,
+    "reasoning": "Claim A explicitly posits AI acting as a virtual scientist with large acceleration in biomedical fields, so the specific claim about outsized returns to intelligence and large speedups becomes much more likely."
+  },
+  {
+    "claim_i_idx": 16,
+    "claim_j_idx": 22,
+    "delta_prob": 0.4,
+    "reasoning": "Even if AI capabilities are huge, real\u2011world constraints will matter; Claim A's truth highlights both the power and the practical limits, modestly raising plausibility of this moderating claim."
+  },
+  {
+    "claim_i_idx": 16,
+    "claim_j_idx": 23,
+    "delta_prob": 0.5,
+    "reasoning": "If powerful AI threatens rapid, risky deployment, targeted policy actions (interpretability scaling, transparency, export controls) become more attractive and likely to be advocated and implemented."
+  },
+  {
+    "claim_i_idx": 16,
+    "claim_j_idx": 24,
+    "delta_prob": 0.2,
+    "reasoning": "Claim A increases the danger of concentration of power, but it does not by itself validate open\u2011sourcing as the primary remedy \u2014 that remedy remains contested, so net support is modest."
+  },
+  {
+    "claim_i_idx": 16,
+    "claim_j_idx": 25,
+    "delta_prob": 0.5,
+    "reasoning": "A true Claim A (multimodal, real\u2011world acting systems) supports the view that next\u2011token LLMs alone are insufficient to reach full AGI, making that skeptical technical claim more likely."
+  },
+  {
+    "claim_i_idx": 16,
+    "claim_j_idx": 26,
+    "delta_prob": 0.5,
+    "reasoning": "Claim A's emphasis on multimodal, embodied capabilities increases the plausibility that high\u2011bandwidth sensory grounding matters for human\u2011like intelligence."
+  },
+  {
+    "claim_i_idx": 16,
+    "claim_j_idx": 27,
+    "delta_prob": 0.2,
+    "reasoning": "Powerful AGI makes interest in architectures that learn predictive world models (like JEPAs) more plausible, but Claim A doesn't specifically validate that particular approach, so effect is small."
+  },
+  {
+    "claim_i_idx": 16,
+    "claim_j_idx": 28,
+    "delta_prob": 0.3,
+    "reasoning": "If LLMs exhibit errors and limits at scale, that makes architectural critiques of autoregressive generation and calls for alternative objectives somewhat more likely."
+  },
+  {
+    "claim_i_idx": 16,
+    "claim_j_idx": 29,
+    "delta_prob": -0.4,
+    "reasoning": "Claim A posits rapid, large\u2011scale impacts within years; that raises the plausibility of faster, disruptive transitions and thus reduces confidence in purely gradual, non\u2011doomer narratives."
+  },
+  {
+    "claim_i_idx": 16,
+    "claim_j_idx": 30,
+    "delta_prob": 0.2,
+    "reasoning": "Given powerful capability emergence from large self\u2011supervised models, the case that RL is not the primary path to AGI is modestly strengthened, though RL may still play roles."
+  },
+  {
+    "claim_i_idx": 16,
+    "claim_j_idx": 31,
+    "delta_prob": 0.4,
+    "reasoning": "If powerful systems exist, it becomes likelier that safety will need iterative engineering, testing, and progressive integration of guardrails rather than a single provable fix."
+  }
+]

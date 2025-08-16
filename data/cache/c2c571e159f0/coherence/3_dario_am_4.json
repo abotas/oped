@@ -1,0 +1,188 @@
+[
+  {
+    "claim_i_idx": 20,
+    "claim_j_idx": 0,
+    "delta_prob": 0.4,
+    "reasoning": "A emphasizes dual-use risks and need for precaution and coordination, which supports urgency about misaligned powerful AIs even if it doesn't assert timelines or technical impossibility."
+  },
+  {
+    "claim_i_idx": 20,
+    "claim_j_idx": 1,
+    "delta_prob": 0.9,
+    "reasoning": "A explicitly calls for democracies to coordinate and prevent unilateral empowerment of regimes, directly reinforcing the need for multilateral governance and limits on unilateral AGI power."
+  },
+  {
+    "claim_i_idx": 20,
+    "claim_j_idx": 2,
+    "delta_prob": 0.3,
+    "reasoning": "A assumes AI will become powerful enough to affect geopolitical balance, which modestly supports the view that demonstrated capability trends make AGI plausibility relevant, though it doesn't address technical argument details."
+  },
+  {
+    "claim_i_idx": 20,
+    "claim_j_idx": 3,
+    "delta_prob": 0.8,
+    "reasoning": "A's call for proactive coordination, export controls and responsible scaling directly aligns with the claim that timeline uncertainty is not a reason to delay regulation and safety work."
+  },
+  {
+    "claim_i_idx": 20,
+    "claim_j_idx": 4,
+    "delta_prob": 0.5,
+    "reasoning": "A's warning about AI empowering regimes and the need for policy action implies skepticism that commercial incentives alone will ensure safe designs, supporting concerns about corporate conflicts."
+  },
+  {
+    "claim_i_idx": 20,
+    "claim_j_idx": 5,
+    "delta_prob": 0.6,
+    "reasoning": "A's emphasis on avoiding empowerment of autocracies and using policy (e.g., export controls) to manage risks supports the view that openness is not an unambiguous safety strategy and needs democratic oversight."
+  },
+  {
+    "claim_i_idx": 20,
+    "claim_j_idx": 6,
+    "delta_prob": 0.9,
+    "reasoning": "A explicitly mentions chip export controls and an 'entente strategy', strongly corroborating the importance of treaties/hardware governance while also implying the need for defense-in-depth and equitable provisions."
+  },
+  {
+    "claim_i_idx": 20,
+    "claim_j_idx": 7,
+    "delta_prob": 0.5,
+    "reasoning": "A's precautionary framing and policy prescriptions reinforce the idea that non-negligible catastrophic risk estimates warrant urgent precautionary investment and policy action."
+  },
+  {
+    "claim_i_idx": 20,
+    "claim_j_idx": 8,
+    "delta_prob": 0.2,
+    "reasoning": "A presumes AI will become geopolitically consequential, which slightly favors the idea of an ongoing takeoff, but it does not claim an already-started event horizon or strong timeline assertions."
+  },
+  {
+    "claim_i_idx": 20,
+    "claim_j_idx": 9,
+    "delta_prob": 0.4,
+    "reasoning": "A acknowledges AI's potential to confer large benefits (if managed) and calls for offering benefits to other countries, modestly increasing the plausibility of large positive gains if harnessed well."
+  },
+  {
+    "claim_i_idx": 20,
+    "claim_j_idx": 10,
+    "delta_prob": 0.5,
+    "reasoning": "A's focus on economic and military advantage and the need to secure supply chains is consistent with self-reinforcing feedbacks that accelerate capabilities and concentrate advantages."
+  },
+  {
+    "claim_i_idx": 20,
+    "claim_j_idx": 11,
+    "delta_prob": 0.2,
+    "reasoning": "A's assumption of powerful AI makes near-term capability milestones somewhat more plausible, but it gives no specific timing evidence so the boost is small."
+  },
+  {
+    "claim_i_idx": 20,
+    "claim_j_idx": 12,
+    "delta_prob": 0.4,
+    "reasoning": "A highlights that governance choices will determine whether AI empowers democracies or autocracies, which supports the conditional view that the 2030s could be radically different under good governance."
+  },
+  {
+    "claim_i_idx": 20,
+    "claim_j_idx": 13,
+    "delta_prob": 0.5,
+    "reasoning": "A's concern about concentration of power and call for international coordination aligns with the claim that alignment plus wide, non-concentrated availability are necessary for safe beneficial outcomes."
+  },
+  {
+    "claim_i_idx": 20,
+    "claim_j_idx": 14,
+    "delta_prob": 0.5,
+    "reasoning": "A's emphasis on strategic scaling, supply chains and geopolitical advantage is consistent with economic drivers that make rapid investment and scaling likely."
+  },
+  {
+    "claim_i_idx": 20,
+    "claim_j_idx": 15,
+    "delta_prob": 0.8,
+    "reasoning": "A directly frames the problem as political and governance-driven (entente strategy, coordinated policy, offering benefits), strongly supporting the importance of public policy and distributional choices."
+  },
+  {
+    "claim_i_idx": 20,
+    "claim_j_idx": 16,
+    "delta_prob": 0.5,
+    "reasoning": "A does not dispute transformative positive potential and in fact advocates shaping deployment to favor liberal democratic outcomes, supporting the conditional plausibility of large benefits if aligned."
+  },
+  {
+    "claim_i_idx": 20,
+    "claim_j_idx": 17,
+    "delta_prob": 0.7,
+    "reasoning": "A's policy prescriptions (coordination, export controls, responsible scaling) underscore that policy choices materially affect whether AI empowers democracies or autocracies, reinforcing the instrumental reason to focus on risks."
+  },
+  {
+    "claim_i_idx": 20,
+    "claim_j_idx": 18,
+    "delta_prob": 0.3,
+    "reasoning": "A's emphasis on buying time through coordination and controls is consistent with the idea that interpretability and other safety work are time\u2011sensitive, though A doesn't name interpretability specifically."
+  },
+  {
+    "claim_i_idx": 20,
+    "claim_j_idx": 19,
+    "delta_prob": 0.1,
+    "reasoning": "A's call for responsible scaling and defensive measures mildly supports investing in technical mitigations like interpretability, but it offers no direct evidence about tractability."
+  },
+  {
+    "claim_i_idx": 20,
+    "claim_j_idx": 21,
+    "delta_prob": 0.2,
+    "reasoning": "A's framing of AI as economically and strategically consequential modestly supports the plausibility that AI can act as a high\u2011leverage virtual scientist, but it doesn't address scientific specifics."
+  },
+  {
+    "claim_i_idx": 20,
+    "claim_j_idx": 22,
+    "delta_prob": 0.2,
+    "reasoning": "A's focus on governance and supply chains implies recognition of non-technical limits and the need to manage complementary factors, slightly increasing credence that constraints matter."
+  },
+  {
+    "claim_i_idx": 20,
+    "claim_j_idx": 23,
+    "delta_prob": 0.9,
+    "reasoning": "A explicitly recommends coordinated policy and chip export controls as tools to avoid empowering autocracies and buy time, directly supporting this claim's policy package."
+  },
+  {
+    "claim_i_idx": 20,
+    "claim_j_idx": 24,
+    "delta_prob": 0.2,
+    "reasoning": "A agrees concentration of power is dangerous and stresses policy to prevent authoritarian advantage, but it does not endorse open\u2011sourcing as the primary remedy, so it partially supports the claim."
+  },
+  {
+    "claim_i_idx": 20,
+    "claim_j_idx": 25,
+    "delta_prob": 0.0,
+    "reasoning": "A speaks to geopolitical and governance effects of powerful AI but says nothing about whether autoregressive LLMs alone can reach human-level intelligence."
+  },
+  {
+    "claim_i_idx": 20,
+    "claim_j_idx": 26,
+    "delta_prob": 0.0,
+    "reasoning": "A's geopolitical focus is agnostic about the technical requirement for high\u2011bandwidth sensory grounding in human-like intelligence."
+  },
+  {
+    "claim_i_idx": 20,
+    "claim_j_idx": 27,
+    "delta_prob": 0.0,
+    "reasoning": "A does not bear on the technical merits of JEPA methods for learning world models, so it has no effect on this claim's likelihood."
+  },
+  {
+    "claim_i_idx": 20,
+    "claim_j_idx": 28,
+    "delta_prob": 0.0,
+    "reasoning": "A is silent on low\u2011level architectural causes of hallucinations and thus doesn't change the plausibility of this technical claim."
+  },
+  {
+    "claim_i_idx": 20,
+    "claim_j_idx": 29,
+    "delta_prob": 0.0,
+    "reasoning": "A highlights political risks from powerful AI but does not take a position on whether takeoff will be sudden or gradual, so it doesn't alter this claim's probability."
+  },
+  {
+    "claim_i_idx": 20,
+    "claim_j_idx": 30,
+    "delta_prob": 0.0,
+    "reasoning": "A's policy and geopolitical emphasis does not assess reinforcement learning's relative role in achieving general intelligence, so it is neutral here."
+  },
+  {
+    "claim_i_idx": 20,
+    "claim_j_idx": 31,
+    "delta_prob": 0.4,
+    "reasoning": "A's recommendations for responsible scaling, coordination, and layered defenses are consistent with viewing safety as an iterative, engineering\u2011oriented process rather than a single provable fix."
+  }
+]

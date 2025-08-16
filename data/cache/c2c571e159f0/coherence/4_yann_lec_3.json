@@ -1,0 +1,188 @@
+[
+  {
+    "claim_i_idx": 27,
+    "claim_j_idx": 0,
+    "delta_prob": 0.4,
+    "reasoning": "If JEPAs provide a viable path to compact, planning\u2011relevant world models, that raises the plausibility and urgency of powerful agentic systems emerging, increasing the chance of catastrophic misuse and need for precaution."
+  },
+  {
+    "claim_i_idx": 27,
+    "claim_j_idx": 1,
+    "delta_prob": 0.3,
+    "reasoning": "Better world models accelerate capability development, which strengthens the argument that unilateral control of AGI is dangerous and multilateral governance is needed."
+  },
+  {
+    "claim_i_idx": 27,
+    "claim_j_idx": 2,
+    "delta_prob": 0.4,
+    "reasoning": "A concrete technical advance toward robust world models undermines skeptical abstractions and makes near\u2011term AGI/ASI more empirically plausible."
+  },
+  {
+    "claim_i_idx": 27,
+    "claim_j_idx": 3,
+    "delta_prob": 0.3,
+    "reasoning": "If JEPAs materially speed capability gains, uncertainty about timelines is a weaker reason to delay regulation, so acting earlier becomes more justified."
+  },
+  {
+    "claim_i_idx": 27,
+    "claim_j_idx": 4,
+    "delta_prob": 0.25,
+    "reasoning": "Easier to build powerful, hard\u2011to\u2011interpret systems increases the risk that corporate incentives lead to unsafe deployments, strengthening the claim."
+  },
+  {
+    "claim_i_idx": 27,
+    "claim_j_idx": 5,
+    "delta_prob": 0.1,
+    "reasoning": "If JEPAs lower the barrier to powerful models, openness decisions become more consequential \u2014 open\u2011release can both aid research and enable misuse."
+  },
+  {
+    "claim_i_idx": 27,
+    "claim_j_idx": 6,
+    "delta_prob": 0.15,
+    "reasoning": "Faster capability growth via JEPAs makes hardware/international controls relatively more attractive, though verification/circumvention remain real challenges."
+  },
+  {
+    "claim_i_idx": 27,
+    "claim_j_idx": 7,
+    "delta_prob": 0.3,
+    "reasoning": "A technical route to stronger models raises the expected value of precautionary investments, reinforcing the argument that non\u2011negligible extinction risk warrants action."
+  },
+  {
+    "claim_i_idx": 27,
+    "claim_j_idx": 8,
+    "delta_prob": 0.2,
+    "reasoning": "JEPAs are evidence of progress toward transformative capabilities, modestly supporting the view that takeoff has begun, but they are not decisive on their own."
+  },
+  {
+    "claim_i_idx": 27,
+    "claim_j_idx": 9,
+    "delta_prob": 0.3,
+    "reasoning": "Better latent world models from images/video plausibly increase AI's ability to accelerate science and engineering, supporting large downstream benefits if aligned."
+  },
+  {
+    "claim_i_idx": 27,
+    "claim_j_idx": 10,
+    "delta_prob": 0.2,
+    "reasoning": "If JEPAs reduce the cost or speed of capability gains, they make recursive/feedback acceleration somewhat more likely, though many other factors matter."
+  },
+  {
+    "claim_i_idx": 27,
+    "claim_j_idx": 11,
+    "delta_prob": 0.3,
+    "reasoning": "A demonstrably effective path to rich world models makes near\u2011term milestones (agents, scientific insight, robots) more plausible within the specified years."
+  },
+  {
+    "claim_i_idx": 27,
+    "claim_j_idx": 12,
+    "delta_prob": 0.25,
+    "reasoning": "By increasing the plausibility of rapid capability improvements, JEPAs modestly raise the chance the 2030s will look very different, conditional on governance."
+  },
+  {
+    "claim_i_idx": 27,
+    "claim_j_idx": 13,
+    "delta_prob": 0.35,
+    "reasoning": "If JEPAs speed creation of powerful systems, they underscore that alignment must be solved before widespread deployment and distribution of superintelligence."
+  },
+  {
+    "claim_i_idx": 27,
+    "claim_j_idx": 14,
+    "delta_prob": 0.15,
+    "reasoning": "More efficient, compressive models could make intelligence cheaper and scale more favorably, modestly supporting the economic scaling observations."
+  },
+  {
+    "claim_i_idx": 27,
+    "claim_j_idx": 15,
+    "delta_prob": 0.2,
+    "reasoning": "Stronger technical progress from JEPAs increases the stakes of public policy choices and distributional decisions, so governance and public debate matter more."
+  },
+  {
+    "claim_i_idx": 27,
+    "claim_j_idx": 16,
+    "delta_prob": 0.3,
+    "reasoning": "A practical way to learn rich, planning\u2011relevant models supports the possibility that powerful, broadly beneficial AI could be developed if alignment succeeds."
+  },
+  {
+    "claim_i_idx": 27,
+    "claim_j_idx": 17,
+    "delta_prob": 0.25,
+    "reasoning": "Technical progress that materially changes outcomes strengthens the instrumental case for focusing on risk\u2011reducing policy and technical interventions."
+  },
+  {
+    "claim_i_idx": 27,
+    "claim_j_idx": 18,
+    "delta_prob": 0.3,
+    "reasoning": "If JEPAs enable transformative systems sooner, the need for mature interpretability before deployment becomes more pressing, increasing the claim's plausibility."
+  },
+  {
+    "claim_i_idx": 27,
+    "claim_j_idx": 19,
+    "delta_prob": 0.15,
+    "reasoning": "JEPAs being tractable doesn't prove interpretability is solved, but they may produce models whose structure is easier to analyze, weakly supporting tractability."
+  },
+  {
+    "claim_i_idx": 27,
+    "claim_j_idx": 20,
+    "delta_prob": 0.05,
+    "reasoning": "JEPAs mainly affect capability trajectories; they don't strongly change the dual\u2011use nature of AI, though greater capability marginally raises geopolitical stakes."
+  },
+  {
+    "claim_i_idx": 27,
+    "claim_j_idx": 21,
+    "delta_prob": 0.35,
+    "reasoning": "Latent predictive world models for experiments and environments plausibly increase AI's ability to act as an autonomous scientific designer, supporting large acceleration claims."
+  },
+  {
+    "claim_i_idx": 27,
+    "claim_j_idx": 22,
+    "delta_prob": 0.0,
+    "reasoning": "Claim A addresses model representations and doesn't directly alter physical, regulatory, or institutional constraints on deploying capabilities."
+  },
+  {
+    "claim_i_idx": 27,
+    "claim_j_idx": 23,
+    "delta_prob": 0.25,
+    "reasoning": "If JEPAs raise near\u2011term risk, targeted policy measures (interpretability scaling, disclosures, export controls) become more valuable as time\u2011buying mitigations."
+  },
+  {
+    "claim_i_idx": 27,
+    "claim_j_idx": 24,
+    "delta_prob": 0.1,
+    "reasoning": "Easier paths to capability can cut both ways: they may decentralize capabilities but also enable large companies to consolidate power; net effect slightly increases concern about concentration."
+  },
+  {
+    "claim_i_idx": 27,
+    "claim_j_idx": 25,
+    "delta_prob": 0.4,
+    "reasoning": "Claim A explicitly proposes non\u2011autoregressive, latent predictive architectures as key to world models, undermining the idea that autoregressive LLMs alone are the path to AGI."
+  },
+  {
+    "claim_i_idx": 27,
+    "claim_j_idx": 26,
+    "delta_prob": 0.6,
+    "reasoning": "JEPAs are specifically about learning from images and video to build grounded world models, strongly supporting the idea that high\u2011bandwidth sensory grounding is crucial."
+  },
+  {
+    "claim_i_idx": 27,
+    "claim_j_idx": 28,
+    "delta_prob": 0.45,
+    "reasoning": "By advocating continuous latent predictive architectures over token\u2011by\u2011token generation, Claim A supports the view that autoregressive methods have limits (hallucination/drift) and alternatives are needed."
+  },
+  {
+    "claim_i_idx": 27,
+    "claim_j_idx": 29,
+    "delta_prob": 0.1,
+    "reasoning": "A new architectural path suggests steady engineering progress rather than a mysterious one\u2011off discovery, slightly favoring a gradual, iterative view of progress."
+  },
+  {
+    "claim_i_idx": 27,
+    "claim_j_idx": 30,
+    "delta_prob": 0.7,
+    "reasoning": "Claim A is directly aligned with the pipeline of learning rich representations via self\u2011supervision and using planning/model\u2011predictive control rather than relying primarily on RL."
+  },
+  {
+    "claim_i_idx": 27,
+    "claim_j_idx": 31,
+    "delta_prob": 0.4,
+    "reasoning": "If JEPAs are a practical engineering route to safer/stronger systems, that reinforces the view that AI safety will be an iterative engineering problem improved through integration and testing."
+  }
+]

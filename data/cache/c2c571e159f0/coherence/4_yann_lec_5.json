@@ -1,0 +1,188 @@
+[
+  {
+    "claim_i_idx": 29,
+    "claim_j_idx": 0,
+    "delta_prob": -0.3,
+    "reasoning": "A denies sudden catastrophic takeoff and asserts co-development of countermeasures, which reduces the likelihood that uncontrollable, immediate goal-pursuing AGI is imminent, though it doesn\u2019t negate the broader concern that alignment methods are needed."
+  },
+  {
+    "claim_i_idx": 29,
+    "claim_j_idx": 1,
+    "delta_prob": -0.2,
+    "reasoning": "A\u2019s claim that safer, controllable systems will co-develop weakens the implication that unilateral wielding of AGI is unavoidable, but political/institutional coordination problems remain plausible."
+  },
+  {
+    "claim_i_idx": 29,
+    "claim_j_idx": 2,
+    "delta_prob": 0.0,
+    "reasoning": "A\u2019s gradualist view doesn\u2019t directly address whether skeptical arguments are misleading about timelines or capability trends, so its effect is neutral."
+  },
+  {
+    "claim_i_idx": 29,
+    "claim_j_idx": 3,
+    "delta_prob": -0.2,
+    "reasoning": "If progress is gradual and safety countermeasures deploy alongside capabilities, the urgency argument for immediate regulation is somewhat tempered, though not eliminated."
+  },
+  {
+    "claim_i_idx": 29,
+    "claim_j_idx": 4,
+    "delta_prob": -0.4,
+    "reasoning": "A implies industry will develop and deploy safety measures broadly, which makes the claim that corporate incentives will prevent voluntary safety less likely (but conflicts of interest remain a concern)."
+  },
+  {
+    "claim_i_idx": 29,
+    "claim_j_idx": 5,
+    "delta_prob": 0.2,
+    "reasoning": "A\u2019s emphasis on co-deploying safeguards and democratic decision-making about safety increases the plausibility that open-sourcing is a nuanced, risky choice rather than an unambiguous good."
+  },
+  {
+    "claim_i_idx": 29,
+    "claim_j_idx": 6,
+    "delta_prob": 0.1,
+    "reasoning": "Gradual development and co-deployed countermeasures make governance and hardware controls more relevant and feasible, though verification and equity challenges persist."
+  },
+  {
+    "claim_i_idx": 29,
+    "claim_j_idx": 7,
+    "delta_prob": -0.4,
+    "reasoning": "A\u2019s rejection of abrupt catastrophic takeoff reduces posterior extinction-risk weight from immediate doomer scenarios, weakening the force of high x\u2011risk estimates as sole policy drivers (but not removing all risk)."
+  },
+  {
+    "claim_i_idx": 29,
+    "claim_j_idx": 8,
+    "delta_prob": -0.8,
+    "reasoning": "A directly contradicts the \u2018past event horizon\u2019 / immediate takeoff claim; if progress is gradual and controlled, a near-term runaway to ASI is much less likely."
+  },
+  {
+    "claim_i_idx": 29,
+    "claim_j_idx": 9,
+    "delta_prob": 0.3,
+    "reasoning": "If systems evolve iteratively with safety and countermeasures, the prospect of harnessing AI for large societal gains becomes more plausible, increasing likelihood of positive outcomes."
+  },
+  {
+    "claim_i_idx": 29,
+    "claim_j_idx": 10,
+    "delta_prob": -0.3,
+    "reasoning": "A undermines the plausibility of an abrupt, self-reinforcing runaway (rapid recursive self\u2011improvement) by positing gradual, controlled engineering and deployed defenses."
+  },
+  {
+    "claim_i_idx": 29,
+    "claim_j_idx": 11,
+    "delta_prob": 0.1,
+    "reasoning": "Gradual, iterative progress is consistent with near\u2011term milestones for practical agents and robotics; A reduces the chance of sudden catastrophe but not of substantial short\u2011term advances."
+  },
+  {
+    "claim_i_idx": 29,
+    "claim_j_idx": 12,
+    "delta_prob": 0.2,
+    "reasoning": "A\u2019s gradual accumulation of capabilities and widespread deployment of safe systems makes significant 2030s changes more plausible rather than precluding them."
+  },
+  {
+    "claim_i_idx": 29,
+    "claim_j_idx": 13,
+    "delta_prob": 0.3,
+    "reasoning": "A\u2019s emphasis on co-developing safe, controllable systems aligns with the view that alignment must be solved before widely distributing powerful AI, increasing this claim\u2019s plausibility."
+  },
+  {
+    "claim_i_idx": 29,
+    "claim_j_idx": 14,
+    "delta_prob": 0.0,
+    "reasoning": "A\u2019s characterization of development tempo doesn\u2019t directly change the empirical economic scaling observations about compute, cost, and value creation."
+  },
+  {
+    "claim_i_idx": 29,
+    "claim_j_idx": 15,
+    "delta_prob": 0.3,
+    "reasoning": "If safety and countermeasures are part of the iterative development path, public policy and governance plausibly play a larger role in shaping that deployment, supporting this claim."
+  },
+  {
+    "claim_i_idx": 29,
+    "claim_j_idx": 16,
+    "delta_prob": 0.3,
+    "reasoning": "A raises the odds that powerful AI, if aligned and deployed responsibly over time, will be used to produce enormous positive outcomes, making this scenario more plausible."
+  },
+  {
+    "claim_i_idx": 29,
+    "claim_j_idx": 17,
+    "delta_prob": 0.2,
+    "reasoning": "A\u2019s assertion that the trajectory is engineering-like and responsive to interventions increases the plausibility that policy and technical actions can materially affect outcomes."
+  },
+  {
+    "claim_i_idx": 29,
+    "claim_j_idx": 18,
+    "delta_prob": -0.2,
+    "reasoning": "If takeoff is gradual and safety measures co-evolve, the extreme urgency that interpretability must mature in a very narrow 5\u201310 year window is reduced, though interpretability remains important."
+  },
+  {
+    "claim_i_idx": 29,
+    "claim_j_idx": 19,
+    "delta_prob": 0.2,
+    "reasoning": "A\u2019s co-development claim supports the idea that tractable interpretability research can be scaled and integrated into safer systems as part of iterative engineering."
+  },
+  {
+    "claim_i_idx": 29,
+    "claim_j_idx": 20,
+    "delta_prob": 0.0,
+    "reasoning": "A doesn\u2019t strongly affect the dual\u2011use nature of AI or the geopolitical choices about whether it favors democracies or autocracies, so neutral effect."
+  },
+  {
+    "claim_i_idx": 29,
+    "claim_j_idx": 21,
+    "delta_prob": 0.1,
+    "reasoning": "A\u2019s gradual, application\u2011focused trajectory makes plausible the incremental build\u2011out of AI as an autonomous scientific tool, modestly increasing this claim\u2019s likelihood."
+  },
+  {
+    "claim_i_idx": 29,
+    "claim_j_idx": 22,
+    "delta_prob": 0.2,
+    "reasoning": "A highlights engineering and institutional constraints and the co\u2011evolution of mitigations, supporting the idea that non\u2011technical bottlenecks will shape realized outcomes."
+  },
+  {
+    "claim_i_idx": 29,
+    "claim_j_idx": 23,
+    "delta_prob": 0.3,
+    "reasoning": "If safety is an integral, iterative part of AI development, targeted policy measures (interpretability funding, transparency, export controls) become more effective and thus more likely to be pursued."
+  },
+  {
+    "claim_i_idx": 29,
+    "claim_j_idx": 24,
+    "delta_prob": -0.2,
+    "reasoning": "A\u2019s claim that safeguards will be widely deployed weakens the assertion that concentration in a few firms is the dominant danger and that open\u2011sourcing is the primary remedy, though concentration remains a concern."
+  },
+  {
+    "claim_i_idx": 29,
+    "claim_j_idx": 25,
+    "delta_prob": 0.2,
+    "reasoning": "A\u2019s rejection of sudden, LLM\u2011driven catastrophes is consistent with the idea that autoregressive LLMs alone aren\u2019t a direct one\u2011step path to AGI, increasing plausibility of this claim."
+  },
+  {
+    "claim_i_idx": 29,
+    "claim_j_idx": 26,
+    "delta_prob": 0.0,
+    "reasoning": "A\u2019s gradualist position does not directly bear on whether high\u2011bandwidth sensory grounding is required for human\u2011like intelligence, so neutral."
+  },
+  {
+    "claim_i_idx": 29,
+    "claim_j_idx": 27,
+    "delta_prob": 0.0,
+    "reasoning": "A doesn\u2019t directly affect the technical prospects for specific architectures like JEPAs; compatibility is neutral."
+  },
+  {
+    "claim_i_idx": 29,
+    "claim_j_idx": 28,
+    "delta_prob": 0.1,
+    "reasoning": "A\u2019s endorsement of iterative engineering makes architectural shifts away from pure autoregressive designs plausible, lending modest support to critiques of token\u2011prediction limits."
+  },
+  {
+    "claim_i_idx": 29,
+    "claim_j_idx": 30,
+    "delta_prob": 0.1,
+    "reasoning": "A\u2019s view that progress will be engineering\u2011driven supports pipelines emphasizing self\u2011supervision and model\u2011based planning over sample\u2011inefficient RL, slightly increasing this claim\u2019s plausibility."
+  },
+  {
+    "claim_i_idx": 29,
+    "claim_j_idx": 31,
+    "delta_prob": 1.0,
+    "reasoning": "This claim is essentially restating Claim A: treating AI safety as an iterative engineering problem aligns directly and is made almost certain by A\u2019s premise."
+  }
+]

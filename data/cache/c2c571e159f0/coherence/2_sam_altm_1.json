@@ -1,0 +1,188 @@
+[
+  {
+    "claim_i_idx": 9,
+    "claim_j_idx": 0,
+    "delta_prob": 0.5,
+    "reasoning": "If AI can drive enormous societal gains, that implies rapidly increasing capability and stakes, which raises the plausibility that AGI/ASI trajectories and alignment failures deserve urgent attention."
+  },
+  {
+    "claim_i_idx": 9,
+    "claim_j_idx": 1,
+    "delta_prob": 0.5,
+    "reasoning": "Huge payoff from powerful AI makes unilateral control more dangerous and increases incentives for misuse, so the coordination/governance concern becomes more likely."
+  },
+  {
+    "claim_i_idx": 9,
+    "claim_j_idx": 2,
+    "delta_prob": 0.5,
+    "reasoning": "Demonstrated transformative capabilities matter more if AI is producing enormous gains, so skeptical minimalist arguments become less persuasive for discounting x-risk and near-term plausibility."
+  },
+  {
+    "claim_i_idx": 9,
+    "claim_j_idx": 3,
+    "delta_prob": 0.5,
+    "reasoning": "High-impact AI that can rapidly change outcomes makes precautionary regulation and early investment in safety more sensible despite timeline uncertainty."
+  },
+  {
+    "claim_i_idx": 9,
+    "claim_j_idx": 4,
+    "delta_prob": 0.5,
+    "reasoning": "If AI yields large benefits, commercial incentives to deploy and monetize powerful models increase, making reliance on voluntary safety by firms less credible."
+  },
+  {
+    "claim_i_idx": 9,
+    "claim_j_idx": 5,
+    "delta_prob": 0.4,
+    "reasoning": "Powerful, widely useful AI raises the stakes of release decisions; openness can accelerate research but also misuse, so Claim A makes the debate about risks of open-sourcing more salient."
+  },
+  {
+    "claim_i_idx": 9,
+    "claim_j_idx": 6,
+    "delta_prob": 0.4,
+    "reasoning": "Transformative AI increases the value of international controls and hardware governance, though the practical verification/circumvention challenges remain plausible and important."
+  },
+  {
+    "claim_i_idx": 9,
+    "claim_j_idx": 7,
+    "delta_prob": 0.5,
+    "reasoning": "If AI can produce enormous gains (and thus enormous harms if misused), non-negligible extinction/large-loss probabilities and precautionary policy follow more naturally."
+  },
+  {
+    "claim_i_idx": 9,
+    "claim_j_idx": 8,
+    "delta_prob": 0.2,
+    "reasoning": "Claim A implies strong acceleration but does not require that takeoff has already passed an event horizon, so it slightly raises the plausibility of near-term superintelligence but is not decisive."
+  },
+  {
+    "claim_i_idx": 9,
+    "claim_j_idx": 10,
+    "delta_prob": 0.4,
+    "reasoning": "Large benefits from AI are consistent with self-reinforcing feedbacks (AI accelerating AI, economic flywheels), so these recursive dynamics become more plausible contributors to rapid capability growth."
+  },
+  {
+    "claim_i_idx": 9,
+    "claim_j_idx": 11,
+    "delta_prob": 0.2,
+    "reasoning": "If AI is already producing big scientific/productivity gains, near-term milestone claims become somewhat more plausible, though Claim A does not pin precise dates."
+  },
+  {
+    "claim_i_idx": 9,
+    "claim_j_idx": 12,
+    "delta_prob": 0.5,
+    "reasoning": "Transformative gains to intelligence and energy strongly support the idea that the 2030s could look very different in important ways, assuming governance shapes outcomes."
+  },
+  {
+    "claim_i_idx": 9,
+    "claim_j_idx": 13,
+    "delta_prob": 0.4,
+    "reasoning": "If superintelligent-capable systems are consequentially transformative, solving alignment before wide deployment is more likely to be seen as a prerequisite for safe, broadly beneficial outcomes."
+  },
+  {
+    "claim_i_idx": 9,
+    "claim_j_idx": 14,
+    "delta_prob": 0.5,
+    "reasoning": "Claim A is consistent with economic scaling laws and falling costs driving very large impact, so it increases the plausibility of the stated economic observations."
+  },
+  {
+    "claim_i_idx": 9,
+    "claim_j_idx": 15,
+    "delta_prob": 0.4,
+    "reasoning": "Powerful, high-impact AI makes policy, governance and distributional choices more consequential, increasing the likelihood that public policy matters greatly."
+  },
+  {
+    "claim_i_idx": 9,
+    "claim_j_idx": 16,
+    "delta_prob": 0.8,
+    "reasoning": "Claim A directly asserts that AI-driven science can produce enormous quality-of-life gains (cures, materials, interfaces), which strongly supports the specific transformative scenario described."
+  },
+  {
+    "claim_i_idx": 9,
+    "claim_j_idx": 17,
+    "delta_prob": 0.6,
+    "reasoning": "If AI materially determines whether a vastly better future is realized, then instrumental-focus arguments \u2014 that our actions substantially change outcomes \u2014 become more compelling."
+  },
+  {
+    "claim_i_idx": 9,
+    "claim_j_idx": 18,
+    "delta_prob": 0.5,
+    "reasoning": "A rapid, high-stakes capability race increases the urgency of interpretability and makes timely progress in mechanistic understanding more impactful and likely to be prioritized."
+  },
+  {
+    "claim_i_idx": 9,
+    "claim_j_idx": 19,
+    "delta_prob": 0.2,
+    "reasoning": "Claim A increases incentives and resources for interpretability research, raising the odds modestly that tractable advances will be pursued, but it doesn't by itself prove tractability."
+  },
+  {
+    "claim_i_idx": 9,
+    "claim_j_idx": 20,
+    "delta_prob": 0.5,
+    "reasoning": "If AI becomes a decisive source of power and capability, dual-use risks to democracy and authoritarian advantages become more likely, so geopolitical coordination and supply-chain security matter more."
+  },
+  {
+    "claim_i_idx": 9,
+    "claim_j_idx": 21,
+    "delta_prob": 0.6,
+    "reasoning": "Claim A explicitly cites faster discovery of cures and similar scientific acceleration, which aligns closely with the notion that AI can act as a virtual scientist and yield outsized returns."
+  },
+  {
+    "claim_i_idx": 9,
+    "claim_j_idx": 22,
+    "delta_prob": 0.2,
+    "reasoning": "The existence of large technical gains makes it more important to account for social/regulatory/physical bottlenecks; Claim A slightly raises the plausibility that such constraints will matter in practice."
+  },
+  {
+    "claim_i_idx": 9,
+    "claim_j_idx": 23,
+    "delta_prob": 0.4,
+    "reasoning": "High-stakes transformative AI makes targeted policy/organizational mitigations (interpretability scale-up, transparency, export controls) more likely to be both proposed and impactful."
+  },
+  {
+    "claim_i_idx": 9,
+    "claim_j_idx": 24,
+    "delta_prob": 0.4,
+    "reasoning": "Powerful, valuable AI increases incentives for concentration (and the harms that entails), so the danger posed by a few dominant proprietary systems becomes more plausible."
+  },
+  {
+    "claim_i_idx": 9,
+    "claim_j_idx": 25,
+    "delta_prob": 0.0,
+    "reasoning": "Claim A about large net societal gains from AI does not bear directly on the technical argument about whether autoregressive LLMs alone constitute a path to AGI."
+  },
+  {
+    "claim_i_idx": 9,
+    "claim_j_idx": 26,
+    "delta_prob": 0.0,
+    "reasoning": "The claim that AI will deliver big benefits does not by itself change the epistemic question of whether high-bandwidth sensory grounding is necessary for human-like intelligence."
+  },
+  {
+    "claim_i_idx": 9,
+    "claim_j_idx": 27,
+    "delta_prob": 0.0,
+    "reasoning": "Claim A doesn't directly affect the technical plausibility of JEPAs as a promising research direction for world models."
+  },
+  {
+    "claim_i_idx": 9,
+    "claim_j_idx": 28,
+    "delta_prob": 0.0,
+    "reasoning": "Claim A being true doesn't change the technical observation about autoregressive generation causing drift/hallucination; it's orthogonal to whether those dynamics occur."
+  },
+  {
+    "claim_i_idx": 9,
+    "claim_j_idx": 29,
+    "delta_prob": 0.0,
+    "reasoning": "Whether progress will be gradual or sudden is a separate empirical question; Claim A's assertion of large gains does not by itself favor gradualism over sudden takeoff."
+  },
+  {
+    "claim_i_idx": 9,
+    "claim_j_idx": 30,
+    "delta_prob": 0.0,
+    "reasoning": "Claim A does not directly affect the relative sample-efficiency of RL or the preferred training pipelines; it's neutral on this technical point."
+  },
+  {
+    "claim_i_idx": 9,
+    "claim_j_idx": 31,
+    "delta_prob": 0.2,
+    "reasoning": "If societies can harness AI to produce enormous benefits, that makes an iterative, engineering-oriented safety approach more plausible (and likely to be funded), though it doesn't prove sufficiency."
+  }
+]

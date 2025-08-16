@@ -1,0 +1,188 @@
+[
+  {
+    "claim_i_idx": 0,
+    "claim_j_idx": 1,
+    "delta_prob": 0.7,
+    "reasoning": "If AGI/ASI is imminent and alignment methods are lacking, the need for multilateral governance and limits on unilateral wielding of power becomes much more likely."
+  },
+  {
+    "claim_i_idx": 0,
+    "claim_j_idx": 2,
+    "delta_prob": 0.6,
+    "reasoning": "Claim A undermines complacent skepticism about timing/importance, so empirical capability trends and demonstrated capabilities become the relevant yardstick for x-risk."
+  },
+  {
+    "claim_i_idx": 0,
+    "claim_j_idx": 3,
+    "delta_prob": 0.7,
+    "reasoning": "Given urgent risk and long lead times for institutions, Claim A makes early regulatory and safety action substantially more likely and rational."
+  },
+  {
+    "claim_i_idx": 0,
+    "claim_j_idx": 4,
+    "delta_prob": 0.5,
+    "reasoning": "If dangerous AGI is plausible and alignment is unreliable, corporate profit motives and conflicts of interest make voluntary purely-safe development less probable."
+  },
+  {
+    "claim_i_idx": 0,
+    "claim_j_idx": 5,
+    "delta_prob": 0.5,
+    "reasoning": "The asserted danger from misaligned AGI raises the plausibility that open-sourcing could enable misuse and is not an unambiguous safety win."
+  },
+  {
+    "claim_i_idx": 0,
+    "claim_j_idx": 6,
+    "delta_prob": 0.5,
+    "reasoning": "Claim A increases the salience of treaty- and hardware-based governance as necessary mitigations, while also implying practical challenges and need for defense in depth."
+  },
+  {
+    "claim_i_idx": 0,
+    "claim_j_idx": 7,
+    "delta_prob": 0.6,
+    "reasoning": "If AGI/ASI risk is real and non-negligible, precautionary reasoning (including from expert aggregation) is much more compelling for urgent investment and policy."
+  },
+  {
+    "claim_i_idx": 0,
+    "claim_j_idx": 8,
+    "delta_prob": 0.4,
+    "reasoning": "Claim A\u2019s assertion of a rapid race toward AGI supports the view that takeoff may already be underway or accelerating, though it doesn't prove the most extreme timing."
+  },
+  {
+    "claim_i_idx": 0,
+    "claim_j_idx": 9,
+    "delta_prob": 0.0,
+    "reasoning": "Claim A is focused on risk and alignment; it neither increases nor decreases the independent plausibility that aligned AI could produce enormous benefits."
+  },
+  {
+    "claim_i_idx": 0,
+    "claim_j_idx": 10,
+    "delta_prob": 0.5,
+    "reasoning": "A claim of rapid capability advances without reliable alignment makes self-reinforcing recursive feedback loops and fast acceleration more plausible."
+  },
+  {
+    "claim_i_idx": 0,
+    "claim_j_idx": 11,
+    "delta_prob": 0.4,
+    "reasoning": "Claim A makes near-term milestones more plausible in principle, though it does not specify exact dates; it modestly raises the probability of these short timelines."
+  },
+  {
+    "claim_i_idx": 0,
+    "claim_j_idx": 12,
+    "delta_prob": 0.4,
+    "reasoning": "If intelligence is becoming abundant and governance is consequential, large societal change in the 2030s becomes more likely, conditional on governance choices."
+  },
+  {
+    "claim_i_idx": 0,
+    "claim_j_idx": 13,
+    "delta_prob": 0.6,
+    "reasoning": "Stating that we lack reliable alignment methods and face urgent risk increases the plausibility that robust alignment is a prerequisite before safe widespread deployment."
+  },
+  {
+    "claim_i_idx": 0,
+    "claim_j_idx": 14,
+    "delta_prob": 0.5,
+    "reasoning": "A narrative of racing capability fits with economic scaling dynamics (compute/data/cost trends) driving rapid impact, so these economic observations become more plausible."
+  },
+  {
+    "claim_i_idx": 0,
+    "claim_j_idx": 15,
+    "delta_prob": 0.6,
+    "reasoning": "Claim A elevates the importance of public policy and governance to manage the risks and distributional effects of powerful AI."
+  },
+  {
+    "claim_i_idx": 0,
+    "claim_j_idx": 16,
+    "delta_prob": 0.3,
+    "reasoning": "Claim A does not contradict large possible benefits from aligned powerful AI, but its emphasis on misalignment tempers certainty, so the claim is somewhat more plausible but conditional."
+  },
+  {
+    "claim_i_idx": 0,
+    "claim_j_idx": 17,
+    "delta_prob": 0.6,
+    "reasoning": "If actions can change whether misaligned AGI emerges or is managed, then instrumental reasons for focusing on risk (to enable positive futures) become more likely."
+  },
+  {
+    "claim_i_idx": 0,
+    "claim_j_idx": 18,
+    "delta_prob": 0.5,
+    "reasoning": "Urgent alignment need strengthens the case that interpretability must mature before highly autonomous systems are deployed, increasing the plausibility of an interpretability-capability race."
+  },
+  {
+    "claim_i_idx": 0,
+    "claim_j_idx": 19,
+    "delta_prob": 0.2,
+    "reasoning": "Claim A raises the need for interpretability and resources for it, modestly increasing confidence in its progress being relevant, but it doesn't by itself prove tractability."
+  },
+  {
+    "claim_i_idx": 0,
+    "claim_j_idx": 20,
+    "delta_prob": 0.5,
+    "reasoning": "If AGI can be misused and there is no reliable alignment, the dual\u2011use nature and geopolitical risks make the claim about non-automatic democratic benefits more likely."
+  },
+  {
+    "claim_i_idx": 0,
+    "claim_j_idx": 21,
+    "delta_prob": 0.2,
+    "reasoning": "Claim A is compatible with AI massively accelerating science; the risk framing neither strongly supports nor contradicts the specific ~10x acceleration estimate, so slight positive."
+  },
+  {
+    "claim_i_idx": 0,
+    "claim_j_idx": 22,
+    "delta_prob": 0.0,
+    "reasoning": "Claim A speaks to capability and alignment urgency but does not change the independent plausibility that non-technical constraints will slow real-world deployment."
+  },
+  {
+    "claim_i_idx": 0,
+    "claim_j_idx": 23,
+    "delta_prob": 0.6,
+    "reasoning": "If alignment is currently unreliable and AGI is plausible, targeted policy/organizational measures (interpretability funding, transparency, export controls) become more likely as useful steps."
+  },
+  {
+    "claim_i_idx": 0,
+    "claim_j_idx": 24,
+    "delta_prob": 0.3,
+    "reasoning": "Claim A increases concern about concentration of power in a few actors, though it does not by itself validate open\u2011sourcing as the primary remedy."
+  },
+  {
+    "claim_i_idx": 0,
+    "claim_j_idx": 25,
+    "delta_prob": 0.5,
+    "reasoning": "Asserting that reliable alignment is lacking makes it more probable that current autoregressive LLMs are insufficient by themselves to reach safe human-level AGI."
+  },
+  {
+    "claim_i_idx": 0,
+    "claim_j_idx": 26,
+    "delta_prob": 0.0,
+    "reasoning": "Claim A\u2019s focus on alignment and imminent AGI does not materially change the technical debate over the necessity of high-bandwidth sensory grounding for human-like intelligence."
+  },
+  {
+    "claim_i_idx": 0,
+    "claim_j_idx": 27,
+    "delta_prob": 0.0,
+    "reasoning": "Claim A does not provide evidence for or against the technical promise of JEPAs specifically; neutrality is appropriate."
+  },
+  {
+    "claim_i_idx": 0,
+    "claim_j_idx": 28,
+    "delta_prob": 0.3,
+    "reasoning": "If current architectures are producing risky, unpredictable behavior, that makes claims about autoregressive hallucinations and the need for different architectures moderately more plausible."
+  },
+  {
+    "claim_i_idx": 0,
+    "claim_j_idx": 29,
+    "delta_prob": -0.6,
+    "reasoning": "Claim A asserts a real possibility of catastrophic misalignment, which directly undermines arguments that catastrophic/rapid takeoff scenarios are unlikely, so it reduces this claim's plausibility."
+  },
+  {
+    "claim_i_idx": 0,
+    "claim_j_idx": 30,
+    "delta_prob": 0.0,
+    "reasoning": "Claim A does not strongly affect which learning paradigms are the primary route to general intelligence; it's neutral on RL vs self-supervision."
+  },
+  {
+    "claim_i_idx": 0,
+    "claim_j_idx": 31,
+    "delta_prob": 0.6,
+    "reasoning": "If no reliable, provable alignment currently exists, it becomes more likely that safety will be an iterative engineering process rather than a single guaranteed fix."
+  }
+]

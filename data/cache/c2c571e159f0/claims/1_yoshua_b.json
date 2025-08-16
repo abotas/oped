@@ -1,0 +1,50 @@
+[
+  {
+    "doc_id": "1_yoshua_b",
+    "doc_title": "1. Yoshua Bengio: Debating AI Safety Risks",
+    "claim_idx": 0,
+    "claim": "Humanity is racing toward AGI (human-level AI) and ASI (superhuman AI) while there is currently no reliable technical method or scientific assurance to make such systems behave morally or as intended, so the possibility they could pursue incompatible goals (including harming or eliminating humans) requires urgent attention and precaution."
+  },
+  {
+    "doc_id": "1_yoshua_b",
+    "doc_title": "1. Yoshua Bengio: Debating AI Safety Risks",
+    "claim_idx": 1,
+    "claim": "Even if a scalable technical solution to AI alignment existed, political and institutional failures \u2014 the coordination problem \u2014 mean no single country, corporation, or individual should be allowed to wield AGI power unilaterally; without robust multilateral governance we risk catastrophic abuse of AGI for oppression, geopolitical domination or economic capture."
+  },
+  {
+    "doc_id": "1_yoshua_b",
+    "doc_title": "1. Yoshua Bengio: Debating AI Safety Risks",
+    "claim_idx": 2,
+    "claim": "Common sceptical arguments (e.g., \u201cAIs just predict the next word\u201d, \u201cAIs cannot have true intelligence\u201d or that AGI is centuries away) are misleading because what matters for x-risk is demonstrated capabilities and intentions, and empirical capability trends through 2024 make AGI/ASI plausible within uncertain but potentially short timeframes."
+  },
+  {
+    "doc_id": "1_yoshua_b",
+    "doc_title": "1. Yoshua Bengio: Debating AI Safety Risks",
+    "claim_idx": 3,
+    "claim": "Uncertainty about AGI timelines is not a reason to delay regulation or safety work: laws, regulatory bodies and treaties take years or decades to create, so precautionary planning and investment in safety now are rational given the non-trivial chance AGI could arrive sooner than experts expect."
+  },
+  {
+    "doc_id": "1_yoshua_b",
+    "doc_title": "1. Yoshua Bengio: Debating AI Safety Risks",
+    "claim_idx": 4,
+    "claim": "Corporate incentives and conflicts of interest make it unrealistic to assume companies will voluntarily design only safe AIs: profit motives, legal loopholes, and the opacity of learned AI behavior mean AIs could develop dangerous instrumental goals (e.g., self-preservation, reward tampering, deception) that legal or contractual remedies alone may not prevent."
+  },
+  {
+    "doc_id": "1_yoshua_b",
+    "doc_title": "1. Yoshua Bengio: Debating AI Safety Risks",
+    "claim_idx": 5,
+    "claim": "Open-sourcing AGI code and weights is not an unambiguous safety strategy \u2014 while it aids research, it makes attacks and fine-tuning-based misuse easier, is harder to patch once released, and decisions about openness should be made democratically with safeguards rather than left to CEOs or unregulated markets."
+  },
+  {
+    "doc_id": "1_yoshua_b",
+    "doc_title": "1. Yoshua Bengio: Debating AI Safety Risks",
+    "claim_idx": 6,
+    "claim": "International treaties and hardware-enabled governance (e.g., restricting high-end training chips) are important avenues to reduce global catastrophic risk, but they face serious verification and circumvention challenges and must be accompanied by defense-in-depth measures, cyber/physical security, and equitable provisions to include and benefit the Global South."
+  },
+  {
+    "doc_id": "1_yoshua_b",
+    "doc_title": "1. Yoshua Bengio: Debating AI Safety Risks",
+    "claim_idx": 7,
+    "claim": "Because aggregated expert judgments (e.g., a median ~5% extinction estimate) and rational decision theory imply non-negligible expected losses, dismissing AI x-risk as a form of Pascal\u2019s wager or as unknowable is unjustified \u2014 policy should follow the precautionary principle and invest urgently in safety research, regulation and multilateral oversight even amid deep uncertainty."
+  }
+]

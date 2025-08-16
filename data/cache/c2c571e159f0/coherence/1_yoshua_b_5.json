@@ -1,0 +1,188 @@
+[
+  {
+    "claim_i_idx": 5,
+    "claim_j_idx": 0,
+    "delta_prob": 0.5,
+    "reasoning": "Claim A emphasizes that releasing models can enable attacks and misuse and calls for democratic safeguards, which strengthens the urgency that AGI risks (including goal misalignment) require attention."
+  },
+  {
+    "claim_i_idx": 5,
+    "claim_j_idx": 1,
+    "delta_prob": 0.7,
+    "reasoning": "Claim A\u2019s insistence that openness decisions shouldn\u2019t be left to CEOs or markets directly supports the need for multilateral governance and limits on unilateral AGI control."
+  },
+  {
+    "claim_i_idx": 5,
+    "claim_j_idx": 2,
+    "delta_prob": 0.1,
+    "reasoning": "Claim A is mainly about governance and openness rather than technical capability timelines; it slightly raises concern because easier misuse/open release can make AGI risks more salient."
+  },
+  {
+    "claim_i_idx": 5,
+    "claim_j_idx": 3,
+    "delta_prob": 0.5,
+    "reasoning": "If open-sourcing can increase misuse and is hard to patch, that strengthens the argument that precautionary regulation and early planning are warranted despite timeline uncertainty."
+  },
+  {
+    "claim_i_idx": 5,
+    "claim_j_idx": 4,
+    "delta_prob": 0.6,
+    "reasoning": "Claim A\u2019s critique of leaving decisions to companies/markets aligns with the view that corporate incentives and opacity make voluntary safe design unrealistic."
+  },
+  {
+    "claim_i_idx": 5,
+    "claim_j_idx": 6,
+    "delta_prob": 0.3,
+    "reasoning": "Claim A\u2019s call for democratic safeguards supports multilateral and hardware/governance measures, though it doesn\u2019t address verification limits; it modestly increases the plausibility of these approaches as necessary."
+  },
+  {
+    "claim_i_idx": 5,
+    "claim_j_idx": 7,
+    "delta_prob": 0.4,
+    "reasoning": "The warning that openness increases misuse risk bolsters the precautionary principle argument that non-trivial extinction/extreme-risk estimates justify urgent policy and safety investment."
+  },
+  {
+    "claim_i_idx": 5,
+    "claim_j_idx": 8,
+    "delta_prob": 0.0,
+    "reasoning": "Claim A concerns openness and governance and does not bear on whether takeoff has already started or on present capability levels."
+  },
+  {
+    "claim_i_idx": 5,
+    "claim_j_idx": 9,
+    "delta_prob": 0.1,
+    "reasoning": "Claim A acknowledges that openness aids research, so it slightly raises the plausibility that AI can accelerate beneficial progress, while still warning of harms."
+  },
+  {
+    "claim_i_idx": 5,
+    "claim_j_idx": 10,
+    "delta_prob": 0.2,
+    "reasoning": "Broader access from open-sourcing could plausibly accelerate feedback loops and distributed capability growth, modestly increasing the chance of rapid acceleration."
+  },
+  {
+    "claim_i_idx": 5,
+    "claim_j_idx": 11,
+    "delta_prob": 0.1,
+    "reasoning": "Claim A can slightly increase the chance of nearer-term milestones by noting openness accelerates research and fine-tuning, but it doesn\u2019t directly affect technical timelines."
+  },
+  {
+    "claim_i_idx": 5,
+    "claim_j_idx": 12,
+    "delta_prob": 0.1,
+    "reasoning": "Because Claim A stresses governance choices will shape outcomes, it modestly increases the likelihood that the decade will see significant change conditional on how openness and policy are handled."
+  },
+  {
+    "claim_i_idx": 5,
+    "claim_j_idx": 13,
+    "delta_prob": 0.3,
+    "reasoning": "Claim A\u2019s emphasis on democratic safeguards and cautions about releasing powerful models aligns with the idea that alignment must be solved before widespread cheap distribution."
+  },
+  {
+    "claim_i_idx": 5,
+    "claim_j_idx": 14,
+    "delta_prob": 0.0,
+    "reasoning": "Claim A doesn\u2019t speak to scaling laws, cost trajectories, or economic returns to model intelligence, so it has no direct effect."
+  },
+  {
+    "claim_i_idx": 5,
+    "claim_j_idx": 15,
+    "delta_prob": 0.7,
+    "reasoning": "Claim A\u2019s core message\u2014that openness is not a simple safety fix and decisions need democratic oversight\u2014strongly supports the importance of public policy, governance, and societal debate."
+  },
+  {
+    "claim_i_idx": 5,
+    "claim_j_idx": 16,
+    "delta_prob": 0.1,
+    "reasoning": "Claim A neither denies nor affirms transformative upside; by noting research benefits it slightly increases plausibility of large positive outcomes contingent on good safeguards."
+  },
+  {
+    "claim_i_idx": 5,
+    "claim_j_idx": 17,
+    "delta_prob": 0.4,
+    "reasoning": "Claim A implies that policy and institutional choices materially affect misuse risk, supporting the instrumentalist argument that actions can change whether positive futures materialize."
+  },
+  {
+    "claim_i_idx": 5,
+    "claim_j_idx": 18,
+    "delta_prob": 0.2,
+    "reasoning": "Claim A\u2019s call for safeguards and caution about unregulated releases modestly supports the importance of interpretability and other technical mitigations prior to deployment."
+  },
+  {
+    "claim_i_idx": 5,
+    "claim_j_idx": 19,
+    "delta_prob": 0.0,
+    "reasoning": "Claim A concerns openness/governance and does not provide evidence about tractability of interpretability research."
+  },
+  {
+    "claim_i_idx": 5,
+    "claim_j_idx": 20,
+    "delta_prob": 0.6,
+    "reasoning": "Claim A\u2019s warning that leaving openness to markets/CEOs is risky aligns with the view that AI is dual-use and that democracies must proactively coordinate to avoid empowering authoritarians."
+  },
+  {
+    "claim_i_idx": 5,
+    "claim_j_idx": 21,
+    "delta_prob": 0.2,
+    "reasoning": "By acknowledging that openness aids research, Claim A slightly raises the chance that AI will substantially accelerate scientific discovery, while also flagging misuse risks."
+  },
+  {
+    "claim_i_idx": 5,
+    "claim_j_idx": 22,
+    "delta_prob": 0.1,
+    "reasoning": "Claim A strengthens the case that social and regulatory constraints matter for how capabilities translate into real outcomes, so it slightly increases credence in analyses of complementary bottlenecks."
+  },
+  {
+    "claim_i_idx": 5,
+    "claim_j_idx": 23,
+    "delta_prob": 0.6,
+    "reasoning": "Claim A\u2019s emphasis on democratic safeguards and the harms of unregulated release supports policy steps like transparency requirements and export controls to buy time for mitigations."
+  },
+  {
+    "claim_i_idx": 5,
+    "claim_j_idx": 24,
+    "delta_prob": -0.8,
+    "reasoning": "Claim A directly contradicts the claim that open-sourcing is the primary remedy to concentration of power, arguing open releases increase misuse and are not an unambiguous safety strategy."
+  },
+  {
+    "claim_i_idx": 5,
+    "claim_j_idx": 25,
+    "delta_prob": 0.0,
+    "reasoning": "Claim A is about openness and governance and does not address whether autoregressive LLMs are sufficient for AGI."
+  },
+  {
+    "claim_i_idx": 5,
+    "claim_j_idx": 26,
+    "delta_prob": 0.0,
+    "reasoning": "Claims about sensory grounding are technical and unrelated to Claim A\u2019s governance/open-source focus."
+  },
+  {
+    "claim_i_idx": 5,
+    "claim_j_idx": 27,
+    "delta_prob": 0.0,
+    "reasoning": "Claim A does not bear on the technical promise of specific architectures like JEPAs."
+  },
+  {
+    "claim_i_idx": 5,
+    "claim_j_idx": 28,
+    "delta_prob": 0.0,
+    "reasoning": "Claim A\u2019s governance focus doesn\u2019t directly inform architectural debates about hallucinations or objective-based alternatives."
+  },
+  {
+    "claim_i_idx": 5,
+    "claim_j_idx": 29,
+    "delta_prob": -0.2,
+    "reasoning": "If open-sourcing materially increases misuse and makes patching harder, that raises the plausibility of faster, potentially sudden misuses\u2014slightly reducing confidence in purely gradual, benign scenarios."
+  },
+  {
+    "claim_i_idx": 5,
+    "claim_j_idx": 30,
+    "delta_prob": 0.0,
+    "reasoning": "Claim A doesn\u2019t address the relative merits of RL versus self-supervision for attaining general intelligence."
+  },
+  {
+    "claim_i_idx": 5,
+    "claim_j_idx": 31,
+    "delta_prob": 0.4,
+    "reasoning": "Claim A\u2019s focus on democratic safeguards and caution about releases supports viewing AI safety as an ongoing engineering and governance project requiring layered mitigations rather than laissez-faire openness."
+  }
+]

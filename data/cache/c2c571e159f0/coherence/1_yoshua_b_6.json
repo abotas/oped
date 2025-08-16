@@ -1,0 +1,188 @@
+[
+  {
+    "claim_i_idx": 6,
+    "claim_j_idx": 0,
+    "delta_prob": 0.4,
+    "reasoning": "Claim A treats international/hardware controls as necessary to reduce catastrophic risk, which implies AGI/ASI are seen as plausible threats and increases the likelihood of urgency about alignment and dangerous capabilities."
+  },
+  {
+    "claim_i_idx": 6,
+    "claim_j_idx": 1,
+    "delta_prob": 0.8,
+    "reasoning": "A explicitly endorses international treaties and hardware governance and flags coordination/verification challenges, strongly supporting the need for multilateral governance and limiting unilateral AGI power."
+  },
+  {
+    "claim_i_idx": 6,
+    "claim_j_idx": 2,
+    "delta_prob": 0.5,
+    "reasoning": "Emphasizing treaties and hardware restrictions to reduce catastrophic risk presumes demonstrated capability trends matter, thus undermining dismissive sceptical arguments and making near-term AGI plausibility more likely."
+  },
+  {
+    "claim_i_idx": 6,
+    "claim_j_idx": 3,
+    "delta_prob": 0.6,
+    "reasoning": "If treaties and export controls are important but slow to negotiate and verify, that strengthens the argument that uncertainty isn't a reason to wait and that precautionary regulation now is necessary."
+  },
+  {
+    "claim_i_idx": 6,
+    "claim_j_idx": 4,
+    "delta_prob": 0.5,
+    "reasoning": "Claim A\u2019s advocacy for formal international and hardware measures plus defense-in-depth signals skepticism that firms alone will reliably self-regulate, increasing the likelihood corporate incentives are a major problem."
+  },
+  {
+    "claim_i_idx": 6,
+    "claim_j_idx": 5,
+    "delta_prob": 0.4,
+    "reasoning": "A\u2019s focus on governance, controls, and equitable decision-making implies openness decisions should be governed democratically rather than left to firms, supporting caution about blanket open-sourcing."
+  },
+  {
+    "claim_i_idx": 6,
+    "claim_j_idx": 7,
+    "delta_prob": 0.5,
+    "reasoning": "Treaties and hardware controls as risk-reduction tools presuppose non-trivial x-risk; that complements expert-judgment-based precautionary reasoning and supports urgent safety investment."
+  },
+  {
+    "claim_i_idx": 6,
+    "claim_j_idx": 8,
+    "delta_prob": -0.2,
+    "reasoning": "Claim A emphasizes governance challenges and the need for layered defenses rather than asserting an already-complete takeoff, so it slightly reduces support for extreme \u2018past event horizon\u2019 claims."
+  },
+  {
+    "claim_i_idx": 6,
+    "claim_j_idx": 9,
+    "delta_prob": 0.3,
+    "reasoning": "A\u2019s call for equitable provisions and governance to \u2018include and benefit the Global South\u2019 implies belief that AI can deliver large benefits if properly governed, modestly increasing its plausibility."
+  },
+  {
+    "claim_i_idx": 6,
+    "claim_j_idx": 10,
+    "delta_prob": 0.4,
+    "reasoning": "Proposing hardware export controls and treaties to slow capability diffusion presumes self-reinforcing feedbacks (compute-driven acceleration) are a real concern, so A increases the plausibility of such loops."
+  },
+  {
+    "claim_i_idx": 6,
+    "claim_j_idx": 11,
+    "delta_prob": 0.1,
+    "reasoning": "A\u2019s emphasis on urgent governance implies some near-term concern, but it does not substantively support specific milestone timelines, so only a small positive effect."
+  },
+  {
+    "claim_i_idx": 6,
+    "claim_j_idx": 12,
+    "delta_prob": 0.3,
+    "reasoning": "Because A conditions positive outcomes on good governance and inclusion, it modestly raises the likelihood that the 2030s could be very different if governance succeeds."
+  },
+  {
+    "claim_i_idx": 6,
+    "claim_j_idx": 13,
+    "delta_prob": 0.4,
+    "reasoning": "A\u2019s stress on defense-in-depth and distributional provisions aligns with the idea that alignment must be solved and access must be managed to avoid concentration of superintelligence."
+  },
+  {
+    "claim_i_idx": 6,
+    "claim_j_idx": 14,
+    "delta_prob": 0.4,
+    "reasoning": "Hardware-focused governance in A presumes compute scaling and cost dynamics matter for capability growth, lending modest support to economic scaling observations underpinning rapid impact."
+  },
+  {
+    "claim_i_idx": 6,
+    "claim_j_idx": 15,
+    "delta_prob": 0.7,
+    "reasoning": "A explicitly foregrounds policy, governance, equitable access, and export controls\u2014directly backing the claim that public policy and distributional mechanisms matter greatly."
+  },
+  {
+    "claim_i_idx": 6,
+    "claim_j_idx": 16,
+    "delta_prob": 0.3,
+    "reasoning": "A assumes AI can be highly consequential and that governance can shape outcomes, which modestly supports the view that powerful aligned AI could yield large societal gains."
+  },
+  {
+    "claim_i_idx": 6,
+    "claim_j_idx": 17,
+    "delta_prob": 0.5,
+    "reasoning": "By arguing treaties and hardware controls can materially reduce catastrophic risk, A implies policy and technical actions are instrumentally important to shaping outcomes."
+  },
+  {
+    "claim_i_idx": 6,
+    "claim_j_idx": 18,
+    "delta_prob": 0.3,
+    "reasoning": "A\u2019s emphasis on buying time via governance and controls is consistent with the need for rapid progress in interpretability, increasing the plausibility of time-sensitive interpretability requirements."
+  },
+  {
+    "claim_i_idx": 6,
+    "claim_j_idx": 19,
+    "delta_prob": 0.0,
+    "reasoning": "Claim A is about governance and controls and does not speak to the technical tractability of interpretability, so it has no clear effect on that technical claim."
+  },
+  {
+    "claim_i_idx": 6,
+    "claim_j_idx": 20,
+    "delta_prob": 0.8,
+    "reasoning": "A explicitly mentions chip export controls, supply constraints, and equitable provisions for the Global South, strongly supporting the dual\u2011use/democracy-vs-authoritarian governance concerns and need to secure supply chains."
+  },
+  {
+    "claim_i_idx": 6,
+    "claim_j_idx": 21,
+    "delta_prob": 0.2,
+    "reasoning": "A\u2019s focus on risk reduction and inclusive benefits implies belief AI can powerfully accelerate science, but it does not strongly quantify the magnitude, so effect is small-to-moderate."
+  },
+  {
+    "claim_i_idx": 6,
+    "claim_j_idx": 22,
+    "delta_prob": 0.4,
+    "reasoning": "Highlighting verification, circumvention, and the need for defense\u2011in\u2011depth acknowledges real non-technical constraints and supports the idea that social/regulatory/physical limits matter."
+  },
+  {
+    "claim_i_idx": 6,
+    "claim_j_idx": 23,
+    "delta_prob": 0.8,
+    "reasoning": "A directly endorses hardware export controls and multilayered mitigations to buy time and emphasizes transparency and inclusion, strongly aligning with these policy recommendations."
+  },
+  {
+    "claim_i_idx": 6,
+    "claim_j_idx": 24,
+    "delta_prob": 0.2,
+    "reasoning": "A supports concern about concentration of power and the need for equitable access, but it does not endorse open-sourcing as the primary remedy (it instead favors regulated, multilateral approaches), so modest support overall."
+  },
+  {
+    "claim_i_idx": 6,
+    "claim_j_idx": 25,
+    "delta_prob": 0.0,
+    "reasoning": "A concerns governance and hardware controls and does not hinge on whether autoregressive LLMs alone can achieve AGI, so it has no direct effect."
+  },
+  {
+    "claim_i_idx": 6,
+    "claim_j_idx": 26,
+    "delta_prob": 0.0,
+    "reasoning": "Claim A is orthogonal to the technical question of whether high-bandwidth sensory grounding is required for human-like intelligence."
+  },
+  {
+    "claim_i_idx": 6,
+    "claim_j_idx": 27,
+    "delta_prob": 0.0,
+    "reasoning": "A\u2019s governance focus does not influence the technical plausibility of JEPAs as a modeling approach, so no clear effect."
+  },
+  {
+    "claim_i_idx": 6,
+    "claim_j_idx": 28,
+    "delta_prob": 0.0,
+    "reasoning": "A does not take a position on architectural causes of hallucination versus generative approaches, so it neither supports nor undermines this technical claim."
+  },
+  {
+    "claim_i_idx": 6,
+    "claim_j_idx": 29,
+    "delta_prob": 0.0,
+    "reasoning": "A emphasizes both the importance and the difficulty of governance but does not adjudicate whether takeoff will be gradual or sudden, leaving this claim unaffected."
+  },
+  {
+    "claim_i_idx": 6,
+    "claim_j_idx": 30,
+    "delta_prob": 0.0,
+    "reasoning": "A is about policy and hardware governance and does not bear on whether RL is the primary route to general intelligence, so it has no effect."
+  },
+  {
+    "claim_i_idx": 6,
+    "claim_j_idx": 31,
+    "delta_prob": 0.6,
+    "reasoning": "A\u2019s recommendation for defense-in-depth, layered mitigations, and complementary security measures aligns with viewing AI safety as an iterative, multi-pronged engineering problem rather than a single provable fix."
+  }
+]

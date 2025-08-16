@@ -1,0 +1,188 @@
+[
+  {
+    "claim_i_idx": 28,
+    "claim_j_idx": 0,
+    "delta_prob": 0.4,
+    "reasoning": "If current autoregressive models systematically hallucinate and degrade with length/OOD prompts, that strengthens the argument that powerful AI could misbehave and therefore urgent attention/precaution is warranted."
+  },
+  {
+    "claim_i_idx": 28,
+    "claim_j_idx": 1,
+    "delta_prob": 0.2,
+    "reasoning": "Claim A emphasizes architectural limits and safety gaps in deployed models, which modestly supports the view that governance/coordination failures would be dangerous if AGI power were concentrated."
+  },
+  {
+    "claim_i_idx": 28,
+    "claim_j_idx": 2,
+    "delta_prob": -0.5,
+    "reasoning": "Claim A affirms that autoregressive next-token modelling has structural failure modes and is unlikely by itself to yield robust reasoning, lending weight to skeptical points that \u201cnext-token\u201d is a substantive limitation rather than a trivial objection."
+  },
+  {
+    "claim_i_idx": 28,
+    "claim_j_idx": 3,
+    "delta_prob": 0.1,
+    "reasoning": "Showing concrete technical fragilities in current architectures makes precautionary regulation more sensible, though Claim A doesn't change timeline uncertainty."
+  },
+  {
+    "claim_i_idx": 28,
+    "claim_j_idx": 4,
+    "delta_prob": 0.0,
+    "reasoning": "Claim A is a technical critique of architectures and doesn't directly affect incentives or corporate behavior estimates."
+  },
+  {
+    "claim_i_idx": 28,
+    "claim_j_idx": 5,
+    "delta_prob": 0.0,
+    "reasoning": "The openness vs. safety tradeoff concerns are sociopolitical; Claim A neither strongly favors nor opposes open\u2011sourcing outcomes."
+  },
+  {
+    "claim_i_idx": 28,
+    "claim_j_idx": 6,
+    "delta_prob": 0.0,
+    "reasoning": "Claim A doesn't materially alter the feasibility or verification issues of international/hardware governance."
+  },
+  {
+    "claim_i_idx": 28,
+    "claim_j_idx": 7,
+    "delta_prob": 0.1,
+    "reasoning": "Demonstrable architectural limitations marginally increase the case for precautionary investment, raising expected-loss concerns slightly."
+  },
+  {
+    "claim_i_idx": 28,
+    "claim_j_idx": 8,
+    "delta_prob": -0.6,
+    "reasoning": "If autoregressive approaches inherently accumulate errors and lack robust long-form reasoning, that undermines the claim that takeoff has already passed an event horizon driven by current LLM designs."
+  },
+  {
+    "claim_i_idx": 28,
+    "claim_j_idx": 9,
+    "delta_prob": -0.1,
+    "reasoning": "Technical limits on reliability and long-form correctness slightly temper optimism about near-term universal productivity gains, though benefits remain plausible."
+  },
+  {
+    "claim_i_idx": 28,
+    "claim_j_idx": 10,
+    "delta_prob": -0.2,
+    "reasoning": "Architectural failure modes make some feedback-driven acceleration paths (via blindly scaling autoregressive models) less certain, modestly reducing the inferred strength of self\u2011reinforcing loops."
+  },
+  {
+    "claim_i_idx": 28,
+    "claim_j_idx": 11,
+    "delta_prob": -0.3,
+    "reasoning": "If current mainstream architectures are inadequate for robust reasoning and long-form correctness, specific near\u2011term milestones driven by those architectures become less likely."
+  },
+  {
+    "claim_i_idx": 28,
+    "claim_j_idx": 12,
+    "delta_prob": -0.2,
+    "reasoning": "Claim A implies important technical hurdles remain, making extreme 2030s transformations somewhat less certain absent new architectures or breakthroughs."
+  },
+  {
+    "claim_i_idx": 28,
+    "claim_j_idx": 13,
+    "delta_prob": 0.3,
+    "reasoning": "Claim A reinforces that alignment is nontrivial and tied to architecture choices, supporting the priority of solving alignment before wide distribution."
+  },
+  {
+    "claim_i_idx": 28,
+    "claim_j_idx": 14,
+    "delta_prob": 0.0,
+    "reasoning": "Economic scaling observations are orthogonal to the specific claim about autoregressive failure modes and alternative architectures."
+  },
+  {
+    "claim_i_idx": 28,
+    "claim_j_idx": 15,
+    "delta_prob": 0.2,
+    "reasoning": "Technical fragility in dominant architectures strengthens the argument that policy and public governance choices matter for how alternatives and mitigations are developed/deployed."
+  },
+  {
+    "claim_i_idx": 28,
+    "claim_j_idx": 16,
+    "delta_prob": -0.1,
+    "reasoning": "Claim A doesn't rule out large beneficial outcomes if aligned, but it lowers confidence that current autoregressive models alone will deliver powerful, well-behaved systems that compress decades of progress."
+  },
+  {
+    "claim_i_idx": 28,
+    "claim_j_idx": 17,
+    "delta_prob": 0.2,
+    "reasoning": "By showing that architecture and design choices materially affect outcomes, Claim A supports the instrumental view that technical and policy actions can change futures."
+  },
+  {
+    "claim_i_idx": 28,
+    "claim_j_idx": 18,
+    "delta_prob": 0.4,
+    "reasoning": "Claim A highlights hidden failure modes and the need for introspective/architectural fixes, bolstering the importance of interpretability before deploying highly autonomous systems."
+  },
+  {
+    "claim_i_idx": 28,
+    "claim_j_idx": 19,
+    "delta_prob": 0.0,
+    "reasoning": "Claim A argues for different architectures but doesn't directly assess the tractability of interpretability research on existing models."
+  },
+  {
+    "claim_i_idx": 28,
+    "claim_j_idx": 20,
+    "delta_prob": 0.0,
+    "reasoning": "The dual\u2011use nature of powerful AI and geopolitical effects are not strongly affected by the specific autoregressive vs objective\u2011based claim."
+  },
+  {
+    "claim_i_idx": 28,
+    "claim_j_idx": 21,
+    "delta_prob": -0.3,
+    "reasoning": "If autoregressive LLMs hallucinate and drift, their capacity to reliably act as virtual autonomous scientists is reduced, lowering plausibility of large autonomous scientific acceleration via current methods."
+  },
+  {
+    "claim_i_idx": 28,
+    "claim_j_idx": 22,
+    "delta_prob": 0.2,
+    "reasoning": "Claim A surfaces real technical constraints that support the view that nontechnical bottlenecks and complementary infrastructure will matter for translating intelligence into outcomes."
+  },
+  {
+    "claim_i_idx": 28,
+    "claim_j_idx": 23,
+    "delta_prob": 0.4,
+    "reasoning": "Because Claim A argues for different architectures and stronger diagnostics/critics, it strengthens the case for scaling interpretability, transparency, and export controls to buy time."
+  },
+  {
+    "claim_i_idx": 28,
+    "claim_j_idx": 24,
+    "delta_prob": -0.2,
+    "reasoning": "Claim A undercuts confidence that simply open\u2011sourcing current autoregressive models is a sufficient remedy\u2014architectural change and broader measures are required\u2014reducing support for the specific open\u2011source-as-primary-remedy claim."
+  },
+  {
+    "claim_i_idx": 28,
+    "claim_j_idx": 25,
+    "delta_prob": 1.0,
+    "reasoning": "This is essentially restating Claim A: that autoregressive next\u2011token models lack essential components and aren't by themselves the path to AGI\u2014so Claim A directly and strongly affirms it."
+  },
+  {
+    "claim_i_idx": 28,
+    "claim_j_idx": 26,
+    "delta_prob": 0.3,
+    "reasoning": "Claim A's emphasis on limitations of text\u2011only autoregressive modelling is consistent with the idea that high\u2011bandwidth sensory grounding is needed for human\u2011like intelligence."
+  },
+  {
+    "claim_i_idx": 28,
+    "claim_j_idx": 27,
+    "delta_prob": 0.6,
+    "reasoning": "Claim A advocates non\u2011autoregressive, latent/energy/objective\u2011based predictive methods, which aligns closely with the promise of JEPA\u2011style latent predictive architectures."
+  },
+  {
+    "claim_i_idx": 28,
+    "claim_j_idx": 29,
+    "delta_prob": 0.3,
+    "reasoning": "By showing structural shortcomings in current dominant approaches, Claim A makes a sudden single catastrophic event less likely and gradual/iterative development relatively more plausible."
+  },
+  {
+    "claim_i_idx": 28,
+    "claim_j_idx": 30,
+    "delta_prob": 0.5,
+    "reasoning": "Claim A supports shifting emphasis away from pure autoregressive/RL-driven pipelines toward self\u2011supervised latent models, model\u2011predictive/planning approaches, and selective RL use."
+  },
+  {
+    "claim_i_idx": 28,
+    "claim_j_idx": 31,
+    "delta_prob": 0.7,
+    "reasoning": "Claim A explicitly recommends objective/energy\u2011based architectures with explicit critics and constraints, which strongly supports the view that safety will be iterative engineering embedded in objective\u2011driven designs."
+  }
+]

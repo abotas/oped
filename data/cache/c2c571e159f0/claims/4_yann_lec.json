@@ -1,0 +1,50 @@
+[
+  {
+    "doc_id": "4_yann_lec",
+    "doc_title": "4. Yann LeCun on Open Source AI and AGI",
+    "claim_idx": 0,
+    "claim": "Concentration of power in a small number of proprietary AI systems (principally West Coast Big Tech) is a bigger danger than most other AI risks because it would let a few companies control the population's information diet and threaten democracy and cultural diversity; open-sourcing foundation models is the primary practical remedy because it enables governments, NGOs, local communities and startups to fine-tune models for local languages, values and needs."
+  },
+  {
+    "doc_id": "4_yann_lec",
+    "doc_title": "4. Yann LeCun on Open Source AI and AGI",
+    "claim_idx": 1,
+    "claim": "Autoregressive large language models (LLMs) trained to predict next tokens are missing essential components of intelligence\u2014robust understanding of the physical world, persistent memory, genuine reasoning and planning\u2014and therefore, while useful for many applications, they are not by themselves the path to human-level (AMI/AGI) intelligence."
+  },
+  {
+    "doc_id": "4_yann_lec",
+    "doc_title": "4. Yann LeCun on Open Source AI and AGI",
+    "claim_idx": 2,
+    "claim": "Human-like intelligence requires grounding in high-bandwidth sensory experience (vision, touch, audio) because much of the knowledge humans acquire in early development is nonlinguistic and far more redundant than text; language alone (the ~10^13 token corpora) lacks the bandwidth/redundancy to build the rich world models needed for physical reasoning and motor skills."
+  },
+  {
+    "doc_id": "4_yann_lec",
+    "doc_title": "4. Yann LeCun on Open Source AI and AGI",
+    "claim_idx": 3,
+    "claim": "Joint-Embedding Predictive Architectures (JEPAs)\u2014self-supervised, non-generative methods that predict in an abstract representation (latent) space (examples: I-JEPA, V-JEPA, DINO, BYOL variants)\u2014are a promising path to learning abstract, predictive world models from images and video, because they compress away unpredictable low-level detail and preserve predictable, planning-relevant structure."
+  },
+  {
+    "doc_id": "4_yann_lec",
+    "doc_title": "4. Yann LeCun on Open Source AI and AGI",
+    "claim_idx": 4,
+    "claim": "Autoregressive token-by-token generation causes hallucinations and error accumulation (a probabilistic drift that grows with sequence length and with out-of-distribution prompts), because LLMs are effectively giant conditional next-token predictors trained on a tiny fraction of the possible prompts; achieving robust reasoning and long-form correctness requires different architectures\u2014energy/objective-based models that optimize in continuous latent representation space with gradient-based inference and explicit critics/reward models."
+  },
+  {
+    "doc_id": "4_yann_lec",
+    "doc_title": "4. Yann LeCun on Open Source AI and AGI",
+    "claim_idx": 5,
+    "claim": "AGI/superintelligence is unlikely to arrive as a sudden, single catastrophic event; progress will be gradual and iterative (more like engineering design than a one-off discovery), so doomer scenarios that assume a rapid rogue AI takeover rest on false assumptions (e.g., innate agentic drive to dominate) and neglect that safer, controllable systems and countermeasures will co-develop and be widely deployed."
+  },
+  {
+    "doc_id": "4_yann_lec",
+    "doc_title": "4. Yann LeCun on Open Source AI and AGI",
+    "claim_idx": 6,
+    "claim": "Reinforcement learning (RL) is highly sample-inefficient and should not be the primary route to general intelligence; the recommended pipeline is to learn rich representations and world models via self-supervision from observation, use model-predictive control and planning at inference time, and apply RL sparingly to adjust the model or objective when predictions fail or objectives are mis-specified."
+  },
+  {
+    "doc_id": "4_yann_lec",
+    "doc_title": "4. Yann LeCun on Open Source AI and AGI",
+    "claim_idx": 7,
+    "claim": "AI safety will be an iterative engineering problem rather than a single provable fix: practical guardrails should be integrated into objective-driven architectures (e.g., include constraints like \u2018obey humans\u2019 or \u2018do no harm\u2019 in the energy/objective function), and safety will be improved progressively through testing and refinement\u2014analogous to how complex, high-stakes systems (like jet engines) became reliable over decades."
+  }
+]

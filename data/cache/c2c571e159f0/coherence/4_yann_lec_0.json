@@ -1,0 +1,188 @@
+[
+  {
+    "claim_i_idx": 24,
+    "claim_j_idx": 0,
+    "delta_prob": -0.3,
+    "reasoning": "Claim A downplays catastrophic AGI as the top risk in favor of concentration-driven social/political harms, so it modestly reduces the likelihood that runaway AGI/x-risk is the primary urgent threat described by claim 0."
+  },
+  {
+    "claim_i_idx": 24,
+    "claim_j_idx": 1,
+    "delta_prob": 0.7,
+    "reasoning": "Claim A emphasizes that concentrated corporate control is dangerous and argues for decentralizing remedies, which strongly supports the view that unilateral AGI power must be prevented and multilateral governance is needed."
+  },
+  {
+    "claim_i_idx": 24,
+    "claim_j_idx": 2,
+    "delta_prob": 0.2,
+    "reasoning": "Claim A's focus on a few firms driving capabilities makes demonstrated capability-based arguments for near-term AGI somewhat more plausible, but it doesn't strongly change technical plausibility judgments."
+  },
+  {
+    "claim_i_idx": 24,
+    "claim_j_idx": 3,
+    "delta_prob": 0.5,
+    "reasoning": "If concentration is a major danger and open-sourcing is urged as a remedy, that implies precautionary regulation and early institutional work are important\u2014raising the likelihood that uncertainty is not a reason to delay."
+  },
+  {
+    "claim_i_idx": 24,
+    "claim_j_idx": 4,
+    "delta_prob": 0.8,
+    "reasoning": "Claim A directly attributes the danger to a few companies' control, which aligns closely with the idea that corporate incentives and conflicts make voluntary safety unreliable."
+  },
+  {
+    "claim_i_idx": 24,
+    "claim_j_idx": 5,
+    "delta_prob": -0.6,
+    "reasoning": "Claim A explicitly promotes open-sourcing as the primary practical remedy, which conflicts with claim 5's emphasis that open-sourcing is not an unambiguous safety strategy, making claim 5 less likely under A."
+  },
+  {
+    "claim_i_idx": 24,
+    "claim_j_idx": 6,
+    "delta_prob": 0.2,
+    "reasoning": "Claim A's attention to political inclusion and distribution of models is consistent with treaty/hardware governance being important, though it doesn't resolve verification challenges\u2014slight positive effect."
+  },
+  {
+    "claim_i_idx": 24,
+    "claim_j_idx": 7,
+    "delta_prob": 0.1,
+    "reasoning": "Claim A doesn't contradict non-trivial aggregated x-risk estimates and supports precaution, but its focus on concentration rather than existential technical failure makes only a small positive effect."
+  },
+  {
+    "claim_i_idx": 24,
+    "claim_j_idx": 8,
+    "delta_prob": -0.4,
+    "reasoning": "By framing concentration and information control as the primary near-term danger, Claim A reduces the plausibility of an already-in-progress, imminent digital superintelligence narrative."
+  },
+  {
+    "claim_i_idx": 24,
+    "claim_j_idx": 9,
+    "delta_prob": 0.3,
+    "reasoning": "Advocating decentralization and enabling local fine-tuning increases the plausibility that AI can be harnessed for broad societal gains if distributed responsibly."
+  },
+  {
+    "claim_i_idx": 24,
+    "claim_j_idx": 10,
+    "delta_prob": 0.2,
+    "reasoning": "Concentration in well-resourced firms can plausibly accelerate feedback loops, and A's remedy (open-source) would affect how those loops spread\u2014so a small positive effect on feedback-loop plausibility."
+  },
+  {
+    "claim_i_idx": 24,
+    "claim_j_idx": 11,
+    "delta_prob": 0.2,
+    "reasoning": "If a few powerful actors are driving development, near-term milestones become somewhat more plausible; A implies concentrated capability creation that could yield near-term advances."
+  },
+  {
+    "claim_i_idx": 24,
+    "claim_j_idx": 12,
+    "delta_prob": 0.2,
+    "reasoning": "Claim A's emphasis on governance and redistribution of models supports the view that the 2030s could be very different under the right policies, increasing plausibility modestly."
+  },
+  {
+    "claim_i_idx": 24,
+    "claim_j_idx": 13,
+    "delta_prob": 0.8,
+    "reasoning": "Claim A explicitly calls for making powerful models widely available (via open-source) and avoiding concentration, which strongly aligns with claim 13's sequence (alignment then broad, non-concentrated availability)."
+  },
+  {
+    "claim_i_idx": 24,
+    "claim_j_idx": 14,
+    "delta_prob": 0.4,
+    "reasoning": "Economic scaling and falling costs help explain why a few firms could dominate; Claim A's premise is consistent with these economic drivers, modestly increasing their plausibility."
+  },
+  {
+    "claim_i_idx": 24,
+    "claim_j_idx": 15,
+    "delta_prob": 0.9,
+    "reasoning": "Claim A centers policy, governance, and openness as solutions to concentration harms, which strongly supports the importance of public policy and measures to distribute access and prevent authoritarian control."
+  },
+  {
+    "claim_i_idx": 24,
+    "claim_j_idx": 16,
+    "delta_prob": 0.3,
+    "reasoning": "Claim A doesn't dispute that aligned powerful AI could produce big gains and in fact argues spreading capability could enable broader benefits, modestly increasing this claim's plausibility."
+  },
+  {
+    "claim_i_idx": 24,
+    "claim_j_idx": 17,
+    "delta_prob": 0.3,
+    "reasoning": "If concentration is the main risk and policy choices (like open-sourcing) materially alter outcomes, that supports the instrumentalist view that actions can substantially change the odds of a positive future."
+  },
+  {
+    "claim_i_idx": 24,
+    "claim_j_idx": 18,
+    "delta_prob": -0.1,
+    "reasoning": "Claim A prioritizes governance and open access over a single technical fix like interpretability; it slightly reduces the relative centrality of interpretability-as-time-critical, but doesn't contradict it strongly."
+  },
+  {
+    "claim_i_idx": 24,
+    "claim_j_idx": 19,
+    "delta_prob": 0.0,
+    "reasoning": "Claim A's focus on political/economic remedies and openness is largely orthogonal to the technical claim that interpretability is tractable and progressing."
+  },
+  {
+    "claim_i_idx": 24,
+    "claim_j_idx": 20,
+    "delta_prob": 0.6,
+    "reasoning": "Claim A asserts that concentrated AI control can threaten democracy and cultural diversity, which aligns strongly with the claim that AI is dual-use and won't automatically favor democracy and thus requires proactive coordination."
+  },
+  {
+    "claim_i_idx": 24,
+    "claim_j_idx": 21,
+    "delta_prob": 0.2,
+    "reasoning": "Claim A's prescription to broaden access via open-sourcing makes it more plausible that many actors could use AI as a virtual scientist, modestly supporting high acceleration in invention."
+  },
+  {
+    "claim_i_idx": 24,
+    "claim_j_idx": 22,
+    "delta_prob": 0.4,
+    "reasoning": "By highlighting political, cultural and governance constraints as central risks, Claim A underscores that non-technical limits matter and that complementary factors must be addressed, increasing claim 22's plausibility."
+  },
+  {
+    "claim_i_idx": 24,
+    "claim_j_idx": 23,
+    "delta_prob": 0.1,
+    "reasoning": "Claim A supports transparency and wider research access but favors openness over export controls; overall it slightly increases support for some policy levers (transparency, scaling research) while being wary of others."
+  },
+  {
+    "claim_i_idx": 24,
+    "claim_j_idx": 25,
+    "delta_prob": 0.0,
+    "reasoning": "Claim A concerns governance and openness and does not bear on the technical point that autoregressive LLMs lack essential components of intelligence."
+  },
+  {
+    "claim_i_idx": 24,
+    "claim_j_idx": 26,
+    "delta_prob": 0.0,
+    "reasoning": "Claim A's sociopolitical focus doesn't affect the technical claim about high\u2011bandwidth sensory grounding being required for human-like intelligence."
+  },
+  {
+    "claim_i_idx": 24,
+    "claim_j_idx": 27,
+    "delta_prob": 0.0,
+    "reasoning": "Claim A is orthogonal to the technical merits of Joint\u2011Embedding Predictive Architectures as a path to world models."
+  },
+  {
+    "claim_i_idx": 24,
+    "claim_j_idx": 28,
+    "delta_prob": 0.0,
+    "reasoning": "Claim A doesn't address whether autoregressive generation causes hallucinations or the need for alternative architectures, so it's neutral."
+  },
+  {
+    "claim_i_idx": 24,
+    "claim_j_idx": 29,
+    "delta_prob": 0.4,
+    "reasoning": "Claim A's framing that social/political concentration is the primary near\u2011term danger makes gradual, systemic risk scenarios more plausible than sudden rogue\u2011AI doomsday narratives."
+  },
+  {
+    "claim_i_idx": 24,
+    "claim_j_idx": 30,
+    "delta_prob": 0.0,
+    "reasoning": "Claim A doesn't adjudicate the sample efficiency of RL or preferred training pipelines, so it has no clear effect."
+  },
+  {
+    "claim_i_idx": 24,
+    "claim_j_idx": 31,
+    "delta_prob": 0.3,
+    "reasoning": "Claim A's emphasis on governance, iterative remedies (open-sourcing, fine-tuning by many actors) and progressive decentralization supports the view that safety will be an iterative engineering effort rather than a single provable fix."
+  }
+]

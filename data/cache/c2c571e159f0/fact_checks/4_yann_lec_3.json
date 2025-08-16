@@ -1,0 +1,9 @@
+{
+  "doc_id": "4_yann_lec",
+  "doc_title": "4. Yann LeCun on Open Source AI and AGI",
+  "claim_idx": 3,
+  "claim": "Joint-Embedding Predictive Architectures (JEPAs)\u2014self-supervised, non-generative methods that predict in an abstract representation (latent) space (examples: I-JEPA, V-JEPA, DINO, BYOL variants)\u2014are a promising path to learning abstract, predictive world models from images and video, because they compress away unpredictable low-level detail and preserve predictable, planning-relevant structure.",
+  "veracity": 85,
+  "explanation": "Largely accurate and well-supported: JEPA methods (e.g., I\u2011JEPA) are self\u2011supervised architectures that predict target representations in a latent space rather than pixels, explicitly designed to learn semantic / high\u2011level features rather than low\u2011level detail. ([arxiv.org](https://arxiv.org/abs/2301.08243?utm_source=chatgpt.com)) Methods like BYOL and DINO are also self\u2011supervised, latent\u2011prediction / distillation-style approaches (though not identical to the JEPA masking/predictor design). ([arxiv.org](https://arxiv.org/abs/2006.07733?utm_source=chatgpt.com)) Empirical work shows JEPA extensions to video can produce representations useful for prediction and planning (V\u2011JEPA2 used for model\u2011based planning on robot manipulation), supporting the claim that latent prediction can compress away unpredictable pixel detail while preserving planning\u2011relevant structure. ([arxiv.org](https://arxiv.org/abs/2506.09985?utm_source=chatgpt.com)) Caveats: this is an active research area \u2014 JEPA variants can be adapted to generative uses (e.g., D\u2011JEPA) and handling stochastic / multimodal futures requires explicit latent\u2011uncertainty modeling, so the approach is promising but not a solved guarantee for all tasks. ([arxiv.org](https://arxiv.org/abs/2410.03755?utm_source=chatgpt.com))",
+  "sources": []
+}

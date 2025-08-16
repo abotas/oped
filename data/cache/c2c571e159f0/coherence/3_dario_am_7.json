@@ -1,0 +1,188 @@
+[
+  {
+    "claim_i_idx": 23,
+    "claim_j_idx": 0,
+    "delta_prob": 0.4,
+    "reasoning": "If proactive interpretability scaling and policy steps are needed and being proposed, that implies the community sees a real, urgent risk from advancing capabilities\u2014making the \u2018racing toward AGI/ASI with no reliable assurance\u2019 framing more plausible."
+  },
+  {
+    "claim_i_idx": 23,
+    "claim_j_idx": 1,
+    "delta_prob": 0.5,
+    "reasoning": "Claim A emphasizes multilateral measures (transparency, export controls) and thus supports the idea that political/institutional coordination failures are critical and that unilateral control of AGI would be dangerous."
+  },
+  {
+    "claim_i_idx": 23,
+    "claim_j_idx": 2,
+    "delta_prob": 0.3,
+    "reasoning": "A assumes practical mitigations (interpretability, disclosure) are required because demonstrated capabilities matter; that aligns with the view that skeptical verbal arguments underplay empirical capability trends."
+  },
+  {
+    "claim_i_idx": 23,
+    "claim_j_idx": 3,
+    "delta_prob": 0.5,
+    "reasoning": "Claim A calls for immediate policy and research scaling and for using export controls to buy time, directly supporting the idea that uncertainty is not a reason to delay regulation and safety work."
+  },
+  {
+    "claim_i_idx": 23,
+    "claim_j_idx": 4,
+    "delta_prob": 0.5,
+    "reasoning": "A\u2019s call for mandatory transparency and cross-sector interpretability work presumes corporate incentives alone won\u2019t suffice, increasing the plausibility of conflicts-of-interest problems."
+  },
+  {
+    "claim_i_idx": 23,
+    "claim_j_idx": 5,
+    "delta_prob": 0.4,
+    "reasoning": "A advocates controlled transparency and export controls rather than unguarded openness, supporting the view that open-sourcing is not an unambiguous safety win and needs democratic safeguards."
+  },
+  {
+    "claim_i_idx": 23,
+    "claim_j_idx": 6,
+    "delta_prob": 0.4,
+    "reasoning": "A explicitly includes targeted hardware controls and coordinated transparency, which increases the plausibility that hardware-enabled governance is important while also implying it must be part of layered defenses."
+  },
+  {
+    "claim_i_idx": 23,
+    "claim_j_idx": 7,
+    "delta_prob": 0.4,
+    "reasoning": "A\u2019s emphasis on precautionary investment in interpretability and policy measures makes following the precautionary principle (despite uncertainty) more justified and likely."
+  },
+  {
+    "claim_i_idx": 23,
+    "claim_j_idx": 8,
+    "delta_prob": -0.6,
+    "reasoning": "A\u2019s recommendation to buy time via controls and to massively scale interpretability presumes there is still a window to act\u2014this undercuts the claim that takeoff has already passed an irreversible event horizon."
+  },
+  {
+    "claim_i_idx": 23,
+    "claim_j_idx": 9,
+    "delta_prob": 0.3,
+    "reasoning": "A is explicitly about increasing the chance of a positive outcome through safety measures, which makes it somewhat more likely that AI\u2019s large potential benefits can be harnessed if those measures succeed."
+  },
+  {
+    "claim_i_idx": 23,
+    "claim_j_idx": 10,
+    "delta_prob": -0.2,
+    "reasoning": "Because A endorses export controls and other measures to slow/shape deployment, it modestly reduces the immediacy of self-reinforcing, runaway feedback-loop scenarios, though it doesn\u2019t deny such dynamics."
+  },
+  {
+    "claim_i_idx": 23,
+    "claim_j_idx": 11,
+    "delta_prob": -0.4,
+    "reasoning": "A\u2019s suggestion to buy time and require safety before wide deployment makes specific near-term milestone timelines (2025\u20132027 transformative steps) somewhat less likely to occur unchecked."
+  },
+  {
+    "claim_i_idx": 23,
+    "claim_j_idx": 12,
+    "delta_prob": 0.3,
+    "reasoning": "A\u2019s focus on governance and safety increases the chance that, under good governance, widespread beneficial transformations in the 2030s happen rather than catastrophic outcomes\u2014conditional optimism is more plausible."
+  },
+  {
+    "claim_i_idx": 23,
+    "claim_j_idx": 13,
+    "delta_prob": 0.5,
+    "reasoning": "A prioritizes alignment-relevant work (interpretability) and policies to avoid premature concentration, reinforcing the view that solving alignment before wide cheap deployment and avoiding excessive concentration is critical."
+  },
+  {
+    "claim_i_idx": 23,
+    "claim_j_idx": 14,
+    "delta_prob": 0.0,
+    "reasoning": "A is a policy/organizational prescription and doesn\u2019t materially change the empirical economic observations about scaling laws, cost declines, and returns to intelligence."
+  },
+  {
+    "claim_i_idx": 23,
+    "claim_j_idx": 15,
+    "delta_prob": 0.6,
+    "reasoning": "A itself is a policy/governance prescription (transparency, export controls, broad research scaling), so it strongly supports the importance of public policy, governance, and societal conversation."
+  },
+  {
+    "claim_i_idx": 23,
+    "claim_j_idx": 16,
+    "delta_prob": 0.5,
+    "reasoning": "A increases the likelihood that powerful AI, if aligned through the advocated measures, will be safely harnessed to produce dramatic benefits\u2014so the positive-outcome scenario becomes more plausible."
+  },
+  {
+    "claim_i_idx": 23,
+    "claim_j_idx": 17,
+    "delta_prob": 0.5,
+    "reasoning": "A assumes that targeted technical and policy actions can materially change outcomes (e.g., buying time, improving interpretability), directly supporting the instrumental rationale for focusing on risks."
+  },
+  {
+    "claim_i_idx": 23,
+    "claim_j_idx": 18,
+    "delta_prob": 0.9,
+    "reasoning": "A centers mechanistic interpretability and buying time as core priorities, almost directly endorsing the time-sensitive race framing and the need for interpretability to mature before transformative systems deploy."
+  },
+  {
+    "claim_i_idx": 23,
+    "claim_j_idx": 19,
+    "delta_prob": 0.6,
+    "reasoning": "A\u2019s call to massively scale interpretability and resource it across industry/academia presumes tractability and progress in interpretability methods, increasing confidence that it is a viable path."
+  },
+  {
+    "claim_i_idx": 23,
+    "claim_j_idx": 20,
+    "delta_prob": 0.6,
+    "reasoning": "A recommends export controls, transparency, and coordinated policy\u2014measures meant to prevent authoritarian advantage\u2014so it bolsters the claim that AI won\u2019t automatically favor democracy and that proactive coordination is necessary."
+  },
+  {
+    "claim_i_idx": 23,
+    "claim_j_idx": 21,
+    "delta_prob": 0.2,
+    "reasoning": "A is compatible with large productivity gains from AI-driven science and, by promoting safe deployment, modestly raises the chance those scientific-acceleration benefits are realized responsibly."
+  },
+  {
+    "claim_i_idx": 23,
+    "claim_j_idx": 22,
+    "delta_prob": 0.3,
+    "reasoning": "A\u2019s emphasis on policy, buying time, and broad institutional measures acknowledges non-technical constraints and the need to address complementary factors, making constraints-focused analysis slightly more likely."
+  },
+  {
+    "claim_i_idx": 23,
+    "claim_j_idx": 24,
+    "delta_prob": -0.2,
+    "reasoning": "A supports concern about concentration of power but favors transparency, controls and democratic decision-making over open-sourcing as the primary remedy, reducing the plausibility of open-sourcing-as-primary-fix."
+  },
+  {
+    "claim_i_idx": 23,
+    "claim_j_idx": 25,
+    "delta_prob": 0.0,
+    "reasoning": "A does not make claims about whether autoregressive LLMs alone can reach AGI; the policy/interpretability focus is orthogonal to this architectural claim."
+  },
+  {
+    "claim_i_idx": 23,
+    "claim_j_idx": 26,
+    "delta_prob": 0.0,
+    "reasoning": "A\u2019s policy and interpretability recommendations do not bear directly on the necessity of high-bandwidth sensory grounding for human-like intelligence."
+  },
+  {
+    "claim_i_idx": 23,
+    "claim_j_idx": 27,
+    "delta_prob": 0.0,
+    "reasoning": "A is agnostic about specific technical approaches like JEPAs; advocating interpretability and governance does not change the plausibility of this architectural research direction."
+  },
+  {
+    "claim_i_idx": 23,
+    "claim_j_idx": 28,
+    "delta_prob": 0.0,
+    "reasoning": "A does not assert specific claims about autoregressive generation vs. alternative architectures, so it neither increases nor decreases the likelihood of this technical claim."
+  },
+  {
+    "claim_i_idx": 23,
+    "claim_j_idx": 29,
+    "delta_prob": -0.3,
+    "reasoning": "Because A treats a race that can be slowed/managed via interpretability scale-up and export controls, it slightly decreases the probability of abrupt, single\u2011event catastrophic takeoff scenarios."
+  },
+  {
+    "claim_i_idx": 23,
+    "claim_j_idx": 30,
+    "delta_prob": 0.0,
+    "reasoning": "A\u2019s focus on interpretability, transparency, and governance does not directly affect the technical argument about RL sample efficiency versus self-supervised pipelines."
+  },
+  {
+    "claim_i_idx": 23,
+    "claim_j_idx": 31,
+    "delta_prob": 0.5,
+    "reasoning": "A frames safety as a set of scaling, organizational, and policy interventions rather than a single proof; that aligns with and supports the engineering-iterative view of AI safety."
+  }
+]

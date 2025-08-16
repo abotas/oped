@@ -1,0 +1,188 @@
+[
+  {
+    "claim_i_idx": 14,
+    "claim_j_idx": 0,
+    "delta_prob": 0.7,
+    "reasoning": "Scaling laws, rapidly falling costs, and super\u2011exponential value make aggressive investment and a race toward ever more capable systems much more likely, increasing the urgency of alignment concerns."
+  },
+  {
+    "claim_i_idx": 14,
+    "claim_j_idx": 1,
+    "delta_prob": 0.5,
+    "reasoning": "If capability and deployment accelerate due to economics, political/institutional coordination becomes more urgent because unilateral actors will have strong incentives to deploy powerful systems."
+  },
+  {
+    "claim_i_idx": 14,
+    "claim_j_idx": 2,
+    "delta_prob": 0.6,
+    "reasoning": "Empirical scaling and cost trends undermine pure skeptical claims that capabilities are far off or irrelevant\u2014demonstrated capability growth matters for x\u2011risk, making near\u2011term plausibility higher."
+  },
+  {
+    "claim_i_idx": 14,
+    "claim_j_idx": 3,
+    "delta_prob": 0.6,
+    "reasoning": "Rapid capability and deployment driven by economics shorten timelines relative to policymaking timescales, so uncertainty about timing strengthens the case for starting regulation and safety work now."
+  },
+  {
+    "claim_i_idx": 14,
+    "claim_j_idx": 4,
+    "delta_prob": 0.5,
+    "reasoning": "Large commercial incentives created by falling costs and huge value increases make voluntary-only corporate safety less credible and increase the risk of unsafe shortcuts or competitive races."
+  },
+  {
+    "claim_i_idx": 14,
+    "claim_j_idx": 5,
+    "delta_prob": 0.3,
+    "reasoning": "Lower costs and easier fine\u2011tuning mean released code/weights would be more readily weaponized or repurposed, so openness is not an unambiguous safety win."
+  },
+  {
+    "claim_i_idx": 14,
+    "claim_j_idx": 6,
+    "delta_prob": 0.3,
+    "reasoning": "The economic leverage of hardware and chips becomes more important as capability scales, supporting the relevance of hardware governance, though verification and equity remain hard."
+  },
+  {
+    "claim_i_idx": 14,
+    "claim_j_idx": 7,
+    "delta_prob": 0.5,
+    "reasoning": "If investment is likely to continue and capabilities can rise quickly, non\u2011negligible extinction or catastrophe probabilities imply precautionary policy is rational rather than dismissible as Pascalian."
+  },
+  {
+    "claim_i_idx": 14,
+    "claim_j_idx": 8,
+    "delta_prob": 0.4,
+    "reasoning": "Claim A makes an accelerating takeoff more plausible, though it doesn't by itself prove we've passed an event horizon; it modestly raises the probability that takeoff is underway or imminent."
+  },
+  {
+    "claim_i_idx": 14,
+    "claim_j_idx": 9,
+    "delta_prob": 0.6,
+    "reasoning": "Super\u2011exponential socioeconomic returns from increased intelligence combined with lower costs make very large, positive welfare gains more plausible if AI is aligned and harnessed."
+  },
+  {
+    "claim_i_idx": 14,
+    "claim_j_idx": 10,
+    "delta_prob": 0.7,
+    "reasoning": "Falling unit costs, scaling laws, and high returns naturally create self\u2011reinforcing feedbacks (reinvestment, automation), supporting the prospect of rapid capability acceleration and cost convergence."
+  },
+  {
+    "claim_i_idx": 14,
+    "claim_j_idx": 11,
+    "delta_prob": 0.4,
+    "reasoning": "Economic and scaling trends increase plausibility of near\u2011term milestones, but specific year predictions remain uncertain, so the overall likelihood is moderately higher."
+  },
+  {
+    "claim_i_idx": 14,
+    "claim_j_idx": 12,
+    "delta_prob": 0.5,
+    "reasoning": "If intelligence and energy become cheaper and more abundant due to investment and scaling, the 2030s being qualitatively different becomes more likely, conditional on governance."
+  },
+  {
+    "claim_i_idx": 14,
+    "claim_j_idx": 13,
+    "delta_prob": 0.5,
+    "reasoning": "Claim A implies superintelligence could become cheap and widespread absent alignment guarantees, so solving alignment before broad availability becomes more necessary and likely prioritized."
+  },
+  {
+    "claim_i_idx": 14,
+    "claim_j_idx": 15,
+    "delta_prob": 0.4,
+    "reasoning": "Rapid capability growth driven by economics increases the stakes of policy and societal debate about distribution, openness, and preventing authoritarian concentration."
+  },
+  {
+    "claim_i_idx": 14,
+    "claim_j_idx": 16,
+    "delta_prob": 0.6,
+    "reasoning": "Economic incentives plus capability scaling make scenarios where powerful aligned AI compresses scientific/medical progress materially more plausible."
+  },
+  {
+    "claim_i_idx": 14,
+    "claim_j_idx": 17,
+    "delta_prob": 0.5,
+    "reasoning": "If outcomes depend heavily on investment choices and deployment, then instrumental actions (policy/tech) matter more for determining whether positive futures materialize, raising the primacy of risk mitigation."
+  },
+  {
+    "claim_i_idx": 14,
+    "claim_j_idx": 18,
+    "delta_prob": 0.5,
+    "reasoning": "A faster capability race driven by economics increases time pressure on interpretability efforts, making a short window to mature interpretability before highly autonomous systems more likely."
+  },
+  {
+    "claim_i_idx": 14,
+    "claim_j_idx": 19,
+    "delta_prob": 0.2,
+    "reasoning": "Claim A increases resources and incentives for interpretability research, so progress is modestly more likely, but it says little about tractability or timelines."
+  },
+  {
+    "claim_i_idx": 14,
+    "claim_j_idx": 20,
+    "delta_prob": 0.4,
+    "reasoning": "Falling costs and dual\u2011use returns increase the chance powerful AI is used by both democracies and autocracies, raising the importance of proactive democratic strategies and supply\u2011chain measures."
+  },
+  {
+    "claim_i_idx": 14,
+    "claim_j_idx": 21,
+    "delta_prob": 0.6,
+    "reasoning": "If intelligence scales in value and is cheaper to use, AI acting as an autonomous scientist with outsized returns becomes more plausible, accelerating invention and experimental throughput."
+  },
+  {
+    "claim_i_idx": 14,
+    "claim_j_idx": 22,
+    "delta_prob": 0.2,
+    "reasoning": "While Claim A raises capability and deployment likelihood, it also implies bottlenecks and complementary constraints will matter more as investments bump up against physical, regulatory, and institutional limits."
+  },
+  {
+    "claim_i_idx": 14,
+    "claim_j_idx": 23,
+    "delta_prob": 0.4,
+    "reasoning": "Rapid capability growth increases the utility of defensive policy measures (interpretability scaling, transparency, targeted export controls) to buy time and reduce risk."
+  },
+  {
+    "claim_i_idx": 14,
+    "claim_j_idx": 24,
+    "delta_prob": 0.1,
+    "reasoning": "Heavy investment can both entrench incumbents and, over time, lower barriers to entry; Claim A slightly raises the short\u2011run risk of concentration but is ambiguous long\u2011term."
+  },
+  {
+    "claim_i_idx": 14,
+    "claim_j_idx": 25,
+    "delta_prob": -0.3,
+    "reasoning": "If intelligence scales with resources and economics favor continued investment in large predictive models, then autoregressive LLMs are more plausibly on a path to very high capability, weakening the claim they are fundamentally insufficient."
+  },
+  {
+    "claim_i_idx": 14,
+    "claim_j_idx": 26,
+    "delta_prob": -0.1,
+    "reasoning": "Claim A doesn't require grounding to be unnecessary, but falling costs and broader multimodal training make purely linguistic insufficiency slightly less decisive as an argument against rapid capability."
+  },
+  {
+    "claim_i_idx": 14,
+    "claim_j_idx": 27,
+    "delta_prob": 0.1,
+    "reasoning": "Economic incentives and more resources make exploration of promising architectures like JEPAs more likely, modestly increasing their plausibility as a path to robust world models."
+  },
+  {
+    "claim_i_idx": 14,
+    "claim_j_idx": 28,
+    "delta_prob": -0.2,
+    "reasoning": "Scaling and resource-driven improvements can mitigate some autoregressive failures via more data, lengthened context, and better training, reducing the necessity of entirely different architectures in the near term."
+  },
+  {
+    "claim_i_idx": 14,
+    "claim_j_idx": 29,
+    "delta_prob": -0.3,
+    "reasoning": "Claim A makes faster, investment\u2011driven leaps more plausible (including fast or discontinuous shifts), so it reduces the probability that progress will be only slow, gradual, and easily managed."
+  },
+  {
+    "claim_i_idx": 14,
+    "claim_j_idx": 30,
+    "delta_prob": 0.3,
+    "reasoning": "If self\u2011supervised scaling yields large gains cheaply, strategies that prioritize learning representations and world models over sample\u2011inefficient RL become more attractive and likely."
+  },
+  {
+    "claim_i_idx": 14,
+    "claim_j_idx": 31,
+    "delta_prob": 0.3,
+    "reasoning": "Economic pressure to deploy and iterate at scale makes an engineering, iterative approach to safety more likely (continuous improvement and guardrails) rather than a single provable one."
+  }
+]

@@ -1,0 +1,188 @@
+[
+  {
+    "claim_i_idx": 22,
+    "claim_j_idx": 0,
+    "delta_prob": -0.4,
+    "reasoning": "Claim A posits social/regulatory/physical bottlenecks that slow deployment even if technical capability exists, reducing the immediacy and likelihood of a fast, unmediated AGI/ASI race though not ruling out risk."
+  },
+  {
+    "claim_i_idx": 22,
+    "claim_j_idx": 1,
+    "delta_prob": 0.6,
+    "reasoning": "Emphasis on institutional and jurisdictional constraints and the need to address complementary governance directly supports the view that multilateral governance and coordination failures are central risks."
+  },
+  {
+    "claim_i_idx": 22,
+    "claim_j_idx": 2,
+    "delta_prob": -0.2,
+    "reasoning": "Claim A focuses on translation bottlenecks rather than raw capability trends, slightly weakening claims that capability trends alone make near-term AGI/ASI highly likely, while not denying capability evidence matters."
+  },
+  {
+    "claim_i_idx": 22,
+    "claim_j_idx": 3,
+    "delta_prob": 0.6,
+    "reasoning": "Because Claim A highlights long lead times for regulatory, social and infrastructural change, it strengthens the argument for early precautionary policy and investment despite timeline uncertainty."
+  },
+  {
+    "claim_i_idx": 22,
+    "claim_j_idx": 4,
+    "delta_prob": 0.5,
+    "reasoning": "By stressing institutional constraints and the need for complementary governance and measurement tools, Claim A supports skepticism that corporate incentives alone will yield safe outcomes."
+  },
+  {
+    "claim_i_idx": 22,
+    "claim_j_idx": 5,
+    "delta_prob": 0.3,
+    "reasoning": "Claim A's focus on jurisdictional variation, governance and misuse risk favors a cautious, democratic approach to openness rather than treating open-sourcing as an unambiguous safety strategy."
+  },
+  {
+    "claim_i_idx": 22,
+    "claim_j_idx": 6,
+    "delta_prob": 0.5,
+    "reasoning": "Claim A's recognition of regulatory and physical constraints and the need for hardware/infrastructure solutions aligns with the idea that treaties and hardware governance are useful but must be part of a layered approach."
+  },
+  {
+    "claim_i_idx": 22,
+    "claim_j_idx": 7,
+    "delta_prob": 0.5,
+    "reasoning": "If deployment is uncertain but potentially fast and costly, Claim A reinforces the reasoning that non-trivial extinction risks merit precautionary investment and policy even under deep uncertainty."
+  },
+  {
+    "claim_i_idx": 22,
+    "claim_j_idx": 8,
+    "delta_prob": -0.7,
+    "reasoning": "Claim A directly contradicts the 'event horizon/takeoff already started' framing by asserting significant bottlenecks to rapid translation of intelligence into real-world outcomes, making that doomer narrative less likely."
+  },
+  {
+    "claim_i_idx": 22,
+    "claim_j_idx": 9,
+    "delta_prob": 0.3,
+    "reasoning": "Claim A does not deny large potential benefits from AI but stresses that realizing them requires complementary infrastructure, data and reform, modestly supporting optimistic outcomes conditional on addressing those factors."
+  },
+  {
+    "claim_i_idx": 22,
+    "claim_j_idx": 10,
+    "delta_prob": -0.5,
+    "reasoning": "By highlighting physical, data and institutional constraints that limit marginal returns and deployment speed, Claim A makes fast, self-reinforcing exponential takeoff scenarios less likely."
+  },
+  {
+    "claim_i_idx": 22,
+    "claim_j_idx": 11,
+    "delta_prob": -0.4,
+    "reasoning": "Claim A implies deployment and systemic impacts depend on non-technical enablers (data, trials, regulation), which reduces confidence in precise near-term milestone timelines for widespread real-world transformation."
+  },
+  {
+    "claim_i_idx": 22,
+    "claim_j_idx": 12,
+    "delta_prob": -0.1,
+    "reasoning": "Claim A tempers unconditional predictions about the 2030s by noting constraints and complementary requirements, slightly lowering the probability that the decade will be radically different absent reforms."
+  },
+  {
+    "claim_i_idx": 22,
+    "claim_j_idx": 13,
+    "delta_prob": 0.5,
+    "reasoning": "Emphasizing that intelligence alone won't yield safe deployed outcomes supports the view that solving alignment first and preventing concentration are prerequisites for safe, widely beneficial superintelligence."
+  },
+  {
+    "claim_i_idx": 22,
+    "claim_j_idx": 14,
+    "delta_prob": -0.3,
+    "reasoning": "Claim A argues marginal returns depend on infrastructure, data and institutions, weakening claims that purely economic scaling laws will automatically produce rapid societal impact."
+  },
+  {
+    "claim_i_idx": 22,
+    "claim_j_idx": 15,
+    "delta_prob": 0.6,
+    "reasoning": "The need to address regulatory, infrastructural and measurement complements in Claim A makes public policy, governance and societal debate central to whether benefits are realized safely and equitably."
+  },
+  {
+    "claim_i_idx": 22,
+    "claim_j_idx": 16,
+    "delta_prob": -0.4,
+    "reasoning": "Claim A's bottlenecks imply that compressing decades of biomedical progress into 5\u201310 years is less likely unless specific complementary factors (data, trials, infrastructure) are solved."
+  },
+  {
+    "claim_i_idx": 22,
+    "claim_j_idx": 17,
+    "delta_prob": 0.5,
+    "reasoning": "If marginal returns and complementary factors materially affect outcomes, then instrumental policy choices can indeed change the likelihood of positive futures, supporting an instrumental focus on risks."
+  },
+  {
+    "claim_i_idx": 22,
+    "claim_j_idx": 18,
+    "delta_prob": 0.4,
+    "reasoning": "Claim A's emphasis on measurement tools and institutional readiness strengthens the case that interpretability and diagnostics are time-sensitive priorities to manage deployment safely."
+  },
+  {
+    "claim_i_idx": 22,
+    "claim_j_idx": 19,
+    "delta_prob": 0.5,
+    "reasoning": "Because Claim A calls for investment in measurement and diagnostic tools, it supports scaling interpretability research as a key complementary factor to translate capability into safe outcomes."
+  },
+  {
+    "claim_i_idx": 22,
+    "claim_j_idx": 20,
+    "delta_prob": 0.5,
+    "reasoning": "The focus on jurisdictional variation and governance constraints in Claim A aligns with the view that AI is dual-use and that democracies must proactively coordinate and secure supply chains to avoid authoritarian advantage."
+  },
+  {
+    "claim_i_idx": 22,
+    "claim_j_idx": 21,
+    "delta_prob": -0.4,
+    "reasoning": "Claim A notes that measurement, new data types, and experimental infrastructure are required to translate intelligence into deployed experimental gains, reducing the unconditional plausibility of rapid ~10x invention without those enablers."
+  },
+  {
+    "claim_i_idx": 22,
+    "claim_j_idx": 23,
+    "delta_prob": 0.6,
+    "reasoning": "Claim A explicitly recommends analyzing complementary policies and infrastructure, which supports targeted organizational steps like scaling interpretability, transparency requirements, and export controls to buy time."
+  },
+  {
+    "claim_i_idx": 22,
+    "claim_j_idx": 24,
+    "delta_prob": -0.2,
+    "reasoning": "Claim A supports concerns about concentration of power, but it also cautions about openness/market decisions and advocates democratic safeguards, weakening the claim that open-sourcing is the primary remedy."
+  },
+  {
+    "claim_i_idx": 22,
+    "claim_j_idx": 25,
+    "delta_prob": 0.4,
+    "reasoning": "By stressing that new data modalities, grounding and complementary tools are needed to convert intelligence into outcomes, Claim A bolsters the argument that autoregressive LLMs alone are insufficient for full AGI."
+  },
+  {
+    "claim_i_idx": 22,
+    "claim_j_idx": 26,
+    "delta_prob": 0.4,
+    "reasoning": "Claim A's call for new types of data and attention to physical-world constraints supports the idea that high-bandwidth sensory grounding is important for human-like intelligence and real-world competence."
+  },
+  {
+    "claim_i_idx": 22,
+    "claim_j_idx": 27,
+    "delta_prob": 0.1,
+    "reasoning": "Claim A is broadly agnostic about specific architectures but endorses approaches that address data and representation bottlenecks, giving mild support to JEPA-style methods as promising complements."
+  },
+  {
+    "claim_i_idx": 22,
+    "claim_j_idx": 28,
+    "delta_prob": 0.3,
+    "reasoning": "Claim A's focus on error modes, measurement and the limits of existing architectures makes the argument for alternative architectures and explicit critics somewhat more plausible."
+  },
+  {
+    "claim_i_idx": 22,
+    "claim_j_idx": 29,
+    "delta_prob": 0.5,
+    "reasoning": "Claim A directly reinforces the view that social, regulatory and physical bottlenecks will make a sudden, single catastrophic takeoff less probable, favoring gradual, iterative progress."
+  },
+  {
+    "claim_i_idx": 22,
+    "claim_j_idx": 30,
+    "delta_prob": 0.3,
+    "reasoning": "Claim A's emphasis on learning from observational data and building measurement/representation tools supports approaches that prioritize self-supervision and world models over sample-inefficient RL."
+  },
+  {
+    "claim_i_idx": 22,
+    "claim_j_idx": 31,
+    "delta_prob": 0.5,
+    "reasoning": "By framing translation of intelligence to outcomes as contingent on complementary fixes and iterative institutional work, Claim A favors viewing AI safety as an engineering and policy iteration problem rather than a single provable fix."
+  }
+]

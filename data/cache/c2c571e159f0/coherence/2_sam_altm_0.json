@@ -1,0 +1,188 @@
+[
+  {
+    "claim_i_idx": 8,
+    "claim_j_idx": 0,
+    "delta_prob": 0.8,
+    "reasoning": "If takeoff has started and hard barriers are largely overcome, the risk that rapidly improving systems could pursue incompatible goals becomes much more salient, increasing urgency around moral/intentional failure modes."
+  },
+  {
+    "claim_i_idx": 8,
+    "claim_j_idx": 1,
+    "delta_prob": 0.6,
+    "reasoning": "Rapid capability growth raises the odds of concentrated, unilateral deployment and competitive races, so coordination failures and the need for multilateral governance become materially more likely."
+  },
+  {
+    "claim_i_idx": 8,
+    "claim_j_idx": 2,
+    "delta_prob": 0.8,
+    "reasoning": "Empirical evidence of strong capabilities undermines skeptical heuristics that dismiss current models; demonstrated capability trends make AGI/ASI plausibility claims more credible."
+  },
+  {
+    "claim_i_idx": 8,
+    "claim_j_idx": 3,
+    "delta_prob": 0.6,
+    "reasoning": "If AGI is approaching, waiting for certainty is risky because governance and laws take long to build, so this claim about precautionary timing becomes more persuasive."
+  },
+  {
+    "claim_i_idx": 8,
+    "claim_j_idx": 4,
+    "delta_prob": 0.6,
+    "reasoning": "A near-term capability race amplifies commercial incentives to prioritize speed and profit over safety, making voluntary corporate self-restraint less plausible."
+  },
+  {
+    "claim_i_idx": 8,
+    "claim_j_idx": 5,
+    "delta_prob": 0.5,
+    "reasoning": "Stronger, more capable models raise the stakes of misuse, so arguments that open-sourcing increases attack surface and misuse risk gain weight."
+  },
+  {
+    "claim_i_idx": 8,
+    "claim_j_idx": 6,
+    "delta_prob": 0.5,
+    "reasoning": "If capabilities accelerate globally, hardware and treaty approaches become more attractive as levers, while simultaneous practical verification/circumvention challenges remain salient."
+  },
+  {
+    "claim_i_idx": 8,
+    "claim_j_idx": 7,
+    "delta_prob": 0.6,
+    "reasoning": "Observed rapid capability increases make non-negligible catastrophic risk estimates more credible, strengthening the case for precautionary policy and investment now."
+  },
+  {
+    "claim_i_idx": 8,
+    "claim_j_idx": 9,
+    "delta_prob": 0.6,
+    "reasoning": "If current systems already substantially amplify output, that supports the plausibility that AI can deliver large productivity and quality\u2011of\u2011life gains if steered well."
+  },
+  {
+    "claim_i_idx": 8,
+    "claim_j_idx": 10,
+    "delta_prob": 0.7,
+    "reasoning": "Evidence of accelerating capabilities and amplification is consistent with self-reinforcing feedback loops (AI improving AI, economic flywheels), increasing plausibility of rapid exponential acceleration."
+  },
+  {
+    "claim_i_idx": 8,
+    "claim_j_idx": 11,
+    "delta_prob": 0.4,
+    "reasoning": "Claim A raises plausibility of near-term milestones, but specific year-by-year predictions remain uncertain, so confidence increases modestly."
+  },
+  {
+    "claim_i_idx": 8,
+    "claim_j_idx": 12,
+    "delta_prob": 0.5,
+    "reasoning": "Close-to-superintelligence dynamics make large 2030s changes more likely, assuming governance doesn\u2019t catastrophically fail\u2014so societal divergence is more probable."
+  },
+  {
+    "claim_i_idx": 8,
+    "claim_j_idx": 13,
+    "delta_prob": 0.5,
+    "reasoning": "If transformative systems are imminent, alignment becomes a prerequisite before widespread cheap deployment; Claim A raises the priority of solving alignment first."
+  },
+  {
+    "claim_i_idx": 8,
+    "claim_j_idx": 14,
+    "delta_prob": 0.4,
+    "reasoning": "Observed scaling and rapidly falling marginal costs are consistent with Claim A, so the economic observations gain plausibility though precise scaling laws are empirical."
+  },
+  {
+    "claim_i_idx": 8,
+    "claim_j_idx": 15,
+    "delta_prob": 0.5,
+    "reasoning": "Faster capability growth makes public policy, governance, and distributional choices materially consequential, increasing the importance of these conversations."
+  },
+  {
+    "claim_i_idx": 8,
+    "claim_j_idx": 16,
+    "delta_prob": 0.6,
+    "reasoning": "If powerful AI is near and can be aligned, it is plausible it could compress scientific progress and deliver large human benefits\u2014Claim A makes that positive scenario more achievable."
+  },
+  {
+    "claim_i_idx": 8,
+    "claim_j_idx": 17,
+    "delta_prob": 0.6,
+    "reasoning": "When capabilities are rapidly advancing, the instrumental value of policy and technical interventions in changing outcomes becomes larger and more actionable."
+  },
+  {
+    "claim_i_idx": 8,
+    "claim_j_idx": 18,
+    "delta_prob": 0.6,
+    "reasoning": "A fast capability trajectory increases the urgency of mechanistic interpretability; if transformative systems could appear soon, interpretability timelines must accelerate or risk increases."
+  },
+  {
+    "claim_i_idx": 8,
+    "claim_j_idx": 19,
+    "delta_prob": 0.1,
+    "reasoning": "Claim A raises the demand and funding for interpretability, which slightly increases odds that progress will be pursued, but it does not itself prove interpretability is tractable."
+  },
+  {
+    "claim_i_idx": 8,
+    "claim_j_idx": 20,
+    "delta_prob": 0.5,
+    "reasoning": "Near-term powerful AI amplifies dual-use risks and geopolitical leverage, making the claim that AI won\u2019t automatically favor democracy more plausible and increasing the need for coordinated democratic strategies."
+  },
+  {
+    "claim_i_idx": 8,
+    "claim_j_idx": 21,
+    "delta_prob": 0.6,
+    "reasoning": "If AI is already amplifying output and heading toward superintelligence, its role as an autonomous scientific accelerator becomes more plausible, supporting large multipliers in invention rates."
+  },
+  {
+    "claim_i_idx": 8,
+    "claim_j_idx": 22,
+    "delta_prob": 0.3,
+    "reasoning": "Imminent capability gains make real-world frictions and bottlenecks more salient as limiting factors, but they don\u2019t overwhelmingly change the basic contention that constraints matter."
+  },
+  {
+    "claim_i_idx": 8,
+    "claim_j_idx": 23,
+    "delta_prob": 0.6,
+    "reasoning": "A near-term takeoff strengthens the case for targeted policy measures (interpretability scale-up, transparency, export controls) as useful ways to buy time and reduce risk."
+  },
+  {
+    "claim_i_idx": 8,
+    "claim_j_idx": 24,
+    "delta_prob": 0.3,
+    "reasoning": "Claim A increases the likelihood of dangerous concentration of power, but it doesn\u2019t settle whether open\u2011sourcing is the primary remedy\u2014so the overall claim gains some credibility but with caveats."
+  },
+  {
+    "claim_i_idx": 8,
+    "claim_j_idx": 25,
+    "delta_prob": -0.5,
+    "reasoning": "If current primarily autoregressive/massively scaled systems are already exceeding humans in many domains, that undercuts the claim that token predictors alone cannot be on the path to AGI."
+  },
+  {
+    "claim_i_idx": 8,
+    "claim_j_idx": 26,
+    "delta_prob": -0.4,
+    "reasoning": "Claim A suggests strong capabilities can arise without full high-bandwidth grounding yet; that weakens the necessity claim that sensory grounding is strictly required for human\u2011level intelligence."
+  },
+  {
+    "claim_i_idx": 8,
+    "claim_j_idx": 27,
+    "delta_prob": 0.1,
+    "reasoning": "A rapid capability trajectory makes alternative architectures like JEPAs more attractive and likely to be explored, but it doesn\u2019t substantially change their technical plausibility."
+  },
+  {
+    "claim_i_idx": 8,
+    "claim_j_idx": 28,
+    "delta_prob": -0.4,
+    "reasoning": "Observed strong performance of autoregressive models makes the stronger claim\u2014that token prediction fundamentally prevents robust reasoning\u2014less compelling, though hallucinations remain an issue."
+  },
+  {
+    "claim_i_idx": 8,
+    "claim_j_idx": 29,
+    "delta_prob": -0.5,
+    "reasoning": "If takeoff has already started and capabilities can accelerate quickly, the likelihood of faster, less gradual transitions (and rapid failure modes) increases, weakening claims that AGI will necessarily be slow and incremental."
+  },
+  {
+    "claim_i_idx": 8,
+    "claim_j_idx": 30,
+    "delta_prob": 0.2,
+    "reasoning": "Claim A is consistent with self-supervised scaling being central to progress and with RL playing a smaller fine\u2011tuning role, slightly increasing the plausibility of the recommended pipeline."
+  },
+  {
+    "claim_i_idx": 8,
+    "claim_j_idx": 31,
+    "delta_prob": 0.3,
+    "reasoning": "If powerful systems are imminent, expecting iterative, engineering\u2011style safety improvements (rather than a single provable fix) becomes more reasonable, raising the plausibility of this framing."
+  }
+]

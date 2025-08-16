@@ -1,0 +1,9 @@
+{
+  "doc_id": "1_yoshua_b",
+  "doc_title": "1. Yoshua Bengio: Debating AI Safety Risks",
+  "claim_idx": 3,
+  "claim": "Uncertainty about AGI timelines is not a reason to delay regulation or safety work: laws, regulatory bodies and treaties take years or decades to create, so precautionary planning and investment in safety now are rational given the non-trivial chance AGI could arrive sooner than experts expect.",
+  "veracity": 92,
+  "explanation": "Largely accurate. Empirical evidence shows lawmaking and formal rulemaking often take years (U.S. federal rulemaking commonly 1\u20134+ years from start to final rule). ([gao.gov](https://www.gao.gov/assets/a288546.html?utm_source=chatgpt.com), [everycrsreport.com](https://www.everycrsreport.com/reports/R45336.html?utm_source=chatgpt.com)) Major, complex laws and international agreements commonly take several years or longer to negotiate and implement. ([keionline.org](https://www.keionline.org/21307?utm_source=chatgpt.com), [digital-strategy.ec.europa.eu](https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai?utm_source=chatgpt.com)) Expert surveys find substantial uncertainty about AGI timing but assign non\u2011trivial near\u2011term probabilities (e.g., notable surveys giving measurable chances within the next decade\u2013few decades). ([arxiv.org](https://arxiv.org/abs/2401.02843?utm_source=chatgpt.com)) Leading scientists and organizations have publicly urged precautionary planning, moratoria, and investment in safety now. ([futureoflife.org](https://futureoflife.org/open-letter/pause-giant-ai-experiments/?utm_source=chatgpt.com)) Given those facts, the claim that uncertainty is not a good reason to delay regulatory/safety preparation is well supported (while noting some faster regulatory options exist, most durable laws, agencies, and treaties require lengthy lead times).",
+  "sources": []
+}

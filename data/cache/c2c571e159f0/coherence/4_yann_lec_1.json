@@ -1,0 +1,188 @@
+[
+  {
+    "claim_i_idx": 25,
+    "claim_j_idx": 0,
+    "delta_prob": 0.2,
+    "reasoning": "If autoregressive LLMs alone aren't the path to AGI, that doesn't remove the risk from other approaches and underscores that alignment uncertainty remains important, so urgency is still more likely."
+  },
+  {
+    "claim_i_idx": 25,
+    "claim_j_idx": 1,
+    "delta_prob": 0.3,
+    "reasoning": "Claim A implies additional components and actors will be needed to reach AGI, strengthening the case that distributed governance and coordination failures are a serious risk."
+  },
+  {
+    "claim_i_idx": 25,
+    "claim_j_idx": 2,
+    "delta_prob": -0.4,
+    "reasoning": "Saying next-token LLMs by themselves are not AGI undermines arguments that dismiss sceptics who point to \u2018just predict next word\u2019 as irrelevant; it lowers the force of claims that current trends alone make imminent AGI very likely."
+  },
+  {
+    "claim_i_idx": 25,
+    "claim_j_idx": 3,
+    "delta_prob": 0.1,
+    "reasoning": "A reduces confidence that current LLMs equal imminent AGI but does not make precautionary regulation less sensible given long lead times for lawmaking."
+  },
+  {
+    "claim_i_idx": 25,
+    "claim_j_idx": 4,
+    "delta_prob": 0.1,
+    "reasoning": "Corporate incentives remain a concern regardless of LLM limits; if more components are required for AGI, corporate pursuit of those components still creates incentive risks."
+  },
+  {
+    "claim_i_idx": 25,
+    "claim_j_idx": 5,
+    "delta_prob": -0.1,
+    "reasoning": "If LLM weights alone aren't AGI, open-sourcing them is somewhat less likely to immediately create AGI misuse, slightly lowering the urgency of the claim that openness is clearly unsafe \u2014 though tradeoffs remain."
+  },
+  {
+    "claim_i_idx": 25,
+    "claim_j_idx": 6,
+    "delta_prob": 0.1,
+    "reasoning": "Claim A reinforces that non-software elements (hardware, embodied systems) matter, supporting the idea that hardware governance is important even if verification is hard."
+  },
+  {
+    "claim_i_idx": 25,
+    "claim_j_idx": 7,
+    "delta_prob": 0.1,
+    "reasoning": "Acknowledging LLM limitations doesn't negate non-trivial extinction risks aggregated experts estimate, so precautionary policy investment remains more likely worthwhile."
+  },
+  {
+    "claim_i_idx": 25,
+    "claim_j_idx": 8,
+    "delta_prob": -0.6,
+    "reasoning": "If the dominant, widely-deployed class of models (autoregressive LLMs) lacks essential intelligence components, that weakens the claim that a takeoff is already underway and superintelligence is near."
+  },
+  {
+    "claim_i_idx": 25,
+    "claim_j_idx": 9,
+    "delta_prob": 0.2,
+    "reasoning": "Claim A admits LLMs are useful for many applications; their limitations don't preclude large productivity and scientific gains from AI more broadly."
+  },
+  {
+    "claim_i_idx": 25,
+    "claim_j_idx": 10,
+    "delta_prob": -0.1,
+    "reasoning": "A reduces the chance that autoregressive LLMs alone will trigger self-reinforcing hardware/robot loops rapidly, though such feedbacks remain plausible from other architectures."
+  },
+  {
+    "claim_i_idx": 25,
+    "claim_j_idx": 11,
+    "delta_prob": -0.4,
+    "reasoning": "If current LLMs miss planning, persistent memory, and physical understanding, the specific near-term milestones tied to LLM-driven agents and robots become less likely on the proposed timeline."
+  },
+  {
+    "claim_i_idx": 25,
+    "claim_j_idx": 12,
+    "delta_prob": -0.1,
+    "reasoning": "Longer-term transformative change is still possible, but A modestly lowers the probability that the 2030s will be as rapidly and radically different purely due to today's LLM trajectory."
+  },
+  {
+    "claim_i_idx": 25,
+    "claim_j_idx": 13,
+    "delta_prob": 0.0,
+    "reasoning": "A is consistent with alignment being a prerequisite for safe superintelligence but doesn't change the logical ordering that alignment should be solved before widespread availability."
+  },
+  {
+    "claim_i_idx": 25,
+    "claim_j_idx": 14,
+    "delta_prob": -0.2,
+    "reasoning": "Claim A weakens the inference that simple scaling of autoregressive token models alone yields rapid, decisive intelligence gains, reducing confidence in the exact economic scaling claims."
+  },
+  {
+    "claim_i_idx": 25,
+    "claim_j_idx": 15,
+    "delta_prob": 0.0,
+    "reasoning": "Limitations of LLMs don't alter the high-level point that governance and public conversation matter; A neither strengthens nor negates the normative balance proposed."
+  },
+  {
+    "claim_i_idx": 25,
+    "claim_j_idx": 16,
+    "delta_prob": 0.0,
+    "reasoning": "A doesn't rule out powerful aligned AIs arising from other architectures; it neither raises nor lowers the basic possibility that aligned superintelligence could yield huge benefits."
+  },
+  {
+    "claim_i_idx": 25,
+    "claim_j_idx": 17,
+    "delta_prob": 0.0,
+    "reasoning": "Whether LLMs are sufficient for AGI doesn't change that policy actions can influence outcomes; A leaves the instrumental rationale for focusing on AI risk intact."
+  },
+  {
+    "claim_i_idx": 25,
+    "claim_j_idx": 18,
+    "delta_prob": -0.1,
+    "reasoning": "If autoregressive LLMs aren't themselves the imminent cause of transformative systems, the urgency of interpretability before a 2026\u201327 deployment is slightly reduced, though interpretability remains important."
+  },
+  {
+    "claim_i_idx": 25,
+    "claim_j_idx": 19,
+    "delta_prob": 0.1,
+    "reasoning": "A increases the importance of techniques beyond next-token prediction (including interpretability of richer architectures), so interpretability progress remains plausibly more valuable."
+  },
+  {
+    "claim_i_idx": 25,
+    "claim_j_idx": 20,
+    "delta_prob": 0.05,
+    "reasoning": "A doesn't change AI's dual-use nature; if anything, the need to manage different modalities and architectures makes proactive democratic coordination modestly more important."
+  },
+  {
+    "claim_i_idx": 25,
+    "claim_j_idx": 21,
+    "delta_prob": -0.2,
+    "reasoning": "Because LLMs lack embodiment and physical reasoning, the specific claim that AI will soon act as fully autonomous lab scientists is somewhat less likely to be realized by language-only models."
+  },
+  {
+    "claim_i_idx": 25,
+    "claim_j_idx": 22,
+    "delta_prob": 0.3,
+    "reasoning": "A explicitly highlights that non-linguistic, institutional, and physical constraints matter, strengthening the claim that complementary factors limit how quickly intelligence maps to outcomes."
+  },
+  {
+    "claim_i_idx": 25,
+    "claim_j_idx": 23,
+    "delta_prob": 0.3,
+    "reasoning": "If LLMs alone won't solve intelligence, investing in interpretability, transparency, and targeted controls to buy time for mitigations becomes more valuable and likely to be recommended."
+  },
+  {
+    "claim_i_idx": 25,
+    "claim_j_idx": 24,
+    "delta_prob": 0.05,
+    "reasoning": "Concentration risks persist even if autoregressive LLMs aren't AGI; however A slightly undercuts the case that open-sourcing foundation LLMs is the primary remedy for concentration."
+  },
+  {
+    "claim_i_idx": 25,
+    "claim_j_idx": 26,
+    "delta_prob": 0.9,
+    "reasoning": "Claim A directly endorses the idea that language-only, next-token models lack grounding in high-bandwidth sensory experience, strongly supporting the need for embodied/sensory grounding."
+  },
+  {
+    "claim_i_idx": 25,
+    "claim_j_idx": 27,
+    "delta_prob": 0.6,
+    "reasoning": "Because A implies alternatives to autoregressive text models are needed to learn world models, approaches like JEPAs that leverage images/video become significantly more plausible paths forward."
+  },
+  {
+    "claim_i_idx": 25,
+    "claim_j_idx": 28,
+    "delta_prob": 0.7,
+    "reasoning": "A's central point that next-token models miss robust reasoning and planning aligns with the conclusion that autoregressive generation causes error accumulation and that different architectures are needed."
+  },
+  {
+    "claim_i_idx": 25,
+    "claim_j_idx": 29,
+    "delta_prob": 0.3,
+    "reasoning": "If current dominant models are incomplete and AGI requires integrating many capabilities, that supports a more gradual, iterative path rather than an abrupt one-off takeover."
+  },
+  {
+    "claim_i_idx": 25,
+    "claim_j_idx": 30,
+    "delta_prob": 0.5,
+    "reasoning": "A supports approaches that emphasize learned world models and planning over purely prediction or sample-inefficient RL, increasing the plausibility of the recommended pipeline."
+  },
+  {
+    "claim_i_idx": 25,
+    "claim_j_idx": 31,
+    "delta_prob": 0.4,
+    "reasoning": "Acknowledging that LLMs are insufficient implies safety will require iterative architectural work and engineering mitigations rather than a single provable fix, raising the probability of this view."
+  }
+]

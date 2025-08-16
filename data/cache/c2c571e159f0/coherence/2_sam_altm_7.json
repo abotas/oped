@@ -1,0 +1,188 @@
+[
+  {
+    "claim_i_idx": 15,
+    "claim_j_idx": 0,
+    "delta_prob": 0.4,
+    "reasoning": "Claim A emphasizes precautionary governance and preventing concentration, which makes taking AGI/ASI catastrophic-risk scenarios seriously more likely though it doesn't assert technical timelines."
+  },
+  {
+    "claim_i_idx": 15,
+    "claim_j_idx": 1,
+    "delta_prob": 0.8,
+    "reasoning": "A explicitly stresses multilateral governance, distribution of compute, and preventing unilateral concentration of power, strongly supporting concerns about the coordination problem."
+  },
+  {
+    "claim_i_idx": 15,
+    "claim_j_idx": 2,
+    "delta_prob": 0.0,
+    "reasoning": "A is about governance and distribution, not a technical claim about whether skeptical technical arguments are misleading, so it doesn't change that technical assessment."
+  },
+  {
+    "claim_i_idx": 15,
+    "claim_j_idx": 3,
+    "delta_prob": 0.6,
+    "reasoning": "A's emphasis that policy and governance matter and that we should act now to balance safety with empowerment makes precautionary regulation despite timeline uncertainty more likely."
+  },
+  {
+    "claim_i_idx": 15,
+    "claim_j_idx": 4,
+    "delta_prob": 0.5,
+    "reasoning": "A's distrust of concentration and call for distributed access implies skepticism that firms will self-regulate adequately, increasing the plausibility of corporate incentive problems."
+  },
+  {
+    "claim_i_idx": 15,
+    "claim_j_idx": 5,
+    "delta_prob": 0.7,
+    "reasoning": "A calls for democratic decision\u2011making about openness and balancing safety with empowerment, which supports the view that open\u2011sourcing is not unambiguously safe and must be governed."
+  },
+  {
+    "claim_i_idx": 15,
+    "claim_j_idx": 6,
+    "delta_prob": 0.6,
+    "reasoning": "A\u2019s focus on international governance and equitable distribution of compute aligns with the claim that treaties and hardware governance matter, while acknowledging the need for complementary technical and equity measures."
+  },
+  {
+    "claim_i_idx": 15,
+    "claim_j_idx": 7,
+    "delta_prob": 0.5,
+    "reasoning": "Because A prioritizes policy responses and precaution, it raises the likelihood that aggregated small probabilities should drive urgent investment and regulation."
+  },
+  {
+    "claim_i_idx": 15,
+    "claim_j_idx": 8,
+    "delta_prob": 0.0,
+    "reasoning": "A concerns governance and distribution and does not bear on the technical claim that takeoff has already started or that systems already constitute digital superintelligence."
+  },
+  {
+    "claim_i_idx": 15,
+    "claim_j_idx": 9,
+    "delta_prob": 0.5,
+    "reasoning": "A\u2019s focus on empowerment and distributing benefits implies greater likelihood that, if governed well, AI can deliver large societal gains."
+  },
+  {
+    "claim_i_idx": 15,
+    "claim_j_idx": 10,
+    "delta_prob": 0.0,
+    "reasoning": "A does not make a technical claim about recursive self\u2011improvement or economic feedback loops, so it doesn't affect their intrinsic likelihood."
+  },
+  {
+    "claim_i_idx": 15,
+    "claim_j_idx": 11,
+    "delta_prob": 0.0,
+    "reasoning": "A advocates policy readiness but does not alter the technical plausibility or timing of near\u2011term milestones."
+  },
+  {
+    "claim_i_idx": 15,
+    "claim_j_idx": 12,
+    "delta_prob": 0.4,
+    "reasoning": "A\u2019s conditional stance\u2014emphasizing governance and distribution\u2014makes scenarios where the 2030s are very different under good governance more plausible."
+  },
+  {
+    "claim_i_idx": 15,
+    "claim_j_idx": 13,
+    "delta_prob": 0.6,
+    "reasoning": "A endorses alignment and broad access concerns (avoid concentration), supporting the idea that alignment plus wide, non\u2011concentrated availability is a necessary path."
+  },
+  {
+    "claim_i_idx": 15,
+    "claim_j_idx": 14,
+    "delta_prob": 0.0,
+    "reasoning": "A is about policy and distribution; it doesn't affect empirical economic scaling laws or cost trends."
+  },
+  {
+    "claim_i_idx": 15,
+    "claim_j_idx": 16,
+    "delta_prob": 0.5,
+    "reasoning": "A's balancing of safety with empowerment and distribution makes the claim that powerful, aligned AI could radically improve humanity more plausible."
+  },
+  {
+    "claim_i_idx": 15,
+    "claim_j_idx": 17,
+    "delta_prob": 0.6,
+    "reasoning": "A explicitly argues that public policy and governance materially change outcomes, supporting the instrumentalist argument for focusing on risk\u2011reducing action."
+  },
+  {
+    "claim_i_idx": 15,
+    "claim_j_idx": 18,
+    "delta_prob": 0.2,
+    "reasoning": "A increases the plausibility of urgent investment in interpretability for governance reasons, but does not strongly change the technical timeline or necessity of interpretability."
+  },
+  {
+    "claim_i_idx": 15,
+    "claim_j_idx": 19,
+    "delta_prob": 0.0,
+    "reasoning": "A supports funding and coordination for interpretability research but does not speak to the technical tractability of interpretability itself."
+  },
+  {
+    "claim_i_idx": 15,
+    "claim_j_idx": 20,
+    "delta_prob": 0.8,
+    "reasoning": "A directly flags preventing authoritarian concentration and distributing access, strongly supporting the view that AI can empower autocracies and that democracies must coordinate."
+  },
+  {
+    "claim_i_idx": 15,
+    "claim_j_idx": 21,
+    "delta_prob": 0.2,
+    "reasoning": "A's focus on enabling broad societal benefit makes it modestly more likely that AI used well could act as an autonomous scientific accelerator, but A is primarily governance\u2011focused."
+  },
+  {
+    "claim_i_idx": 15,
+    "claim_j_idx": 22,
+    "delta_prob": 0.4,
+    "reasoning": "A acknowledges policy, social and governance constraints matter, increasing the likelihood that non\u2011technical bottlenecks will limit how fast capabilities translate into outcomes."
+  },
+  {
+    "claim_i_idx": 15,
+    "claim_j_idx": 23,
+    "delta_prob": 0.7,
+    "reasoning": "A\u2019s emphasis on policy levers, distribution of compute, and democratic oversight strongly supports targeted policy tools like transparency, interpretability scaling and export controls as useful measures."
+  },
+  {
+    "claim_i_idx": 15,
+    "claim_j_idx": 24,
+    "delta_prob": 0.2,
+    "reasoning": "A supports concern about concentration of power, but it explicitly calls for balanced openness and democratic decision\u2011making, so it is less committal to open\u2011sourcing as the primary remedy."
+  },
+  {
+    "claim_i_idx": 15,
+    "claim_j_idx": 25,
+    "delta_prob": 0.0,
+    "reasoning": "A's governance and distribution focus does not change the technical assessment of whether autoregressive LLMs alone reach AGI."
+  },
+  {
+    "claim_i_idx": 15,
+    "claim_j_idx": 26,
+    "delta_prob": 0.0,
+    "reasoning": "A does not address the sensory grounding requirements of human\u2011like intelligence, so it doesn't affect this technical claim."
+  },
+  {
+    "claim_i_idx": 15,
+    "claim_j_idx": 27,
+    "delta_prob": 0.0,
+    "reasoning": "A is agnostic about specific architectures like JEPAs; governance priorities don't alter the technical promise of particular methods."
+  },
+  {
+    "claim_i_idx": 15,
+    "claim_j_idx": 28,
+    "delta_prob": 0.0,
+    "reasoning": "A has no bearing on low\u2011level architectural causes of hallucination or whether alternative architectures are required."
+  },
+  {
+    "claim_i_idx": 15,
+    "claim_j_idx": 29,
+    "delta_prob": 0.0,
+    "reasoning": "A prescribes governance responses to risks but does not adjudicate whether takeoff will be sudden or gradual."
+  },
+  {
+    "claim_i_idx": 15,
+    "claim_j_idx": 30,
+    "delta_prob": 0.0,
+    "reasoning": "A doesn't change the technical assessment of RL sample efficiency or preferred research pipelines."
+  },
+  {
+    "claim_i_idx": 15,
+    "claim_j_idx": 31,
+    "delta_prob": 0.6,
+    "reasoning": "A's emphasis that public policy, governance, and societal conversation are central makes it more likely safety will be pursued iteratively with integrated guardrails rather than as a single provable fix."
+  }
+]

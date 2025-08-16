@@ -1,0 +1,9 @@
+{
+  "doc_id": "2_sam_altm",
+  "doc_title": "2. Sam Altman: The Gentle Singularity",
+  "claim_idx": 4,
+  "claim": "While many everyday human activities (family, creativity, leisure) will remain recognizable, the 2030s are likely to be wildly different in important ways because intelligence and energy will become abundant, enabling capabilities previously limited by those two factors\u2014assuming good governance.",
+  "veracity": 65,
+  "explanation": "Plausible but uncertain. Rapid falls in AI inference and model costs and wider availability of capable models make \u201cintelligence\u201d far more accessible\u2014and could transform many activities in the 2030s (Stanford AI Index). Likewise, solar/wind and battery costs have plunged and deployment is scaling, making much cheaper electricity increasingly attainable (IEA, IRENA). However, truly \u2018abundant\u2019 energy (e.g., commercial fusion at scale) remains promising but not guaranteed within the 2030s, and material, supply\u2011chain and engineering limits persist. Crucially, real-world outcomes depend on governance, policy and distributional choices that will shape who benefits and whether risks are managed (OECD). So the claim is directionally supported by current trends but not assured; timing, scale and social impacts remain uncertain. ([hai.stanford.edu](https://hai.stanford.edu/ai-index/2024-ai-index-report?utm_source=chatgpt.com), [iea.org](https://www.iea.org/reports/batteries-and-secure-energy-transitions/executive-summary?utm_source=chatgpt.com), [irena.org](https://www.irena.org/publications/2024/Sep/Renewable-Power-Generation-Costs-in-2023?utm_source=chatgpt.com), [oecd.org](https://www.oecd.org/en/topics/artificial-intelligence.html?utm_source=chatgpt.com), [washingtonpost.com](https://www.washingtonpost.com/climate-solutions/2025/06/23/fusion-energy-climate-science/?utm_source=chatgpt.com))",
+  "sources": []
+}

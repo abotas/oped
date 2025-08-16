@@ -32,9 +32,9 @@ def main():
     with col2:
         # Add spacing to align with title
         st.markdown("<div style='height: 20px'></div>", unsafe_allow_html=True)
-        if st.button("📚 Example", help="Machines of loving grace + Sama blog", use_container_width=True):
+        if st.button("📚 Example", help="Dario Sama Bengio Lecun on the AI and the future", use_container_width=True):
             # Load the specific cached analysis
-            cache_hash = "db6ed1d90088"
+            cache_hash = "c2c571e159f0"
             if load_cached_analysis(cache_hash):
                 config = InputConfig.load_from_cache(cache_hash)
                 st.session_state.config = config

@@ -1,0 +1,188 @@
+[
+  {
+    "claim_i_idx": 10,
+    "claim_j_idx": 0,
+    "delta_prob": 0.7,
+    "reasoning": "A asserts rapid, self-reinforcing capability growth toward cheap intelligence, which increases the likelihood we are racing to AGI/ASI and thus heightens urgency about alignment gaps."
+  },
+  {
+    "claim_i_idx": 10,
+    "claim_j_idx": 1,
+    "delta_prob": 0.6,
+    "reasoning": "Faster capability acceleration and cheaper deployment magnify the risks of unilateral AGI control, making multilateral governance and coordination more necessary and plausible."
+  },
+  {
+    "claim_i_idx": 10,
+    "claim_j_idx": 2,
+    "delta_prob": 0.6,
+    "reasoning": "If capabilities accelerate as A says, empirical capability trends matter more and common skeptical reframes that rely on slow timelines or toy explanations become less persuasive."
+  },
+  {
+    "claim_i_idx": 10,
+    "claim_j_idx": 3,
+    "delta_prob": 0.6,
+    "reasoning": "A implies short timelines are plausible, so delaying regulatory and safety work is riskier because laws and institutions take a long time to build."
+  },
+  {
+    "claim_i_idx": 10,
+    "claim_j_idx": 4,
+    "delta_prob": 0.5,
+    "reasoning": "Rapid commercial value and infrastructure scaling make corporate incentives to prioritize speed/profit over safety more likely, strengthening the claim that voluntary safety is insufficient."
+  },
+  {
+    "claim_i_idx": 10,
+    "claim_j_idx": 5,
+    "delta_prob": 0.4,
+    "reasoning": "Cheaper, widely usable models increase the harms from openly released code/weights, so openness becomes a double\u2011edged issue rather than an unambiguous safety benefit."
+  },
+  {
+    "claim_i_idx": 10,
+    "claim_j_idx": 6,
+    "delta_prob": 0.5,
+    "reasoning": "A makes hardware-and-infrastructure controls more salient as mitigation levers, but also implies adversaries may scale clandestinely, matching the claim\u2019s caveats about verification and circumvention."
+  },
+  {
+    "claim_i_idx": 10,
+    "claim_j_idx": 7,
+    "delta_prob": 0.6,
+    "reasoning": "Faster capability growth raises expected catastrophic loss in standard decision-theoretic calculations, supporting precautionary investment in safety and governance."
+  },
+  {
+    "claim_i_idx": 10,
+    "claim_j_idx": 8,
+    "delta_prob": 0.7,
+    "reasoning": "A describes a nascent recursive and economic takeoff\u2014if true, it makes the 'takeoff has started/near superintelligence' narrative substantially more plausible."
+  },
+  {
+    "claim_i_idx": 10,
+    "claim_j_idx": 9,
+    "delta_prob": 0.5,
+    "reasoning": "Rapidly accelerating AI capabilities imply large potential upside in productivity and scientific progress, increasing plausibility of major quality\u2011of\u2011life gains."
+  },
+  {
+    "claim_i_idx": 10,
+    "claim_j_idx": 11,
+    "delta_prob": 0.6,
+    "reasoning": "If A\u2019s fast exponential acceleration is true, near\u2011term milestones (agents, scientific insights, real\u2011world robots) become significantly more likely on short timelines."
+  },
+  {
+    "claim_i_idx": 10,
+    "claim_j_idx": 12,
+    "delta_prob": 0.6,
+    "reasoning": "Cheap abundant intelligence and accelerating capabilities make large societal shifts in the 2030s more probable, assuming governance doesn't catastrophically fail."
+  },
+  {
+    "claim_i_idx": 10,
+    "claim_j_idx": 13,
+    "delta_prob": 0.6,
+    "reasoning": "A predicts superintelligence becoming cheap and widespread, which strengthens the claim that alignment must be solved before broad deployment and distribution."
+  },
+  {
+    "claim_i_idx": 10,
+    "claim_j_idx": 14,
+    "delta_prob": 0.7,
+    "reasoning": "A is essentially an instantiation of these economic observations (scaling, falling marginal cost, large nonlinear value), so it strongly supports the claim."
+  },
+  {
+    "claim_i_idx": 10,
+    "claim_j_idx": 15,
+    "delta_prob": 0.5,
+    "reasoning": "Greater acceleration raises policy and governance stakes and the need to balance safety, openness, and equitable distribution, making public policy more consequential."
+  },
+  {
+    "claim_i_idx": 10,
+    "claim_j_idx": 16,
+    "delta_prob": 0.6,
+    "reasoning": "If intelligence becomes cheap and abundant rapidly, the potential for compressed scientific/medical progress and large human improvements becomes substantially more plausible."
+  },
+  {
+    "claim_i_idx": 10,
+    "claim_j_idx": 17,
+    "delta_prob": 0.5,
+    "reasoning": "A increases the leverage of policy and technical interventions over outcomes because small choices could scale enormously as capabilities accelerate."
+  },
+  {
+    "claim_i_idx": 10,
+    "claim_j_idx": 18,
+    "delta_prob": 0.6,
+    "reasoning": "Rapid capability improvement shortens the window for interpretability to catch up, making the race between capability and mechanistic understanding more urgent and plausible."
+  },
+  {
+    "claim_i_idx": 10,
+    "claim_j_idx": 19,
+    "delta_prob": 0.1,
+    "reasoning": "A increases resources and impetus for interpretability research but does not by itself establish tractability; modestly raises odds that interpretability will be pursued at scale."
+  },
+  {
+    "claim_i_idx": 10,
+    "claim_j_idx": 20,
+    "delta_prob": 0.5,
+    "reasoning": "Faster, powerful AI raises dual\u2011use geopolitical stakes, increasing the likelihood AI will be used by both democracies and authoritarians and that coordinated democratic strategy is needed."
+  },
+  {
+    "claim_i_idx": 10,
+    "claim_j_idx": 21,
+    "delta_prob": 0.6,
+    "reasoning": "If intelligence becomes cheaper and more capable, AI acting as an autonomous virtual scientist with large returns to intelligence becomes significantly more plausible."
+  },
+  {
+    "claim_i_idx": 10,
+    "claim_j_idx": 22,
+    "delta_prob": 0.0,
+    "reasoning": "A accelerates capabilities but does not directly resolve physical, regulatory, or institutional constraints; it neither strongly raises nor lowers the claim\u2019s likelihood."
+  },
+  {
+    "claim_i_idx": 10,
+    "claim_j_idx": 23,
+    "delta_prob": 0.5,
+    "reasoning": "Rapid capability growth increases the value of interpretability scaling, transparency rules, and export controls as time\u2011buying measures, making these policies more likely to be important."
+  },
+  {
+    "claim_i_idx": 10,
+    "claim_j_idx": 24,
+    "delta_prob": 0.4,
+    "reasoning": "Economic flywheels and infrastructure scaling make concentration in deep\u2011pocket firms more likely, supporting the concern about power concentration, though open\u2011source as the primary remedy is more contested."
+  },
+  {
+    "claim_i_idx": 10,
+    "claim_j_idx": 25,
+    "delta_prob": 0.4,
+    "reasoning": "A\u2019s emphasis on robots, datacenters and multi\u2011modal systems suggests that next\u2011token LLMs alone are unlikely to be the whole path to AGI, increasing support for the claim."
+  },
+  {
+    "claim_i_idx": 10,
+    "claim_j_idx": 26,
+    "delta_prob": 0.4,
+    "reasoning": "If physical robots and sensory systems are central to the accelerating stack in A, then grounding via high\u2011bandwidth sensory modalities becomes more important for human\u2011like intelligence."
+  },
+  {
+    "claim_i_idx": 10,
+    "claim_j_idx": 27,
+    "delta_prob": 0.1,
+    "reasoning": "A makes alternative architectures for efficient world models more attractive, modestly increasing the plausibility of JEPA\u2011style approaches but does not strongly imply them."
+  },
+  {
+    "claim_i_idx": 10,
+    "claim_j_idx": 28,
+    "delta_prob": 0.1,
+    "reasoning": "A\u2019s claim that capabilities will accelerate makes reliance on flawed architectures more risky, slightly raising the plausibility that new architectures are needed to avoid drift/hallucination."
+  },
+  {
+    "claim_i_idx": 10,
+    "claim_j_idx": 29,
+    "delta_prob": -0.6,
+    "reasoning": "A explicitly posits self\u2011reinforcing recursive improvement and rapid exponential takeoff, which increases the chance of faster, less gradual transitions and weakens the gradualist/doomer\u2011dismissal view."
+  },
+  {
+    "claim_i_idx": 10,
+    "claim_j_idx": 30,
+    "delta_prob": 0.3,
+    "reasoning": "A\u2019s emphasis on scaling and predictive improvements favors self\u2011supervised representation learning pipelines over sample\u2011inefficient RL as the primary route to broad capabilities."
+  },
+  {
+    "claim_i_idx": 10,
+    "claim_j_idx": 31,
+    "delta_prob": 0.2,
+    "reasoning": "Rapid capability growth makes it more likely safety will be an iterative engineering challenge requiring progressive guardrails rather than a single provable fix, though it doesn\u2019t rule out formal methods."
+  }
+]

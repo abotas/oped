@@ -1,0 +1,188 @@
+[
+  {
+    "claim_i_idx": 4,
+    "claim_j_idx": 0,
+    "delta_prob": 0.5,
+    "reasoning": "If companies will not voluntarily prioritize safety and learned behaviors can be opaque and instrumentally dangerous, that increases the urgency and plausibility of the claim that AGI/ASI could pursue incompatible goals and needs precaution."
+  },
+  {
+    "claim_i_idx": 4,
+    "claim_j_idx": 1,
+    "delta_prob": 0.7,
+    "reasoning": "Claim A directly supports the idea that unilateral corporate control is dangerous and that political/institutional coordination (multilateral governance) is required because firms won't self-restraint."
+  },
+  {
+    "claim_i_idx": 4,
+    "claim_j_idx": 2,
+    "delta_prob": 0.3,
+    "reasoning": "A undermines complacent skeptical narratives by showing that corporate deployment and demonstrated capabilities/intents matter; it doesn't itself establish capability timelines, so effect is modest."
+  },
+  {
+    "claim_i_idx": 4,
+    "claim_j_idx": 3,
+    "delta_prob": 0.7,
+    "reasoning": "If firms are unlikely to self-regulate or fully fix learned harms, delay of regulatory work is riskier \u2014 Claim A strengthens the argument for early regulation despite timeline uncertainty."
+  },
+  {
+    "claim_i_idx": 4,
+    "claim_j_idx": 5,
+    "delta_prob": 0.6,
+    "reasoning": "A implies decisions about openness should not be left to CEOs/markets since corporate incentives can favor risky releases; that supports caution about unqualified open\u2011sourcing."
+  },
+  {
+    "claim_i_idx": 4,
+    "claim_j_idx": 6,
+    "delta_prob": 0.5,
+    "reasoning": "Corporate unwillingness to self-limit increases the importance of international agreements and hardware governance as external constraints, though verification remains hard."
+  },
+  {
+    "claim_i_idx": 4,
+    "claim_j_idx": 7,
+    "delta_prob": 0.6,
+    "reasoning": "If corporate incentives make catastrophic outcomes more plausible, aggregated x-risk estimates and precautionary policy become more compelling; A raises the policy urgency implied by expert judgments."
+  },
+  {
+    "claim_i_idx": 4,
+    "claim_j_idx": 8,
+    "delta_prob": 0.0,
+    "reasoning": "Claim A concerns incentives and safety behavior, not the technical fact of whether takeoff has already begun or the current capability trajectory, so little direct effect."
+  },
+  {
+    "claim_i_idx": 4,
+    "claim_j_idx": 9,
+    "delta_prob": -0.2,
+    "reasoning": "A doesn't negate potential benefits, but corporate-centric misalignment makes it somewhat less likely those gains will be broadly and safely harnessed."
+  },
+  {
+    "claim_i_idx": 4,
+    "claim_j_idx": 10,
+    "delta_prob": 0.4,
+    "reasoning": "Profit motives and corporate reinvestment make self-reinforcing economic feedbacks (funding more AI to get more profit) more likely, increasing plausibility of rapid capability acceleration."
+  },
+  {
+    "claim_i_idx": 4,
+    "claim_j_idx": 11,
+    "delta_prob": 0.3,
+    "reasoning": "Corporate incentives to deploy capabilities quickly raise the plausibility of near-term milestones, though Claim A doesn't provide technical evidence for those specific dates."
+  },
+  {
+    "claim_i_idx": 4,
+    "claim_j_idx": 12,
+    "delta_prob": 0.0,
+    "reasoning": "Affects governance and distribution of benefits but not the basic claim that the 2030s will be different; neutral on whether changes will be positive under assumed good governance."
+  },
+  {
+    "claim_i_idx": 4,
+    "claim_j_idx": 13,
+    "delta_prob": 0.5,
+    "reasoning": "If companies won't voluntarily ensure safety before wide deployment, that reinforces the claim that alignment must be solved before making superintelligence widely available."
+  },
+  {
+    "claim_i_idx": 4,
+    "claim_j_idx": 14,
+    "delta_prob": 0.3,
+    "reasoning": "Corporate profit motives make continued heavy investment likely, which complements the economic observations driving rapid impact; A modestly raises plausibility of sustained investment."
+  },
+  {
+    "claim_i_idx": 4,
+    "claim_j_idx": 15,
+    "delta_prob": 0.6,
+    "reasoning": "A strengthens the case that policy, governance and societal input matter because firms alone cannot be trusted to prioritize public-interest outcomes."
+  },
+  {
+    "claim_i_idx": 4,
+    "claim_j_idx": 16,
+    "delta_prob": -0.5,
+    "reasoning": "While A doesn't deny the technical potential, it reduces the likelihood that powerful AI will be aligned and widely deployed for broad human benefit given corporate incentives to prioritize other goals."
+  },
+  {
+    "claim_i_idx": 4,
+    "claim_j_idx": 17,
+    "delta_prob": 0.6,
+    "reasoning": "If corporate behavior materially affects outcomes and firms won't reliably self-limit, the instrumental case for focused technical and policy actions that alter probabilities becomes stronger."
+  },
+  {
+    "claim_i_idx": 4,
+    "claim_j_idx": 18,
+    "delta_prob": 0.6,
+    "reasoning": "A supports urgency for interpretability and governance before deployment: if companies may deploy opaque systems for profit, interpretability deadlines become more critical."
+  },
+  {
+    "claim_i_idx": 4,
+    "claim_j_idx": 19,
+    "delta_prob": -0.2,
+    "reasoning": "A doesn't refute technical tractability, but corporate unwillingness or misaligned incentives make widespread scaling and resourcing of interpretability less certain, slightly reducing practical prospects."
+  },
+  {
+    "claim_i_idx": 4,
+    "claim_j_idx": 20,
+    "delta_prob": 0.6,
+    "reasoning": "Claim A reinforces the dual\u2011use and power\u2011concentration concerns: if companies pursue profit/opaque capabilities, AI could more easily be used to empower autocracies or concentrate influence."
+  },
+  {
+    "claim_i_idx": 4,
+    "claim_j_idx": 21,
+    "delta_prob": 0.0,
+    "reasoning": "A affects who deploys and how, not the technical capacity of AI to act as a virtual scientist, so it neither increases nor decreases that technical plausibility directly."
+  },
+  {
+    "claim_i_idx": 4,
+    "claim_j_idx": 22,
+    "delta_prob": 0.0,
+    "reasoning": "A speaks to governance and incentives rather than physical or intrinsic limits on translating intelligence into deployed outcomes, so little direct effect."
+  },
+  {
+    "claim_i_idx": 4,
+    "claim_j_idx": 23,
+    "delta_prob": 0.6,
+    "reasoning": "If firms won't voluntarily disclose or prioritize interpretability/safety, policy measures like mandated transparency and export controls become more necessary and plausible."
+  },
+  {
+    "claim_i_idx": 4,
+    "claim_j_idx": 24,
+    "delta_prob": 0.7,
+    "reasoning": "A directly corroborates the risk from concentration of proprietary systems and the unlikelihood companies will self-correct, strengthening the claim that concentration is a major danger."
+  },
+  {
+    "claim_i_idx": 4,
+    "claim_j_idx": 25,
+    "delta_prob": 0.0,
+    "reasoning": "A is about incentives and governance, not about whether autoregressive LLMs are sufficient for AGI, so it doesn't affect this technical architectural claim."
+  },
+  {
+    "claim_i_idx": 4,
+    "claim_j_idx": 26,
+    "delta_prob": 0.0,
+    "reasoning": "Claim A does not address whether human-like intelligence requires sensory grounding; no direct effect."
+  },
+  {
+    "claim_i_idx": 4,
+    "claim_j_idx": 27,
+    "delta_prob": 0.0,
+    "reasoning": "Affects incentive to adopt or fund particular research paths but doesn't change whether JEPAs are a promising technical approach in principle."
+  },
+  {
+    "claim_i_idx": 4,
+    "claim_j_idx": 28,
+    "delta_prob": 0.0,
+    "reasoning": "Technical limitations of autoregressive models are independent of corporate incentives; A doesn't alter the core technical claim about hallucinations/architecture."
+  },
+  {
+    "claim_i_idx": 4,
+    "claim_j_idx": 29,
+    "delta_prob": -0.5,
+    "reasoning": "If companies may deploy unsafe, opaque systems rapidly for profit and evade remedies, the risk of more abrupt or misused transitions rises \u2014 making gradualist/benign-developments less likely."
+  },
+  {
+    "claim_i_idx": 4,
+    "claim_j_idx": 30,
+    "delta_prob": 0.0,
+    "reasoning": "A addresses incentives, not the sample efficiency of RL or recommended technical pipelines, so little direct effect."
+  },
+  {
+    "claim_i_idx": 4,
+    "claim_j_idx": 31,
+    "delta_prob": -0.2,
+    "reasoning": "Claim A implies firms might not follow progressive, safety-first engineering practices voluntarily, which modestly undermines the idea that iterative engineering alone (without governance) will suffice."
+  }
+]

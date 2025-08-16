@@ -1,0 +1,188 @@
+[
+  {
+    "claim_i_idx": 1,
+    "claim_j_idx": 0,
+    "delta_prob": 0.6,
+    "reasoning": "Claim A stresses catastrophic misuse absent governance and so reinforces urgency and precaution around AGI/ASI capabilities and lack of assured safety methods."
+  },
+  {
+    "claim_i_idx": 1,
+    "claim_j_idx": 2,
+    "delta_prob": 0.3,
+    "reasoning": "A\u2019s focus on political/institutional failure makes demonstrated capabilities and intentions more salient than abstract sceptical arguments, modestly increasing plausibility of the claim."
+  },
+  {
+    "claim_i_idx": 1,
+    "claim_j_idx": 3,
+    "delta_prob": 0.8,
+    "reasoning": "If coordination failure makes unilateral wielding dangerous, the need to start regulatory/treaty work early (despite timeline uncertainty) becomes much more compelling."
+  },
+  {
+    "claim_i_idx": 1,
+    "claim_j_idx": 4,
+    "delta_prob": 0.9,
+    "reasoning": "A explicitly cites political/institutional failures and coordination problems, which directly support the idea that corporate incentives alone won\u2019t produce safety."
+  },
+  {
+    "claim_i_idx": 1,
+    "claim_j_idx": 5,
+    "delta_prob": 0.6,
+    "reasoning": "A\u2019s call for democratic, multilateral governance over unilateral corporate decisions aligns with caution about unregulated open-sourcing and the need for safeguards."
+  },
+  {
+    "claim_i_idx": 1,
+    "claim_j_idx": 6,
+    "delta_prob": 0.7,
+    "reasoning": "A endorses multilateral governance and limiting unilateral power, which supports treaty/hardware-control approaches while acknowledging their practical challenges and need for defense\u2011in\u2011depth."
+  },
+  {
+    "claim_i_idx": 1,
+    "claim_j_idx": 7,
+    "delta_prob": 0.7,
+    "reasoning": "Emphasizing catastrophic abuse risk due to governance failure makes precautionary, risk\u2011averse policy justified even under uncertainty, bolstering this claim."
+  },
+  {
+    "claim_i_idx": 1,
+    "claim_j_idx": 8,
+    "delta_prob": 0.0,
+    "reasoning": "Claim A is about governance risks and does not materially change evidence about whether an AI takeoff has already started."
+  },
+  {
+    "claim_i_idx": 1,
+    "claim_j_idx": 9,
+    "delta_prob": 0.2,
+    "reasoning": "A\u2019s concern about abuse implies AI\u2019s potential is large (good and bad), slightly increasing the plausibility of large positive gains if properly harnessed."
+  },
+  {
+    "claim_i_idx": 1,
+    "claim_j_idx": 10,
+    "delta_prob": 0.2,
+    "reasoning": "Coordination and concentration risks are most acute if self\u2011reinforcing capability loops exist, so A modestly raises the relevance of such feedback dynamics without asserting them."
+  },
+  {
+    "claim_i_idx": 1,
+    "claim_j_idx": 11,
+    "delta_prob": 0.0,
+    "reasoning": "A addresses governance and misuse, not the technical plausibility of specific near\u2011term milestones, so it has no direct effect on their likelihood."
+  },
+  {
+    "claim_i_idx": 1,
+    "claim_j_idx": 12,
+    "delta_prob": 0.1,
+    "reasoning": "Because A emphasizes governance as decisive for outcomes, it slightly increases the credibility of large societal change by the 2030s conditional on governance decisions."
+  },
+  {
+    "claim_i_idx": 1,
+    "claim_j_idx": 13,
+    "delta_prob": 0.8,
+    "reasoning": "A\u2019s insistence that unilateral wielding is unacceptable directly supports the idea that alignment then broad, non\u2011concentrated deployment are prerequisites for safe outcomes."
+  },
+  {
+    "claim_i_idx": 1,
+    "claim_j_idx": 14,
+    "delta_prob": 0.0,
+    "reasoning": "A speaks to institutional risk and governance, not to empirical scaling laws or economic return curves, so it does not change their plausibility."
+  },
+  {
+    "claim_i_idx": 1,
+    "claim_j_idx": 15,
+    "delta_prob": 0.9,
+    "reasoning": "A centrally asserts that public policy, governance and multilateral coordination are necessary to avoid catastrophic abuse, strongly boosting this claim."
+  },
+  {
+    "claim_i_idx": 1,
+    "claim_j_idx": 16,
+    "delta_prob": 0.4,
+    "reasoning": "A implies the upside of powerful AI is large if aligned and distributed safely, modestly increasing credence in transformational benefits conditional on alignment."
+  },
+  {
+    "claim_i_idx": 1,
+    "claim_j_idx": 17,
+    "delta_prob": 0.6,
+    "reasoning": "If political/institutional choices can enable or wreck outcomes, that supports the instrumentalist view that policy actions materially change the chance of positive futures."
+  },
+  {
+    "claim_i_idx": 1,
+    "claim_j_idx": 18,
+    "delta_prob": 0.4,
+    "reasoning": "A\u2019s governance urgency makes maturing interpretability and diagnostics more important as part of multilateral safeguards, raising plausibility of the time\u2011sensitive race framing."
+  },
+  {
+    "claim_i_idx": 1,
+    "claim_j_idx": 19,
+    "delta_prob": 0.0,
+    "reasoning": "A does not bear on the tractability or technical progress of interpretability research itself, only on the need to fund and deploy it under governance."
+  },
+  {
+    "claim_i_idx": 1,
+    "claim_j_idx": 20,
+    "delta_prob": 0.9,
+    "reasoning": "A\u2019s warning about catastrophic abuse and unilateral power aligns strongly with the view that AI is dual\u2011use and could bolster autocracies, so democracies must coordinate."
+  },
+  {
+    "claim_i_idx": 1,
+    "claim_j_idx": 21,
+    "delta_prob": 0.1,
+    "reasoning": "A implies big scientific upside if AI is well governed, giving slight support to claims about AI accelerating discovery, but it doesn\u2019t assert technical rates."
+  },
+  {
+    "claim_i_idx": 1,
+    "claim_j_idx": 22,
+    "delta_prob": 0.6,
+    "reasoning": "A foregrounds social and institutional constraints as central failure modes, increasing the plausibility that non\u2011technical limits matter for translating intelligence into outcomes."
+  },
+  {
+    "claim_i_idx": 1,
+    "claim_j_idx": 23,
+    "delta_prob": 0.8,
+    "reasoning": "A\u2019s emphasis on multilateral governance and preventing unilateral wielding directly supports targeted policy steps like transparency, interpretability scaling, and export controls."
+  },
+  {
+    "claim_i_idx": 1,
+    "claim_j_idx": 24,
+    "delta_prob": -0.4,
+    "reasoning": "A agrees concentration is dangerous but would more likely favor multilateral governance and controlled access than blanket open\u2011sourcing; that weakens the claim\u2019s proposed primary remedy."
+  },
+  {
+    "claim_i_idx": 1,
+    "claim_j_idx": 25,
+    "delta_prob": 0.0,
+    "reasoning": "A\u2019s institutional focus does not affect technical judgments about whether autoregressive LLMs alone suffice for AGI."
+  },
+  {
+    "claim_i_idx": 1,
+    "claim_j_idx": 26,
+    "delta_prob": 0.0,
+    "reasoning": "A does not change the technical question of whether human\u2011like intelligence requires high\u2011bandwidth sensory grounding."
+  },
+  {
+    "claim_i_idx": 1,
+    "claim_j_idx": 27,
+    "delta_prob": 0.0,
+    "reasoning": "A is agnostic on specific ML architectures like JEPAs; governance concerns neither support nor undermine their technical promise."
+  },
+  {
+    "claim_i_idx": 1,
+    "claim_j_idx": 28,
+    "delta_prob": 0.0,
+    "reasoning": "A does not affect the architectural debate about autoregressive generation versus alternative objectives; it is about governance risks."
+  },
+  {
+    "claim_i_idx": 1,
+    "claim_j_idx": 29,
+    "delta_prob": 0.0,
+    "reasoning": "Claim A does not imply a particular takeoff speed; political failure can matter in both gradual and rapid scenarios, so neutrality is appropriate."
+  },
+  {
+    "claim_i_idx": 1,
+    "claim_j_idx": 30,
+    "delta_prob": 0.0,
+    "reasoning": "A\u2019s claim about coordination and misuse does not bear on whether RL is sample\u2011inefficient or the preferred technical pipeline to general intelligence."
+  },
+  {
+    "claim_i_idx": 1,
+    "claim_j_idx": 31,
+    "delta_prob": 0.0,
+    "reasoning": "A highlights governance as a bottleneck but does not by itself change the technical view that safety may be an iterative engineering problem."
+  }
+]

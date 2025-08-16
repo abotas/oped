@@ -1,0 +1,188 @@
+[
+  {
+    "claim_i_idx": 30,
+    "claim_j_idx": 0,
+    "delta_prob": 0.3,
+    "reasoning": "A describes a concrete, plausible capability path (self-supervised world models + planning) that makes powerful AI more attainable and thus raises urgency about misuse and alignment."
+  },
+  {
+    "claim_i_idx": 30,
+    "claim_j_idx": 1,
+    "delta_prob": 0.2,
+    "reasoning": "If representation+model-based routes (easier to scale than RL) accelerate capabilities, the coordination/governance problem becomes more pressing; A does not conflict with this concern."
+  },
+  {
+    "claim_i_idx": 30,
+    "claim_j_idx": 2,
+    "delta_prob": 0.4,
+    "reasoning": "A rejects RL-as-primary and points to alternative capability routes that are already productive, supporting the view that demonstrated capabilities (not reductive scepticism) drive x-risk relevance."
+  },
+  {
+    "claim_i_idx": 30,
+    "claim_j_idx": 3,
+    "delta_prob": 0.3,
+    "reasoning": "By indicating a realistic, non\u2011RL path to powerful systems, A increases the prudence of early regulation and safety work despite timeline uncertainty."
+  },
+  {
+    "claim_i_idx": 30,
+    "claim_j_idx": 4,
+    "delta_prob": 0.2,
+    "reasoning": "A implies more accessible routes to capability (self\u2011supervision, planning), which could amplify corporate incentives to deploy powerful systems and thus supports skepticism about voluntary safety."
+  },
+  {
+    "claim_i_idx": 30,
+    "claim_j_idx": 5,
+    "delta_prob": 0.1,
+    "reasoning": "A doesn\u2019t directly address openness, but by highlighting dual-use model capabilities it modestly supports caution about unrestricted open\u2011sourcing."
+  },
+  {
+    "claim_i_idx": 30,
+    "claim_j_idx": 6,
+    "delta_prob": 0.1,
+    "reasoning": "If model\u2011based approaches lower barriers, hardware and international governance become more relevant; A modestly increases the plausibility that such measures are needed alongside defenses."
+  },
+  {
+    "claim_i_idx": 30,
+    "claim_j_idx": 7,
+    "delta_prob": 0.3,
+    "reasoning": "A raises the plausibility of relatively near\u2011term capability advances via non\u2011RL routes, lending weight to precautionary policymaking justified by non\u2011negligible x\u2011risk estimates."
+  },
+  {
+    "claim_i_idx": 30,
+    "claim_j_idx": 8,
+    "delta_prob": 0.1,
+    "reasoning": "A describes a credible capability pathway that makes continued rapid progress plausible, but it does not assert we are already past an irreversible \u2018event horizon\u2019, so effect is small."
+  },
+  {
+    "claim_i_idx": 30,
+    "claim_j_idx": 9,
+    "delta_prob": 0.3,
+    "reasoning": "A\u2019s emphasis on rich world models and planning aligns with the idea that AI can materially accelerate scientific and productive tasks if aligned and deployed."
+  },
+  {
+    "claim_i_idx": 30,
+    "claim_j_idx": 10,
+    "delta_prob": 0.3,
+    "reasoning": "Model-based, self\u2011supervised methods and cheaper inference/planning can feed back into faster development and deployment, supporting the plausibility of reinforcing capability/economic loops."
+  },
+  {
+    "claim_i_idx": 30,
+    "claim_j_idx": 11,
+    "delta_prob": 0.2,
+    "reasoning": "A makes certain capability advances (agents using world models and planning) more plausible in the near term, slightly increasing credibility of near\u2011term milestones, though it doesn't fix dates."
+  },
+  {
+    "claim_i_idx": 30,
+    "claim_j_idx": 12,
+    "delta_prob": 0.2,
+    "reasoning": "If A\u2019s pipeline yields broad capability growth, it supports the view that the 2030s could be markedly different; A itself is agnostic about social outcomes or timing nuances."
+  },
+  {
+    "claim_i_idx": 30,
+    "claim_j_idx": 13,
+    "delta_prob": 0.3,
+    "reasoning": "A implicitly elevates alignment importance by recommending cautious RL and model\u2011centric methods, reinforcing that robust alignment and equitable access are prerequisites for positive outcomes."
+  },
+  {
+    "claim_i_idx": 30,
+    "claim_j_idx": 14,
+    "delta_prob": 0.1,
+    "reasoning": "A is mainly technical and doesn't speak directly to economic scaling laws, but model/value gains from better representations slightly bolster arguments about high leverage from investment."
+  },
+  {
+    "claim_i_idx": 30,
+    "claim_j_idx": 15,
+    "delta_prob": 0.2,
+    "reasoning": "A\u2019s plausible capability pathway strengthens the case that policy and governance will materially affect outcomes and should shape how these technologies are developed and distributed."
+  },
+  {
+    "claim_i_idx": 30,
+    "claim_j_idx": 16,
+    "delta_prob": 0.3,
+    "reasoning": "By proposing scalable, generalizable world models and planning, A increases plausibility that powerful, transformative AI systems could be built and deliver large benefits if aligned."
+  },
+  {
+    "claim_i_idx": 30,
+    "claim_j_idx": 17,
+    "delta_prob": 0.2,
+    "reasoning": "A suggests concrete technical choices can alter development trajectories (e.g., favoring self\u2011supervision over brute\u2011force RL), supporting the instrumentalist policy argument."
+  },
+  {
+    "claim_i_idx": 30,
+    "claim_j_idx": 18,
+    "delta_prob": 0.1,
+    "reasoning": "A emphasizes different technical priorities (representation/world models) which modestly raises the importance of interpretability, but it does not strongly constrain timelines for interpretability progress."
+  },
+  {
+    "claim_i_idx": 30,
+    "claim_j_idx": 19,
+    "delta_prob": 0.1,
+    "reasoning": "If industry pivots toward world models and structured representations, interpretability research becomes more useful and relevant\u2014so A slightly increases belief that interpretability progress is impactful."
+  },
+  {
+    "claim_i_idx": 30,
+    "claim_j_idx": 20,
+    "delta_prob": 0.1,
+    "reasoning": "A increases plausibility of powerful, dual\u2011use AI systems via non\u2011RL routes, modestly supporting the claim that outcomes depend on governance and that AI can empower both democracies and autocracies."
+  },
+  {
+    "claim_i_idx": 30,
+    "claim_j_idx": 21,
+    "delta_prob": 0.3,
+    "reasoning": "World models and planning at inference are precisely the sorts of architectures likely to enable autonomous scientific design and experimentation, so A strengthens this claim's plausibility."
+  },
+  {
+    "claim_i_idx": 30,
+    "claim_j_idx": 22,
+    "delta_prob": 0.0,
+    "reasoning": "A focuses on a technical development path and is largely neutral about higher\u2011level constraints (regulatory, physical, institutional) that will limit deployment speed."
+  },
+  {
+    "claim_i_idx": 30,
+    "claim_j_idx": 23,
+    "delta_prob": 0.2,
+    "reasoning": "A\u2019s emphasis on model\u2011centric safety and cautious RL use reinforces the value of interpretability, transparency, and export controls as pragmatic measures to buy time for mitigations."
+  },
+  {
+    "claim_i_idx": 30,
+    "claim_j_idx": 24,
+    "delta_prob": 0.0,
+    "reasoning": "A neither endorses nor rejects open\u2011sourcing or argues that decentralization is the primary remedy for concentration of power, so its effect on this claim is neutral."
+  },
+  {
+    "claim_i_idx": 30,
+    "claim_j_idx": 25,
+    "delta_prob": 0.6,
+    "reasoning": "A directly argues that prediction\u2011only (especially RL\u2011centric) approaches are insufficient and advocates richer world models and planning, strongly supporting the claim that autoregressive LLMs alone are not the path to AGI."
+  },
+  {
+    "claim_i_idx": 30,
+    "claim_j_idx": 26,
+    "delta_prob": 0.6,
+    "reasoning": "A explicitly recommends learning from observation and building world models\u2014this directly supports the idea that high\u2011bandwidth sensory grounding is important for human\u2011like intelligence."
+  },
+  {
+    "claim_i_idx": 30,
+    "claim_j_idx": 27,
+    "delta_prob": 0.5,
+    "reasoning": "A endorses self\u2011supervised learning of predictive representations and world models; JEPAs are a concrete instantiation of that approach, so A substantially increases their plausibility as a path."
+  },
+  {
+    "claim_i_idx": 30,
+    "claim_j_idx": 28,
+    "delta_prob": 0.4,
+    "reasoning": "A criticizes relying on RL and advocates planning in learned model space, which aligns with the claim that token\u2011predictors have limitations (hallucination) and alternative architectures are needed."
+  },
+  {
+    "claim_i_idx": 30,
+    "claim_j_idx": 29,
+    "delta_prob": 0.3,
+    "reasoning": "A prescribes a staged pipeline (representation \u2192 world model \u2192 planning \u2192 selective RL), which implies incremental engineering progress rather than a single abrupt takeover, supporting a gradualist view."
+  },
+  {
+    "claim_i_idx": 30,
+    "claim_j_idx": 31,
+    "delta_prob": 0.4,
+    "reasoning": "A frames development as a methodological pipeline with iterative corrections (self\u2011supervision, planning, selective RL), aligning well with the view that safety will be an iterative engineering process."
+  }
+]

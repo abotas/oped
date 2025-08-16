@@ -1,0 +1,188 @@
+[
+  {
+    "claim_i_idx": 21,
+    "claim_j_idx": 0,
+    "delta_prob": 0.6,
+    "reasoning": "If AI can autonomously design and run experiments and greatly speed invention, timelines to AGI/ASI shorten and the stakes of misalignment rise, making the claim about urgent attention more likely."
+  },
+  {
+    "claim_i_idx": 21,
+    "claim_j_idx": 1,
+    "delta_prob": 0.5,
+    "reasoning": "Faster, widely useful lab automation amplifies incentives to deploy powerful systems and makes unilateral wielding of AGI more dangerous, increasing the need for multilateral governance."
+  },
+  {
+    "claim_i_idx": 21,
+    "claim_j_idx": 2,
+    "delta_prob": 0.6,
+    "reasoning": "Demonstrated autonomous scientific capability undercuts skeptical appeals to \u2018\u2018merely statistical\u2019\u2019 or distant-AGI arguments by showing capability trends that matter for x-risk."
+  },
+  {
+    "claim_i_idx": 21,
+    "claim_j_idx": 3,
+    "delta_prob": 0.6,
+    "reasoning": "If AI can materially accelerate invention, uncertainty about timelines becomes a weaker excuse to delay regulation because capability arrival could be sooner than expected."
+  },
+  {
+    "claim_i_idx": 21,
+    "claim_j_idx": 4,
+    "delta_prob": 0.5,
+    "reasoning": "Greater practical value from deploying powerful autonomous lab AIs heightens corporate pressure to push capabilities, making voluntary purely-safe behavior by firms less likely."
+  },
+  {
+    "claim_i_idx": 21,
+    "claim_j_idx": 5,
+    "delta_prob": 0.4,
+    "reasoning": "Autonomous wet\u2011lab/biotech capabilities make misuse and irreversible release more consequential, strengthening the case that open\u2011sourcing is not an unambiguous safety win."
+  },
+  {
+    "claim_i_idx": 21,
+    "claim_j_idx": 6,
+    "delta_prob": 0.4,
+    "reasoning": "Increased global capability from autonomous scientific AIs raises the importance of treaties and hardware governance while also highlighting verification and circumvention risks."
+  },
+  {
+    "claim_i_idx": 21,
+    "claim_j_idx": 7,
+    "delta_prob": 0.5,
+    "reasoning": "A material increase in pace and impact of AI reduces expected time to high\u2011stakes outcomes, reinforcing precautionary policies based on non\u2011negligible extinction risk estimates."
+  },
+  {
+    "claim_i_idx": 21,
+    "claim_j_idx": 8,
+    "delta_prob": 0.3,
+    "reasoning": "Claim A supports the idea that a takeoff has begun in some domains (science/biotech), making the \u2018\u2018past event horizon\u2019\u2019 view somewhat more plausible, though not definitive for full superintelligence."
+  },
+  {
+    "claim_i_idx": 21,
+    "claim_j_idx": 9,
+    "delta_prob": 0.7,
+    "reasoning": "Directly accelerating discovery in medicine, materials and biology implies large potential quality\u2011of\u2011life gains if those capabilities are steered toward beneficial uses."
+  },
+  {
+    "claim_i_idx": 21,
+    "claim_j_idx": 10,
+    "delta_prob": 0.6,
+    "reasoning": "Autonomous experimentalists create self\u2011reinforcing loops (faster science \u2192 better tools \u2192 faster science), increasing plausibility of rapid capability acceleration and falling marginal costs."
+  },
+  {
+    "claim_i_idx": 21,
+    "claim_j_idx": 11,
+    "delta_prob": 0.4,
+    "reasoning": "Claim A makes near\u2011term milestones like AI generating novel scientific insights more likely, though precise year-by-year predictions remain uncertain."
+  },
+  {
+    "claim_i_idx": 21,
+    "claim_j_idx": 12,
+    "delta_prob": 0.5,
+    "reasoning": "Substantially faster scientific/technical progress makes large 2030s changes more plausible, assuming governance and complementary resources allow deployment."
+  },
+  {
+    "claim_i_idx": 21,
+    "claim_j_idx": 13,
+    "delta_prob": 0.4,
+    "reasoning": "If autonomous AIs can cheaply produce transformative capability, solving alignment before widespread diffusion becomes more critical and more urgent."
+  },
+  {
+    "claim_i_idx": 21,
+    "claim_j_idx": 14,
+    "delta_prob": 0.3,
+    "reasoning": "Autonomous lab AIs increase returns on compute/data investment, consistent with economic observations about scaling and falling marginal cost, though they don't prove the exact scaling laws."
+  },
+  {
+    "claim_i_idx": 21,
+    "claim_j_idx": 15,
+    "delta_prob": 0.5,
+    "reasoning": "Higher stakes from accelerated discovery increase the importance of public policy, governance and distributional mechanisms to shape outcomes."
+  },
+  {
+    "claim_i_idx": 21,
+    "claim_j_idx": 16,
+    "delta_prob": 0.7,
+    "reasoning": "Directly compressing decades of biological and medical R&D via autonomous experimentation makes the claim that aligned powerful AI could rapidly deliver huge health gains substantially more plausible."
+  },
+  {
+    "claim_i_idx": 21,
+    "claim_j_idx": 17,
+    "delta_prob": 0.4,
+    "reasoning": "When policy choices can materially change whether accelerated AI yields good or bad outcomes, instrumental reasons to focus on risk and governance become stronger."
+  },
+  {
+    "claim_i_idx": 21,
+    "claim_j_idx": 18,
+    "delta_prob": 0.5,
+    "reasoning": "Rapid capability growth from autonomous scientific AIs raises the urgency for interpretability; the window to develop those tools before deployment is likely to shrink."
+  },
+  {
+    "claim_i_idx": 21,
+    "claim_j_idx": 19,
+    "delta_prob": 0.2,
+    "reasoning": "Claim A increases demand and funding for interpretability but doesn\u2019t by itself show tractability; it modestly raises the chance interpretability gets scaled successfully."
+  },
+  {
+    "claim_i_idx": 21,
+    "claim_j_idx": 20,
+    "delta_prob": 0.4,
+    "reasoning": "Dual\u2011use autonomous lab capabilities can benefit both democracies and authoritarian regimes, making the claim about non\u2011automatic democratic benefits more likely."
+  },
+  {
+    "claim_i_idx": 21,
+    "claim_j_idx": 22,
+    "delta_prob": 0.3,
+    "reasoning": "Even with faster AI science, real\u2011world constraints (infrastructure, trials, law) will still matter; Claim A suggests large gains but does not eliminate these bottlenecks."
+  },
+  {
+    "claim_i_idx": 21,
+    "claim_j_idx": 23,
+    "delta_prob": 0.5,
+    "reasoning": "If autonomous AIs accelerate capabilities, targeted policy measures (interpretability funding, disclosure, export controls) become more valuable as ways to buy time and reduce risk."
+  },
+  {
+    "claim_i_idx": 21,
+    "claim_j_idx": 24,
+    "delta_prob": 0.3,
+    "reasoning": "High\u2011end lab automation tends to concentrate power among well\u2011resourced actors, increasing the danger of concentration; however, open\u2011sourcing as the primary remedy is conflicted by misuse risks."
+  },
+  {
+    "claim_i_idx": 21,
+    "claim_j_idx": 25,
+    "delta_prob": 0.5,
+    "reasoning": "Claim A implies intelligence tied to autonomous experimental interaction and embodied intervention, supporting the view that token\u2011prediction LLMs alone aren\u2019t the full path to AGI."
+  },
+  {
+    "claim_i_idx": 21,
+    "claim_j_idx": 26,
+    "delta_prob": 0.4,
+    "reasoning": "Autonomous scientific AIs will rely on rich sensory and measurement data (lab instruments, imaging), reinforcing the importance of high\u2011bandwidth nonlinguistic grounding for robust intelligence."
+  },
+  {
+    "claim_i_idx": 21,
+    "claim_j_idx": 27,
+    "delta_prob": 0.2,
+    "reasoning": "Autonomous real\u2011world learning favors architectures that build predictive world models; this modestly increases the plausibility of JEPA\u2011style approaches without proving they are best."
+  },
+  {
+    "claim_i_idx": 21,
+    "claim_j_idx": 28,
+    "delta_prob": 0.3,
+    "reasoning": "Real\u2011world experimentation demands robust long\u2011horizon reasoning and fewer hallucinations, lending support to arguments that next\u2011token autoregressive models are insufficient alone."
+  },
+  {
+    "claim_i_idx": 21,
+    "claim_j_idx": 29,
+    "delta_prob": 0.3,
+    "reasoning": "Autonomous, iterative experimentation suggests progress will often be incremental and engineering\u2011driven, making purely sudden catastrophic one\u2011step takeoffs somewhat less likely, though rapid cascades remain possible."
+  },
+  {
+    "claim_i_idx": 21,
+    "claim_j_idx": 30,
+    "delta_prob": 0.4,
+    "reasoning": "Scaling self\u2011supervised world models and planning fits with autonomous experimentalists' needs, increasing the plausibility that RL is not the primary route to general intelligence."
+  },
+  {
+    "claim_i_idx": 21,
+    "claim_j_idx": 31,
+    "delta_prob": 0.4,
+    "reasoning": "Claim A favors an engineering, test\u2011and\u2011refine approach to high\u2011stakes systems (deploy, observe, iterate), making the iterative\u2011engineering view of AI safety more plausible."
+  }
+]

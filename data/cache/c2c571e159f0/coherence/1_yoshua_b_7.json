@@ -1,0 +1,188 @@
+[
+  {
+    "claim_i_idx": 7,
+    "claim_j_idx": 0,
+    "delta_prob": 0.5,
+    "reasoning": "Claim A accepts expert extinction estimates and urges precaution, which increases plausibility that AGI/ASI progress and lack of reliable assurance are urgent concerns."
+  },
+  {
+    "claim_i_idx": 7,
+    "claim_j_idx": 1,
+    "delta_prob": 0.5,
+    "reasoning": "Advocating multilateral oversight and urgent regulation implies skepticism that unilateral actors can be trusted or coordinated, making institutional/coordination failure more likely."
+  },
+  {
+    "claim_i_idx": 7,
+    "claim_j_idx": 2,
+    "delta_prob": 0.5,
+    "reasoning": "If expert judgments imply non\u2011negligible x\u2011risk and call for precaution, skeptical minimizations of capability/intent are less persuasive and empirical trends gain weight."
+  },
+  {
+    "claim_i_idx": 7,
+    "claim_j_idx": 3,
+    "delta_prob": 1.0,
+    "reasoning": "Claim A explicitly states uncertainty is not a reason to delay and calls for urgent law/regulation/treaties, directly supporting this claim."
+  },
+  {
+    "claim_i_idx": 7,
+    "claim_j_idx": 4,
+    "delta_prob": 0.5,
+    "reasoning": "Calling for regulation and oversight presumes corporate incentives alone are insufficient, increasing the likelihood corporate self\u2011regulation is unrealistic."
+  },
+  {
+    "claim_i_idx": 7,
+    "claim_j_idx": 5,
+    "delta_prob": 0.3,
+    "reasoning": "Precautionary stance and multilateral oversight favor cautious openness decisions, so the view that open\u2011sourcing isn\u2019t an unambiguous safety win becomes somewhat more likely."
+  },
+  {
+    "claim_i_idx": 7,
+    "claim_j_idx": 6,
+    "delta_prob": 0.4,
+    "reasoning": "Support for multilateral governance and hardware restraints aligns with treating international treaties and chip controls as important, though Claim A doesn\u2019t detail verification challenges."
+  },
+  {
+    "claim_i_idx": 7,
+    "claim_j_idx": 8,
+    "delta_prob": 0.0,
+    "reasoning": "Claim A argues for precaution given non\u2011negligible risk but does not by itself assert a completed takeoff or that lowest\u2011probability barriers are overcome."
+  },
+  {
+    "claim_i_idx": 7,
+    "claim_j_idx": 9,
+    "delta_prob": 0.0,
+    "reasoning": "Claim A focuses on risk and precaution; it does not affect the independent plausibility of large net benefits from AI if aligned."
+  },
+  {
+    "claim_i_idx": 7,
+    "claim_j_idx": 10,
+    "delta_prob": 0.0,
+    "reasoning": "The argument for precaution doesn\u2019t directly change the technical likelihood of recursive feedback loops driving costs toward electricity."
+  },
+  {
+    "claim_i_idx": 7,
+    "claim_j_idx": 11,
+    "delta_prob": 0.0,
+    "reasoning": "Claim A\u2019s endorsement of urgent safety action doesn\u2019t provide direct evidence for specific near\u2011term milestone timings."
+  },
+  {
+    "claim_i_idx": 7,
+    "claim_j_idx": 12,
+    "delta_prob": 0.0,
+    "reasoning": "Precautionary policy recommendations don\u2019t alter the independent claim about broad 2030s societal changes under abundant intelligence and energy."
+  },
+  {
+    "claim_i_idx": 7,
+    "claim_j_idx": 13,
+    "delta_prob": 0.6,
+    "reasoning": "Claim A prioritizes alignment research and multilateral oversight, increasing the probability that solving alignment is seen as a precondition before safe diffusion of superintelligence."
+  },
+  {
+    "claim_i_idx": 7,
+    "claim_j_idx": 14,
+    "delta_prob": 0.2,
+    "reasoning": "Accepting non\u2011negligible x\u2011risk based on expert trends modestly supports the idea that scaling/resource economics are driving rapid impact, but Claim A doesn\u2019t endorse the specific quantitative observations."
+  },
+  {
+    "claim_i_idx": 7,
+    "claim_j_idx": 15,
+    "delta_prob": 0.6,
+    "reasoning": "Claim A\u2019s call for policy, regulation, and multilateral oversight directly increases the plausibility that public policy and governance choices matter greatly."
+  },
+  {
+    "claim_i_idx": 7,
+    "claim_j_idx": 16,
+    "delta_prob": 0.0,
+    "reasoning": "Claim A\u2019s focus on preventing catastrophic outcomes does not by itself change the technical plausibility or magnitude of potential positive impacts if systems are aligned."
+  },
+  {
+    "claim_i_idx": 7,
+    "claim_j_idx": 17,
+    "delta_prob": 0.5,
+    "reasoning": "Claim A is instrumentalist\u2014arguing that policy and investment can change expected losses\u2014so it raises the likelihood that policy actions materially affect outcomes."
+  },
+  {
+    "claim_i_idx": 7,
+    "claim_j_idx": 18,
+    "delta_prob": 0.3,
+    "reasoning": "Calling for urgent safety research makes it more plausible that mechanistic interpretability is an important mitigation path, though Claim A doesn\u2019t commit to the tight timeline."
+  },
+  {
+    "claim_i_idx": 7,
+    "claim_j_idx": 19,
+    "delta_prob": 0.2,
+    "reasoning": "Support for scaling safety research modestly raises the chance that interpretability is tractable and worth funding, but Claim A doesn\u2019t claim it\u2019s solved."
+  },
+  {
+    "claim_i_idx": 7,
+    "claim_j_idx": 20,
+    "delta_prob": 0.5,
+    "reasoning": "A precautionary, multilateral governance stance implies concern that AI can empower authoritarian uses, increasing plausibility that democracies must coordinate."
+  },
+  {
+    "claim_i_idx": 7,
+    "claim_j_idx": 21,
+    "delta_prob": 0.0,
+    "reasoning": "Claim A\u2019s risk\u2011focused argument doesn\u2019t bear directly on whether AI will act as an autonomous virtual scientist with outsized returns."
+  },
+  {
+    "claim_i_idx": 7,
+    "claim_j_idx": 22,
+    "delta_prob": 0.1,
+    "reasoning": "Urging regulation and cautious rollout slightly increases attention to social/regulatory constraints limiting translation of intelligence to outcomes, but it\u2019s a modest effect."
+  },
+  {
+    "claim_i_idx": 7,
+    "claim_j_idx": 23,
+    "delta_prob": 0.7,
+    "reasoning": "Claim A explicitly calls for urgent safety research, regulation and multilateral oversight, so targeted policies like scaling interpretability, disclosures and export controls become substantially more likely."
+  },
+  {
+    "claim_i_idx": 7,
+    "claim_j_idx": 24,
+    "delta_prob": 0.2,
+    "reasoning": "Claim A\u2019s emphasis on oversight makes concentration of power a more salient risk, but it does not necessarily endorse open\u2011sourcing as the primary remedy, so net support is modest."
+  },
+  {
+    "claim_i_idx": 7,
+    "claim_j_idx": 25,
+    "delta_prob": 0.0,
+    "reasoning": "Claim A\u2019s precautionary conclusion does not depend on a particular claim about autoregressive LLMs\u2019 sufficiency for AGI, so it leaves this technical claim unchanged."
+  },
+  {
+    "claim_i_idx": 7,
+    "claim_j_idx": 26,
+    "delta_prob": 0.0,
+    "reasoning": "The assertion about non\u2011linguistic grounding for human\u2011like intelligence is a technical hypothesis unaffected by a precautionary policy stance."
+  },
+  {
+    "claim_i_idx": 7,
+    "claim_j_idx": 27,
+    "delta_prob": 0.0,
+    "reasoning": "Claim A\u2019s policy focus doesn\u2019t change the technical plausibility of JEPAs as a promising research path."
+  },
+  {
+    "claim_i_idx": 7,
+    "claim_j_idx": 28,
+    "delta_prob": 0.0,
+    "reasoning": "The precautionary argument doesn\u2019t directly support or refute architectural claims about autoregressive generation vs. latent/energy models."
+  },
+  {
+    "claim_i_idx": 7,
+    "claim_j_idx": 29,
+    "delta_prob": -0.6,
+    "reasoning": "If experts\u2019 aggregated judgments imply non\u2011negligible extinction risk and urgent precaution is warranted, that makes confidently dismissing rapid catastrophic takeoff scenarios less credible."
+  },
+  {
+    "claim_i_idx": 7,
+    "claim_j_idx": 30,
+    "delta_prob": 0.0,
+    "reasoning": "Claim A does not adjudicate whether RL will be the primary route to general intelligence, so it leaves this technical preference unchanged."
+  },
+  {
+    "claim_i_idx": 7,
+    "claim_j_idx": 31,
+    "delta_prob": 0.4,
+    "reasoning": "Calling for urgent, iterative safety research and regulation makes it more likely that safety will be treated as an engineering, iterative process requiring ongoing guardrails and testing."
+  }
+]

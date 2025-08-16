@@ -1,0 +1,188 @@
+[
+  {
+    "claim_i_idx": 2,
+    "claim_j_idx": 0,
+    "delta_prob": 0.8,
+    "reasoning": "A affirms short\u2011term plausibility of AGI and highlights intentions, which strongly supports urgency about potential goal misalignment and need for precautions."
+  },
+  {
+    "claim_i_idx": 2,
+    "claim_j_idx": 1,
+    "delta_prob": 0.6,
+    "reasoning": "If AGI is plausibly near and intentions matter, coordination failures become a salient risk and multilateral governance more likely necessary."
+  },
+  {
+    "claim_i_idx": 2,
+    "claim_j_idx": 3,
+    "delta_prob": 0.7,
+    "reasoning": "A's emphasis on empirical trends and plausible short timelines makes early regulatory/safety work and precautionary planning more rational."
+  },
+  {
+    "claim_i_idx": 2,
+    "claim_j_idx": 4,
+    "delta_prob": 0.4,
+    "reasoning": "Plausible near\u2011term AGI increases the relevance of corporate incentive problems, though A doesn't directly address firms' motives."
+  },
+  {
+    "claim_i_idx": 2,
+    "claim_j_idx": 5,
+    "delta_prob": 0.3,
+    "reasoning": "Greater concern about capabilities and misuse raises the salience of openness tradeoffs, making arguments against unrestricted open\u2011sourcing more likely."
+  },
+  {
+    "claim_i_idx": 2,
+    "claim_j_idx": 6,
+    "delta_prob": 0.5,
+    "reasoning": "If AGI is plausible soon, international and hardware governance become more important, though practical challenges remain."
+  },
+  {
+    "claim_i_idx": 2,
+    "claim_j_idx": 7,
+    "delta_prob": 0.7,
+    "reasoning": "A supports treating non\u2011negligible x\u2011risk estimates as actionable rather than dismissible, bolstering precautionary policy recommendations."
+  },
+  {
+    "claim_i_idx": 2,
+    "claim_j_idx": 8,
+    "delta_prob": 0.3,
+    "reasoning": "A increases plausibility of rapid progress but does not by itself prove we are already past an irreversible 'event horizon', so support is modest."
+  },
+  {
+    "claim_i_idx": 2,
+    "claim_j_idx": 9,
+    "delta_prob": 0.4,
+    "reasoning": "Empirical capability trends making AGI plausible also increase credibility that AI could drive large productivity and scientific gains if well\u2011directed."
+  },
+  {
+    "claim_i_idx": 2,
+    "claim_j_idx": 10,
+    "delta_prob": 0.5,
+    "reasoning": "A's focus on capability trends makes recursive/self\u2011reinforcing acceleration more plausible as a mechanism for rapid capability growth."
+  },
+  {
+    "claim_i_idx": 2,
+    "claim_j_idx": 11,
+    "delta_prob": 0.6,
+    "reasoning": "Claim A's short\u2011timeframe plausibility raises the prior probability of specific near\u2011term milestones occurring, though dates are uncertain."
+  },
+  {
+    "claim_i_idx": 2,
+    "claim_j_idx": 12,
+    "delta_prob": 0.5,
+    "reasoning": "If intelligence capabilities are plausibly near\u2011term, major 2030s transformations become more likely, conditional on deployment and governance."
+  },
+  {
+    "claim_i_idx": 2,
+    "claim_j_idx": 13,
+    "delta_prob": 0.6,
+    "reasoning": "A highlights the centrality of intentions/alignment and plausibility of superintelligence, supporting alignment as a prerequisite to safe diffusion."
+  },
+  {
+    "claim_i_idx": 2,
+    "claim_j_idx": 14,
+    "delta_prob": 0.4,
+    "reasoning": "Empirical trends in A make economic scaling arguments more credible, though A doesn't fully specify those three technical/economic claims."
+  },
+  {
+    "claim_i_idx": 2,
+    "claim_j_idx": 15,
+    "delta_prob": 0.5,
+    "reasoning": "If demonstrated capabilities and intentions are decisive, public policy and governance become more consequential, increasing the claim's plausibility."
+  },
+  {
+    "claim_i_idx": 2,
+    "claim_j_idx": 16,
+    "delta_prob": 0.5,
+    "reasoning": "A's plausibility claim for powerful AI raises the chance that, if aligned, such systems could compress scientific progress and produce large benefits."
+  },
+  {
+    "claim_i_idx": 2,
+    "claim_j_idx": 17,
+    "delta_prob": 0.5,
+    "reasoning": "A implies interventions on capability and intent matter, supporting the instrumental argument for focusing on risk\u2011reducing actions."
+  },
+  {
+    "claim_i_idx": 2,
+    "claim_j_idx": 18,
+    "delta_prob": 0.6,
+    "reasoning": "Given plausibly near transformative systems and the importance of intentions, the urgency of interpretability before deployment is increased."
+  },
+  {
+    "claim_i_idx": 2,
+    "claim_j_idx": 19,
+    "delta_prob": 0.2,
+    "reasoning": "A raises demand for interpretability but does not by itself imply tractability; it modestly increases the probability that interpretability progress is consequential and pursued."
+  },
+  {
+    "claim_i_idx": 2,
+    "claim_j_idx": 20,
+    "delta_prob": 0.5,
+    "reasoning": "If AGI is plausible and intentions matter, dual\u2011use geopolitical risks and the need for democratic coordination become more likely concerns."
+  },
+  {
+    "claim_i_idx": 2,
+    "claim_j_idx": 21,
+    "delta_prob": 0.5,
+    "reasoning": "A's emphasis on demonstrated capability trends makes AI acting as an autonomous scientific accelerator more plausible."
+  },
+  {
+    "claim_i_idx": 2,
+    "claim_j_idx": 22,
+    "delta_prob": 0.0,
+    "reasoning": "A doesn't directly bear on the existence of physical, institutional, or regulatory constraints; it is neutral about limiting factors."
+  },
+  {
+    "claim_i_idx": 2,
+    "claim_j_idx": 23,
+    "delta_prob": 0.6,
+    "reasoning": "If AGI is plausibly near and interpretability matters, targeted policy/organizational mitigations (interpretability scaling, disclosures, export controls) become more compelling."
+  },
+  {
+    "claim_i_idx": 2,
+    "claim_j_idx": 24,
+    "delta_prob": 0.4,
+    "reasoning": "A increases the salience of concentration risks given plausible AGI and intent importance, though it doesn't uniquely endorse open\u2011sourcing as the primary remedy."
+  },
+  {
+    "claim_i_idx": 2,
+    "claim_j_idx": 25,
+    "delta_prob": 0.0,
+    "reasoning": "A disputes dismissive slogans but does not imply whether autoregressive LLMs alone are sufficient or insufficient for AGI; neutral effect."
+  },
+  {
+    "claim_i_idx": 2,
+    "claim_j_idx": 26,
+    "delta_prob": 0.0,
+    "reasoning": "A's focus on demonstrated capability trends doesn't settle the modality/grounding question, so it has little effect on this claim."
+  },
+  {
+    "claim_i_idx": 2,
+    "claim_j_idx": 27,
+    "delta_prob": 0.1,
+    "reasoning": "A raises interest in non\u2011language architectures as routes to capabilities, slightly increasing JEPA\u2011style approaches' plausibility."
+  },
+  {
+    "claim_i_idx": 2,
+    "claim_j_idx": 28,
+    "delta_prob": 0.2,
+    "reasoning": "By rejecting simplistic dismissals and emphasizing capability architectures, A modestly boosts credence that next\u2011token models have specific failure modes and that alternative architectures matter."
+  },
+  {
+    "claim_i_idx": 2,
+    "claim_j_idx": 29,
+    "delta_prob": -0.3,
+    "reasoning": "A's assertion of plausible short timeframes and focus on demonstrated capabilities makes rapid, impactful transitions more plausible and thus reduces confidence in purely gradual benign progress narratives."
+  },
+  {
+    "claim_i_idx": 2,
+    "claim_j_idx": 30,
+    "delta_prob": 0.1,
+    "reasoning": "A's emphasis on empirical trends modestly favors self\u2011supervised/representation approaches observed to be productive, slightly lowering the prior on RL\u2011first narratives."
+  },
+  {
+    "claim_i_idx": 2,
+    "claim_j_idx": 31,
+    "delta_prob": 0.5,
+    "reasoning": "If capability trends make AGI plausible and intentions matter, practical, iterative engineering of safety measures becomes a more likely and necessary approach than a single provable fix."
+  }
+]

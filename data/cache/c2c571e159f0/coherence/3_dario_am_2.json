@@ -1,0 +1,188 @@
+[
+  {
+    "claim_i_idx": 18,
+    "claim_j_idx": 0,
+    "delta_prob": 0.8,
+    "reasoning": "A asserts near-term transformative systems and lack of interpretability/safety, which strongly supports the claim that humanity is racing toward high\u2011risk AGI/ASI without reliable assurances."
+  },
+  {
+    "claim_i_idx": 18,
+    "claim_j_idx": 1,
+    "delta_prob": 0.6,
+    "reasoning": "If interpretability must mature before deployment and systems may arrive soon, it increases the importance of multilateral governance and coordination failure concerns."
+  },
+  {
+    "claim_i_idx": 18,
+    "claim_j_idx": 2,
+    "delta_prob": 0.7,
+    "reasoning": "A's emphasis on demonstrated rapid capability advances and plausible near-term emergence undermines skeptical claims that AGI is far off or harmless."
+  },
+  {
+    "claim_i_idx": 18,
+    "claim_j_idx": 3,
+    "delta_prob": 0.6,
+    "reasoning": "A treats timeline uncertainty as insufficient reason to delay safety work, so it raises the plausibility of urgent regulation and preemptive planning."
+  },
+  {
+    "claim_i_idx": 18,
+    "claim_j_idx": 4,
+    "delta_prob": 0.5,
+    "reasoning": "A implies actors may deploy powerful systems before safety is ready, which makes corporate incentive problems and conflicts of interest more worrisome."
+  },
+  {
+    "claim_i_idx": 18,
+    "claim_j_idx": 5,
+    "delta_prob": 0.2,
+    "reasoning": "A's precautionary stance favors careful governance of releases, modestly supporting the view that open\u2011sourcing has safety downsides."
+  },
+  {
+    "claim_i_idx": 18,
+    "claim_j_idx": 6,
+    "delta_prob": 0.4,
+    "reasoning": "A increases the perceived need for international and hardware governance to buy time for interpretability, while recognizing practical enforcement challenges."
+  },
+  {
+    "claim_i_idx": 18,
+    "claim_j_idx": 7,
+    "delta_prob": 0.5,
+    "reasoning": "A makes precautionary responses more rational by portraying non\u2011negligible near\u2011term risk and the value of early investment in safety."
+  },
+  {
+    "claim_i_idx": 18,
+    "claim_j_idx": 8,
+    "delta_prob": 0.5,
+    "reasoning": "A's claim of imminent transformative systems supports a view that takeoff dynamics are already well underway or close, though it doesn't prove all aspects of claim 8."
+  },
+  {
+    "claim_i_idx": 18,
+    "claim_j_idx": 9,
+    "delta_prob": 0.1,
+    "reasoning": "A is primarily risk\u2011focused and doesn't speak to benefits, so it only slightly raises the plausibility that powerful AI could yield large gains if controlled."
+  },
+  {
+    "claim_i_idx": 18,
+    "claim_j_idx": 10,
+    "delta_prob": 0.5,
+    "reasoning": "A's framing of rapidly advancing capability makes self\u2011reinforcing feedback loops (AI accelerating AI) more likely as a driver of speedups."
+  },
+  {
+    "claim_i_idx": 18,
+    "claim_j_idx": 11,
+    "delta_prob": 0.6,
+    "reasoning": "A explicitly endorses near\u2011term emergence (2026\u201327) of transformative systems, which raises the credibility of specific short\u2011term milestones."
+  },
+  {
+    "claim_i_idx": 18,
+    "claim_j_idx": 12,
+    "delta_prob": 0.3,
+    "reasoning": "A's expectation of near\u2011term transformative systems increases the chance of large 2030s changes, though it doesn't detail which everyday activities will persist."
+  },
+  {
+    "claim_i_idx": 18,
+    "claim_j_idx": 13,
+    "delta_prob": 0.6,
+    "reasoning": "A makes clear alignment (interpretability) is a prerequisite to safe deployment, supporting the view that alignment must precede democratized superintelligence."
+  },
+  {
+    "claim_i_idx": 18,
+    "claim_j_idx": 14,
+    "delta_prob": 0.2,
+    "reasoning": "A is compatible with rapid economic scaling effects but doesn't directly assert the specific scaling/cost numbers, so it slightly raises plausibility."
+  },
+  {
+    "claim_i_idx": 18,
+    "claim_j_idx": 15,
+    "delta_prob": 0.4,
+    "reasoning": "A's urgency bolsters the case that public policy, governance and distributional choices matter greatly to manage risks and benefits."
+  },
+  {
+    "claim_i_idx": 18,
+    "claim_j_idx": 16,
+    "delta_prob": 0.3,
+    "reasoning": "A implies powerful AI could be transformative if aligned, modestly increasing belief in large possible benefits conditional on successful alignment."
+  },
+  {
+    "claim_i_idx": 18,
+    "claim_j_idx": 17,
+    "delta_prob": 0.4,
+    "reasoning": "A frames the problem instrumentally (actions now matter to avoid harms), which supports prioritizing risk\u2011reducing policy and technical work."
+  },
+  {
+    "claim_i_idx": 18,
+    "claim_j_idx": 19,
+    "delta_prob": 0.6,
+    "reasoning": "A's requirement that interpretability mature within a decade presumes tractability and progress, increasing the plausibility of interpretability research delivering useful diagnostics."
+  },
+  {
+    "claim_i_idx": 18,
+    "claim_j_idx": 20,
+    "delta_prob": 0.4,
+    "reasoning": "A heightens the stakes around deployment choices, supporting the claim that AI can empower both democracies and autocracies and requires proactive international strategy."
+  },
+  {
+    "claim_i_idx": 18,
+    "claim_j_idx": 21,
+    "delta_prob": 0.1,
+    "reasoning": "A doesn't claim AI's scientific productivity directly but is compatible with AI acting as a powerful scientific accelerator, so slight positive effect."
+  },
+  {
+    "claim_i_idx": 18,
+    "claim_j_idx": 22,
+    "delta_prob": -0.3,
+    "reasoning": "A's assertion that transformative systems could arrive very soon implies physical/regulatory/social constraints may not be sufficient to slow deployment, weakening claim 21's emphasis on strong limiting effects."
+  },
+  {
+    "claim_i_idx": 18,
+    "claim_j_idx": 23,
+    "delta_prob": 0.8,
+    "reasoning": "A directly endorses massively scaling interpretability and using policy/export controls to buy time, strongly increasing the plausibility of these steps as effective safety measures."
+  },
+  {
+    "claim_i_idx": 18,
+    "claim_j_idx": 24,
+    "delta_prob": 0.0,
+    "reasoning": "A emphasizes interpretability before deployment but doesn't adjudicate whether concentration is the single biggest danger or whether open\u2011sourcing is the primary remedy, so little net effect."
+  },
+  {
+    "claim_i_idx": 18,
+    "claim_j_idx": 25,
+    "delta_prob": 0.0,
+    "reasoning": "A's focus on interpretability and imminent transformative systems doesn't directly support or refute the technical claim about autoregressive LLMs lacking essential components."
+  },
+  {
+    "claim_i_idx": 18,
+    "claim_j_idx": 26,
+    "delta_prob": 0.0,
+    "reasoning": "Claim A does not address modality or developmental grounding, so it has no direct effect on this sensory\u2011grounding claim."
+  },
+  {
+    "claim_i_idx": 18,
+    "claim_j_idx": 27,
+    "delta_prob": 0.0,
+    "reasoning": "A speaks to timelines and interpretability, not to the technical promise of JEPAs, so it neither raises nor lowers their plausibility."
+  },
+  {
+    "claim_i_idx": 18,
+    "claim_j_idx": 28,
+    "delta_prob": 0.0,
+    "reasoning": "A highlights the need for interpretability but does not claim autoregressive architectures are fundamentally flawed, so no direct effect."
+  },
+  {
+    "claim_i_idx": 18,
+    "claim_j_idx": 29,
+    "delta_prob": -0.6,
+    "reasoning": "A's expectation of possibly rapid emergence and need for pre\u2011deployment interpretability makes gradualist, non\u2011doomer scenarios less likely."
+  },
+  {
+    "claim_i_idx": 18,
+    "claim_j_idx": 30,
+    "delta_prob": 0.0,
+    "reasoning": "A does not speak to RL sample efficiency or the preferred training pipeline, so it has no clear effect."
+  },
+  {
+    "claim_i_idx": 18,
+    "claim_j_idx": 31,
+    "delta_prob": 0.3,
+    "reasoning": "A's call for maturing interpretability and iterative readiness before deployment is consistent with viewing safety as an engineering process improved over time."
+  }
+]

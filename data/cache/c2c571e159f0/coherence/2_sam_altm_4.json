@@ -1,0 +1,188 @@
+[
+  {
+    "claim_i_idx": 12,
+    "claim_j_idx": 0,
+    "delta_prob": 0.6,
+    "reasoning": "A asserts intelligence becomes abundant by the 2030s, which makes the emergence of AGI/ASI more likely and therefore strengthens urgency about unresolved alignment and malicious-goal risks."
+  },
+  {
+    "claim_i_idx": 12,
+    "claim_j_idx": 1,
+    "delta_prob": 0.5,
+    "reasoning": "Abundant intelligence raises the stakes of unilateral control; A\u2019s emphasis on \u2018assuming good governance\u2019 implies the need for multilateral constraints and coordination to prevent catastrophic abuse."
+  },
+  {
+    "claim_i_idx": 12,
+    "claim_j_idx": 2,
+    "delta_prob": 0.6,
+    "reasoning": "If intelligence abundance is plausible within the 2030s, skeptical claims that AGI is centuries away or harmless are undermined \u2014 demonstrated capability trends matter for x-risk timelines."
+  },
+  {
+    "claim_i_idx": 12,
+    "claim_j_idx": 3,
+    "delta_prob": 0.6,
+    "reasoning": "A\u2019s near-term transformation implies regulatory lead time matters, so uncertainty about timelines is not a good reason to delay precautionary regulation and safety work."
+  },
+  {
+    "claim_i_idx": 12,
+    "claim_j_idx": 4,
+    "delta_prob": 0.4,
+    "reasoning": "Abundant intelligence increases incentives and potential harms from corporate actors; although A assumes good governance, it makes corporate incentives and conflicts a more salient risk factor."
+  },
+  {
+    "claim_i_idx": 12,
+    "claim_j_idx": 5,
+    "delta_prob": 0.4,
+    "reasoning": "If AGI/weights matter a lot in an intelligence\u2011abundant world, open-sourcing clearly has tradeoffs: it aids research but also eases misuse, supporting the claim\u2019s caution."
+  },
+  {
+    "claim_i_idx": 12,
+    "claim_j_idx": 6,
+    "delta_prob": 0.5,
+    "reasoning": "Global abundance of intelligence and energy makes international/hardware governance more important; A also implies the need for defense\u2011in\u2011depth and equitable provisions given verification challenges."
+  },
+  {
+    "claim_i_idx": 12,
+    "claim_j_idx": 7,
+    "delta_prob": 0.5,
+    "reasoning": "If intelligence abundance could produce existential outcomes in the 2030s, non\u2011negligible aggregated risk estimates and Pascal-like dismissals become less defensible, supporting precautionary policy."
+  },
+  {
+    "claim_i_idx": 12,
+    "claim_j_idx": 8,
+    "delta_prob": 0.3,
+    "reasoning": "A implies super\u2011scale intelligence will arrive by the 2030s, which modestly supports the idea of a started takeoff, but it does not necessarily imply current systems already exceed humans in most domains."
+  },
+  {
+    "claim_i_idx": 12,
+    "claim_j_idx": 9,
+    "delta_prob": 0.6,
+    "reasoning": "Abundant intelligence and energy directly increase the plausibility of large productivity and scientific gains that could greatly raise quality of life, conditional on governance."
+  },
+  {
+    "claim_i_idx": 12,
+    "claim_j_idx": 10,
+    "delta_prob": 0.7,
+    "reasoning": "A explicitly links abundant intelligence and energy to enabled capabilities; that dovetails strongly with self\u2011reinforcing feedback loops and falling marginal cost of intelligence."
+  },
+  {
+    "claim_i_idx": 12,
+    "claim_j_idx": 11,
+    "delta_prob": 0.2,
+    "reasoning": "A supports substantial change by the 2030s but is agnostic about the precise 2025\u20132027 milestones, so it gives only modest additional credence to these specific near\u2011term dates."
+  },
+  {
+    "claim_i_idx": 12,
+    "claim_j_idx": 13,
+    "delta_prob": 0.4,
+    "reasoning": "A\u2019s conditional \u2018assuming good governance\u2019 implies alignment and broad, non\u2011concentrated access are prerequisites for a positive outcome, increasing plausibility of this sequencing."
+  },
+  {
+    "claim_i_idx": 12,
+    "claim_j_idx": 14,
+    "delta_prob": 0.6,
+    "reasoning": "Abundance of intelligence and energy is consistent with rapid scaling, falling usage costs, and large nonlinear socioeconomic returns, supporting the economic observations."
+  },
+  {
+    "claim_i_idx": 12,
+    "claim_j_idx": 15,
+    "delta_prob": 0.6,
+    "reasoning": "If the 2030s are transformed by abundant intelligence, public policy, governance and societal choices become central to shaping outcomes, increasing the claim\u2019s importance."
+  },
+  {
+    "claim_i_idx": 12,
+    "claim_j_idx": 16,
+    "delta_prob": 0.6,
+    "reasoning": "A implies powerful AI capability is possible and\u2014under good governance\u2014could compress scientific progress and deliver large health and longevity benefits, making the claim more likely."
+  },
+  {
+    "claim_i_idx": 12,
+    "claim_j_idx": 17,
+    "delta_prob": 0.5,
+    "reasoning": "If actions now can materially affect whether abundant intelligence yields a positive future, that supports the instrumental rationale for focusing on AI risks and interventions."
+  },
+  {
+    "claim_i_idx": 12,
+    "claim_j_idx": 18,
+    "delta_prob": 0.5,
+    "reasoning": "A\u2019s timeline puts pressure on safety tools before widespread deployment; that increases the importance of interpretability maturing in a time\u2011sensitive window."
+  },
+  {
+    "claim_i_idx": 12,
+    "claim_j_idx": 19,
+    "delta_prob": 0.2,
+    "reasoning": "A doesn\u2019t directly imply interpretability is already tractable, but the need for it in an intelligence\u2011abundant future makes progress and tractability more consequential and somewhat more likely to be pursued."
+  },
+  {
+    "claim_i_idx": 12,
+    "claim_j_idx": 20,
+    "delta_prob": 0.5,
+    "reasoning": "Abundant AI capability is dual\u2011use; A therefore raises the plausibility that AI may empower both democracies and autocracies and so that proactive democratic strategies are needed."
+  },
+  {
+    "claim_i_idx": 12,
+    "claim_j_idx": 21,
+    "delta_prob": 0.6,
+    "reasoning": "If AI becomes an abundant, autonomous scientific capability, it naturally follows that it can act as a virtual scientist and accelerate invention and discovery substantially."
+  },
+  {
+    "claim_i_idx": 12,
+    "claim_j_idx": 22,
+    "delta_prob": 0.5,
+    "reasoning": "A\u2019s caveat that many activities remain recognizable implies non\u2011trivial social, regulatory and physical constraints, so analyzing marginal returns and complementary factors becomes more important."
+  },
+  {
+    "claim_i_idx": 12,
+    "claim_j_idx": 23,
+    "delta_prob": 0.5,
+    "reasoning": "Given an intelligence\u2011abundant future, targeted policy steps (interpretability scaling, transparency, export controls) become more plausible and valuable to buy time and manage risk."
+  },
+  {
+    "claim_i_idx": 12,
+    "claim_j_idx": 24,
+    "delta_prob": -0.3,
+    "reasoning": "A\u2019s statement that intelligence and energy become abundant (and the \u2018assuming good governance\u2019 qualifier) slightly decreases the likelihood that power will remain highly concentrated in a few firms as the primary danger."
+  },
+  {
+    "claim_i_idx": 12,
+    "claim_j_idx": 25,
+    "delta_prob": 0.4,
+    "reasoning": "If true AGI requires more than token prediction (as an intelligence\u2011abundant future implies), that supports the view that autoregressive LLMs alone are not the full path to AGI."
+  },
+  {
+    "claim_i_idx": 12,
+    "claim_j_idx": 26,
+    "delta_prob": 0.4,
+    "reasoning": "Abundant, broadly capable intelligence plausibly entails multimodal, embodied grounding; that makes the claim that language alone is insufficient more likely."
+  },
+  {
+    "claim_i_idx": 12,
+    "claim_j_idx": 27,
+    "delta_prob": 0.2,
+    "reasoning": "A is compatible with alternative architectures (like JEPAs) playing a key role, so it slightly increases the plausibility that such methods are promising."
+  },
+  {
+    "claim_i_idx": 12,
+    "claim_j_idx": 28,
+    "delta_prob": 0.3,
+    "reasoning": "If robust long\u2011form reasoning and low hallucination rates are needed in an intelligence\u2011abundant future, that raises the probability that token\u2011by\u2011token autoregression has limitations and alternative architectures will be pursued."
+  },
+  {
+    "claim_i_idx": 12,
+    "claim_j_idx": 29,
+    "delta_prob": 0.0,
+    "reasoning": "A predicts large changes by the 2030s but is agnostic about whether progress is sudden or gradual, so it does not shift the balance for or against catastrophe\u2011style sudden takeoff claims."
+  },
+  {
+    "claim_i_idx": 12,
+    "claim_j_idx": 30,
+    "delta_prob": 0.2,
+    "reasoning": "An intelligence\u2011abundant outcome is consistent with self\u2011supervised representation learning and planning pipelines being central; this modestly decreases reliance on sample\u2011inefficient RL as the primary route."
+  },
+  {
+    "claim_i_idx": 12,
+    "claim_j_idx": 31,
+    "delta_prob": 0.2,
+    "reasoning": "A\u2019s conditional on \u2018good governance\u2019 and the practical nature of deploying powerful systems modestly supports the view that safety will be iterative engineering rather than a single provable fix."
+  }
+]

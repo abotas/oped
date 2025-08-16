@@ -1,0 +1,9 @@
+{
+  "doc_id": "2_sam_altm",
+  "doc_title": "2. Sam Altman: The Gentle Singularity",
+  "claim_idx": 0,
+  "claim": "Humanity is past the event horizon: the AI takeoff has started and we are close to building digital superintelligence\u2014current systems already exceed people in many ways and are significantly amplifying human output, so the least-likely technical barriers have largely been overcome.",
+  "veracity": 45,
+  "explanation": "Partly true but overstated. It is correct that modern AI already exceeds humans on many narrow tasks (e.g., protein\u2011structure prediction and some professional/exam benchmarks) and can materially amplify human output (e.g., AlphaFold\u2019s impact; GPT\u20114 exam performance; GitHub Copilot productivity gains). ([wired.com](https://www.wired.com/story/deepmind-protein-folding-database?utm_source=chatgpt.com), [arxiv.org](https://arxiv.org/abs/2303.08774?utm_source=chatgpt.com))  However, the claim that an irreversible \u201cevent horizon\u201d has passed and that we are close to digital superintelligence is speculative and disputed: many AI researchers give widely varying timelines for AGI and do not agree we are imminently at superintelligence. ([arxiv.org](https://arxiv.org/abs/2401.02843?utm_source=chatgpt.com))  Crucially, hard safety/technical problems\u2014hallucinations, robustness, deceptive or \u201calignment\u2011faking\u201d behaviours and other alignment/assurance gaps\u2014remain active research challenges and are not resolved, so key low\u2011probability/\u201cleast\u2011likely\u201d barriers have not been demonstrably \u201clargely overcome.\u201d ([arxiv.org](https://arxiv.org/abs/2401.11817?utm_source=chatgpt.com))  In sum: strong evidence for major narrow\u2011domain progress and amplification, but insufficient evidence that a takeoff past an irreversible event horizon or near\u2011term arrival of digital superintelligence has already occurred.",
+  "sources": []
+}

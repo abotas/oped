@@ -1,0 +1,188 @@
+[
+  {
+    "claim_i_idx": 13,
+    "claim_j_idx": 0,
+    "delta_prob": 0.5,
+    "reasoning": "A asserts alignment must be solved before wide deployment, which presumes current lack of reliable assurances and thus raises urgency that AGI/ASI could act incompatibly with human values."
+  },
+  {
+    "claim_i_idx": 13,
+    "claim_j_idx": 1,
+    "delta_prob": 0.8,
+    "reasoning": "A explicitly warns against concentration of power and calls for prerequisites and multilateral control, which strongly supports the coordination/governance failure concern."
+  },
+  {
+    "claim_i_idx": 13,
+    "claim_j_idx": 2,
+    "delta_prob": 0.3,
+    "reasoning": "A presupposes that aligning powerful systems is necessary, which weakly undermines sceptical arguments that downplay near-term capability/intent risk but doesn't itself prove timelines."
+  },
+  {
+    "claim_i_idx": 13,
+    "claim_j_idx": 3,
+    "delta_prob": 0.6,
+    "reasoning": "If alignment must be solved before deployment, that implies precaution and early regulatory planning are rational given long lead times for institutions."
+  },
+  {
+    "claim_i_idx": 13,
+    "claim_j_idx": 4,
+    "delta_prob": 0.8,
+    "reasoning": "A\u2019s emphasis on preventing concentration and requiring alignment before broad access makes corporate incentive failure and opacity a much more salient and likely problem."
+  },
+  {
+    "claim_i_idx": 13,
+    "claim_j_idx": 5,
+    "delta_prob": 0.4,
+    "reasoning": "A supports democratized access only after alignment and safeguards, implying openness is not an unambiguous safety win and should be governed democratically."
+  },
+  {
+    "claim_i_idx": 13,
+    "claim_j_idx": 6,
+    "delta_prob": 0.6,
+    "reasoning": "A\u2019s focus on preventing concentration and prerequisite safety makes international treaties and hardware controls more plausible as needed tools, though challenges remain."
+  },
+  {
+    "claim_i_idx": 13,
+    "claim_j_idx": 7,
+    "delta_prob": 0.6,
+    "reasoning": "A\u2019s framing of alignment as a prerequisite elevates the expected downside of failure, supporting precautionary investment based on non\u2011negligible extinction/large\u2011loss estimates."
+  },
+  {
+    "claim_i_idx": 13,
+    "claim_j_idx": 8,
+    "delta_prob": 0.0,
+    "reasoning": "A mandates solving alignment before wide deployment but says nothing decisive about whether a takeoff has already started, so it doesn't materially change that claim's likelihood."
+  },
+  {
+    "claim_i_idx": 13,
+    "claim_j_idx": 9,
+    "delta_prob": 0.0,
+    "reasoning": "A is neutral about the magnitude of benefits once aligned and widely available; it conditions deployment on alignment but doesn't affect the plausibility of large gains."
+  },
+  {
+    "claim_i_idx": 13,
+    "claim_j_idx": 10,
+    "delta_prob": 0.2,
+    "reasoning": "A implies widespread, cheap superintelligence could follow alignment, which modestly increases plausibility of feedback loops but doesn't commit to their speed."
+  },
+  {
+    "claim_i_idx": 13,
+    "claim_j_idx": 11,
+    "delta_prob": 0.0,
+    "reasoning": "A\u2019s requirement for alignment before wide availability doesn't meaningfully alter the plausibility of specific short\u2011term milestone dates."
+  },
+  {
+    "claim_i_idx": 13,
+    "claim_j_idx": 12,
+    "delta_prob": 0.4,
+    "reasoning": "A conditions transformative change on successful alignment and reasonably distributed access, making a dramatically different 2030s more plausible under the stated conditions."
+  },
+  {
+    "claim_i_idx": 13,
+    "claim_j_idx": 14,
+    "delta_prob": 0.2,
+    "reasoning": "A\u2019s goal of cheap, widespread superintelligence is consistent with the economic scaling arguments, slightly increasing their plausibility but not proving them."
+  },
+  {
+    "claim_i_idx": 13,
+    "claim_j_idx": 15,
+    "delta_prob": 0.7,
+    "reasoning": "A directly emphasizes governance and equitable distribution as prerequisites, strongly supporting the view that policy and societal choices matter greatly."
+  },
+  {
+    "claim_i_idx": 13,
+    "claim_j_idx": 16,
+    "delta_prob": 0.8,
+    "reasoning": "A explicitly links successful alignment followed by wide, non\u2011concentrated deployment to the potential for radical, aligned benefits, increasing the claim\u2019s plausibility."
+  },
+  {
+    "claim_i_idx": 13,
+    "claim_j_idx": 17,
+    "delta_prob": 0.6,
+    "reasoning": "A frames risk mitigation as a prerequisite action that can change outcomes, supporting the instrumental view that policy/tech choices meaningfully affect the future."
+  },
+  {
+    "claim_i_idx": 13,
+    "claim_j_idx": 18,
+    "delta_prob": 0.3,
+    "reasoning": "A\u2019s requirement for reliable alignment before deployment makes interpretability/diagnostics more valuable, modestly boosting the urgency of such research timelines."
+  },
+  {
+    "claim_i_idx": 13,
+    "claim_j_idx": 19,
+    "delta_prob": 0.2,
+    "reasoning": "A increases the importance of interpretability as one plausible alignment route, slightly raising the chance that interpretability progress will be central."
+  },
+  {
+    "claim_i_idx": 13,
+    "claim_j_idx": 20,
+    "delta_prob": 0.6,
+    "reasoning": "A\u2019s concern about concentration and the need for distributed, governed deployment aligns with the view that AI is dual\u2011use and requires democratic coordination to avoid authoritarian advantage."
+  },
+  {
+    "claim_i_idx": 13,
+    "claim_j_idx": 21,
+    "delta_prob": 0.2,
+    "reasoning": "A is compatible with AI acting as a powerful scientific accelerator once aligned and widely available, slightly increasing plausibility of large acceleration effects."
+  },
+  {
+    "claim_i_idx": 13,
+    "claim_j_idx": 22,
+    "delta_prob": 0.0,
+    "reasoning": "A focuses on alignment and distribution prerequisites but does not alter the plausibility of physical, social, or regulatory constraints on deployment speed."
+  },
+  {
+    "claim_i_idx": 13,
+    "claim_j_idx": 23,
+    "delta_prob": 0.6,
+    "reasoning": "A\u2019s emphasis on prerequisites and preventing concentration supports policy measures like scaling interpretability, transparency, and export controls to buy time for mitigations."
+  },
+  {
+    "claim_i_idx": 13,
+    "claim_j_idx": 24,
+    "delta_prob": 0.2,
+    "reasoning": "A agrees concentration is dangerous (increasing that part of the claim) but does not endorse open\u2011sourcing as the primary remedy, so it only modestly raises overall plausibility."
+  },
+  {
+    "claim_i_idx": 13,
+    "claim_j_idx": 25,
+    "delta_prob": 0.0,
+    "reasoning": "A\u2019s high\u2011level prescription about alignment and distribution does not bear on the technical claim that autoregressive LLMs lack certain components of intelligence."
+  },
+  {
+    "claim_i_idx": 13,
+    "claim_j_idx": 26,
+    "delta_prob": 0.0,
+    "reasoning": "A is neutral regarding the role of multimodal sensory grounding in achieving human\u2011like intelligence; it neither supports nor undermines that technical claim."
+  },
+  {
+    "claim_i_idx": 13,
+    "claim_j_idx": 27,
+    "delta_prob": 0.0,
+    "reasoning": "A being true doesn't specifically affect the plausibility of JEPAs as a promising technical path for world models."
+  },
+  {
+    "claim_i_idx": 13,
+    "claim_j_idx": 28,
+    "delta_prob": 0.0,
+    "reasoning": "A speaks to the need for alignment and controlled distribution, but is neutral on whether autoregressive architectures inherently cause hallucinations and require different designs."
+  },
+  {
+    "claim_i_idx": 13,
+    "claim_j_idx": 29,
+    "delta_prob": 0.5,
+    "reasoning": "A\u2019s insistence that alignment must be solved before broad deployment implies an intentional, managed approach and thus makes sudden, unmanageable takeoff scenarios less likely."
+  },
+  {
+    "claim_i_idx": 13,
+    "claim_j_idx": 30,
+    "delta_prob": 0.0,
+    "reasoning": "A does not take a stance on which ML paradigms (RL vs self\u2011supervision) are primary routes to general intelligence, so it leaves this claim unchanged."
+  },
+  {
+    "claim_i_idx": 13,
+    "claim_j_idx": 31,
+    "delta_prob": -0.3,
+    "reasoning": "A\u2019s framing that alignment must be robustly solved as a prerequisite suggests a preference for strong, possibly non\u2011iterative guarantees before deployment, which slightly contradicts the view that safety will mainly be iterative engineering."
+  }
+]

@@ -14,7 +14,7 @@ wheels/
 data/*
 !data/cache/
 data/cache/*
-!data/cache/db6ed1d90088/
+!data/cache/c2c571e159f0/
 
 substack_api_readme.md
 ./CLAUDE.md

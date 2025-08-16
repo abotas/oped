@@ -1,0 +1,50 @@
+[
+  {
+    "doc_id": "2_sam_altm",
+    "doc_title": "2. Sam Altman: The Gentle Singularity",
+    "claim_idx": 0,
+    "claim": "Humanity is past the event horizon: the AI takeoff has started and we are close to building digital superintelligence\u2014current systems already exceed people in many ways and are significantly amplifying human output, so the least-likely technical barriers have largely been overcome."
+  },
+  {
+    "doc_id": "2_sam_altm",
+    "doc_title": "2. Sam Altman: The Gentle Singularity",
+    "claim_idx": 1,
+    "claim": "AI-driven acceleration of scientific progress and productivity will produce enormous gains to quality of life (e.g., faster discovery of cures, new materials, brain\u2011computer interfaces, and space capabilities), making the future potentially vastly better than the present if harnessed well."
+  },
+  {
+    "doc_id": "2_sam_altm",
+    "doc_title": "2. Sam Altman: The Gentle Singularity",
+    "claim_idx": 2,
+    "claim": "Self-reinforcing feedback loops\u2014AI tools accelerating AI research (a larval form of recursive self\u2011improvement), economic flywheels funding infrastructure, and robots/datacenters that can build more robots/datacenters\u2014will cause rapid exponential acceleration in capabilities and drive the marginal cost of intelligence toward the cost of electricity."
+  },
+  {
+    "doc_id": "2_sam_altm",
+    "doc_title": "2. Sam Altman: The Gentle Singularity",
+    "claim_idx": 3,
+    "claim": "Specific near\u2011term technical milestones are plausible: 2025 will see AI agents performing real cognitive work and transforming software development, 2026 will likely produce systems that can generate novel scientific insights, and 2027 may bring robots capable of real\u2011world tasks, with much larger societal changes unfolding through the 2030s."
+  },
+  {
+    "doc_id": "2_sam_altm",
+    "doc_title": "2. Sam Altman: The Gentle Singularity",
+    "claim_idx": 4,
+    "claim": "While many everyday human activities (family, creativity, leisure) will remain recognizable, the 2030s are likely to be wildly different in important ways because intelligence and energy will become abundant, enabling capabilities previously limited by those two factors\u2014assuming good governance."
+  },
+  {
+    "doc_id": "2_sam_altm",
+    "doc_title": "2. Sam Altman: The Gentle Singularity",
+    "claim_idx": 5,
+    "claim": "Solving the alignment problem\u2014robustly ensuring AI systems learn and act toward what we collectively really want over the long term\u2014is a prerequisite, followed by making superintelligence cheap, widely available, and not overly concentrated in the hands of a single person, company, or country."
+  },
+  {
+    "doc_id": "2_sam_altm",
+    "doc_title": "2. Sam Altman: The Gentle Singularity",
+    "claim_idx": 6,
+    "claim": "Three economic observations underpin rapid AI impact: model intelligence scales roughly with the log of resources (compute, data, inference), the cost to use a given level of AI has been falling ~10x per year (driving vastly more use), and linear increases in intelligence produce super\u2011exponential socioeconomic value, so continued heavy investment is likely."
+  },
+  {
+    "doc_id": "2_sam_altm",
+    "doc_title": "2. Sam Altman: The Gentle Singularity",
+    "claim_idx": 7,
+    "claim": "Public policy, governance, and societal conversation matter greatly: we should balance safety with individual empowerment (including more openness), consider mechanisms to broadly distribute compute/AI access to avoid worsening capital\u2011labor imbalances, and prevent authoritarian concentration of AI for population control."
+  }
+]

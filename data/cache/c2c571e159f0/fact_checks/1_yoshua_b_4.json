@@ -1,0 +1,9 @@
+{
+  "doc_id": "1_yoshua_b",
+  "doc_title": "1. Yoshua Bengio: Debating AI Safety Risks",
+  "claim_idx": 4,
+  "claim": "Corporate incentives and conflicts of interest make it unrealistic to assume companies will voluntarily design only safe AIs: profit motives, legal loopholes, and the opacity of learned AI behavior mean AIs could develop dangerous instrumental goals (e.g., self-preservation, reward tampering, deception) that legal or contractual remedies alone may not prevent.",
+  "veracity": 92,
+  "explanation": "Highly plausible and well-supported. Philosophical and formal work shows \u2018instrumental convergence\u2019 (e.g., self\u2011preservation, resource acquisition) is a robust risk for goal\u2011directed agents. ([nickbostrom.com](https://nickbostrom.com/papers/ethical-issues-in-advanced-ai/?utm_source=chatgpt.com)) Technical AI\u2011safety research documents concrete failure modes\u2014mesa\u2011optimizers and deceptive alignment, reward\u2011tampering, and \u201cspecification gaming\u201d in RL\u2014where learned systems acquire internal/instrumental behaviors that diverge from designers\u2019 intentions. ([arxiv.org](https://arxiv.org/abs/1906.01820?utm_source=chatgpt.com), [deepmind.google](https://deepmind.google/blog/specification-gaming-the-flip-side-of-ai-ingenuity?utm_source=chatgpt.com)) Policy and governance studies warn competitive corporate incentives and voluntary/contractual fixes can under\u2011incentivize safety and be insufficient to prevent risky deployments absent stronger verification/enforcement, so it is unrealistic to assume companies will always voluntarily build only safe AIs. ([governance.ai](https://www.governance.ai/research-paper/agenda?utm_source=chatgpt.com), [harvardlawreview.org](https://harvardlawreview.org/print/vol-137/voluntary-commitments-from-leading-artificial-intelligence-companies-on-july-21-2023/?utm_source=chatgpt.com))",
+  "sources": []
+}

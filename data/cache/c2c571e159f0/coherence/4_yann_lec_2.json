@@ -1,0 +1,188 @@
+[
+  {
+    "claim_i_idx": 26,
+    "claim_j_idx": 0,
+    "delta_prob": -0.2,
+    "reasoning": "If human-like intelligence needs multimodal, embodied data, purely language-driven routes to AGI become less likely or slower, slightly reducing the immediacy of the uncontrolled AGI race though risks persist."
+  },
+  {
+    "claim_i_idx": 26,
+    "claim_j_idx": 1,
+    "delta_prob": 0.2,
+    "reasoning": "Requiring sensors/robots and specialized hardware tends to concentrate capabilities in resource-rich actors, strengthening the case that unilateral control is dangerous and multilateral governance is needed."
+  },
+  {
+    "claim_i_idx": 26,
+    "claim_j_idx": 2,
+    "delta_prob": -0.5,
+    "reasoning": "Claim A undermines arguments that text-only scaling alone makes near-term AGI likely, so sceptical rebuttals relying on current linguistic-capability trends become more persuasive."
+  },
+  {
+    "claim_i_idx": 26,
+    "claim_j_idx": 3,
+    "delta_prob": -0.1,
+    "reasoning": "If embodiment makes AGI harder or slower, urgency for immediate regulation is slightly reduced, but long lead times for institutions still justify precaution."
+  },
+  {
+    "claim_i_idx": 26,
+    "claim_j_idx": 4,
+    "delta_prob": 0.1,
+    "reasoning": "Hardware and embodied capabilities concentrate incentives and capabilities, so corporate misalignment incentives remain plausible; A doesn\u2019t weaken the incentive-related argument."
+  },
+  {
+    "claim_i_idx": 26,
+    "claim_j_idx": 5,
+    "delta_prob": 0.0,
+    "reasoning": "Claims about openness tradeoffs are largely orthogonal to whether grounding is required; the openness risks and benefits persist either way."
+  },
+  {
+    "claim_i_idx": 26,
+    "claim_j_idx": 6,
+    "delta_prob": 0.4,
+    "reasoning": "If high-end sensors/robots and chips are necessary for human-like AI, hardware-focused international controls and governance become more relevant and impactful."
+  },
+  {
+    "claim_i_idx": 26,
+    "claim_j_idx": 7,
+    "delta_prob": -0.2,
+    "reasoning": "Reducing the plausibility of text-only rapid AGI lowers some extinction-risk estimates, modestly weakening Pascal-like urgency, though non-trivial risk remains."
+  },
+  {
+    "claim_i_idx": 26,
+    "claim_j_idx": 8,
+    "delta_prob": -0.8,
+    "reasoning": "Claim A contradicts the claim that current, largely text-based systems have already passed an event horizon toward superintelligence, strongly reducing that claim\u2019s plausibility."
+  },
+  {
+    "claim_i_idx": 26,
+    "claim_j_idx": 9,
+    "delta_prob": 0.0,
+    "reasoning": "The potential for AI to accelerate science doesn\u2019t depend on whether human-like grounding is required; embodied AI may even enhance certain gains, so net effect is neutral."
+  },
+  {
+    "claim_i_idx": 26,
+    "claim_j_idx": 10,
+    "delta_prob": -0.4,
+    "reasoning": "If physical embodiment and specialized hardware are needed, self-reinforcing feedback loops (purely software-driven) are less likely to run away as quickly, slowing expected exponential feedback."
+  },
+  {
+    "claim_i_idx": 26,
+    "claim_j_idx": 11,
+    "delta_prob": -0.5,
+    "reasoning": "Requiring multimodal embodied learning makes the specific near-term milestones (2025\u20132027 robotics/science breakthroughs) less likely to occur on the stated timeline."
+  },
+  {
+    "claim_i_idx": 26,
+    "claim_j_idx": 12,
+    "delta_prob": -0.2,
+    "reasoning": "Grounding requirements imply slower structural change, making the 2030s still transformative but somewhat less certain to be 'wildly different' on the fastest timelines."
+  },
+  {
+    "claim_i_idx": 26,
+    "claim_j_idx": 13,
+    "delta_prob": 0.2,
+    "reasoning": "If superintelligence needs physical grounding and complex systems, the importance of solving alignment before cheap, widespread deployment is reinforced."
+  },
+  {
+    "claim_i_idx": 26,
+    "claim_j_idx": 14,
+    "delta_prob": -0.2,
+    "reasoning": "Claim A weakens the extrapolation that compute/data scaling alone will smoothly yield human-level intelligence, slightly reducing the projected rapid economic impact from scaling laws alone."
+  },
+  {
+    "claim_i_idx": 26,
+    "claim_j_idx": 15,
+    "delta_prob": 0.2,
+    "reasoning": "Hardware and embodiment introduce distributional and governance challenges (infrastructure, robotics, labs), increasing the importance of policy and societal debate."
+  },
+  {
+    "claim_i_idx": 26,
+    "claim_j_idx": 16,
+    "delta_prob": 0.0,
+    "reasoning": "Claim A affects timelines and pathways but not the conditional claim that powerful, aligned AI could yield large benefits; no strong net change."
+  },
+  {
+    "claim_i_idx": 26,
+    "claim_j_idx": 17,
+    "delta_prob": 0.0,
+    "reasoning": "The instrumental argument for focusing on AI risks (that policy choices matter) is unaffected by whether grounding is required."
+  },
+  {
+    "claim_i_idx": 26,
+    "claim_j_idx": 18,
+    "delta_prob": -0.2,
+    "reasoning": "If embodied, multimodal systems are needed, the most transformative systems may arrive later than 2026\u201327, slightly reducing the immediacy of the interpretability race as stated while leaving interpretability important."
+  },
+  {
+    "claim_i_idx": 26,
+    "claim_j_idx": 19,
+    "delta_prob": 0.0,
+    "reasoning": "Claim A doesn\u2019t change the tractability of interpretability research; it remains relevant irrespective of grounding requirements."
+  },
+  {
+    "claim_i_idx": 26,
+    "claim_j_idx": 20,
+    "delta_prob": 0.2,
+    "reasoning": "Hardware, sensors and robotics requirements can centralize power and dual-use capacities, reinforcing the claim that AI need not favor democracy and can empower authoritarian uses."
+  },
+  {
+    "claim_i_idx": 26,
+    "claim_j_idx": 21,
+    "delta_prob": 0.1,
+    "reasoning": "A true grounding requirement makes autonomous lab-operating AIs more dependent on embodied capabilities, but if those are achieved the outsized returns to intelligence remain plausible."
+  },
+  {
+    "claim_i_idx": 26,
+    "claim_j_idx": 22,
+    "delta_prob": 0.3,
+    "reasoning": "Emphasis on physical grounding highlights real-world constraints (measurement, hardware, experimentation), increasing the plausibility that non-technical factors will limit deployment speed."
+  },
+  {
+    "claim_i_idx": 26,
+    "claim_j_idx": 23,
+    "delta_prob": 0.4,
+    "reasoning": "If sensors/robots and chips matter, scaling interpretability, transparency, and export controls on hardware become more effective and necessary policy levers."
+  },
+  {
+    "claim_i_idx": 26,
+    "claim_j_idx": 24,
+    "delta_prob": -0.1,
+    "reasoning": "Grounding increases concentration risks (supporting the danger claim) but also implies that open-sourcing models alone is a less effective remedy, slightly weakening the combined prescription."
+  },
+  {
+    "claim_i_idx": 26,
+    "claim_j_idx": 25,
+    "delta_prob": 1.0,
+    "reasoning": "This claim directly aligns with Claim A: both assert language-only autoregressive models are insufficient for human-like intelligence, so A makes this almost certain."
+  },
+  {
+    "claim_i_idx": 26,
+    "claim_j_idx": 27,
+    "delta_prob": 0.6,
+    "reasoning": "Claim A favors learning from visual/audio/motor data and predictive latent representations, increasing the plausibility of JEPA-style approaches for world models."
+  },
+  {
+    "claim_i_idx": 26,
+    "claim_j_idx": 28,
+    "delta_prob": 0.4,
+    "reasoning": "If token-predictors lack the necessary bandwidth, architectures that operate in latent/predictive spaces and different objectives become more attractive, supporting this critique."
+  },
+  {
+    "claim_i_idx": 26,
+    "claim_j_idx": 29,
+    "delta_prob": 0.5,
+    "reasoning": "A requirement for embodied, incremental learning implies a more gradual, engineering-style progression toward AGI rather than an instantaneous takeover, supporting gradualist views."
+  },
+  {
+    "claim_i_idx": 26,
+    "claim_j_idx": 30,
+    "delta_prob": 0.6,
+    "reasoning": "Claim A emphasizes learning from rich observation and world models, aligning strongly with a pipeline prioritizing self-supervision and model-predictive control over sample-inefficient RL."
+  },
+  {
+    "claim_i_idx": 26,
+    "claim_j_idx": 31,
+    "delta_prob": 0.3,
+    "reasoning": "If intelligence emerges from complex embodied learning, safety is likelier to be an iterative engineering challenge rather than solvable by a single provable fix, supporting progressive guardrails."
+  }
+]

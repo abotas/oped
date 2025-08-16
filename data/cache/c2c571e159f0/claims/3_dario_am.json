@@ -1,0 +1,50 @@
+[
+  {
+    "doc_id": "3_dario_am",
+    "doc_title": "3. Dario Amodei: AI's Positive Future",
+    "claim_idx": 0,
+    "claim": "Powerful AI\u2014systems as capable or more capable than top human experts across fields, multimodal, able to run many parallel instances, and to act autonomously on real-world tasks\u2014could radically improve humanity if aligned, compressing decades of scientific and medical progress (e.g., 50\u2013100 years of biology and neuroscience) into roughly 5\u201310 years and delivering outcomes like elimination of most infectious disease and large reductions in cancer, major mental-illness cures, greatly expanded biological freedom, and very large lifespan increases."
+  },
+  {
+    "doc_id": "3_dario_am",
+    "doc_title": "3. Dario Amodei: AI's Positive Future",
+    "claim_idx": 1,
+    "claim": "The primary reason to focus on AI risks is instrumental: the technical and policy actions we take can substantially change the likelihood that the radically positive future materializes, whereas many of the basic benefits of AI development are driven by powerful market forces and may be inevitable unless risks derail them."
+  },
+  {
+    "doc_id": "3_dario_am",
+    "doc_title": "3. Dario Amodei: AI's Positive Future",
+    "claim_idx": 2,
+    "claim": "We are in a time-sensitive race between rapidly advancing model capability and the development of mechanistic interpretability; interpretability\u2014understanding models' internal circuits and features well enough to 'MRI' an AI\u2014must mature (ideally within 5\u201310 years) before transformative, highly autonomous systems (which could emerge as early as 2026\u20132027) are deployed, because interpretability is critical to detecting deception, power-seeking, jailbreaks, and other alignment failures."
+  },
+  {
+    "doc_id": "3_dario_am",
+    "doc_title": "3. Dario Amodei: AI's Positive Future",
+    "claim_idx": 3,
+    "claim": "Interpretability is tractable and progressing: recent advances (finding millions of human-interpretable features, sparse autoencoders, autointerpretability, and circuit discovery) show we can map concepts and trace model reasoning, and these techniques can be used as practical diagnostics to find and fix alignment issues in models if scaled and resourced broadly across industry and academia."
+  },
+  {
+    "doc_id": "3_dario_am",
+    "doc_title": "3. Dario Amodei: AI's Positive Future",
+    "claim_idx": 4,
+    "claim": "Powerful AI will not automatically favor democracy, peace, or equitable access; AI is a dual-use technology that can strengthen both democracies and authoritarian regimes through surveillance, propaganda, and economic/military advantage, so democracies must proactively coordinate (an 'entente strategy'), secure supply chains (e.g., chip export controls), scale responsibly, and offer benefits to other countries to avoid empowering autocracies and to tilt global governance toward liberal democracy."
+  },
+  {
+    "doc_id": "3_dario_am",
+    "doc_title": "3. Dario Amodei: AI's Positive Future",
+    "claim_idx": 5,
+    "claim": "AI\u2019s capacity to act as a virtual scientist\u2014not merely as an analysis tool but as an autonomous designer, director, and operator of experiments and lab automation\u2014gives it outsized returns to intelligence in fields driven by discovery of broad measurement and intervention technologies (e.g., CRISPR, sequencing, mRNA vaccines), meaning AI could accelerate invention rates (plausibly ~10x) by leveraging creativity, parallelism, and experimental design to overcome current data, complexity, and latency bottlenecks."
+  },
+  {
+    "doc_id": "3_dario_am",
+    "doc_title": "3. Dario Amodei: AI's Positive Future",
+    "claim_idx": 6,
+    "claim": "Even with large technical gains, social, regulatory, and physical constraints (speed of the physical world, need for new types of data, intrinsic complexity, human institutional constraints, and physical laws) will limit how fast intelligence translates into deployed outcomes, so we should analyze 'marginal returns to intelligence' and which complementary factors (infrastructure, measurement tools, clinical trial reform, jurisdictional variation) need to be addressed to realize benefits safely."
+  },
+  {
+    "doc_id": "3_dario_am",
+    "doc_title": "3. Dario Amodei: AI's Positive Future",
+    "claim_idx": 7,
+    "claim": "Policy and organizational steps that would substantially improve safety and the chance of a positive outcome include massively scaling interpretability research across companies and academia, requiring transparency about safety practices (Responsible Scaling Policy disclosures), and using targeted export controls (e.g., on chips to China) to buy time and strategic advantage so interpretability and other mitigations can mature before the most powerful AI is widely available."
+  }
+]
