@@ -35,6 +35,7 @@ def get_top_load_bearing_claims(coherence_results, claims, n=3):
         {
             "claim": claims[idx].claim,
             "doc_id": claims[idx].doc_id,
+            "doc_title": claims[idx].doc_title,
             "claim_idx": claims[idx].claim_idx,
             "avg_impact": score,
             "total_impact": impact_scores[idx],
@@ -62,6 +63,7 @@ def get_top_load_bearing_claims_filtered(coherence_results, all_claims, filtered
         {
             "claim": all_claims[idx].claim,
             "doc_id": all_claims[idx].doc_id,
+            "doc_title": all_claims[idx].doc_title,
             "claim_idx": all_claims[idx].claim_idx,
             "avg_impact": score,
             "total_impact": impact_scores[idx],

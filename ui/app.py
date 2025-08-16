@@ -256,9 +256,11 @@ def create_coherence_matrix(coherence_results, claims, all_claims, full_coherenc
             doc_groups[claim.doc_id] = []
         doc_groups[claim.doc_id].append(i)
         
-        # Create short label for axes (just claim number within doc)
+        # Create short label for axes using doc_title
         claim_num = len([c for c in claims[:i+1] if c.doc_id == claim.doc_id])
-        claim_labels.append(f"{claim.doc_id}[{claim_num-1}]")
+        # Use just the title number from doc_title (e.g., "1" from "1. Machines of Grace")
+        title_num = claim.doc_title.split('.')[0] if '.' in claim.doc_title else claim.doc_title[:3]
+        claim_labels.append(f"{title_num}[{claim_num-1}]")
     
     # Create detailed hover text with full claims
     hover_text = []
@@ -421,21 +423,30 @@ def main():
                         all_claims.extend([ExtractedClaim(**claim) for claim in claims_data])
                     
                     if all_claims:
+                        # Try to load cached TitledDocuments first
+                        titled_docs_dir = cache_dir / "titled_documents"
+                        titled_docs_file = titled_docs_dir / "documents.json"
+                        
+                        if titled_docs_file.exists():
+                            # Load from cached TitledDocuments
+                            titled_docs_data = json.loads(titled_docs_file.read_text())
+                            titled_docs = [TitledDocument(**doc) for doc in titled_docs_data]
+                        else:
+                            # Fallback: create from claims (for old cached analyses)
+                            docs_by_id = {}
+                            doc_titles = {}
+                            for claim in all_claims:
+                                if claim.doc_id not in docs_by_id:
+                                    docs_by_id[claim.doc_id] = ""  # No text available in old cache
+                                    doc_titles[claim.doc_id] = getattr(claim, 'doc_title', claim.doc_id)
+                            
+                            titled_docs = [
+                                TitledDocument(id=doc_id, text=text, title=doc_titles[doc_id])
+                                for doc_id, text in docs_by_id.items()
+                            ]
+                        
                         # Store in session state
                         st.session_state.all_claims = all_claims
-                        # Create mock TitledDocument structure for compatibility
-                        docs_by_id = {}
-                        doc_titles = {}
-                        for claim in all_claims:
-                            if claim.doc_id not in docs_by_id:
-                                docs_by_id[claim.doc_id] = claim.document_text
-                                # Use doc_title if available, otherwise fallback to doc_id
-                                doc_titles[claim.doc_id] = getattr(claim, 'doc_title', claim.doc_id)
-                        
-                        titled_docs = [
-                            TitledDocument(id=doc_id, text=text, title=doc_titles[doc_id])
-                            for doc_id, text in docs_by_id.items()
-                        ]
                         st.session_state.titled_documents = titled_docs
                         st.session_state.num_docs = len(titled_docs)
                         st.session_state.claims_per_doc = len([c for c in all_claims if c.doc_id == titled_docs[0].id])
@@ -482,21 +493,30 @@ def main():
                             all_claims.extend([ExtractedClaim(**claim) for claim in claims_data])
                         
                         if all_claims:
+                            # Try to load cached TitledDocuments first
+                            titled_docs_dir = cache_dir / "titled_documents"
+                            titled_docs_file = titled_docs_dir / "documents.json"
+                            
+                            if titled_docs_file.exists():
+                                # Load from cached TitledDocuments
+                                titled_docs_data = json.loads(titled_docs_file.read_text())
+                                titled_docs = [TitledDocument(**doc) for doc in titled_docs_data]
+                            else:
+                                # Fallback: create from claims (for old cached analyses)
+                                docs_by_id = {}
+                                doc_titles = {}
+                                for claim in all_claims:
+                                    if claim.doc_id not in docs_by_id:
+                                        docs_by_id[claim.doc_id] = ""  # No text available in old cache
+                                        doc_titles[claim.doc_id] = getattr(claim, 'doc_title', claim.doc_id)
+                                
+                                titled_docs = [
+                                    TitledDocument(id=doc_id, text=text, title=doc_titles[doc_id])
+                                    for doc_id, text in docs_by_id.items()
+                                ]
+                            
                             # Store in session state
                             st.session_state.all_claims = all_claims
-                            # Create mock TitledDocument structure for compatibility
-                            docs_by_id = {}
-                            doc_titles = {}
-                            for claim in all_claims:
-                                if claim.doc_id not in docs_by_id:
-                                    docs_by_id[claim.doc_id] = claim.document_text
-                                    # Use doc_title if available, otherwise fallback to doc_id
-                                    doc_titles[claim.doc_id] = getattr(claim, 'doc_title', claim.doc_id)
-                            
-                            titled_docs = [
-                                TitledDocument(id=doc_id, text=text, title=doc_titles[doc_id])
-                                for doc_id, text in docs_by_id.items()
-                            ]
                             st.session_state.titled_documents = titled_docs
                             st.session_state.num_docs = len(titled_docs)
                             st.session_state.claims_per_doc = len([c for c in all_claims if c.doc_id == titled_docs[0].id])
@@ -562,13 +582,21 @@ def main():
         
         # Title documents first
         with st.spinner("📝 Generating document titles..."):
-            titled_docs = title_documents(documents)
+            titled_docs = title_documents(documents, claims_per_doc)
         
         # Store configuration in session state when analysis starts
         st.session_state.num_docs = num_docs
         st.session_state.claims_per_doc = claims_per_doc
         st.session_state.titled_documents = titled_docs
         st.session_state.selected_model = selected_model
+        
+        # Initialize session state for analysis steps
+        st.session_state.all_claims = None
+        st.session_state.coherence_results = None
+        st.session_state.fact_checks = None
+        
+        # Immediately start claim extraction (don't wait for another click)
+        st.rerun()
     
     else:
         # We're in analysis mode - retrieve stored configuration
@@ -676,12 +704,16 @@ def main():
             doc_ids = list(set(claim.doc_id for claim in all_claims))
             doc_ids.sort()  # Sort for consistent ordering
             
+            # Create mapping from doc_id to doc_title
+            doc_id_to_title = {claim.doc_id: claim.doc_title for claim in all_claims}
+            
             # Create checkboxes for each document (all checked by default)
             selected_docs = []
             cols = st.columns(len(doc_ids))
             for i, doc_id in enumerate(doc_ids):
                 with cols[i]:
-                    is_selected = st.checkbox(doc_id.upper(), value=True, key=f"coherence_{doc_id}")
+                    doc_title = doc_id_to_title[doc_id]
+                    is_selected = st.checkbox(doc_title.upper(), value=True, key=f"coherence_{doc_id}")
                     if is_selected:
                         selected_docs.append(doc_id)
             
@@ -716,9 +748,12 @@ def main():
                     st.info("Matrix visualization requires at least one coherence relationship.")
                 
                 st.markdown("### Top Load-Bearing Claims")
+                st.write('-'*100)
                 for i, claim_info in enumerate(load_bearing[:3]):
-                    st.write(f"{i+1}. **{claim_info['doc_id']}[{claim_info['claim_idx']}]** (impact: {claim_info['avg_impact']:.2f})")
-                    st.write(f"   _{claim_info['claim']}_")
+                    st.write(f"**{claim_info['doc_title'].split('.')[1]}** (Doc {claim_info['doc_title'].split('.')[0]})")
+                    st.write(f"Claim {claim_info['claim_idx'] + 1}: _{claim_info['claim']}_")
+                    st.write(f"Avg impact: {claim_info['avg_impact']:.2f} ")
+                    st.write('-'*100)
             else:
                 st.warning("Please select at least one document to analyze.")
     
@@ -754,12 +789,16 @@ def main():
             doc_ids = list(set(claim.doc_id for claim in all_claims))
             doc_ids.sort()  # Sort for consistent ordering
             
+            # Create mapping from doc_id to doc_title
+            doc_id_to_title = {claim.doc_id: claim.doc_title for claim in all_claims}
+            
             # Create checkboxes for each document (all checked by default)
             selected_docs_fact = []
             cols = st.columns(len(doc_ids))
             for i, doc_id in enumerate(doc_ids):
                 with cols[i]:
-                    is_selected = st.checkbox(doc_id.upper(), value=True, key=f"fact_check_{doc_id}")
+                    doc_title = doc_id_to_title[doc_id]
+                    is_selected = st.checkbox(doc_title.upper(), value=True, key=f"fact_check_{doc_id}")
                     if is_selected:
                         selected_docs_fact.append(doc_id)
             
@@ -794,17 +833,23 @@ def main():
                 
                 if fact_summary.get('most_accurate_claims'):
                     st.markdown("### Most Validated Claims")
+                    st.write('-'*100)
                     for claim_info in fact_summary['most_accurate_claims'][:3]:
-                        st.write(f"**{claim_info['veracity']}/100** - {claim_info['claim']}")
+                        st.write(f"**{claim_info['doc_title'].split('.')[1]}** (Doc {claim_info['doc_title'].split('.')[0]})")
+                        st.write(f"Claim {claim_info['claim_idx'] + 1}: _{claim_info['claim']}_")
+                        st.write(f"Validation score: {claim_info['veracity']}/100")
                         st.write(f"_{claim_info['explanation']}_")
-                        st.write("")
+                        st.write('-'*100)
                 
                 if fact_summary.get('least_accurate_claims'):
                     st.markdown("### Least Validated Claims")
+                    st.write('-'*100)
                     for claim_info in fact_summary['least_accurate_claims'][:3]:
-                        st.write(f"**{claim_info['veracity']}/100** - {claim_info['claim']}")
+                        st.write(f"**{claim_info['doc_title'].split('.')[1]}** (Doc {claim_info['doc_title'].split('.')[0]})")
+                        st.write(f"Claim {claim_info['claim_idx'] + 1}: _{claim_info['claim']}_")
+                        st.write(f"Validation score: {claim_info['veracity']}/100")
                         st.write(f"_{claim_info['explanation']}_")
-                        st.write("")
+                        st.write('-'*100)
             else:
                 st.warning("Please select at least one document to analyze.")
         

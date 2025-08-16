@@ -86,8 +86,7 @@ def _extract_claims(titled_doc: TitledDocument, n: int, unified_hash: str, model
             doc_id=titled_doc.id,
             doc_title=titled_doc.title,
             claim_idx=idx,
-            claim=claim_text,
-            document_text=titled_doc.text
+            claim=claim_text
         )
         claims.append(claim)
     

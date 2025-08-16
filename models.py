@@ -14,4 +14,3 @@ class ExtractedClaim(BaseModel):
     doc_title: str  # Human-readable title
     claim_idx: int
     claim: str
-    document_text: str

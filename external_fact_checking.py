@@ -15,6 +15,7 @@ MAX_WORKERS = 4
 
 class FactCheck(BaseModel):
     doc_id: str
+    doc_title: str  # Human-readable title
     claim_idx: int
     claim: str
     veracity: int  # 0-100 scale
@@ -53,6 +54,7 @@ def _check_single_claim(claim: ExtractedClaim, cache_dir: Path, model: str = "gp
     
     fact_check = FactCheck(
         doc_id=claim.doc_id,
+        doc_title=claim.doc_title,
         claim_idx=claim.claim_idx,
         claim=claim.claim,
         veracity=int(result["veracity"]),
@@ -140,7 +142,9 @@ def get_fact_check_summary(fact_checks: list[FactCheck]) -> dict:
         {
             "claim": fc.claim,
             "veracity": fc.veracity,
-            "explanation": fc.explanation
+            "explanation": fc.explanation,
+            "doc_title": fc.doc_title,
+            "claim_idx": fc.claim_idx
         }
         for fc in sorted_checks[:3]  # Top 3 items (highest scores)
     ]
@@ -150,7 +154,9 @@ def get_fact_check_summary(fact_checks: list[FactCheck]) -> dict:
         {
             "claim": fc.claim,
             "veracity": fc.veracity,
-            "explanation": fc.explanation
+            "explanation": fc.explanation,
+            "doc_title": fc.doc_title,
+            "claim_idx": fc.claim_idx
         }
         for fc in sorted_checks[-3:]  # Last 3 items (lowest scores)
     ][::-1]  # Reverse to show lowest first

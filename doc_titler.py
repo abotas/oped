@@ -2,9 +2,12 @@
 
 from openai import OpenAI
 import re
+import json
+from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor
 from dotenv import load_dotenv
 from models import TitledDocument
+from cache_utils import generate_unified_hash_from_config
 
 load_dotenv()
 client = OpenAI()
@@ -86,14 +89,16 @@ def _title_to_id(title: str) -> str:
     return snake_case[:10]
 
 
-def title_documents(documents: list[dict]) -> list[TitledDocument]:
-    """Generate titles and IDs for documents.
+def title_documents(documents: list[dict], claims_per_doc: int = 10) -> list[TitledDocument]:
+    """Generate titles and IDs for documents with caching support.
     
     This is the main public interface for the doc_titler module.
     Takes raw documents and returns them with generated titles and IDs.
+    Caches results for interruptability and reuse.
     
     Args:
         documents: List of dicts with 'text' field
+        claims_per_doc: Number of claims per doc (used for cache key consistency)
         
     Returns:
         List of TitledDocument objects with:
@@ -101,21 +106,41 @@ def title_documents(documents: list[dict]) -> list[TitledDocument]:
         - title: Human-readable title like "1. Machines of Loving Grace"
         - text: Original document text
     """
+    # Generate unified hash for caching (same approach as other modules)
+    unified_hash = generate_unified_hash_from_config(
+        [{"id": f"doc_{i+1}", "text": doc["text"]} for i, doc in enumerate(documents)], 
+        claims_per_doc
+    )
+    
+    # Setup cache directory
+    cache_dir = Path("data/cache") / unified_hash / "titled_documents"
+    cache_dir.mkdir(parents=True, exist_ok=True)
+    cache_file = cache_dir / "documents.json"
+    
+    # Check if already cached
+    if cache_file.exists():
+        print(f"Loading cached titled documents from {cache_file}")
+        cached_data = json.loads(cache_file.read_text())
+        return [TitledDocument(**doc) for doc in cached_data]
+    
+    print(f"Generating titles and caching to {cache_file}")
     titles = _generate_titles(documents)
     
     processed_docs = []
     for i, (doc, title) in enumerate(zip(documents, titles)):
-        doc_id = _title_to_id(title)
+        base_id = _title_to_id(title)
         
-        # Ensure unique IDs by appending index if needed
-        used_ids = {d.id for d in processed_docs}
-        if doc_id in used_ids:
-            doc_id = f"{doc_id[:8]}_{i+1}"  # Leave room for underscore and number
+        # Always prefix with document index (1-based)
+        doc_id = f"{i+1}_{base_id[:8]}"  # Format: "1_machines", "2_some_oth", etc.
         
         processed_docs.append(TitledDocument(
             text=doc['text'],
             id=doc_id,
             title=title
         ))
+    
+    # Cache the results
+    cache_file.write_text(json.dumps([doc.model_dump() for doc in processed_docs], indent=2))
+    print(f"Cached {len(processed_docs)} titled documents")
     
     return processed_docs
