@@ -63,5 +63,6 @@ def load_cached_analysis(cache_hash: str) -> bool:
     st.session_state.titled_documents = titled_docs
     st.session_state.num_docs = len(titled_docs)
     st.session_state.claims_per_doc = len([c for c in all_claims if c.doc_id == titled_docs[0].id])
+    st.session_state.analysis_started = True
     
     return True

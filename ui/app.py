@@ -40,8 +40,7 @@ def main():
                 st.rerun()
     
     # Check if we're in analysis mode (session state indicates analysis has started)
-    analysis_started = any(key in st.session_state and st.session_state[key] is not None 
-                          for key in ['all_claims', 'coherence_results', 'fact_checks', 'titled_documents'])
+    analysis_started = st.session_state.get('analysis_started', False)
     
     if not analysis_started:
         # Debug hash loading option
@@ -124,6 +123,7 @@ def main():
         st.session_state.claims_per_doc = claims_per_doc
         st.session_state.selected_model = selected_model
         st.session_state.raw_documents = documents
+        st.session_state.analysis_started = True
         
         # Initialize session state for analysis steps
         st.session_state.titled_documents = None
@@ -138,7 +138,14 @@ def main():
         num_docs = st.session_state.num_docs
         claims_per_doc = st.session_state.claims_per_doc
         selected_model = st.session_state.get('selected_model', 'gpt-5-mini')
-        documents = st.session_state.raw_documents
+        
+        # Handle case where we loaded from cache (no raw_documents)
+        if hasattr(st.session_state, 'raw_documents'):
+            documents = st.session_state.raw_documents
+        else:
+            # Reconstruct documents from titled_documents for cache-loaded analyses
+            titled_documents = st.session_state.titled_documents
+            documents = [{"id": doc.id, "text": doc.text} for doc in titled_documents]
         
         # Show analysis header with document info and reset button
         col1, col2 = st.columns([3, 1])
@@ -151,7 +158,7 @@ def main():
         with col2:
             if st.button("🔄 New Analysis", type="secondary", use_container_width=True):
                 # Clear session state to start fresh
-                for key in ['all_claims', 'coherence_results', 'fact_checks', 'num_docs', 'claims_per_doc', 'titled_documents', 'raw_documents']:
+                for key in ['all_claims', 'coherence_results', 'fact_checks', 'num_docs', 'claims_per_doc', 'titled_documents', 'raw_documents', 'selected_model', 'analysis_started']:
                     if key in st.session_state:
                         del st.session_state[key]
                 st.rerun()

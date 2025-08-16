@@ -4,7 +4,7 @@ import streamlit as st
 from claim_extractor import extract_claims_for_docs
 from claim_coherence import analyze_coherence
 from external_fact_checking import check_facts, get_fact_check_summary
-from utils import get_conflict_metrics, get_top_load_bearing_claims_filtered
+from .utils import get_conflict_metrics, get_top_load_bearing_claims_filtered, get_most_contradicted_claims
 from doc_titler import title_documents
 from .visualizations import create_coherence_matrix, create_veracity_buckets
 
@@ -27,8 +27,8 @@ def run_title_generation_step(documents, claims_per_doc):
     st.markdown("## ✅ Document Titles Generated")
     
     for i, doc in enumerate(titled_documents):
-        preview = doc.text[:200] + "..." if len(doc.text) > 200 else doc.text
-        st.markdown(f"**{doc.title}:** {preview}")
+        # preview = doc.text[:200] + "..." if len(doc.text) > 200 else doc.text
+        st.markdown(f"**{doc.title}**")
         if i < len(titled_documents) - 1:  # Add separator except for last item
             st.markdown("---")
     
@@ -135,6 +135,7 @@ def render_coherence_section(coherence_results, all_claims):
             # Calculate metrics with filtered data
             conflict_metrics = get_conflict_metrics(filtered_coherence, filtered_claims)
             load_bearing = get_top_load_bearing_claims_filtered(filtered_coherence, all_claims, filtered_claims, n=3)
+            contradicted = get_most_contradicted_claims(filtered_coherence, all_claims, filtered_claims, n=3)
             
             st.markdown("### Conflict Metrics")
             st.write(f"- **Prevalence**: {conflict_metrics['conflict_prevalence']:.1%} of relationships are negative")
@@ -158,6 +159,18 @@ def render_coherence_section(coherence_results, all_claims):
                 st.write(f"Claim {claim_info['claim_idx'] + 1}: _{claim_info['claim']}_")
                 st.write(f"Avg impact: {claim_info['avg_impact']:.2f} ")
                 st.write('-'*100)
+            
+            if contradicted:
+                st.markdown("### Most Contradicted Claims")
+                st.write('-'*100)
+                for i, claim_info in enumerate(contradicted[:3]):
+                    st.write(f"**{claim_info['doc_title'].split('.')[1]}** (Doc {claim_info['doc_title'].split('.')[0]})")
+                    st.write(f"Claim {claim_info['claim_idx'] + 1}: _{claim_info['claim']}_")
+                    st.write(f"({claim_info['num_contradictions']} claims oppose this with an average contradiction of {claim_info['avg_contradiction']:.2f}")
+                    st.write('-'*100)
+            else:
+                st.markdown("### Most Contradicted Claims")
+                st.write("No contradictions found - all claims are mutually supportive or neutral.")
         else:
             st.warning("Please select at least one document to analyze.")
 

@@ -75,7 +75,15 @@ def _analyze_single_claim(work_item: tuple, cache_dir: Path, model: str = "gpt-5
             raw_content = raw_content[4:]
         raw_content = raw_content.strip()
     
-    relationships = json.loads(raw_content)
+    try:
+        relationships = json.loads(raw_content)
+    except json.JSONDecodeError as e:
+        print(f"JSON decode error for claim {claim_i.doc_id}[{claim_i.claim_idx}]:")
+        print(f"Error: {e}")
+        print(f"Raw model response:")
+        print(repr(raw_content))
+        print("---")
+        raise
     claim_results = []
     
     # Create mapping from LLM's sequential indices to original claim indices
