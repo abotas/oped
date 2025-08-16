@@ -132,8 +132,8 @@ def render_coherence_section(coherence_results, all_claims):
             
             # Calculate metrics with filtered data
             conflict_metrics = get_conflict_metrics(filtered_coherence, filtered_claims)
-            load_bearing = get_top_load_bearing_claims_filtered(filtered_coherence, all_claims, filtered_claims)
-            contradicted = get_most_contradicted_claims(filtered_coherence, all_claims, filtered_claims)
+            load_bearing = get_top_load_bearing_claims_filtered(filtered_coherence, all_claims)
+            contradicted = get_most_contradicted_claims(filtered_coherence, all_claims)
             
             st.markdown("### Conflict Metrics")
             st.write(f"- **Prevalence**: {conflict_metrics['conflict_prevalence']:.1%} of relationships are negative")
@@ -165,7 +165,7 @@ def render_coherence_section(coherence_results, all_claims):
                     render_load_bearing_claim
                 )
             else:  # Documents
-                doc_load_bearing = get_document_load_bearing_scores(filtered_coherence, all_claims, filtered_claims)
+                doc_load_bearing = get_document_load_bearing_scores(filtered_coherence, all_claims)
                 render_navigation_panel(
                     doc_load_bearing,
                     "Most Load-Bearing Documents",
@@ -186,7 +186,7 @@ def render_coherence_section(coherence_results, all_claims):
                     st.markdown("### Most Contradicted Claims")
                     st.write("No contradictions found - all claims are mutually supportive or neutral.")
             else:  # Documents
-                doc_contradicted = get_document_contradiction_scores(filtered_coherence, all_claims, filtered_claims)
+                doc_contradicted = get_document_contradiction_scores(filtered_coherence, all_claims)
                 if doc_contradicted:
                     render_navigation_panel(
                         doc_contradicted,
@@ -273,10 +273,11 @@ def render_fact_checking_section(fact_checks, all_claims):
             
             # Validation granularity toggle
             validation_granularity = st.radio(
-                "📊 Analyze by:",
+                "toggle",
                 ["Claims", "Documents"],
                 key="validation_granularity",
-                horizontal=True
+                horizontal=True,
+                label_visibility="hidden"
             )
             
             # Create full ranked claim lists from ALL filtered fact checks

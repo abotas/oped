@@ -75,7 +75,7 @@ def render_load_bearing_claim(claim_info: dict, index: int):
     st.info(f"**Claim {claim_info['claim_idx'] + 1}:** {claim_info['claim']}")
     
     # Impact metric using native metric
-    st.metric("Load-bearing Impact", f"{claim_info['avg_impact']:.2f}", help="Average impact on other claims")
+    st.metric("Avg Load-bearing Impact", f"{claim_info['avg_impact']:.2f}", help="Average impact on other claims")
 
 
 def render_contradicted_claim(claim_info: dict, index: int):

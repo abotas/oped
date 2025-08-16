@@ -1,12 +1,12 @@
 """Document-level aggregation functions for the Op-Ed Analyzer UI."""
 
 
-def get_document_load_bearing_scores(coherence_results, all_claims, filtered_claims):
+def get_document_load_bearing_scores(coherence_results, all_claims):
     """Get documents ranked by average load-bearing impact of their claims."""
     from .utils import get_top_load_bearing_claims_filtered
     
     # First get all claim scores
-    claim_scores = get_top_load_bearing_claims_filtered(coherence_results, all_claims, filtered_claims)
+    claim_scores = get_top_load_bearing_claims_filtered(coherence_results, all_claims)
     
     # Group by document and calculate averages
     doc_scores = {}
@@ -35,12 +35,12 @@ def get_document_load_bearing_scores(coherence_results, all_claims, filtered_cla
     return doc_averages
 
 
-def get_document_contradiction_scores(coherence_results, all_claims, filtered_claims):
+def get_document_contradiction_scores(coherence_results, all_claims):
     """Get documents ranked by average contradiction of their claims."""
     from .utils import get_most_contradicted_claims
     
     # First get all claim scores
-    claim_scores = get_most_contradicted_claims(coherence_results, all_claims, filtered_claims)
+    claim_scores = get_most_contradicted_claims(coherence_results, all_claims)
     
     if not claim_scores:
         return []
