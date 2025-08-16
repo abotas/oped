@@ -1,0 +1,140 @@
+[
+  {
+    "claim_i_idx": 23,
+    "claim_j_idx": 0,
+    "delta_prob": 0.7,
+    "reasoning": "Unlimited genius enables autonomous design/iteration of experiments, compressing decades of bio/med progress."
+  },
+  {
+    "claim_i_idx": 23,
+    "claim_j_idx": 1,
+    "delta_prob": 0.8,
+    "reasoning": "The scenario presupposes multimodal, autonomous, massively parallel AI\u2014effectively a 'country of geniuses.'"
+  },
+  {
+    "claim_i_idx": 23,
+    "claim_j_idx": 2,
+    "delta_prob": 0.3,
+    "reasoning": "Abundant intelligence shifts constraints to physical/data/legal bottlenecks, making marginal-returns analysis central."
+  },
+  {
+    "claim_i_idx": 23,
+    "claim_j_idx": 3,
+    "delta_prob": 0.7,
+    "reasoning": "Massively parallel scientific reasoning accelerates platform-tool discovery by an order of magnitude or more."
+  },
+  {
+    "claim_i_idx": 23,
+    "claim_j_idx": 4,
+    "delta_prob": 0.5,
+    "reasoning": "AI design/simulation/triage shortens clinical cycles when effects are large; logistics/regulation still constrain."
+  },
+  {
+    "claim_i_idx": 23,
+    "claim_j_idx": 5,
+    "delta_prob": 0.5,
+    "reasoning": "Superabundant expertise makes sweeping health gains plausible, though biology and aging limits still apply."
+  },
+  {
+    "claim_i_idx": 23,
+    "claim_j_idx": 6,
+    "delta_prob": 0.6,
+    "reasoning": "Intelligence abundance speeds neuro tools/therapies and behavioral supports; uploading still likely beyond 5\u201310 years."
+  },
+  {
+    "claim_i_idx": 23,
+    "claim_j_idx": 7,
+    "delta_prob": 0.5,
+    "reasoning": "Worldwide access plus AI-optimized logistics/eradication campaigns makes broad health distribution more feasible."
+  },
+  {
+    "claim_i_idx": 23,
+    "claim_j_idx": 8,
+    "delta_prob": 0.5,
+    "reasoning": "Unlimited expert help lowers tech and policy-execution barriers, enabling high growth if governance cooperates."
+  },
+  {
+    "claim_i_idx": 23,
+    "claim_j_idx": 9,
+    "delta_prob": 0.2,
+    "reasoning": "AI\u2019s regime neutrality remains; global-scale capability heightens the need for entente and supply-chain strategy."
+  },
+  {
+    "claim_i_idx": 23,
+    "claim_j_idx": 10,
+    "delta_prob": 0.4,
+    "reasoning": "If democracies lead amid abundant AI, they can scale counter-propaganda, transparency, and service delivery."
+  },
+  {
+    "claim_i_idx": 23,
+    "claim_j_idx": 11,
+    "delta_prob": 0.6,
+    "reasoning": "Cheap, superior AI erodes existing labor structures, increasing need for new distribution/incentive systems."
+  },
+  {
+    "claim_i_idx": 23,
+    "claim_j_idx": 12,
+    "delta_prob": 0.4,
+    "reasoning": "Reaching universal access to vast intelligence by 2035 implies takeoff began in the mid-2020s."
+  },
+  {
+    "claim_i_idx": 23,
+    "claim_j_idx": 13,
+    "delta_prob": 0.3,
+    "reasoning": "Such 2035 capability implies earlier milestones (insightful agents, competent robots) likely appeared by 2025\u201327."
+  },
+  {
+    "claim_i_idx": 23,
+    "claim_j_idx": 14,
+    "delta_prob": 0.6,
+    "reasoning": "Unlimited genius presumes AI-accelerated AI research and recursive improvement compressing timelines."
+  },
+  {
+    "claim_i_idx": 23,
+    "claim_j_idx": 15,
+    "delta_prob": 0.7,
+    "reasoning": "Achieving intelligence abundance requires/datapoints massive compute buildout and automation flywheels."
+  },
+  {
+    "claim_i_idx": 23,
+    "claim_j_idx": 16,
+    "delta_prob": 0.4,
+    "reasoning": "Rapid cost declines and high value from capability gains help explain universal access by 2035."
+  },
+  {
+    "claim_i_idx": 23,
+    "claim_j_idx": 17,
+    "delta_prob": 0.6,
+    "reasoning": "Replicable agent coworkers are a direct path to per-person access to vast cognitive labor."
+  },
+  {
+    "claim_i_idx": 23,
+    "claim_j_idx": 18,
+    "delta_prob": 0.5,
+    "reasoning": "Everyday life can feel familiar while capabilities are radically expanded by abundant intelligence/energy."
+  },
+  {
+    "claim_i_idx": 23,
+    "claim_j_idx": 19,
+    "delta_prob": 0.4,
+    "reasoning": "Cheap intelligence/energy drive uneven industry change and price shifts; scarcity goods may rise."
+  },
+  {
+    "claim_i_idx": 23,
+    "claim_j_idx": 20,
+    "delta_prob": 0.2,
+    "reasoning": "Safe, widespread genius implies substantial alignment progress was necessary, supporting safety as prerequisite."
+  },
+  {
+    "claim_i_idx": 23,
+    "claim_j_idx": 21,
+    "delta_prob": 0.4,
+    "reasoning": "Worldwide individual access suggests policy/architecture trended toward empowerment and controlled openness."
+  },
+  {
+    "claim_i_idx": 23,
+    "claim_j_idx": 22,
+    "delta_prob": 0.5,
+    "reasoning": "Delivering universal access implies broad distribution mechanisms were crucial (e.g., compute budgets, low costs)."
+  }
+]

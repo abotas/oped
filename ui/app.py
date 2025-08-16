@@ -405,9 +405,9 @@ def main():
     with col2:
         # Add spacing to align with title
         st.markdown("<div style='height: 20px'></div>", unsafe_allow_html=True)
-        if st.button("📚 Example", help="Owen Crucible + David Brooks AI is so great", use_container_width=True):
+        if st.button("📚 Example", help="Machines of loving grace + Sama blog", use_container_width=True):
             # Load the specific cached analysis
-            cache_hash = "5a1ccfd92f5c"
+            cache_hash = "db6ed1d90088"
             cache_dir = Path("data/cache") / cache_hash
             if cache_dir.exists():
                 # Try to load claims first to get document info
@@ -710,9 +710,9 @@ def main():
             def fact_check_progress_callback(completed, total):
                 progress = completed / total if total > 0 else 0
                 progress_bar.progress(progress)
-                status_text.text(f"✅ Fact checking: {completed}/{total} claims complete")
+                status_text.text(f"✅ Running external validation: {completed}/{total} claims complete")
             
-            status_text.text("✅ Starting fact checking...")
+            status_text.text("✅ Starting external validation...")
             fact_checks = check_facts(
                 all_claims, documents, claims_per_doc, 
                 model=selected_model,

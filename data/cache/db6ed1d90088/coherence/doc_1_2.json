@@ -1,0 +1,140 @@
+[
+  {
+    "claim_i_idx": 2,
+    "claim_j_idx": 0,
+    "delta_prob": -0.5,
+    "reasoning": "Biology is constrained by experiment throughput, clinical/ethical/regulatory delays, data and intrinsic complexity; intelligence can't instantly overcome these, so 50\u2013100 years of progress in 5\u201310 is less likely."
+  },
+  {
+    "claim_i_idx": 2,
+    "claim_j_idx": 1,
+    "delta_prob": 0.0,
+    "reasoning": "This is a definitional threshold; Claim A about bottlenecks doesn't change whether this is how 'powerful AI' is defined."
+  },
+  {
+    "claim_i_idx": 2,
+    "claim_j_idx": 3,
+    "delta_prob": 0.2,
+    "reasoning": "Discovery (vs deployment) can be sped up by better design and automation, but lab throughput and data remain constraints; still, routing around over 5\u201310 years makes a \u226510x discovery speedup more plausible."
+  },
+  {
+    "claim_i_idx": 2,
+    "claim_j_idx": 4,
+    "delta_prob": -0.4,
+    "reasoning": "Clinical development is bottlenecked by human/legal constraints, recruitment, follow-up and real-world time; intelligence and better models help but can't compress most programs to ~1 year."
+  },
+  {
+    "claim_i_idx": 2,
+    "claim_j_idx": 5,
+    "delta_prob": -0.7,
+    "reasoning": "Achieving sweeping disease elimination and lifespan doubling in a decade collides with biological complexity, clinical/regulatory and global deployment bottlenecks that intelligence cannot quickly erase."
+  },
+  {
+    "claim_i_idx": 2,
+    "claim_j_idx": 6,
+    "delta_prob": -0.5,
+    "reasoning": "Neuroscience advances depend on invasive measurement/intervention, data and ethics\u2014hard physical/human bottlenecks\u2014so compressing a century into 5\u201310 years is unlikely."
+  },
+  {
+    "claim_i_idx": 2,
+    "claim_j_idx": 7,
+    "delta_prob": -0.1,
+    "reasoning": "Distribution in low-income settings is constrained by logistics, governance and supply chains; intelligence helps plan but cannot quickly remove these frictions, tempering the 5\u201310 year target."
+  },
+  {
+    "claim_i_idx": 2,
+    "claim_j_idx": 8,
+    "delta_prob": -0.2,
+    "reasoning": "Sustained ~20% growth hinges on overcoming corruption/policy and absorption bottlenecks that intelligence can't instantly fix, making the ambition less likely."
+  },
+  {
+    "claim_i_idx": 2,
+    "claim_j_idx": 9,
+    "delta_prob": 0.3,
+    "reasoning": "Since political constraints are real bottlenecks, AI doesn't inherently favor one regime type; a deliberate entente strategy fits Claim A\u2019s governance emphasis."
+  },
+  {
+    "claim_i_idx": 2,
+    "claim_j_idx": 10,
+    "delta_prob": 0.2,
+    "reasoning": "Given real institutional bottlenecks, AI leadership plus targeted tools can gradually route around some constraints to bolster democratic capacity."
+  },
+  {
+    "claim_i_idx": 2,
+    "claim_j_idx": 11,
+    "delta_prob": 0.5,
+    "reasoning": "Short-run complementarities from physical-world and institutional bottlenecks, followed by erosion as intelligence routes around them, matches Claim A\u2019s dynamics."
+  },
+  {
+    "claim_i_idx": 2,
+    "claim_j_idx": 12,
+    "delta_prob": 0.0,
+    "reasoning": "Claim A is about how to reason under constraints, not timing; it neither supports nor undermines the 'gentle singularity' timeline."
+  },
+  {
+    "claim_i_idx": 2,
+    "claim_j_idx": 13,
+    "delta_prob": -0.1,
+    "reasoning": "Fast timelines\u2014especially for competent physical robots\u2014run into real-world speed and hardware/actuation bottlenecks; intelligence helps but not instantly."
+  },
+  {
+    "claim_i_idx": 2,
+    "claim_j_idx": 14,
+    "delta_prob": 0.1,
+    "reasoning": "Software-centric fields can see big gains and AI-for-AI loops, but broader science faces physical/data bottlenecks; acceleration is real yet not limitless."
+  },
+  {
+    "claim_i_idx": 2,
+    "claim_j_idx": 15,
+    "delta_prob": 0.4,
+    "reasoning": "Economic scaling and automation can route around many bottlenecks over time, pushing intelligence costs toward energy limits, consistent with Claim A."
+  },
+  {
+    "claim_i_idx": 2,
+    "claim_j_idx": 16,
+    "delta_prob": 0.2,
+    "reasoning": "Focusing on marginal returns aligns with observed scaling/cost trends; these do not clash with the bottleneck view and may reinforce investment."
+  },
+  {
+    "claim_i_idx": 2,
+    "claim_j_idx": 17,
+    "delta_prob": 0.4,
+    "reasoning": "Knowledge work has fewer physical bottlenecks; intelligence can be replicated cheaply, so junior-coworker agents are made more plausible."
+  },
+  {
+    "claim_i_idx": 2,
+    "claim_j_idx": 18,
+    "delta_prob": 0.2,
+    "reasoning": "Over longer horizons many bottlenecks can be routed around, changing capabilities while core human experiences persist; fits Claim A\u2019s long-horizon view."
+  },
+  {
+    "claim_i_idx": 2,
+    "claim_j_idx": 19,
+    "delta_prob": 0.5,
+    "reasoning": "Heterogeneous bottlenecks imply uneven industry impact and sharper price declines where constraints are weaker (e.g., bits vs atoms)."
+  },
+  {
+    "claim_i_idx": 2,
+    "claim_j_idx": 20,
+    "delta_prob": 0.2,
+    "reasoning": "Alignment and governance are human/legal bottlenecks that must be addressed in parallel with scaling\u2014precisely the kind of constraint Claim A highlights."
+  },
+  {
+    "claim_i_idx": 2,
+    "claim_j_idx": 21,
+    "delta_prob": 0.2,
+    "reasoning": "Policy co-evolution and user empowerment address human/legal bottlenecks and mitigate authoritarian misuse, matching Claim A\u2019s framing."
+  },
+  {
+    "claim_i_idx": 2,
+    "claim_j_idx": 22,
+    "delta_prob": 0.2,
+    "reasoning": "Sharing access to intelligence (compute budgets, low costs) targets distributional/institutional bottlenecks rather than assuming intelligence alone fixes them."
+  },
+  {
+    "claim_i_idx": 2,
+    "claim_j_idx": 23,
+    "delta_prob": -0.3,
+    "reasoning": "Even by 2035, 'unlimited genius' is bounded by data, coordination, and physical-world bottlenecks; intelligence helps but doesn\u2019t erase these limits."
+  }
+]

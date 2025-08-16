@@ -15,4 +15,4 @@ CLAUDE.md
 data/*
 !data/cache/
 data/cache/*
-!data/cache/5a1ccfd92f5c/
+!data/cache/db6ed1d90088/

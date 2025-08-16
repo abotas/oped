@@ -1,0 +1,140 @@
+[
+  {
+    "claim_i_idx": 5,
+    "claim_j_idx": 0,
+    "delta_prob": 0.8,
+    "reasoning": "A-level health gains imply 50\u2013100 years of bio/med progress were compressed via AI that designs and runs real experiments."
+  },
+  {
+    "claim_i_idx": 5,
+    "claim_j_idx": 1,
+    "delta_prob": 0.6,
+    "reasoning": "Delivering such sweeping outcomes likely required extremely capable, scalable, autonomous AI\u2014akin to a 'country of geniuses.'"
+  },
+  {
+    "claim_i_idx": 5,
+    "claim_j_idx": 2,
+    "delta_prob": 0.5,
+    "reasoning": "A 10-year horizon reflects navigating bottlenecks (physical speed, data, regulation) rather than instant intelligence-only gains."
+  },
+  {
+    "claim_i_idx": 5,
+    "claim_j_idx": 3,
+    "delta_prob": 0.9,
+    "reasoning": "Near-elimination of infections and massive cancer reductions likely came from accelerated discovery of general-purpose bio platforms."
+  },
+  {
+    "claim_i_idx": 5,
+    "claim_j_idx": 4,
+    "delta_prob": 0.7,
+    "reasoning": "Global deployment of many effective interventions within a decade implies much shorter clinical cycles and better preclinical fidelity."
+  },
+  {
+    "claim_i_idx": 5,
+    "claim_j_idx": 6,
+    "delta_prob": 0.3,
+    "reasoning": "A includes Alzheimer\u2019s prevention and broad chronic improvements, consistent with major neuroscience acceleration (though not guaranteed to cure most mental illness)."
+  },
+  {
+    "claim_i_idx": 5,
+    "claim_j_idx": 7,
+    "delta_prob": 0.8,
+    "reasoning": "Near-elimination of infectious disease implies coordinated global distribution reaching low-income countries within the window."
+  },
+  {
+    "claim_i_idx": 5,
+    "claim_j_idx": 8,
+    "delta_prob": 0.4,
+    "reasoning": "Large health and tech gains boost productivity and can enable sustained high growth where governance allows."
+  },
+  {
+    "claim_i_idx": 5,
+    "claim_j_idx": 9,
+    "delta_prob": 0.1,
+    "reasoning": "A-level AI power raises the stakes for governance and supply-chain strategies but doesn\u2019t favor any regime type by itself."
+  },
+  {
+    "claim_i_idx": 5,
+    "claim_j_idx": 10,
+    "delta_prob": 0.2,
+    "reasoning": "If democracies lead the AI behind A\u2019s outcomes, the same tools can strengthen rule-of-law and service delivery; not required, but more salient."
+  },
+  {
+    "claim_i_idx": 5,
+    "claim_j_idx": 11,
+    "delta_prob": 0.6,
+    "reasoning": "Such transformative AI-driven health advances imply broadly superior, cheap AI, pressuring current labor/economic structures."
+  },
+  {
+    "claim_i_idx": 5,
+    "claim_j_idx": 12,
+    "delta_prob": 0.3,
+    "reasoning": "A-scale changes align with a 'gentle singularity' narrative, though they don\u2019t fix the start date to the mid-2020s."
+  },
+  {
+    "claim_i_idx": 5,
+    "claim_j_idx": 13,
+    "delta_prob": 0.1,
+    "reasoning": "A doesn\u2019t require the specific 2025\u20132027 milestones, although early agent and robot capability would facilitate it."
+  },
+  {
+    "claim_i_idx": 5,
+    "claim_j_idx": 14,
+    "delta_prob": 0.5,
+    "reasoning": "Achieving A likely required large scientific productivity multipliers and AI-for-AI acceleration."
+  },
+  {
+    "claim_i_idx": 5,
+    "claim_j_idx": 15,
+    "delta_prob": 0.4,
+    "reasoning": "Realizing A likely involved datacenter/compute buildouts and automation flywheels driving down the marginal cost of intelligence."
+  },
+  {
+    "claim_i_idx": 5,
+    "claim_j_idx": 16,
+    "delta_prob": 0.2,
+    "reasoning": "A\u2019s realization is consistent with scaling/cost-drop dynamics, offering weak support for these empirical regularities."
+  },
+  {
+    "claim_i_idx": 5,
+    "claim_j_idx": 17,
+    "delta_prob": 0.4,
+    "reasoning": "Delivering A likely depended on ubiquitous AI coworkers (esp. in science/software) replicated at scale."
+  },
+  {
+    "claim_i_idx": 5,
+    "claim_j_idx": 18,
+    "delta_prob": 0.3,
+    "reasoning": "A-level health gains fit a world where daily life feels familiar but capabilities are radically higher."
+  },
+  {
+    "claim_i_idx": 5,
+    "claim_j_idx": 19,
+    "delta_prob": 0.5,
+    "reasoning": "A evidences dramatic scientific acceleration and the price effects of cheaper intelligence/energy."
+  },
+  {
+    "claim_i_idx": 5,
+    "claim_j_idx": 20,
+    "delta_prob": 0.3,
+    "reasoning": "Safe, widespread deployment implicit in A suggests workable alignment/safety practices are a prerequisite."
+  },
+  {
+    "claim_i_idx": 5,
+    "claim_j_idx": 21,
+    "delta_prob": 0.3,
+    "reasoning": "A\u2019s 'biological freedom' and broad benefits are more compatible with policies that empower individuals and avoid authoritarian misuse."
+  },
+  {
+    "claim_i_idx": 5,
+    "claim_j_idx": 22,
+    "delta_prob": 0.4,
+    "reasoning": "Global realization of A implies broad benefit-sharing, strengthening the case for proactive distribution mechanisms."
+  },
+  {
+    "claim_i_idx": 5,
+    "claim_j_idx": 23,
+    "delta_prob": 0.3,
+    "reasoning": "The capabilities enabling A make widely accessible 'unlimited genius' tools by ~2035 more plausible, though not guaranteed."
+  }
+]

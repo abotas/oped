@@ -1,0 +1,8 @@
+{
+  "doc_id": "doc_1",
+  "claim_idx": 9,
+  "claim": "AI does not inherently favor liberal democracy over authoritarianism; to avoid AI-enabled autocracy, democratic states should pursue an 'entente strategy' that secures AI supply chains, scales rapidly, restricts adversaries\u2019 chip access, achieves military superiority, and pairs deterrence with broad benefit-sharing to tilt global governance toward democracy.",
+  "veracity": 75,
+  "explanation": "Evidence shows AI can bolster digital repression and censorship, so it doesn\u2019t inherently favor liberal democracy; scholars also argue technology is not a natural ally of democracy. ([freedomhouse.org](https://freedomhouse.org/report/freedom-net/2023/repressive-power-artificial-intelligence?utm_source=chatgpt.com), [cambridge.org](https://www.cambridge.org/core/books/cambridge-handbook-of-responsible-artificial-intelligence/artificial-intelligence-and-the-past-present-and-future-of-democracy/B6A19E65F15179EC41AB226D24A9FC51?utm_source=chatgpt.com)) The recommended \u201centente\u201d-style mix\u2014ally coordination to secure AI/semiconductor supply chains, coordinated export controls to limit adversaries\u2019 access to advanced chips, scaling and diffusion/benefit-sharing among partners, and pursuing an AI-enabled military edge\u2014matches prominent policy analyses and ongoing U.S.\u2013allied efforts. ([foreignaffairs.com](https://www.foreignaffairs.com/united-states/how-america-can-stay-ahead-china-ai-race?utm_source=chatgpt.com))",
+  "sources": []
+}

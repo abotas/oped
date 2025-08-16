@@ -1,0 +1,8 @@
+{
+  "doc_id": "doc_1",
+  "claim_idx": 1,
+  "claim": "Powerful AI is defined as a system exceeding Nobel-level human performance across fields, with full multimodal interfaces, autonomous long-horizon tasking, remote tool/robot control, and the capacity to run millions of 10x\u2013100x-speed instances that collaborate\u2014a 'country of geniuses in a datacenter.'",
+  "veracity": 90,
+  "explanation": "This matches Anthropic CEO Dario Amodei\u2019s explicit definition of \u201cpowerful AI\u201d in his October 2024 essay: smarter than a Nobel Prize winner across fields; full text/audio/video/mouse/keyboard/internet interfaces; autonomous long\u2011horizon tasking; ability to control tools/robots; and millions of 10x\u2013100x\u2011speed instances that can collaborate\u2014summarized as a \u201ccountry of geniuses in a datacenter.\u201d It is accurate to that source, though it isn\u2019t a universal field-wide definition. ([darioamodei.com](https://darioamodei.com/machines-of-loving-grace))",
+  "sources": []
+}

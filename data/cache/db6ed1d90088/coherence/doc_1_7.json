@@ -1,0 +1,140 @@
+[
+  {
+    "claim_i_idx": 7,
+    "claim_j_idx": 0,
+    "delta_prob": 0.2,
+    "reasoning": "Operational success in global health distribution implies strong AI-driven execution and faster health impact pipelines, modestly supporting compressed bio progress."
+  },
+  {
+    "claim_i_idx": 7,
+    "claim_j_idx": 1,
+    "delta_prob": 0.1,
+    "reasoning": "Achieving Claim A suggests advanced planning/logistics agents, but not necessarily the full 'country of geniuses' spec."
+  },
+  {
+    "claim_i_idx": 7,
+    "claim_j_idx": 2,
+    "delta_prob": 0.2,
+    "reasoning": "Claim A\u2019s 5\u201310 year, real-world logistics success aligns with a bottleneck-aware view where intelligence routes around constraints over time."
+  },
+  {
+    "claim_i_idx": 7,
+    "claim_j_idx": 3,
+    "delta_prob": 0.2,
+    "reasoning": "Large benefits being deployable implies significant tools/platforms exist or emerge quickly, though some benefits could be from existing tech."
+  },
+  {
+    "claim_i_idx": 7,
+    "claim_j_idx": 4,
+    "delta_prob": 0.1,
+    "reasoning": "Faster deployment suggests improved translation timelines, but logistics alone could deliver benefits without 1-year clinical cycles."
+  },
+  {
+    "claim_i_idx": 7,
+    "claim_j_idx": 5,
+    "delta_prob": 0.2,
+    "reasoning": "Eradication-style logistics supports ambitious infectious-disease goals; weaker link to cancer/genetic cures and lifespan doubling."
+  },
+  {
+    "claim_i_idx": 7,
+    "claim_j_idx": 6,
+    "delta_prob": 0.1,
+    "reasoning": "Distribution/logistics success weakly supports rapid neuro/mental health progress but provides no direct evidence."
+  },
+  {
+    "claim_i_idx": 7,
+    "claim_j_idx": 8,
+    "delta_prob": 0.5,
+    "reasoning": "Health-driven productivity gains and demonstrated diffusion/coordination in LMICs strongly boost prospects for sustained high growth."
+  },
+  {
+    "claim_i_idx": 7,
+    "claim_j_idx": 9,
+    "delta_prob": 0.0,
+    "reasoning": "Claim A is compatible with either regime type and doesn\u2019t speak to inherent political tilt."
+  },
+  {
+    "claim_i_idx": 7,
+    "claim_j_idx": 10,
+    "delta_prob": 0.2,
+    "reasoning": "Effective AI-enabled public-service delivery in health makes democratic strengthening via AI more plausible if democracies lead."
+  },
+  {
+    "claim_i_idx": 7,
+    "claim_j_idx": 11,
+    "delta_prob": 0.0,
+    "reasoning": "Health-tech distribution does not materially inform labor market displacement or new incentive systems."
+  },
+  {
+    "claim_i_idx": 7,
+    "claim_j_idx": 12,
+    "delta_prob": 0.2,
+    "reasoning": "Rapid, normalized global AI-enabled health gains fit the 'gentle singularity' narrative."
+  },
+  {
+    "claim_i_idx": 7,
+    "claim_j_idx": 13,
+    "delta_prob": 0.1,
+    "reasoning": "Claim A\u2019s success is consistent with rapid capability timelines but doesn\u2019t require the specific 2025\u20132027 milestones."
+  },
+  {
+    "claim_i_idx": 7,
+    "claim_j_idx": 14,
+    "delta_prob": 0.2,
+    "reasoning": "Executing Claim A implies meaningful AI-enabled productivity and iterative improvement in science/operations."
+  },
+  {
+    "claim_i_idx": 7,
+    "claim_j_idx": 15,
+    "delta_prob": 0.1,
+    "reasoning": "Large-scale AI campaigns suggest growing compute/infra flywheels, though robots/energy dynamics aren\u2019t evidenced."
+  },
+  {
+    "claim_i_idx": 7,
+    "claim_j_idx": 16,
+    "delta_prob": 0.1,
+    "reasoning": "Wide, low-cost rollout is consistent with falling inference costs and scaling trends, but only indirectly supports them."
+  },
+  {
+    "claim_i_idx": 7,
+    "claim_j_idx": 17,
+    "delta_prob": 0.2,
+    "reasoning": "Coordinated global campaigns imply agentic AI coworkers handling multi-day tasks at scale under supervision."
+  },
+  {
+    "claim_i_idx": 7,
+    "claim_j_idx": 18,
+    "delta_prob": 0.2,
+    "reasoning": "Broad health gains within a decade align with familiar lives amid radically higher capability."
+  },
+  {
+    "claim_i_idx": 7,
+    "claim_j_idx": 19,
+    "delta_prob": 0.1,
+    "reasoning": "Sectorally uneven change with cheaper goods fits AI-driven health improvements; linkage is indirect."
+  },
+  {
+    "claim_i_idx": 7,
+    "claim_j_idx": 20,
+    "delta_prob": 0.0,
+    "reasoning": "Claim A does not address solving alignment prior to cheap superintelligence."
+  },
+  {
+    "claim_i_idx": 7,
+    "claim_j_idx": 21,
+    "delta_prob": 0.2,
+    "reasoning": "Coordinated, pro-social global health deployments support policy trends toward empowerment over authoritarian misuse."
+  },
+  {
+    "claim_i_idx": 7,
+    "claim_j_idx": 22,
+    "delta_prob": 0.4,
+    "reasoning": "Claim A is a concrete instance of broad benefit distribution, underscoring the need/value of mechanisms to share AI gains."
+  },
+  {
+    "claim_i_idx": 7,
+    "claim_j_idx": 23,
+    "delta_prob": 0.2,
+    "reasoning": "If such benefits are widely accessible by ~2035, individuals leveraging vast AI capability becomes more plausible."
+  }
+]

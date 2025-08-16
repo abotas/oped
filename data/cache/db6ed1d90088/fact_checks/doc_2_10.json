@@ -1,0 +1,8 @@
+{
+  "doc_id": "doc_2",
+  "claim_idx": 10,
+  "claim": "Ensuring broad distribution of AGI\u2019s benefits is critical: the capital\u2013labor balance could skew without early intervention, so ideas like giving every person a 'compute budget' or relentlessly lowering the cost of intelligence may be needed to share gains globally.",
+  "veracity": 72,
+  "explanation": "Partly accurate but speculative. Credible analyses warn AI could tilt income toward capital and heighten wealth inequality without policy responses, though outcomes depend on how adoption and task complementarities play out. ([imf.org](https://www.imf.org/en/Publications/WP/Issues/2025/04/04/AI-Adoption-and-Inequality-565729?utm_source=chatgpt.com), [elibrary.imf.org](https://www.elibrary.imf.org/view/journals/006/2024/001/article-A001-en.xml?utm_source=chatgpt.com)) Evidence on realized distributional effects to date is mixed: recent OECD work finds little impact on between-occupation wage inequality so far (2014\u20132018), with some signs of reduced within-occupation gaps, underscoring uncertainty. ([oecd.org](https://www.oecd.org/en/publications/artificial-intelligence-and-wage-inequality_bf98a45c-en.html?utm_source=chatgpt.com)) The specific remedies cited\u2014giving everyone a \u201ccompute budget\u201d and driving down the cost of intelligence\u2014are real proposals articulated by Sam Altman, not established policy solutions. ([blog.samaltman.com](https://blog.samaltman.com/three-observations?utm_source=chatgpt.com)) Thus the claim aligns with prominent viewpoints but remains normative and forward-looking rather than empirically verified.",
+  "sources": []
+}

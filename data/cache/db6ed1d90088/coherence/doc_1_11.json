@@ -1,0 +1,140 @@
+[
+  {
+    "claim_i_idx": 11,
+    "claim_j_idx": 0,
+    "delta_prob": 0.4,
+    "reasoning": "If AI becomes broadly superior/cheap, virtual biologists and rapid lab iteration become more plausible, boosting compression likelihood."
+  },
+  {
+    "claim_i_idx": 11,
+    "claim_j_idx": 1,
+    "delta_prob": 0.3,
+    "reasoning": "Obsoleting economic structures implies systems with vast, cheap, scalable capability akin to a 'country of geniuses.'"
+  },
+  {
+    "claim_i_idx": 11,
+    "claim_j_idx": 2,
+    "delta_prob": 0.4,
+    "reasoning": "A\u2019s short-term human advantage in the physical world reflects real bottlenecks, aligning with a bottleneck-centric forecast framework."
+  },
+  {
+    "claim_i_idx": 11,
+    "claim_j_idx": 3,
+    "delta_prob": 0.3,
+    "reasoning": "Broadly superior, cheap AI makes 10x acceleration in platform biotech tools more plausible, though timelines remain uncertain."
+  },
+  {
+    "claim_i_idx": 11,
+    "claim_j_idx": 4,
+    "delta_prob": 0.2,
+    "reasoning": "Cheap superhuman AI supports faster trial design and parallelization, but regulatory/biological limits temper the effect."
+  },
+  {
+    "claim_i_idx": 11,
+    "claim_j_idx": 5,
+    "delta_prob": 0.1,
+    "reasoning": "Vast AI capability raises the ceiling on health gains, but extreme outcomes (e.g., ~150-year lifespan) are not implied by A alone."
+  },
+  {
+    "claim_i_idx": 11,
+    "claim_j_idx": 6,
+    "delta_prob": 0.2,
+    "reasoning": "If AI is broadly superior and cheap, neuroscience acceleration is more likely, though mind uploading remains orthogonal."
+  },
+  {
+    "claim_i_idx": 11,
+    "claim_j_idx": 7,
+    "delta_prob": 0.3,
+    "reasoning": "A\u2019s call for new distribution systems makes coordinated global rollouts more credible, conditional on governance."
+  },
+  {
+    "claim_i_idx": 11,
+    "claim_j_idx": 8,
+    "delta_prob": 0.3,
+    "reasoning": "Cheap superhuman AI and better policy tooling would support very high growth in LMICs if institutions adopt them."
+  },
+  {
+    "claim_i_idx": 11,
+    "claim_j_idx": 9,
+    "delta_prob": 0.1,
+    "reasoning": "A implies power concentration risks and the need for new systems, consistent with AI not inherently favoring democracies."
+  },
+  {
+    "claim_i_idx": 11,
+    "claim_j_idx": 10,
+    "delta_prob": 0.2,
+    "reasoning": "If AI is cheap and superior, democracies gain stronger tools to improve services/legitimacy, raising plausibility."
+  },
+  {
+    "claim_i_idx": 11,
+    "claim_j_idx": 12,
+    "delta_prob": 0.1,
+    "reasoning": "A describes a transitional arc (complements then displacement) consistent with a gentle singularity, but without timing."
+  },
+  {
+    "claim_i_idx": 11,
+    "claim_j_idx": 13,
+    "delta_prob": 0.1,
+    "reasoning": "A implies rapid capability growth but not specific 2025\u20132027 milestones; timelines become modestly more plausible."
+  },
+  {
+    "claim_i_idx": 11,
+    "claim_j_idx": 14,
+    "delta_prob": 0.4,
+    "reasoning": "To reach broad superiority/cheapness, using AI to improve AI is likely; this supports compressed research cycles."
+  },
+  {
+    "claim_i_idx": 11,
+    "claim_j_idx": 15,
+    "delta_prob": 0.7,
+    "reasoning": "A\u2019s 'broadly superior and cheap' strongly implies economic flywheels driving marginal intelligence cost toward electricity."
+  },
+  {
+    "claim_i_idx": 11,
+    "claim_j_idx": 16,
+    "delta_prob": 0.3,
+    "reasoning": "A\u2019s outcome requires large cost declines and growing value from capability gains, consistent with observed AI economics."
+  },
+  {
+    "claim_i_idx": 11,
+    "claim_j_idx": 17,
+    "delta_prob": 0.6,
+    "reasoning": "A\u2019s short-term complementarity presumes agents doing much knowledge work under human oversight at scale."
+  },
+  {
+    "claim_i_idx": 11,
+    "claim_j_idx": 18,
+    "delta_prob": 0.5,
+    "reasoning": "A says human meaning remains in relationships/self-chosen challenges while capability explodes\u2014matching this picture."
+  },
+  {
+    "claim_i_idx": 11,
+    "claim_j_idx": 19,
+    "delta_prob": 0.4,
+    "reasoning": "A implies cheap intelligence transforms cost structures; uneven industry impact and shifting relative prices follow."
+  },
+  {
+    "claim_i_idx": 11,
+    "claim_j_idx": 20,
+    "delta_prob": 0.3,
+    "reasoning": "If AI becomes broadly superior, robust alignment becomes a practical prerequisite to safely realize/ distribute benefits."
+  },
+  {
+    "claim_i_idx": 11,
+    "claim_j_idx": 21,
+    "delta_prob": 0.4,
+    "reasoning": "A\u2019s call for new distribution/incentive systems implies policy must co-evolve and empower users to avoid misuse."
+  },
+  {
+    "claim_i_idx": 11,
+    "claim_j_idx": 22,
+    "delta_prob": 0.9,
+    "reasoning": "A explicitly claims current structures will be obsolete and new distribution needed\u2014making broad-benefit sharing critical."
+  },
+  {
+    "claim_i_idx": 11,
+    "claim_j_idx": 23,
+    "delta_prob": 0.3,
+    "reasoning": "If intelligence becomes broadly superior and cheap, 'unlimited genius' access by ~2035 is more plausible, though timing is open."
+  }
+]

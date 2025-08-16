@@ -1,8 +1,0 @@
-{
-  "doc_id": "doc_2",
-  "claim_idx": 1,
-  "claim": "Because human cognition is a complex blend of conscious and unconscious, rational and intuitive, emotional and moral processes\u2014not mere computation\u2014AI systems, which lack consciousness, understanding, emotions, agency, and a lived worldview, cannot replicate essential aspects of the human mind.",
-  "veracity": 65,
-  "explanation": "Largely accurate for today: cognitive science indicates human cognition is an embodied mix of intuitive, emotional and deliberative processes, not mere computation (([plato.stanford.edu](https://plato.stanford.edu/eNtRIeS/embodied-cognition/?utm_source=chatgpt.com), [docslib.org](https://docslib.org/doc/2089281/the-emotional-dog-and-its-rational-tail-a-social-intuitionist-approach-to-moral-judgment?utm_source=chatgpt.com))). Current AI is broadly assessed as not conscious (and thus lacking phenomenal emotion), lacks legal/moral agency, and has no lived, embodied worldview, so it cannot presently replicate key aspects of the human mind (([arxiv.org](https://arxiv.org/abs/2308.08708?utm_source=chatgpt.com), [oecd.ai](https://oecd.ai/en/principles?utm_source=chatgpt.com))). However, experts argue this is not a proven impossibility\u2014analyses conclude no existing systems are conscious but outline plausible routes by which future AI could meet some indicators\u2014so the absolute \u201ccannot\u201d claim overreaches (([arxiv.org](https://arxiv.org/abs/2308.08708?utm_source=chatgpt.com))).",
-  "sources": []
-}

@@ -1,0 +1,8 @@
+{
+  "doc_id": "doc_2",
+  "claim_idx": 11,
+  "claim": "By around 2035, individuals worldwide should be able to marshal 'unlimited genius'\u2014effectively the cumulative intellectual capacity equivalent to everyone in 2025\u2014making single people more, not less, impactful in the AGI era.",
+  "veracity": 10,
+  "explanation": "This is a speculative, extreme prediction not supported by current evidence. Large expert surveys put the median 50% chance for human-level AI around 2047\u2014not ~2035\u2014and emphasize wide uncertainty. ([arxiv.org](https://arxiv.org/abs/2401.02843?utm_source=chatgpt.com)) Physical bottlenecks also challenge the idea of \u201cunlimited genius\u201d: analyses forecast high\u2011quality human text for training could be effectively exhausted between about 2026 and 2032, and the IEA projects data\u2011centre electricity demand merely doubling by 2030 and, in a high\u2011adoption scenario, rising to ~1,700 TWh by 2035\u2014large, but hardly indicative of limitless, universally accessible capability. ([arxiv.org](https://arxiv.org/abs/2211.04325?utm_source=chatgpt.com), [iea.org](https://www.iea.org/reports/energy-and-ai/energy-demand-from-ai?utm_source=chatgpt.com)) Moreover, \u201cindividuals worldwide\u201d having such access is unlikely by 2035 given today\u2019s digital divide (about 2.6 billion people remained offline in 2024). ([itu.int](https://www.itu.int/en/mediacentre/Pages/PR-2024-11-27-facts-and-figures.aspx?utm_source=chatgpt.com)) Overall, the claim overreaches both timeline and feasibility.",
+  "sources": []
+}

@@ -1,0 +1,8 @@
+{
+  "doc_id": "doc_2",
+  "claim_idx": 9,
+  "claim": "Public policy worldwide should co-evolve with AI and trend toward individual empowerment (more user control and some open-sourcing within broad societal bounds) to avoid the alternative of authoritarian misuse such as mass surveillance and loss of autonomy.",
+  "veracity": 50,
+  "explanation": "The statement is a normative policy opinion (a \u201cshould\u201d), so it isn\u2019t a verifiable factual claim. Its premise\u2014that AI can be misused for authoritarian ends such as mass surveillance\u2014is well documented (e.g., global trends in digital repression and concrete cases like Xinjiang). ([freedomhouse.org](https://freedomhouse.org/report/freedom-net/2023/repressive-power-artificial-intelligence?utm_source=chatgpt.com), [hrw.org](https://www.hrw.org/news/2019/05/01/china-how-mass-surveillance-works-xinjiang?utm_source=chatgpt.com)) Major international frameworks and laws (UNESCO\u2019s 2021 Recommendation on AI Ethics, the OECD AI Principles, and the EU AI Act) emphasize human rights, transparency, user protections, and restrictions on abusive practices (e.g., bans on social scoring and limits on biometric identification), which broadly align with an \u201cindividual empowerment\u201d orientation, though how far to go on open\u2011sourcing remains contested. ([unesco.org](https://www.unesco.org/en/legal-affairs/recommendation-ethics-artificial-intelligence?utm_source=chatgpt.com), [oecd.org](https://www.oecd.org/en/topics/sub-issues/ai-principles.html?utm_source=chatgpt.com), [europarl.europa.eu](https://www.europarl.europa.eu/news/en/press-room/20240308IPR19015/artificial-intelligence-act-meps-adopt-landmark-law?utm_source=chatgpt.com))",
+  "sources": []
+}

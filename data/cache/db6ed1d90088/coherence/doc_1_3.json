@@ -1,0 +1,140 @@
+[
+  {
+    "claim_i_idx": 3,
+    "claim_j_idx": 0,
+    "delta_prob": 0.6,
+    "reasoning": "10x acceleration in general-purpose bio tools that drive most downstream progress makes decades of progress compression via AI-run experiments much more plausible."
+  },
+  {
+    "claim_i_idx": 3,
+    "claim_j_idx": 1,
+    "delta_prob": 0.2,
+    "reasoning": "Such acceleration implies very capable AI, modestly supporting the 'country of geniuses' characterization, though it doesn\u2019t prove all specified features."
+  },
+  {
+    "claim_i_idx": 3,
+    "claim_j_idx": 2,
+    "delta_prob": 0.4,
+    "reasoning": "Acceleration over 5\u201310 years (not instant) suggests bottlenecks and diminishing returns that intelligence can route around over time, aligning with this framing."
+  },
+  {
+    "claim_i_idx": 3,
+    "claim_j_idx": 4,
+    "delta_prob": 0.4,
+    "reasoning": "Better general-purpose tools, measurement, and iteration speed plausibly shorten clinical timelines and enable parallelization, especially for large-effect interventions."
+  },
+  {
+    "claim_i_idx": 3,
+    "claim_j_idx": 5,
+    "delta_prob": 0.3,
+    "reasoning": "Rapid tool discovery and downstream progress raise odds of major health gains, though biological, regulatory, and deployment limits temper certainty."
+  },
+  {
+    "claim_i_idx": 3,
+    "claim_j_idx": 6,
+    "delta_prob": 0.5,
+    "reasoning": "General-purpose measurement/intervention tools extend to neuroscience, supporting rapid advances in treating mental illness; uploading remains harder."
+  },
+  {
+    "claim_i_idx": 3,
+    "claim_j_idx": 7,
+    "delta_prob": 0.3,
+    "reasoning": "Highly effective tools increase the payoff of distribution and eradication campaigns, though logistics and governance still constrain impact."
+  },
+  {
+    "claim_i_idx": 3,
+    "claim_j_idx": 8,
+    "delta_prob": 0.2,
+    "reasoning": "Health-driven productivity gains and technology diffusion from such tools support higher growth potential, contingent on policy and corruption barriers."
+  },
+  {
+    "claim_i_idx": 3,
+    "claim_j_idx": 9,
+    "delta_prob": 0.0,
+    "reasoning": "Bio-tool acceleration is largely orthogonal to whether AI favors specific political regimes."
+  },
+  {
+    "claim_i_idx": 3,
+    "claim_j_idx": 10,
+    "delta_prob": 0.1,
+    "reasoning": "Demonstrated AI potency suggests strong potential for civic-strengthening tools, but outcomes depend on governance and adoption."
+  },
+  {
+    "claim_i_idx": 3,
+    "claim_j_idx": 11,
+    "delta_prob": 0.2,
+    "reasoning": "If AI can drive most progress in biology, it likely becomes broadly superior and cheap, increasing pressure to reform distribution and incentives."
+  },
+  {
+    "claim_i_idx": 3,
+    "claim_j_idx": 12,
+    "delta_prob": 0.3,
+    "reasoning": "Strong AI-driven acceleration in a core domain fits the narrative of a gentle singularity with rapidly normalizing breakthroughs."
+  },
+  {
+    "claim_i_idx": 3,
+    "claim_j_idx": 13,
+    "delta_prob": 0.1,
+    "reasoning": "Accelerated bio progress modestly corroborates rapid capability timelines, but it doesn\u2019t fix specific dates for agents and robots."
+  },
+  {
+    "claim_i_idx": 3,
+    "claim_j_idx": 14,
+    "delta_prob": 0.4,
+    "reasoning": "Large scientific acceleration implies AI-as-researcher and recursive improvement dynamics are operating."
+  },
+  {
+    "claim_i_idx": 3,
+    "claim_j_idx": 15,
+    "delta_prob": 0.2,
+    "reasoning": "Success in one high-value domain supports expectations of compute/datacenter and robotics flywheels, though indirectly."
+  },
+  {
+    "claim_i_idx": 3,
+    "claim_j_idx": 16,
+    "delta_prob": 0.1,
+    "reasoning": "Achieving Claim A likely reflects underlying scaling and cost trends, modestly supporting these empirical regularities."
+  },
+  {
+    "claim_i_idx": 3,
+    "claim_j_idx": 17,
+    "delta_prob": 0.1,
+    "reasoning": "If AI can function as effective biologists, it likely can as junior coworkers elsewhere, but this is an indirect link."
+  },
+  {
+    "claim_i_idx": 3,
+    "claim_j_idx": 18,
+    "delta_prob": 0.2,
+    "reasoning": "Acceleration suggests abundant capabilities by the 2030s while daily life remains human-centered, modestly supporting this outlook."
+  },
+  {
+    "claim_i_idx": 3,
+    "claim_j_idx": 19,
+    "delta_prob": 0.1,
+    "reasoning": "Evidence that intelligence gets cheaper and drives science supports broad price shifts across industries, indirectly."
+  },
+  {
+    "claim_i_idx": 3,
+    "claim_j_idx": 20,
+    "delta_prob": 0.2,
+    "reasoning": "Potent bio capabilities raise stakes and risks, strengthening the case that addressing safety is prerequisite."
+  },
+  {
+    "claim_i_idx": 3,
+    "claim_j_idx": 21,
+    "delta_prob": 0.1,
+    "reasoning": "Powerful AI in bio increases misuse risks, modestly reinforcing the need for empowerment-oriented policy evolution."
+  },
+  {
+    "claim_i_idx": 3,
+    "claim_j_idx": 22,
+    "delta_prob": 0.1,
+    "reasoning": "Concentrated AI-driven bio gains highlight the importance of broad benefit distribution mechanisms."
+  },
+  {
+    "claim_i_idx": 3,
+    "claim_j_idx": 23,
+    "delta_prob": 0.2,
+    "reasoning": "If AI enables most progress in biology, the idea of individuals accessing vast, on-demand intellect by 2035 is more plausible."
+  }
+]

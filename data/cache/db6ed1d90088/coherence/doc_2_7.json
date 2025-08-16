@@ -1,0 +1,140 @@
+[
+  {
+    "claim_i_idx": 19,
+    "claim_j_idx": 0,
+    "delta_prob": 0.6,
+    "reasoning": "Claim A asserts dramatic scientific acceleration and cheaper intelligence/energy, which supports rapid, AI-driven experimental cycles in biomedicine."
+  },
+  {
+    "claim_i_idx": 19,
+    "claim_j_idx": 1,
+    "delta_prob": 0.3,
+    "reasoning": "Cheaper, abundant intelligence and major science gains are consistent with highly capable, massively replicated AI, though A doesn\u2019t require this exact definition."
+  },
+  {
+    "claim_i_idx": 19,
+    "claim_j_idx": 2,
+    "delta_prob": 0.5,
+    "reasoning": "Uneven industry impact and price/scarcity dynamics in A align with bottlenecks and marginal returns shaping AI impact."
+  },
+  {
+    "claim_i_idx": 19,
+    "claim_j_idx": 3,
+    "delta_prob": 0.5,
+    "reasoning": "Dramatic science acceleration and lower costs in A make faster discovery of general-purpose bio tools more likely."
+  },
+  {
+    "claim_i_idx": 19,
+    "claim_j_idx": 4,
+    "delta_prob": 0.3,
+    "reasoning": "Cheaper intelligence/energy and better preclinical modeling follow from A, but real-world/regulatory constraints temper the effect."
+  },
+  {
+    "claim_i_idx": 19,
+    "claim_j_idx": 5,
+    "delta_prob": 0.2,
+    "reasoning": "A boosts plausibility of large health advances, but the extreme scope (near-elimination, lifespan ~150) requires more than A implies."
+  },
+  {
+    "claim_i_idx": 19,
+    "claim_j_idx": 6,
+    "delta_prob": 0.3,
+    "reasoning": "A\u2019s science acceleration supports faster neuroscience progress, though specific cures and scope exceed what A ensures."
+  },
+  {
+    "claim_i_idx": 19,
+    "claim_j_idx": 7,
+    "delta_prob": 0.3,
+    "reasoning": "Falling costs and changed price structures help distribution, but coordinated efforts and governance are outside A."
+  },
+  {
+    "claim_i_idx": 19,
+    "claim_j_idx": 8,
+    "delta_prob": 0.4,
+    "reasoning": "Cheaper intelligence/energy and lower goods prices can drive rapid growth and diffusion, supporting ambitious LMIC development."
+  },
+  {
+    "claim_i_idx": 19,
+    "claim_j_idx": 9,
+    "delta_prob": 0.0,
+    "reasoning": "A addresses economic/scientific acceleration and prices, not regime comparative advantage or strategy."
+  },
+  {
+    "claim_i_idx": 19,
+    "claim_j_idx": 10,
+    "delta_prob": 0.1,
+    "reasoning": "Abundant, cheap intelligence can enhance services and information access if democracies lead, but A doesn\u2019t address leadership."
+  },
+  {
+    "claim_i_idx": 19,
+    "claim_j_idx": 11,
+    "delta_prob": 0.8,
+    "reasoning": "A directly implies cheap, superior intelligence eroding current labor structures and pushing need for new distribution systems."
+  },
+  {
+    "claim_i_idx": 19,
+    "claim_j_idx": 12,
+    "delta_prob": 0.3,
+    "reasoning": "A\u2019s dramatic acceleration and broad price shifts fit a gentle-singularity narrative, though timing isn\u2019t specified."
+  },
+  {
+    "claim_i_idx": 19,
+    "claim_j_idx": 13,
+    "delta_prob": 0.2,
+    "reasoning": "A supports near-term capability ramp but does not commit to specific 2025\u20132027 milestones."
+  },
+  {
+    "claim_i_idx": 19,
+    "claim_j_idx": 14,
+    "delta_prob": 0.5,
+    "reasoning": "A\u2019s \u2018dramatically accelerate science\u2019 is consistent with significant AI-driven productivity gains and recursive improvement."
+  },
+  {
+    "claim_i_idx": 19,
+    "claim_j_idx": 15,
+    "delta_prob": 0.8,
+    "reasoning": "A explicitly posits cheaper intelligence/energy and falling prices, reinforcing compute buildout and cost-to-electricity dynamics."
+  },
+  {
+    "claim_i_idx": 19,
+    "claim_j_idx": 16,
+    "delta_prob": 0.4,
+    "reasoning": "A\u2019s cheaper-intelligence trend aligns with rapid cost declines and high socioeconomic returns to capability."
+  },
+  {
+    "claim_i_idx": 19,
+    "claim_j_idx": 17,
+    "delta_prob": 0.6,
+    "reasoning": "Abundant, cheap intelligence in A supports scalable AI coworkers handling many knowledge tasks."
+  },
+  {
+    "claim_i_idx": 19,
+    "claim_j_idx": 18,
+    "delta_prob": 0.7,
+    "reasoning": "A\u2019s cheaper intelligence/energy and falling goods prices support a 2030s world of abundant capability with familiar daily life."
+  },
+  {
+    "claim_i_idx": 19,
+    "claim_j_idx": 20,
+    "delta_prob": 0.1,
+    "reasoning": "A\u2019s rapid capability and diffusion heighten the need for alignment, though A doesn\u2019t address safety directly."
+  },
+  {
+    "claim_i_idx": 19,
+    "claim_j_idx": 21,
+    "delta_prob": 0.1,
+    "reasoning": "A implies widespread capability and price shifts that argue for adaptive, empowering policy, but governance direction isn\u2019t in A."
+  },
+  {
+    "claim_i_idx": 19,
+    "claim_j_idx": 22,
+    "delta_prob": 0.6,
+    "reasoning": "A\u2019s falling prices for many goods but rising luxury/scarce resources highlight distributional tensions, strengthening the case for broad benefit-sharing."
+  },
+  {
+    "claim_i_idx": 19,
+    "claim_j_idx": 23,
+    "delta_prob": 0.6,
+    "reasoning": "A\u2019s cheap, abundant intelligence makes massive on-demand cognitive leverage for individuals by ~2035 more plausible."
+  }
+]

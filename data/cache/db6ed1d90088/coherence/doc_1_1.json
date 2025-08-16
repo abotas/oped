@@ -1,0 +1,140 @@
+[
+  {
+    "claim_i_idx": 1,
+    "claim_j_idx": 0,
+    "delta_prob": 0.7,
+    "reasoning": "A implies millions of autonomous Nobel-level virtual biologists plus robot-lab control; remaining limits are physical throughput and regulation, so 50-100 years in 5-10 becomes plausible."
+  },
+  {
+    "claim_i_idx": 1,
+    "claim_j_idx": 2,
+    "delta_prob": 0.5,
+    "reasoning": "A shows intelligence can route around but not instantly defeat physical speed, data scarcity, institutional, and law-of-nature bottlenecks, validating this framework."
+  },
+  {
+    "claim_i_idx": 1,
+    "claim_j_idx": 3,
+    "delta_prob": 0.6,
+    "reasoning": "A's rapid design-iterate cycles and robotized experimentation make platform-tool discovery far faster despite wet-lab constraints."
+  },
+  {
+    "claim_i_idx": 1,
+    "claim_j_idx": 4,
+    "delta_prob": 0.4,
+    "reasoning": "A enables better trial design, simulations, and parallelization, but regulation and biological variance limit universal 1-year timelines."
+  },
+  {
+    "claim_i_idx": 1,
+    "claim_j_idx": 5,
+    "delta_prob": 0.3,
+    "reasoning": "A boosts prevention, detection, and therapy design and rollout, but aging biology, heterogeneity, and deployment constraints make the extreme targets uncertain."
+  },
+  {
+    "claim_i_idx": 1,
+    "claim_j_idx": 6,
+    "delta_prob": 0.6,
+    "reasoning": "A accelerates neural measurement, intervention design, computational models, and personalized support; mind uploading remains hardware and scanning limited."
+  },
+  {
+    "claim_i_idx": 1,
+    "claim_j_idx": 7,
+    "delta_prob": 0.4,
+    "reasoning": "A can plan optimized eradication and logistics at scale; outcomes still hinge on governance, funding, and last-mile execution."
+  },
+  {
+    "claim_i_idx": 1,
+    "claim_j_idx": 8,
+    "delta_prob": 0.4,
+    "reasoning": "A enables strong policy advice and tech diffusion that could sustain double-digit growth, but corruption and adoption barriers remain binding."
+  },
+  {
+    "claim_i_idx": 1,
+    "claim_j_idx": 9,
+    "delta_prob": 0.3,
+    "reasoning": "A's capabilities are regime-agnostic; this heightens the need for a democratic entente to secure supply chains and deter adversaries."
+  },
+  {
+    "claim_i_idx": 1,
+    "claim_j_idx": 10,
+    "delta_prob": 0.5,
+    "reasoning": "If democracies lead, A enables superior counter-propaganda, transparency tools, consensus-building, and service delivery."
+  },
+  {
+    "claim_i_idx": 1,
+    "claim_j_idx": 11,
+    "delta_prob": 0.7,
+    "reasoning": "A outcompetes humans in most cognitive tasks at low cost, eroding current labor structures and motivating new distribution mechanisms."
+  },
+  {
+    "claim_i_idx": 1,
+    "claim_j_idx": 12,
+    "delta_prob": 0.2,
+    "reasoning": "A implies accelerating normalization of breakthroughs and near superintelligence, though whether the transition is gentle remains uncertain."
+  },
+  {
+    "claim_i_idx": 1,
+    "claim_j_idx": 13,
+    "delta_prob": 0.3,
+    "reasoning": "A makes the forecasted 2025-2027 sequence of agentic cognition and capable robots more plausible, though timing is not guaranteed."
+  },
+  {
+    "claim_i_idx": 1,
+    "claim_j_idx": 14,
+    "delta_prob": 0.5,
+    "reasoning": "A already multiplies scientist productivity and enables rapid AI-for-AI improvements that can compress research timelines."
+  },
+  {
+    "claim_i_idx": 1,
+    "claim_j_idx": 15,
+    "delta_prob": 0.6,
+    "reasoning": "A's value would drive massive compute and robot buildouts with automation compounding, pushing intelligence cost toward electricity."
+  },
+  {
+    "claim_i_idx": 1,
+    "claim_j_idx": 16,
+    "delta_prob": 0.2,
+    "reasoning": "A's success supports scaling-law usefulness and falling usage costs, though the exact 10x-per-year figure is uncertain."
+  },
+  {
+    "claim_i_idx": 1,
+    "claim_j_idx": 17,
+    "delta_prob": 0.8,
+    "reasoning": "With A, agents exceed competent engineers and are trivially replicated at scale, making junior-coworker capability almost certain."
+  },
+  {
+    "claim_i_idx": 1,
+    "claim_j_idx": 18,
+    "delta_prob": 0.5,
+    "reasoning": "A yields abundant capability while core human experiences can remain familiar, conditional on stable governance and energy scaling."
+  },
+  {
+    "claim_i_idx": 1,
+    "claim_j_idx": 19,
+    "delta_prob": 0.5,
+    "reasoning": "A accelerates science and automatable goods, while scarcity and luxury items remain supply constrained, reshaping price structures."
+  },
+  {
+    "claim_i_idx": 1,
+    "claim_j_idx": 20,
+    "delta_prob": 0.4,
+    "reasoning": "A heightens systemic risk from misalignment, making solving alignment a practical prerequisite to safe, broad deployment."
+  },
+  {
+    "claim_i_idx": 1,
+    "claim_j_idx": 21,
+    "delta_prob": 0.3,
+    "reasoning": "A raises the stakes of centralized misuse; adaptive, user-empowering policy becomes more necessary to preserve autonomy."
+  },
+  {
+    "claim_i_idx": 1,
+    "claim_j_idx": 22,
+    "delta_prob": 0.5,
+    "reasoning": "A skews returns toward capital and operators, increasing the need for mechanisms like compute budgets or cheaper intelligence to share gains."
+  },
+  {
+    "claim_i_idx": 1,
+    "claim_j_idx": 23,
+    "delta_prob": 0.6,
+    "reasoning": "A enables country-of-geniuses assistance; with cost declines by 2035, individuals could command vast effective intellect and impact."
+  }
+]

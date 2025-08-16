@@ -1,0 +1,140 @@
+[
+  {
+    "claim_i_idx": 22,
+    "claim_j_idx": 0,
+    "delta_prob": 0.3,
+    "reasoning": "If distribution is critical due to large capital\u2013labor shocks, AI must be highly transformative, making rapid biomedical acceleration more plausible."
+  },
+  {
+    "claim_i_idx": 22,
+    "claim_j_idx": 1,
+    "delta_prob": 0.4,
+    "reasoning": "Concern over compute concentration and per-person budgets aligns with 'country of geniuses in a datacenter' as the relevant powerful-AI model."
+  },
+  {
+    "claim_i_idx": 22,
+    "claim_j_idx": 2,
+    "delta_prob": 0.3,
+    "reasoning": "Emphasis on early intervention and structural risks implies careful analysis of bottlenecks and marginal returns is necessary and useful."
+  },
+  {
+    "claim_i_idx": 22,
+    "claim_j_idx": 3,
+    "delta_prob": 0.3,
+    "reasoning": "Transformative, cheap intelligence needed for equitable distribution also supports large accelerations in general-purpose bio tools."
+  },
+  {
+    "claim_i_idx": 22,
+    "claim_j_idx": 4,
+    "delta_prob": 0.2,
+    "reasoning": "Cheaper, widely deployed intelligence would enable faster design, simulation, and parallelization, modestly boosting this claim."
+  },
+  {
+    "claim_i_idx": 22,
+    "claim_j_idx": 5,
+    "delta_prob": 0.2,
+    "reasoning": "If AI is powerful enough to force redistribution policy, large health gains become more feasible, though still uncertain."
+  },
+  {
+    "claim_i_idx": 22,
+    "claim_j_idx": 6,
+    "delta_prob": 0.2,
+    "reasoning": "Similar logic: transformative AI plus broad deployment pressure modestly increases rapid neuroscience progress."
+  },
+  {
+    "claim_i_idx": 22,
+    "claim_j_idx": 7,
+    "delta_prob": 0.4,
+    "reasoning": "Claim A advocates mechanisms for broad benefit-sharing, making coordinated global distribution of health tech more likely."
+  },
+  {
+    "claim_i_idx": 22,
+    "claim_j_idx": 8,
+    "delta_prob": 0.3,
+    "reasoning": "Lowering intelligence costs and proactive sharing raise plausibility of rapid LMIC growth via technology diffusion."
+  },
+  {
+    "claim_i_idx": 22,
+    "claim_j_idx": 9,
+    "delta_prob": 0.5,
+    "reasoning": "Avoiding concentration and sharing benefits aligns with an entente strategy to counter AI-enabled autocracy."
+  },
+  {
+    "claim_i_idx": 22,
+    "claim_j_idx": 10,
+    "delta_prob": 0.3,
+    "reasoning": "Broad distribution and empowerment strengthen democratic capacity-building and legitimacy."
+  },
+  {
+    "claim_i_idx": 22,
+    "claim_j_idx": 11,
+    "delta_prob": 0.8,
+    "reasoning": "Claim A directly asserts capital\u2013labor skew and the need for new distribution systems (e.g., compute budgets/UBI)."
+  },
+  {
+    "claim_i_idx": 22,
+    "claim_j_idx": 12,
+    "delta_prob": 0.4,
+    "reasoning": "Urgency about distribution implies ongoing rapid capability growth consistent with a gentle singularity."
+  },
+  {
+    "claim_i_idx": 22,
+    "claim_j_idx": 13,
+    "delta_prob": 0.2,
+    "reasoning": "The need for early intervention suggests near-term capability jumps, mildly supporting the aggressive timeline."
+  },
+  {
+    "claim_i_idx": 22,
+    "claim_j_idx": 14,
+    "delta_prob": 0.4,
+    "reasoning": "If cost declines and capability growth drive distribution concerns, recursive AI-improvement and productivity boosts are more plausible."
+  },
+  {
+    "claim_i_idx": 22,
+    "claim_j_idx": 15,
+    "delta_prob": 0.7,
+    "reasoning": "Claim A\u2019s 'relentlessly lowering the cost of intelligence' strongly aligns with flywheels driving intelligence cost toward electricity prices."
+  },
+  {
+    "claim_i_idx": 22,
+    "claim_j_idx": 16,
+    "delta_prob": 0.4,
+    "reasoning": "Distribution-focused policy presumes rapid cost declines and rising value of capability, consistent with observed AI economics."
+  },
+  {
+    "claim_i_idx": 22,
+    "claim_j_idx": 17,
+    "delta_prob": 0.5,
+    "reasoning": "Capital\u2013labor skew pressure implies scalable AI coworkers replacing/augmenting human roles at large replication levels."
+  },
+  {
+    "claim_i_idx": 22,
+    "claim_j_idx": 18,
+    "delta_prob": 0.3,
+    "reasoning": "Abundant, cheap intelligence from deliberate cost-lowering supports radically increased societal capability by the 2030s."
+  },
+  {
+    "claim_i_idx": 22,
+    "claim_j_idx": 19,
+    "delta_prob": 0.2,
+    "reasoning": "Cheaper intelligence implies falling costs for many goods and uneven sectoral impacts, modestly supporting the price-structure shifts."
+  },
+  {
+    "claim_i_idx": 22,
+    "claim_j_idx": 20,
+    "delta_prob": 0.6,
+    "reasoning": "If broad, cheap access is a goal, alignment and safety must precede scale to avoid harmful concentration/misuse."
+  },
+  {
+    "claim_i_idx": 22,
+    "claim_j_idx": 21,
+    "delta_prob": 0.6,
+    "reasoning": "Compute budgets and empowerment reflect policy co-evolving toward individual control within societal bounds."
+  },
+  {
+    "claim_i_idx": 22,
+    "claim_j_idx": 23,
+    "delta_prob": 0.7,
+    "reasoning": "Per-person compute and very low intelligence costs make 'unlimited genius' access by ~2035 more plausible."
+  }
+]

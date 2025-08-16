@@ -1,0 +1,140 @@
+[
+  {
+    "claim_i_idx": 0,
+    "claim_j_idx": 1,
+    "delta_prob": 0.5,
+    "reasoning": "Compressing 50\u2013100 years of bio/med progress implies extremely capable, scalable AI with autonomy, multimodality, and tool/robot use, consistent with a 'country of geniuses' model."
+  },
+  {
+    "claim_i_idx": 0,
+    "claim_j_idx": 2,
+    "delta_prob": 0.3,
+    "reasoning": "Such rapid progress suggests intelligence can route around many bottlenecks over years but not instantly, aligning with the bottleneck-centric forecast framing."
+  },
+  {
+    "claim_i_idx": 0,
+    "claim_j_idx": 3,
+    "delta_prob": 0.8,
+    "reasoning": "Achieving 50\u2013100 years of progress in 5\u201310 years likely requires multiple CRISPR-like platforms and measurement/intervention breakthroughs driving downstream gains."
+  },
+  {
+    "claim_i_idx": 0,
+    "claim_j_idx": 4,
+    "delta_prob": 0.5,
+    "reasoning": "Huge acceleration in bio implies faster candidate selection and better models, supporting shorter clinical timelines for large-effect interventions and more parallelization, though regulation still binds."
+  },
+  {
+    "claim_i_idx": 0,
+    "claim_j_idx": 5,
+    "delta_prob": 0.3,
+    "reasoning": "Massive scientific advances raise the odds of dramatic health outcomes, but deployment, access, and biology\u2019s limits temper certainty about near-elimination and lifespan doubling."
+  },
+  {
+    "claim_i_idx": 0,
+    "claim_j_idx": 6,
+    "delta_prob": 0.4,
+    "reasoning": "If bio/med compresses a century, neuroscience\u2014integrating drugs, genetics, measurement, and modeling\u2014likely accelerates similarly, though cures and enhancements remain ambitious."
+  },
+  {
+    "claim_i_idx": 0,
+    "claim_j_idx": 7,
+    "delta_prob": 0.3,
+    "reasoning": "The existence of superior health tech makes global distribution campaigns more impactful and plausible, though coordination and logistics still constrain outcomes."
+  },
+  {
+    "claim_i_idx": 0,
+    "claim_j_idx": 8,
+    "delta_prob": 0.2,
+    "reasoning": "Health and tech leaps can boost productivity and policy efficacy in LMICs, raising chances of sustained high growth if governance barriers are addressed."
+  },
+  {
+    "claim_i_idx": 0,
+    "claim_j_idx": 9,
+    "delta_prob": 0.1,
+    "reasoning": "More powerful AI heightens both democratic and autocratic potentials, slightly strengthening the case for a strategic entente by democracies."
+  },
+  {
+    "claim_i_idx": 0,
+    "claim_j_idx": 10,
+    "delta_prob": 0.2,
+    "reasoning": "Stronger AI tools would enhance counter-propaganda, legal transparency, and service delivery if democracies lead, making these outcomes more likely."
+  },
+  {
+    "claim_i_idx": 0,
+    "claim_j_idx": 11,
+    "delta_prob": 0.5,
+    "reasoning": "AI capable of century-scale bio progress implies broad superiority and low cost across knowledge work, increasing pressure to redesign distribution and incentives."
+  },
+  {
+    "claim_i_idx": 0,
+    "claim_j_idx": 12,
+    "delta_prob": 0.2,
+    "reasoning": "The premise of near-term transformative AI progress supports the view that a gentle singularity is underway by the mid-2020s."
+  },
+  {
+    "claim_i_idx": 0,
+    "claim_j_idx": 13,
+    "delta_prob": 0.3,
+    "reasoning": "If powerful AI arrives by 2026 and enables rapid scientific advances, a 2025\u20132027 ramp in agentic cognition and robotics is more plausible."
+  },
+  {
+    "claim_i_idx": 0,
+    "claim_j_idx": 14,
+    "delta_prob": 0.4,
+    "reasoning": "Century-scale acceleration in bio implies large productivity multipliers and effective 'AI to build AI,' consistent with recursive improvement compressing timelines."
+  },
+  {
+    "claim_i_idx": 0,
+    "claim_j_idx": 15,
+    "delta_prob": 0.4,
+    "reasoning": "Demonstrated massive value in bio would trigger larger compute buildouts and automation flywheels, pushing intelligence costs toward energy costs."
+  },
+  {
+    "claim_i_idx": 0,
+    "claim_j_idx": 16,
+    "delta_prob": 0.1,
+    "reasoning": "A strong bio acceleration increases investment and cost declines likelihood, but does not strongly confirm specific scaling or cost-drop rates."
+  },
+  {
+    "claim_i_idx": 0,
+    "claim_j_idx": 17,
+    "delta_prob": 0.5,
+    "reasoning": "AI able to autonomously design and run experiments suggests strong agentic coworker capability broadly, including software engineering at scale."
+  },
+  {
+    "claim_i_idx": 0,
+    "claim_j_idx": 18,
+    "delta_prob": 0.3,
+    "reasoning": "Transformative bio capabilities imply abundant, cheap intelligence and rapid tech progress by the 2030s, even if daily life remains familiar."
+  },
+  {
+    "claim_i_idx": 0,
+    "claim_j_idx": 19,
+    "delta_prob": 0.2,
+    "reasoning": "Large scientific acceleration supports uneven industry impacts and sharp price declines for intelligence-intensive goods, with scarcity rents persisting."
+  },
+  {
+    "claim_i_idx": 0,
+    "claim_j_idx": 20,
+    "delta_prob": 0.2,
+    "reasoning": "More capable AI raises alignment stakes and the need to ensure safe, widely beneficial deployment without dangerous concentration."
+  },
+  {
+    "claim_i_idx": 0,
+    "claim_j_idx": 21,
+    "delta_prob": 0.1,
+    "reasoning": "The power implied by Claim A increases the importance of empowerment-oriented policy to avoid authoritarian misuse."
+  },
+  {
+    "claim_i_idx": 0,
+    "claim_j_idx": 22,
+    "delta_prob": 0.3,
+    "reasoning": "Extreme AI-driven productivity can skew capital\u2013labor returns, making early mechanisms for broad benefit-sharing more necessary."
+  },
+  {
+    "claim_i_idx": 0,
+    "claim_j_idx": 23,
+    "delta_prob": 0.5,
+    "reasoning": "If AI can deliver century-scale bio advances rapidly, scaling 'on-demand genius' to individuals by ~2035 becomes substantially more credible."
+  }
+]
