@@ -143,10 +143,7 @@ def render_coherence_section(coherence_results, all_claims):
             st.write(f"- **Avg Intensity**: {conflict_metrics['avg_conflict_intensity']:.2f} (among conflicts)")
             st.write(f"- **Max Conflict**: {conflict_metrics['max_conflict']:.2f} (worst contradiction)")
             
-            # Display interactive coherence matrix
-            st.markdown("### Coherence Matrix")
-            st.markdown("Interactive visualization showing how each claim affects the likelihood of other claims:")
-            
+            # # Display interactive coherence matrix
             matrix_fig = create_coherence_matrix(filtered_coherence, filtered_claims, all_claims, coherence_results)
             if matrix_fig:
                 st.plotly_chart(matrix_fig, use_container_width=True)
@@ -156,7 +153,7 @@ def render_coherence_section(coherence_results, all_claims):
             # Load-bearing claims panel
             render_navigation_panel(
                 load_bearing, 
-                "Top Load-Bearing Claims",
+                "Most Load-Bearing Claims",
                 "load_bearing_index",
                 render_load_bearing_claim
             )
@@ -235,10 +232,7 @@ def render_fact_checking_section(fact_checks, all_claims):
             # Calculate summary with filtered data
             fact_summary = get_fact_check_summary(filtered_fact_checks)
             
-            # Display validation buckets visualization
-            st.markdown("### Validation Distribution")
-            st.markdown("Interactive visualization showing claim validation score distribution across buckets:")
-            
+            # # Display validation buckets visualization
             veracity_fig = create_veracity_buckets(fact_checks, selected_docs_fact)
             if veracity_fig:
                 st.plotly_chart(veracity_fig, use_container_width=True)

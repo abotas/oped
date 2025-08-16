@@ -218,21 +218,35 @@ def create_coherence_matrix(coherence_results, claims, all_claims, full_coherenc
     # Generate the matrix with remapped coherence
     matrix = coherence_to_matrix(remapped_coherence, len(claims))
     
-    # Create claim labels with doc grouping
-    claim_labels = []
-    doc_groups = {}
-    
     # Group claims by document
+    doc_groups = {}
+    doc_titles = {}
+    
     for i, claim in enumerate(claims):
         if claim.doc_id not in doc_groups:
             doc_groups[claim.doc_id] = []
+            doc_titles[claim.doc_id] = f"Doc {claim.doc_title[:20]}..."
         doc_groups[claim.doc_id].append(i)
-        
-        # Create short label for axes using doc_title
+    
+    # Create tick positions and labels for document groups
+    tick_positions = []
+    tick_labels = []
+    
+    current_pos = 0
+    for doc_id in sorted(doc_groups.keys()):
+        group_size = len(doc_groups[doc_id])
+        # Position label at the center of the document group
+        center_pos = current_pos + (group_size - 1) / 2
+        tick_positions.append(center_pos)
+        tick_labels.append(doc_titles[doc_id])
+        current_pos += group_size
+    
+    # Create temporary claim labels for hover text (not used for axes)
+    temp_claim_labels = []
+    for i, claim in enumerate(claims):
         claim_num = len([c for c in claims[:i+1] if c.doc_id == claim.doc_id])
-        # Use just the title number from doc_title (e.g., "1" from "1. Machines of Grace")
         title_num = claim.doc_title.split('.')[0] if '.' in claim.doc_title else claim.doc_title[:3]
-        claim_labels.append(f"{title_num}[{claim_num-1}]")
+        temp_claim_labels.append(f"{title_num}[{claim_num-1}]")
     
     # Create detailed hover text with full claims
     hover_text = []
@@ -274,9 +288,9 @@ def create_coherence_matrix(coherence_results, claims, all_claims, full_coherenc
                 
                 hover_text_cell = (
                     f"<b>Effect:</b> {sign}{delta:.2f}<br><br>"
-                    f"<b>Source Claim A ({claim_labels[i]}):</b><br>"
+                    f"<b>Source Claim A ({temp_claim_labels[i]}):</b><br>"
                     f"{claim_i_wrapped}<br><br>"
-                    f"<b>→ Target Claim B ({claim_labels[j]}):</b><br>"
+                    f"<b>→ Target Claim B ({temp_claim_labels[j]}):</b><br>"
                     f"{claim_j_wrapped}<br><br>"
                     f"<b>Reasoning:</b><br>"
                     f"{reasoning_wrapped}"
@@ -284,11 +298,9 @@ def create_coherence_matrix(coherence_results, claims, all_claims, full_coherenc
             hover_row.append(hover_text_cell)
         hover_text.append(hover_row)
     
-    # Create the heatmap
+    # Create the heatmap with no initial tick labels (we'll set them manually)
     fig = go.Figure(data=go.Heatmap(
         z=matrix,
-        x=claim_labels,
-        y=claim_labels,
         colorscale=[
             [0.0, 'darkred'],      # -1.0 (strong negative)
             [0.25, 'red'],         # -0.5
@@ -301,13 +313,7 @@ def create_coherence_matrix(coherence_results, claims, all_claims, full_coherenc
         zmax=1,
         hovertemplate='%{hovertext}<extra></extra>',
         hovertext=hover_text,
-        showscale=True,
-        colorbar=dict(
-            title=dict(text="Probability delta"),
-            tickmode="linear",
-            tick0=-1,
-            dtick=0.5
-        )
+        showscale=False
     ))
     
     # Add document group separators
@@ -353,14 +359,21 @@ def create_coherence_matrix(coherence_results, claims, all_claims, full_coherenc
         width=None,  # Let it be responsive
         height=600,
         xaxis=dict(
-            tickangle=45,
-            tickfont=dict(size=10, color="white"),
+            tickmode='array',
+            tickvals=tick_positions,
+            ticktext=tick_labels,
+            # tickangle=45,
+            tickfont=dict(size=12, color="white"),
             gridcolor="rgba(255,255,255,0.3)",
             linecolor="rgba(255,255,255,0.5)"
         ),
         yaxis=dict(
             autorange='reversed',  # Reverse y-axis to match matrix convention
-            tickfont=dict(size=10, color="white"),
+            tickmode='array',
+            tickvals=tick_positions,
+            ticktext=tick_labels,
+            tickangle=45,
+            tickfont=dict(size=12, color="white"),
             gridcolor="rgba(255,255,255,0.3)", 
             linecolor="rgba(255,255,255,0.5)"
         ),
