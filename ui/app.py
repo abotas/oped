@@ -10,7 +10,8 @@ from pathlib import Path
 import plotly.graph_objects as go
 import plotly.express as px
 import textwrap
-
+from dotenv import load_dotenv
+load_dotenv()
 
 # Add parent directory to path to import our modules
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -499,11 +500,19 @@ def main():
         st.markdown("---")
         
         # Configuration
-        col1, col2 = st.columns(2)
+        col1, col2, col3 = st.columns(3)
         with col1:
             num_docs = st.number_input("Number of documents", min_value=1, value=2)
         with col2:
             claims_per_doc = st.number_input("Claims per document", min_value=1, value=5)
+        with col3:
+            # Model selector
+            selected_model = st.selectbox(
+                "Model",
+                options=["gpt-5", "gpt-5-mini", "gpt-5-nano"],
+                index=1,  # Default to gpt-5-mini
+                help="Select the model to use for analysis"
+            )
         
         # Text input areas
         documents = []
@@ -542,12 +551,14 @@ def main():
         st.session_state.num_docs = num_docs
         st.session_state.claims_per_doc = claims_per_doc
         st.session_state.documents = documents
+        st.session_state.selected_model = selected_model
     
     else:
         # We're in analysis mode - retrieve stored configuration
         num_docs = st.session_state.num_docs
         claims_per_doc = st.session_state.claims_per_doc
         documents = st.session_state.documents
+        selected_model = st.session_state.get('selected_model', 'gpt-5-mini')
         
         # Show analysis header with document info and reset button
         col1, col2 = st.columns([3, 1])
@@ -586,7 +597,7 @@ def main():
         if st.session_state.all_claims is None:
             with st.spinner("🔍 Extracting claims from documents..."):
                 # Extract claims from all documents using multithreading
-                all_claims = extract_claims_for_docs(documents, claims_per_doc)
+                all_claims = extract_claims_for_docs(documents, claims_per_doc, model=selected_model)
                 
                 if not all_claims:
                     st.error("No claims could be extracted from the documents")
@@ -616,7 +627,7 @@ def main():
         # Step 2: Analyze coherence
         if st.session_state.coherence_results is None:
             with st.spinner("🔗 Analyzing claim coherence..."):
-                coherence_results = analyze_coherence(all_claims, documents, claims_per_doc)
+                coherence_results = analyze_coherence(all_claims, documents, claims_per_doc, model=selected_model)
                 st.session_state.coherence_results = coherence_results
         
         coherence_results = st.session_state.coherence_results
@@ -679,7 +690,7 @@ def main():
         # Step 3: External validation
         if st.session_state.fact_checks is None:
             with st.spinner("✅ Validating claims against external sources..."):
-                fact_checks = check_facts(all_claims, documents, claims_per_doc)
+                fact_checks = check_facts(all_claims, documents, claims_per_doc, model=selected_model)
                 st.session_state.fact_checks = fact_checks
         
         fact_checks = st.session_state.fact_checks

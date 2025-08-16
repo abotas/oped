@@ -33,7 +33,7 @@ or after the JSON object: {{"veracity": "int", "explanation": "str"}}. Here is t
 """
 
 
-def _check_single_claim(claim: ExtractedClaim, cache_dir: Path) -> FactCheck:
+def _check_single_claim(claim: ExtractedClaim, cache_dir: Path, model: str = "gpt-5-mini") -> FactCheck:
     """Check a single claim against external sources. Used for multithreading."""
     # Check if this claim's fact check is already cached
     claim_cache_file = cache_dir / f"{claim.doc_id}_{claim.claim_idx}.json"
@@ -42,9 +42,9 @@ def _check_single_claim(claim: ExtractedClaim, cache_dir: Path) -> FactCheck:
         cached_data = json.loads(claim_cache_file.read_text())
         return FactCheck(**cached_data)
     
-    # Use GPT-5 with web search capability using responses API
+    # Use selected model with web search capability using responses API
     response = client.responses.create(
-        model="gpt-5",
+        model=model,
         tools=[{"type": "web_search_preview"}],
         input=PROMPT_FACT_CHECK.format(claim=claim.claim)
     )
@@ -67,7 +67,7 @@ def _check_single_claim(claim: ExtractedClaim, cache_dir: Path) -> FactCheck:
     return fact_check
 
 
-def check_facts(claims: list[ExtractedClaim], documents: list[dict], claims_per_doc: int) -> list[FactCheck]:
+def check_facts(claims: list[ExtractedClaim], documents: list[dict], claims_per_doc: int, model: str = "gpt-5-mini") -> list[FactCheck]:
     """Check claims against external sources for accuracy.
     
     Args:
@@ -91,7 +91,7 @@ def check_facts(claims: list[ExtractedClaim], documents: list[dict], claims_per_
     
     # Process claims in parallel
     with ThreadPoolExecutor(max_workers=min(MAX_WORKERS, len(claims))) as executor:
-        futures = [executor.submit(_check_single_claim, claim, cache_dir) for claim in claims]
+        futures = [executor.submit(_check_single_claim, claim, cache_dir, model) for claim in claims]
         
         completed = 0
         for future in as_completed(futures):

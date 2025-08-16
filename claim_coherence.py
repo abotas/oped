@@ -46,7 +46,7 @@ ONLY return the JSON array without markdown or extra text:
 """
 
 
-def _analyze_single_claim(work_item: tuple, cache_dir: Path) -> list[ClaimCoherence]:
+def _analyze_single_claim(work_item: tuple, cache_dir: Path, model: str = "gpt-5-mini") -> list[ClaimCoherence]:
     """Analyze how one claim affects all others. Used for multithreading."""
     i, claim_i, other_claims_text, other_claims = work_item
     
@@ -58,7 +58,7 @@ def _analyze_single_claim(work_item: tuple, cache_dir: Path) -> list[ClaimCohere
         return [ClaimCoherence(**item) for item in cached_data]
     
     response = client.chat.completions.create(
-        model="gpt-5",
+        model=model,
         messages=[
             {"role": "user", "content": PROMPT_COHERENCE_ANALYSIS.format(
                 claim_a=claim_i.claim,
@@ -108,7 +108,7 @@ def _analyze_single_claim(work_item: tuple, cache_dir: Path) -> list[ClaimCohere
     return claim_results
 
 
-def analyze_coherence(claims: list[ExtractedClaim], documents: list[dict], claims_per_doc: int) -> list[ClaimCoherence]:
+def analyze_coherence(claims: list[ExtractedClaim], documents: list[dict], claims_per_doc: int, model: str = "gpt-5-mini") -> list[ClaimCoherence]:
     """Analyze coherence between claims - how each claim affects others' likelihood.
     
     Args:
@@ -147,7 +147,7 @@ def analyze_coherence(claims: list[ExtractedClaim], documents: list[dict], claim
     
     # Process claims in parallel
     with ThreadPoolExecutor(max_workers=min(MAX_WORKERS, len(work_items))) as executor:
-        futures = [executor.submit(_analyze_single_claim, work_item, cache_dir) for work_item in work_items]
+        futures = [executor.submit(_analyze_single_claim, work_item, cache_dir, model) for work_item in work_items]
         
         completed = 0
         for future in as_completed(futures):
