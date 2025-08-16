@@ -67,13 +67,15 @@ def _check_single_claim(claim: ExtractedClaim, cache_dir: Path, model: str = "gp
     return fact_check
 
 
-def check_facts(claims: list[ExtractedClaim], documents: list[dict], claims_per_doc: int, model: str = "gpt-5-mini") -> list[FactCheck]:
+def check_facts(claims: list[ExtractedClaim], documents: list[dict], claims_per_doc: int, model: str = "gpt-5-mini", progress_callback: callable = None) -> list[FactCheck]:
     """Check claims against external sources for accuracy.
     
     Args:
         claims: List of ExtractedClaim objects to verify
         documents: Original document configuration (for consistent hashing)
         claims_per_doc: Number of claims per document (for consistent hashing)
+        model: The model to use for fact checking
+        progress_callback: Optional callback function(completed, total) for progress updates
         
     Returns:
         List of FactCheck objects with veracity scores
@@ -100,6 +102,8 @@ def check_facts(claims: list[ExtractedClaim], documents: list[dict], claims_per_
             completed += 1
             if completed % 5 == 0 or completed == len(claims):
                 print(f"  Progress: {completed}/{len(claims)} claims checked")
+            if progress_callback:
+                progress_callback(completed, len(claims))
     
     print(f"Checked {len(fact_checks)} claims")
     

@@ -108,13 +108,15 @@ def _analyze_single_claim(work_item: tuple, cache_dir: Path, model: str = "gpt-5
     return claim_results
 
 
-def analyze_coherence(claims: list[ExtractedClaim], documents: list[dict], claims_per_doc: int, model: str = "gpt-5-mini") -> list[ClaimCoherence]:
+def analyze_coherence(claims: list[ExtractedClaim], documents: list[dict], claims_per_doc: int, model: str = "gpt-5-mini", progress_callback: callable = None) -> list[ClaimCoherence]:
     """Analyze coherence between claims - how each claim affects others' likelihood.
     
     Args:
         claims: List of ExtractedClaim objects to analyze
         documents: Original document configuration (for consistent hashing)
         claims_per_doc: Number of claims per document (for consistent hashing)
+        model: The model to use for analysis
+        progress_callback: Optional callback function(completed, total) for progress updates
         
     Returns:
         List of ClaimCoherence objects showing relationships
@@ -156,6 +158,8 @@ def analyze_coherence(claims: list[ExtractedClaim], documents: list[dict], claim
             completed += 1
             if completed % 5 == 0 or completed == len(work_items):
                 print(f"  Progress: {completed}/{len(work_items)} claims processed")
+            if progress_callback:
+                progress_callback(completed, len(work_items))
     
     print(f"Analyzed {len(coherence_results)} claim relationships")
     

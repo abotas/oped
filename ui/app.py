@@ -626,9 +626,24 @@ def main():
     
         # Step 2: Analyze coherence
         if st.session_state.coherence_results is None:
-            with st.spinner("🔗 Analyzing claim coherence..."):
-                coherence_results = analyze_coherence(all_claims, documents, claims_per_doc, model=selected_model)
-                st.session_state.coherence_results = coherence_results
+            progress_bar = st.progress(0)
+            status_text = st.empty()
+            
+            def coherence_progress_callback(completed, total):
+                progress = completed / total if total > 0 else 0
+                progress_bar.progress(progress)
+                status_text.text(f"🔗 Analyzing coherence: {completed}/{total} claims complete")
+            
+            status_text.text("🔗 Starting coherence analysis...")
+            coherence_results = analyze_coherence(
+                all_claims, documents, claims_per_doc, 
+                model=selected_model, 
+                progress_callback=coherence_progress_callback
+            )
+            
+            progress_bar.empty()
+            status_text.empty()
+            st.session_state.coherence_results = coherence_results
         
         coherence_results = st.session_state.coherence_results
     
@@ -689,9 +704,24 @@ def main():
     
         # Step 3: External validation
         if st.session_state.fact_checks is None:
-            with st.spinner("✅ Validating claims against external sources..."):
-                fact_checks = check_facts(all_claims, documents, claims_per_doc, model=selected_model)
-                st.session_state.fact_checks = fact_checks
+            progress_bar = st.progress(0)
+            status_text = st.empty()
+            
+            def fact_check_progress_callback(completed, total):
+                progress = completed / total if total > 0 else 0
+                progress_bar.progress(progress)
+                status_text.text(f"✅ Fact checking: {completed}/{total} claims complete")
+            
+            status_text.text("✅ Starting fact checking...")
+            fact_checks = check_facts(
+                all_claims, documents, claims_per_doc, 
+                model=selected_model,
+                progress_callback=fact_check_progress_callback
+            )
+            
+            progress_bar.empty()
+            status_text.empty()
+            st.session_state.fact_checks = fact_checks
         
         fact_checks = st.session_state.fact_checks
         fact_summary = get_fact_check_summary(fact_checks)
