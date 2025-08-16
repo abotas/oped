@@ -125,3 +125,30 @@ def render_validated_claim(claim_info: dict, index: int):
     # Explanation using native expander
     with st.expander("View Explanation"):
         st.write(claim_info['explanation'])
+
+
+def render_load_bearing_document(doc_info: dict, index: int):
+    """Render function for load-bearing documents using native Streamlit components."""
+    # Document title
+    st.markdown(f"**{doc_info['doc_title']}**")
+    
+    # Average impact metric
+    st.metric("Average Load-bearing Impact", f"{doc_info['avg_impact']:.2f}", help="Average impact across all claims in this document")
+
+
+def render_contradicted_document(doc_info: dict, index: int):
+    """Render function for contradicted documents using native Streamlit components."""
+    # Document title
+    st.markdown(f"**{doc_info['doc_title']}**")
+    
+    # Average contradiction metric
+    st.metric("Average Contradiction", f"{doc_info['avg_contradiction']:.2f}", help="Average contradiction across all claims in this document")
+
+
+def render_validated_document(doc_info: dict, index: int):
+    """Render function for validated documents using native Streamlit components."""
+    # Document title
+    st.markdown(f"**{doc_info['doc_title']}**")
+    
+    # Average validation score metric
+    st.metric("Average Validation Score", f"{doc_info['avg_veracity']:.1f}/100", help="Average validation score across all claims in this document")

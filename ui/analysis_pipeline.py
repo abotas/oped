@@ -7,7 +7,8 @@ from external_fact_checking import check_facts, get_fact_check_summary
 from .utils import get_conflict_metrics, get_top_load_bearing_claims_filtered, get_most_contradicted_claims
 from doc_titler import title_documents
 from .visualizations import create_coherence_matrix, create_veracity_buckets
-from .navigation_panel import render_navigation_panel, render_load_bearing_claim, render_contradicted_claim, render_validated_claim
+from .navigation_panel import render_navigation_panel, render_load_bearing_claim, render_contradicted_claim, render_validated_claim, render_load_bearing_document, render_contradicted_document, render_validated_document
+from .utils_document_aggregation import get_document_load_bearing_scores, get_document_contradiction_scores, get_document_validation_scores
 
 
 def run_title_generation_step(documents, claims_per_doc):
@@ -145,25 +146,55 @@ def render_coherence_section(coherence_results, all_claims):
             else:
                 st.info("Matrix visualization requires at least one coherence relationship.")
             
-            # Load-bearing claims panel
-            render_navigation_panel(
-                load_bearing, 
-                "Most Load-Bearing Claims",
-                "load_bearing_index",
-                render_load_bearing_claim
+            # Coherence granularity toggle
+            coherence_granularity = st.radio(
+                "📊 Analyze by:",
+                ["Claims", "Documents"],
+                key="coherence_granularity",
+                horizontal=True
             )
             
-            # Contradicted claims panel
-            if contradicted:
+            # Load-bearing panel (claims or documents)
+            if coherence_granularity == "Claims":
                 render_navigation_panel(
-                    contradicted,
-                    "Most Contradicted Claims", 
-                    "contradicted_index",
-                    render_contradicted_claim
+                    load_bearing, 
+                    "Most Load-Bearing Claims",
+                    "load_bearing_index",
+                    render_load_bearing_claim
                 )
-            else:
-                st.markdown("### Most Contradicted Claims")
-                st.write("No contradictions found - all claims are mutually supportive or neutral.")
+            else:  # Documents
+                doc_load_bearing = get_document_load_bearing_scores(filtered_coherence, all_claims, filtered_claims)
+                render_navigation_panel(
+                    doc_load_bearing,
+                    "Most Load-Bearing Documents",
+                    "load_bearing_doc_index",
+                    render_load_bearing_document
+                )
+            
+            # Contradicted panel (claims or documents)
+            if coherence_granularity == "Claims":
+                if contradicted:
+                    render_navigation_panel(
+                        contradicted,
+                        "Most Contradicted Claims", 
+                        "contradicted_index",
+                        render_contradicted_claim
+                    )
+                else:
+                    st.markdown("### Most Contradicted Claims")
+                    st.write("No contradictions found - all claims are mutually supportive or neutral.")
+            else:  # Documents
+                doc_contradicted = get_document_contradiction_scores(filtered_coherence, all_claims, filtered_claims)
+                if doc_contradicted:
+                    render_navigation_panel(
+                        doc_contradicted,
+                        "Most Contradicted Documents",
+                        "contradicted_doc_index", 
+                        render_contradicted_document
+                    )
+                else:
+                    st.markdown("### Most Contradicted Documents")
+                    st.write("No contradictions found - all documents are mutually supportive or neutral.")
         else:
             st.warning("Please select at least one document to analyze.")
 
@@ -224,7 +255,7 @@ def render_fact_checking_section(fact_checks, all_claims):
             # Filter fact checks to only include those from selected documents
             filtered_fact_checks = [fc for fc in fact_checks if fc.doc_id in selected_docs_fact]
             
-            # Calculate summary with filtered data
+            # Calculate summary with filtered data (only used for average score display)
             fact_summary = get_fact_check_summary(filtered_fact_checks)
             
             # # Display validation buckets visualization
@@ -237,23 +268,74 @@ def render_fact_checking_section(fact_checks, all_claims):
             st.markdown(f"### Summary")
             st.write(f"**Average Validation Score**: {fact_summary['average_veracity']:.1f}/100")
             
-            # Most validated claims panel
-            if fact_summary.get('most_accurate_claims'):
-                render_navigation_panel(
-                    fact_summary['most_accurate_claims'],
-                    "Most Validated Claims",
-                    "most_validated_index", 
-                    render_validated_claim
-                )
+            # Validation granularity toggle
+            validation_granularity = st.radio(
+                "📊 Analyze by:",
+                ["Claims", "Documents"],
+                key="validation_granularity",
+                horizontal=True
+            )
             
-            # Least validated claims panel
-            if fact_summary.get('least_accurate_claims'):
-                render_navigation_panel(
-                    fact_summary['least_accurate_claims'],
-                    "Least Validated Claims",
-                    "least_validated_index",
-                    render_validated_claim
-                )
+            # Create full ranked claim lists from ALL filtered fact checks
+            if filtered_fact_checks:
+                # Sort all filtered fact checks by veracity (highest to lowest)
+                all_claims_by_veracity = sorted(filtered_fact_checks, key=lambda x: x.veracity, reverse=True)
+                
+                # Convert to the format expected by render functions
+                most_validated_claims = [
+                    {
+                        "claim": fc.claim,
+                        "veracity": fc.veracity,
+                        "explanation": fc.explanation,
+                        "doc_title": fc.doc_title,
+                        "claim_idx": fc.claim_idx
+                    }
+                    for fc in all_claims_by_veracity
+                ]
+                
+                # Least validated is the same list reversed (lowest to highest)
+                least_validated_claims = list(reversed(most_validated_claims))
+            else:
+                most_validated_claims = []
+                least_validated_claims = []
+            
+            # Most validated panel (claims or documents)
+            if validation_granularity == "Claims":
+                if most_validated_claims:
+                    render_navigation_panel(
+                        most_validated_claims,
+                        "Most Validated Claims",
+                        "most_validated_index", 
+                        render_validated_claim
+                    )
+            else:  # Documents
+                doc_validation = get_document_validation_scores(filtered_fact_checks)
+                if doc_validation['most_validated']:
+                    render_navigation_panel(
+                        doc_validation['most_validated'],
+                        "Most Validated Documents",
+                        "most_validated_doc_index",
+                        render_validated_document
+                    )
+            
+            # Least validated panel (claims or documents)
+            if validation_granularity == "Claims":
+                if least_validated_claims:
+                    render_navigation_panel(
+                        least_validated_claims,
+                        "Least Validated Claims",
+                        "least_validated_index",
+                        render_validated_claim
+                    )
+            else:  # Documents
+                doc_validation = get_document_validation_scores(filtered_fact_checks)
+                if doc_validation['least_validated']:
+                    render_navigation_panel(
+                        doc_validation['least_validated'],
+                        "Least Validated Documents", 
+                        "least_validated_doc_index",
+                        render_validated_document
+                    )
         else:
             st.warning("Please select at least one document to analyze.")
 
