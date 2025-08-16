@@ -9,7 +9,6 @@ from concurrent.futures import ThreadPoolExecutor
 from cache_utils import generate_unified_hash_from_config
 from models import ExtractedClaim
 
-load_dotenv()
 client = OpenAI()
 
 # Configuration
@@ -39,7 +38,7 @@ Here is the text to parse:
 """
 
 
-def _extract_claims(doc: str, doc_id: str, n: int, unified_hash: str) -> list[ExtractedClaim]:
+def _extract_claims(doc: str, doc_id: str, n: int, unified_hash: str, model: str = "gpt-5-mini") -> list[ExtractedClaim]:
     """Extract the N most central claims from a single document.
     
     Args:
@@ -61,9 +60,9 @@ def _extract_claims(doc: str, doc_id: str, n: int, unified_hash: str) -> list[Ex
         claims_data = json.loads(cache_file.read_text())
         return [ExtractedClaim(**claim) for claim in claims_data]
     
-    print(f"Extracting top {n} claims from document '{doc_id}'")
+    print(f"Extracting top {n} claims from document '{doc_id}' using model: {model}")
     response = client.chat.completions.create(
-        model="gpt-5",
+        model=model,
         messages=[
             {"role": "user", "content": PROMPT_CLAIM_EXTRACTION.format(n=n, text=doc)}
         ]
@@ -98,7 +97,7 @@ def _extract_claims(doc: str, doc_id: str, n: int, unified_hash: str) -> list[Ex
     return claims
 
 
-def extract_claims_for_docs(documents: list[dict], claims_per_doc: int = 10) -> list[ExtractedClaim]:
+def extract_claims_for_docs(documents: list[dict], claims_per_doc: int = 10, model: str = "gpt-5-mini") -> list[ExtractedClaim]:
     """Extract claims from multiple documents using multithreading.
     
     Args:
@@ -118,7 +117,7 @@ def extract_claims_for_docs(documents: list[dict], claims_per_doc: int = 10) -> 
     with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
         # Submit all extraction tasks
         future_to_doc = {
-            executor.submit(_extract_claims, doc["text"], doc["id"], claims_per_doc, unified_hash): doc 
+            executor.submit(_extract_claims, doc["text"], doc["id"], claims_per_doc, unified_hash, model): doc 
             for doc in documents
         }
         
