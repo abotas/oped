@@ -24,14 +24,9 @@ def run_title_generation_step(documents, claims_per_doc):
     
     titled_documents = st.session_state.titled_documents
     
-    # Show generated titles immediately (progressive display)
-    st.markdown("## ✅ Document Titles Generated")
-    
-    for i, doc in enumerate(titled_documents):
-        # preview = doc.text[:200] + "..." if len(doc.text) > 200 else doc.text
-        st.markdown(f"**{doc.title}**")
-        if i < len(titled_documents) - 1:  # Add separator except for last item
-            st.markdown("---")
+    # Show generated titles in compact format
+    titles = [doc.title for doc in titled_documents]
+    st.markdown(f"**Docs:** {',   '.join(titles)}")
     
     return titled_documents
 
