@@ -3,8 +3,7 @@
 from openai import OpenAI
 import json
 from pathlib import Path
-import hashlib
-from dotenv import load_dotenv
+
 from concurrent.futures import ThreadPoolExecutor
 from cache_utils import generate_unified_hash_from_config
 from models import ExtractedClaim, TitledDocument
@@ -20,9 +19,32 @@ PROMPT_CLAIM_EXTRACTION = """You are an expert at parsing text for central claim
 A central claim should:
 - Be a substantive assertion or argument made in the text
 - Contain all necessary context to understand it independently
-- Include geographic/jurisdictional scope when relevant
-- Include temporal context when relevant  
-- Be specific rather than vague (avoid phrases like 'the proposal' - say which proposal)
+    - Include geographic/jurisdictional scope when relevant
+    - Include temporal context when relevant  
+    - Be specific rather than vague (avoid phrases like 'the proposal' - say which proposal)
+
+Focus on the core arguments and assertions rather than minor supporting details.
+
+Respond with a valid JSON matching this schema, where claim_1 is the most central claim, claim_2 is the second most central, etc:
+{{"claim_1": "str", "claim_2": "str", ...}}
+
+If there are fewer than {n} substantive claims, return only what you find.
+ONLY return the JSON object without markdown or extra text.
+
+Here is the text to parse:
+
+{text}
+"""
+PROMPT_CLAIM_EXTRACTION_FOR_TOPIC = """You are an expert at parsing text for central claims and arguments. Extract the {n} most CENTRAL and IMPORTANT claims from the provided text(s)
+on the topic: {topic}
+
+A central claim should:
+- Be on topic
+- Be a substantive assertion or argument made in the text
+- Contain all necessary context to understand it independently
+    - Include geographic/jurisdictional scope when relevant
+    - Include temporal context when relevant
+    - Be specific rather than vague (avoid phrases like 'the proposal' - say which proposal)
 
 Focus on the core arguments and assertions rather than minor supporting details.
 
@@ -38,7 +60,7 @@ Here is the text to parse:
 """
 
 
-def _extract_claims(titled_doc: TitledDocument, n: int, unified_hash: str, model: str = "gpt-5-mini") -> list[ExtractedClaim]:
+def _extract_claims(titled_doc: TitledDocument, n: int, unified_hash: str, model: str = "gpt-5-mini", topic: str = None) -> list[ExtractedClaim]:
     """Extract the N most central claims from a single document.
     
     Args:
@@ -46,6 +68,7 @@ def _extract_claims(titled_doc: TitledDocument, n: int, unified_hash: str, model
         n: Number of top claims to extract
         unified_hash: Pre-computed unified hash for this analysis
         model: Model to use for extraction
+        topic: Optional topic for focused claim extraction
         
     Returns:
         List of ExtractedClaim objects
@@ -61,10 +84,18 @@ def _extract_claims(titled_doc: TitledDocument, n: int, unified_hash: str, model
         return [ExtractedClaim(**claim) for claim in claims_data]
     
     print(f"Extracting top {n} claims from document '{titled_doc.title}' using model: {model}")
+    
+    # Choose prompt based on whether topic is provided
+    if topic:
+        prompt_content = PROMPT_CLAIM_EXTRACTION_FOR_TOPIC.format(n=n, topic=topic, text=titled_doc.text)
+        print(f"Using topic-focused extraction for topic: {topic}")
+    else:
+        prompt_content = PROMPT_CLAIM_EXTRACTION.format(n=n, text=titled_doc.text)
+    
     response = client.chat.completions.create(
         model=model,
         messages=[
-            {"role": "user", "content": PROMPT_CLAIM_EXTRACTION.format(n=n, text=titled_doc.text)}
+            {"role": "user", "content": prompt_content}
         ]
     )
     raw_content = response.choices[0].message.content
@@ -97,13 +128,14 @@ def _extract_claims(titled_doc: TitledDocument, n: int, unified_hash: str, model
     return claims
 
 
-def extract_claims_for_docs(titled_documents: list[TitledDocument], claims_per_doc: int = 10, model: str = "gpt-5-mini") -> list[ExtractedClaim]:
+def extract_claims_for_docs(titled_documents: list[TitledDocument], claims_per_doc: int = 10, model: str = "gpt-5-mini", topic: str = None) -> list[ExtractedClaim]:
     """Extract claims from multiple documents using multithreading.
     
     Args:
         titled_documents: List of TitledDocument objects
         claims_per_doc: Number of claims to extract per document
         model: Model to use for extraction
+        topic: Optional topic for focused claim extraction
         
     Returns:
         List of ExtractedClaim objects from all documents
@@ -112,7 +144,7 @@ def extract_claims_for_docs(titled_documents: list[TitledDocument], claims_per_d
     documents_for_hash = [{"id": doc.id, "text": doc.text} for doc in titled_documents]
     
     # Generate unified hash for ALL documents (used by all modules)
-    unified_hash = generate_unified_hash_from_config(documents_for_hash, claims_per_doc)
+    unified_hash = generate_unified_hash_from_config(documents_for_hash, claims_per_doc, topic=topic)
     print(f"Using unified hash: {unified_hash}")
     
     all_claims = []
@@ -121,7 +153,7 @@ def extract_claims_for_docs(titled_documents: list[TitledDocument], claims_per_d
     with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
         # Submit all extraction tasks
         future_to_doc = {
-            executor.submit(_extract_claims, doc, claims_per_doc, unified_hash, model): doc 
+            executor.submit(_extract_claims, doc, claims_per_doc, unified_hash, model, topic): doc 
             for doc in titled_documents
         }
         

@@ -89,7 +89,7 @@ def _title_to_id(title: str) -> str:
     return snake_case[:10]
 
 
-def title_documents(documents: list[dict], claims_per_doc: int = 10) -> list[TitledDocument]:
+def title_documents(documents: list[dict], claims_per_doc: int = 10, topic: str = None) -> list[TitledDocument]:
     """Generate titles and IDs for documents with caching support.
     
     This is the main public interface for the doc_titler module.
@@ -99,6 +99,7 @@ def title_documents(documents: list[dict], claims_per_doc: int = 10) -> list[Tit
     Args:
         documents: List of dicts with 'text' field
         claims_per_doc: Number of claims per doc (used for cache key consistency)
+        topic: Optional topic for consistent cache hashing
         
     Returns:
         List of TitledDocument objects with:
@@ -109,7 +110,8 @@ def title_documents(documents: list[dict], claims_per_doc: int = 10) -> list[Tit
     # Generate unified hash for caching (same approach as other modules)
     unified_hash = generate_unified_hash_from_config(
         [{"id": f"doc_{i+1}", "text": doc["text"]} for i, doc in enumerate(documents)], 
-        claims_per_doc
+        claims_per_doc,
+        topic=topic
     )
     
     # Setup cache directory

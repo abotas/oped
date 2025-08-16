@@ -85,6 +85,13 @@ def main():
                 help="Select the model to use for analysis"
             )
         
+        # Topic input (optional)
+        topic = st.text_input(
+            "Topic (optional)",
+            placeholder="e.g., artificial intelligence, climate change, healthcare...",
+            help="Focus claim extraction on a specific topic"
+        )
+        
         # Text input areas
         documents = []
         all_docs_filled = True
@@ -122,6 +129,7 @@ def main():
         st.session_state.num_docs = num_docs
         st.session_state.claims_per_doc = claims_per_doc
         st.session_state.selected_model = selected_model
+        st.session_state.topic = topic.strip() if topic.strip() else None
         st.session_state.raw_documents = documents
         st.session_state.analysis_started = True
         
@@ -138,6 +146,7 @@ def main():
         num_docs = st.session_state.num_docs
         claims_per_doc = st.session_state.claims_per_doc
         selected_model = st.session_state.get('selected_model', 'gpt-5-mini')
+        topic = st.session_state.get('topic', None)
         
         # Handle case where we loaded from cache (no raw_documents)
         if hasattr(st.session_state, 'raw_documents'):
@@ -151,20 +160,21 @@ def main():
         col1, col2 = st.columns([3, 1])
         with col1:
             st.markdown(f"### 📊 Analysis Results")
-            st.markdown(f"**{num_docs} documents • {claims_per_doc} claims each**")
+            topic_text = f" • Topic: {topic}" if topic else ""
+            st.markdown(f"**{num_docs} documents • {claims_per_doc} claims each{topic_text}**")
             # Show cache hash for debugging
-            current_hash = generate_unified_hash_from_config(documents, claims_per_doc)
+            current_hash = generate_unified_hash_from_config(documents, claims_per_doc, topic=topic)
             st.code(f"Cache Hash: {current_hash}", language=None)
         with col2:
             if st.button("🔄 New Analysis", type="secondary", use_container_width=True):
                 # Clear session state to start fresh
-                for key in ['all_claims', 'coherence_results', 'fact_checks', 'num_docs', 'claims_per_doc', 'titled_documents', 'raw_documents', 'selected_model', 'analysis_started']:
+                for key in ['all_claims', 'coherence_results', 'fact_checks', 'num_docs', 'claims_per_doc', 'titled_documents', 'raw_documents', 'selected_model', 'topic', 'analysis_started']:
                     if key in st.session_state:
                         del st.session_state[key]
                 st.rerun()
         
         # Run the complete 4-step analysis pipeline
-        run_analysis_pipeline(documents, selected_model, claims_per_doc)
+        run_analysis_pipeline(documents, selected_model, claims_per_doc, topic)
 
 
 if __name__ == "__main__":

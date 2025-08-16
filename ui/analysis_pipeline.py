@@ -11,11 +11,11 @@ from .navigation_panel import render_navigation_panel, render_load_bearing_claim
 from .utils_document_aggregation import get_document_load_bearing_scores, get_document_contradiction_scores, get_document_validation_scores
 
 
-def run_title_generation_step(documents, claims_per_doc):
+def run_title_generation_step(documents, claims_per_doc, topic=None):
     """Step 1: Generate document titles and display them progressively."""
     if st.session_state.titled_documents is None:
-        with st.spinner("📝 Generating document titles..."):
-            titled_documents = title_documents(documents, claims_per_doc)
+        with st.spinner("📝 Finding titles..."):
+            titled_documents = title_documents(documents, claims_per_doc, topic)
             
             if not titled_documents:
                 st.error("No document titles could be generated")
@@ -32,12 +32,12 @@ def run_title_generation_step(documents, claims_per_doc):
     return titled_documents
 
 
-def run_claim_extraction_step(titled_documents, selected_model, claims_per_doc):
+def run_claim_extraction_step(titled_documents, selected_model, claims_per_doc, topic=None):
     """Step 1: Extract claims and display them progressively."""
     if st.session_state.all_claims is None:
         with st.spinner("🔍 Extracting claims from documents..."):
             # Extract claims from all documents using multithreading
-            all_claims = extract_claims_for_docs(titled_documents, claims_per_doc, model=selected_model)
+            all_claims = extract_claims_for_docs(titled_documents, claims_per_doc, model=selected_model, topic=topic)
             
             if not all_claims:
                 st.error("No claims could be extracted from the documents")
@@ -67,7 +67,7 @@ def run_claim_extraction_step(titled_documents, selected_model, claims_per_doc):
     return all_claims
 
 
-def run_coherence_analysis_step(all_claims, documents, claims_per_doc, selected_model):
+def run_coherence_analysis_step(all_claims, documents, claims_per_doc, selected_model, topic=None):
     """Step 2: Analyze coherence and display results progressively."""
     if st.session_state.coherence_results is None:
         progress_bar = st.progress(0)
@@ -82,7 +82,8 @@ def run_coherence_analysis_step(all_claims, documents, claims_per_doc, selected_
         coherence_results = analyze_coherence(
             all_claims, documents, claims_per_doc, 
             model=selected_model, 
-            progress_callback=coherence_progress_callback
+            progress_callback=coherence_progress_callback,
+            topic=topic
         )
         
         progress_bar.empty()
@@ -148,10 +149,11 @@ def render_coherence_section(coherence_results, all_claims):
             
             # Coherence granularity toggle
             coherence_granularity = st.radio(
-                "📊 Analyze by:",
+                "toggle",
                 ["Claims", "Documents"],
                 key="coherence_granularity",
-                horizontal=True
+                horizontal=True,
+                label_visibility="hidden"
             )
             
             # Load-bearing panel (claims or documents)
@@ -199,7 +201,7 @@ def render_coherence_section(coherence_results, all_claims):
             st.warning("Please select at least one document to analyze.")
 
 
-def run_fact_checking_step(all_claims, documents, claims_per_doc, selected_model):
+def run_fact_checking_step(all_claims, documents, claims_per_doc, selected_model, topic=None):
     """Step 3: Run fact checking and display results progressively."""
     if st.session_state.fact_checks is None:
         progress_bar = st.progress(0)
@@ -214,7 +216,8 @@ def run_fact_checking_step(all_claims, documents, claims_per_doc, selected_model
         fact_checks = check_facts(
             all_claims, documents, claims_per_doc, 
             model=selected_model,
-            progress_callback=fact_check_progress_callback
+            progress_callback=fact_check_progress_callback,
+            topic=topic
         )
         
         progress_bar.empty()
@@ -340,7 +343,7 @@ def render_fact_checking_section(fact_checks, all_claims):
             st.warning("Please select at least one document to analyze.")
 
 
-def run_analysis_pipeline(documents, selected_model, claims_per_doc):
+def run_analysis_pipeline(documents, selected_model, claims_per_doc, topic=None):
     """Run the complete 4-step analysis pipeline with progressive display."""
     
     # Initialize session state for incremental results
@@ -354,19 +357,19 @@ def run_analysis_pipeline(documents, selected_model, claims_per_doc):
         st.session_state.fact_checks = None
 
     # Step 1: Generate document titles (shows immediately when complete)
-    titled_documents = run_title_generation_step(documents, claims_per_doc)
+    titled_documents = run_title_generation_step(documents, claims_per_doc, topic)
     if not titled_documents:
         return
 
     # Step 2: Extract claims (shows immediately when complete)  
-    all_claims = run_claim_extraction_step(titled_documents, selected_model, claims_per_doc)
+    all_claims = run_claim_extraction_step(titled_documents, selected_model, claims_per_doc, topic)
     if not all_claims:
         return
 
     # Step 3: Analyze coherence (shows immediately when complete)
-    coherence_results = run_coherence_analysis_step(all_claims, documents, claims_per_doc, selected_model)
+    coherence_results = run_coherence_analysis_step(all_claims, documents, claims_per_doc, selected_model, topic)
     render_coherence_section(coherence_results, all_claims)
 
     # Step 4: External validation (shows immediately when complete)
-    fact_checks = run_fact_checking_step(all_claims, documents, claims_per_doc, selected_model)
+    fact_checks = run_fact_checking_step(all_claims, documents, claims_per_doc, selected_model, topic)
     render_fact_checking_section(fact_checks, all_claims)

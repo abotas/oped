@@ -116,7 +116,7 @@ def _analyze_single_claim(work_item: tuple, cache_dir: Path, model: str = "gpt-5
     return claim_results
 
 
-def analyze_coherence(claims: list[ExtractedClaim], documents: list[dict], claims_per_doc: int, model: str = "gpt-5-mini", progress_callback: callable = None) -> list[ClaimCoherence]:
+def analyze_coherence(claims: list[ExtractedClaim], documents: list[dict], claims_per_doc: int, model: str = "gpt-5-mini", progress_callback: callable = None, topic: str = None) -> list[ClaimCoherence]:
     """Analyze coherence between claims - how each claim affects others' likelihood.
     
     Args:
@@ -125,12 +125,13 @@ def analyze_coherence(claims: list[ExtractedClaim], documents: list[dict], claim
         claims_per_doc: Number of claims per document (for consistent hashing)
         model: The model to use for analysis
         progress_callback: Optional callback function(completed, total) for progress updates
+        topic: Optional topic for consistent cache hashing
         
     Returns:
         List of ClaimCoherence objects showing relationships
     """
     # Generate unified cache key using same method as claim extraction
-    unified_hash = generate_unified_hash_from_config(documents, claims_per_doc)
+    unified_hash = generate_unified_hash_from_config(documents, claims_per_doc, topic=topic)
     
     # Setup cache directory for this set of claims
     cache_dir = Path("data/cache") / unified_hash / "coherence"
