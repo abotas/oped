@@ -13,3 +13,4 @@ To orient read @README.md
 - You may drive-by simplify if you notice opportunities, but only for true, small simplifications
 - gpt5 is out do not switch me back to gpt4o gpt5 is better and cheaper
 - do not test streamlit by launching it. it's ok to not test it unless you have a really good idea for how to do it easily without spending API credits or writing tons of code.
+- if you're doing a no-op refactoring job for pure code simplification and get to the end, check that you did actually make the code simpler. if not, consider reverting your change and (maybe) trying again
