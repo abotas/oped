@@ -6,8 +6,7 @@ from pydantic import BaseModel
 from pathlib import Path
 import hashlib
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from models import ExtractedClaim
-from cache_utils import generate_unified_hash_from_config
+from models import ExtractedClaim, InputConfig
 
 client = OpenAI()
 MAX_WORKERS = 4
@@ -116,22 +115,19 @@ def _analyze_single_claim(work_item: tuple, cache_dir: Path, model: str = "gpt-5
     return claim_results
 
 
-def analyze_coherence(claims: list[ExtractedClaim], documents: list[dict], claims_per_doc: int, model: str = "gpt-5-mini", progress_callback: callable = None, topic: str = None) -> list[ClaimCoherence]:
-    """Analyze coherence between claims - how each claim affects others' likelihood.
+def analyze_coherence(claims: list[ExtractedClaim], config: InputConfig, progress_callback: callable = None) -> list[ClaimCoherence]:
+    """Analyze coherence between claims using config object.
     
     Args:
         claims: List of ExtractedClaim objects to analyze
-        documents: Original document configuration (for consistent hashing)
-        claims_per_doc: Number of claims per document (for consistent hashing)
-        model: The model to use for analysis
+        config: AnalysisConfig object with all parameters
         progress_callback: Optional callback function(completed, total) for progress updates
-        topic: Optional topic for consistent cache hashing
         
     Returns:
         List of ClaimCoherence objects showing relationships
     """
-    # Generate unified cache key using same method as claim extraction
-    unified_hash = generate_unified_hash_from_config(documents, claims_per_doc, topic=topic)
+    # Generate unified cache key from config
+    unified_hash = config.generate_cache_hash()
     
     # Setup cache directory for this set of claims
     cache_dir = Path("data/cache") / unified_hash / "coherence"
@@ -158,7 +154,7 @@ def analyze_coherence(claims: list[ExtractedClaim], documents: list[dict], claim
     
     # Process claims in parallel
     with ThreadPoolExecutor(max_workers=min(MAX_WORKERS, len(work_items))) as executor:
-        futures = [executor.submit(_analyze_single_claim, work_item, cache_dir, model) for work_item in work_items]
+        futures = [executor.submit(_analyze_single_claim, work_item, cache_dir, config.model) for work_item in work_items]
         
         completed = 0
         for future in as_completed(futures):
@@ -173,6 +169,8 @@ def analyze_coherence(claims: list[ExtractedClaim], documents: list[dict], claim
     print(f"Analyzed {len(coherence_results)} claim relationships")
     
     return coherence_results
+
+
 
 
 def coherence_to_matrix(coherence_results: list[ClaimCoherence], n_claims: int) -> list[list[float]]:

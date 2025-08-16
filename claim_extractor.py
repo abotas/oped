@@ -5,8 +5,7 @@ import json
 from pathlib import Path
 
 from concurrent.futures import ThreadPoolExecutor
-from cache_utils import generate_unified_hash_from_config
-from models import ExtractedClaim, TitledDocument
+from models import ExtractedClaim, TitledDocument, InputConfig
 
 client = OpenAI()
 
@@ -60,11 +59,12 @@ Here is the text to parse:
 """
 
 
-def _extract_claims(titled_doc: TitledDocument, n: int, unified_hash: str, model: str = "gpt-5-mini", topic: str = None) -> list[ExtractedClaim]:
+def _extract_claims(titled_doc: TitledDocument, doc_text: str, n: int, unified_hash: str, model: str = "gpt-5-mini", topic: str = None) -> list[ExtractedClaim]:
     """Extract the N most central claims from a single document.
     
     Args:
-        titled_doc: TitledDocument with text, id, and title
+        titled_doc: TitledDocument with id and title
+        doc_text: The actual document text from AnalysisConfig
         n: Number of top claims to extract
         unified_hash: Pre-computed unified hash for this analysis
         model: Model to use for extraction
@@ -87,10 +87,10 @@ def _extract_claims(titled_doc: TitledDocument, n: int, unified_hash: str, model
     
     # Choose prompt based on whether topic is provided
     if topic:
-        prompt_content = PROMPT_CLAIM_EXTRACTION_FOR_TOPIC.format(n=n, topic=topic, text=titled_doc.text)
+        prompt_content = PROMPT_CLAIM_EXTRACTION_FOR_TOPIC.format(n=n, topic=topic, text=doc_text)
         print(f"Using topic-focused extraction for topic: {topic}")
     else:
-        prompt_content = PROMPT_CLAIM_EXTRACTION.format(n=n, text=titled_doc.text)
+        prompt_content = PROMPT_CLAIM_EXTRACTION.format(n=n, text=doc_text)
     
     response = client.chat.completions.create(
         model=model,
@@ -128,23 +128,18 @@ def _extract_claims(titled_doc: TitledDocument, n: int, unified_hash: str, model
     return claims
 
 
-def extract_claims_for_docs(titled_documents: list[TitledDocument], claims_per_doc: int = 10, model: str = "gpt-5-mini", topic: str = None) -> list[ExtractedClaim]:
-    """Extract claims from multiple documents using multithreading.
+def extract_claims_for_docs(titled_documents: list[TitledDocument], config: InputConfig) -> list[ExtractedClaim]:
+    """Extract claims from multiple documents using config object.
     
     Args:
         titled_documents: List of TitledDocument objects
-        claims_per_doc: Number of claims to extract per document
-        model: Model to use for extraction
-        topic: Optional topic for focused claim extraction
+        config: AnalysisConfig object with all parameters
         
     Returns:
         List of ExtractedClaim objects from all documents
     """
-    # Convert TitledDocuments to dicts for hashing (backward compatibility)
-    documents_for_hash = [{"id": doc.id, "text": doc.text} for doc in titled_documents]
-    
-    # Generate unified hash for ALL documents (used by all modules)
-    unified_hash = generate_unified_hash_from_config(documents_for_hash, claims_per_doc, topic=topic)
+    # Generate unified hash from config
+    unified_hash = config.generate_cache_hash()
     print(f"Using unified hash: {unified_hash}")
     
     all_claims = []
@@ -152,10 +147,12 @@ def extract_claims_for_docs(titled_documents: list[TitledDocument], claims_per_d
     # Use ThreadPoolExecutor for parallel processing
     with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
         # Submit all extraction tasks
-        future_to_doc = {
-            executor.submit(_extract_claims, doc, claims_per_doc, unified_hash, model, topic): doc 
-            for doc in titled_documents
-        }
+        future_to_doc = {}
+        for i, doc in enumerate(titled_documents):
+            # Get document text from config using the document index
+            doc_text = config.documents[i]['text']
+            future = executor.submit(_extract_claims, doc, doc_text, config.claims_per_doc, unified_hash, config.model, config.topic)
+            future_to_doc[future] = doc
         
         # Collect results as they complete
         for future in future_to_doc:
@@ -164,3 +161,5 @@ def extract_claims_for_docs(titled_documents: list[TitledDocument], claims_per_d
             all_claims.extend(claims)
     
     return all_claims
+
+

@@ -10,7 +10,7 @@ load_dotenv()
 # Add parent directory to path to import our modules
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from cache_utils import generate_unified_hash_from_config
+from models import InputConfig
 from ui.cache_loader import load_cached_analysis
 from ui.analysis_pipeline import run_analysis_pipeline
 
@@ -36,6 +36,9 @@ def main():
             # Load the specific cached analysis
             cache_hash = "db6ed1d90088"
             if load_cached_analysis(cache_hash):
+                config = InputConfig.load_from_cache(cache_hash)
+                st.session_state.config = config
+                st.session_state.cache_hash = cache_hash
                 st.success(f"✅ Loaded example analysis")
                 st.rerun()
     
@@ -65,6 +68,9 @@ def main():
             
             if st.button("Load from Hash", disabled=load_button_disabled):
                 if load_cached_analysis(cache_hash.strip()):
+                    config = InputConfig.load_from_cache(cache_hash.strip())
+                    st.session_state.config = config
+                    st.session_state.cache_hash = cache_hash.strip()
                     st.success(f"✅ Loaded analysis from cache hash {cache_hash.strip()}")
                     st.rerun()
         
@@ -125,11 +131,22 @@ def main():
         if not analyze_clicked:
             return
         
-        # Store configuration in session state when analysis starts
+        # Create config object with all parameters
+        config = InputConfig(
+            documents=documents,
+            claims_per_doc=claims_per_doc,
+            model=selected_model,
+            topic=topic.strip() if topic.strip() else None
+        )
+        
+        # Save config to cache and store in session state
+        cache_hash = config.save_to_cache()
+        st.session_state.config = config
+        st.session_state.cache_hash = cache_hash
         st.session_state.num_docs = num_docs
         st.session_state.claims_per_doc = claims_per_doc
         st.session_state.selected_model = selected_model
-        st.session_state.topic = topic.strip() if topic.strip() else None
+        st.session_state.topic = config.topic
         st.session_state.raw_documents = documents
         st.session_state.analysis_started = True
         
@@ -143,38 +160,32 @@ def main():
     
     else:
         # We're in analysis mode - retrieve stored configuration
+        config = st.session_state.config
         num_docs = st.session_state.num_docs
-        claims_per_doc = st.session_state.claims_per_doc
-        selected_model = st.session_state.get('selected_model', 'gpt-5-mini')
-        topic = st.session_state.get('topic', None)
-        
-        # Handle case where we loaded from cache (no raw_documents)
-        if hasattr(st.session_state, 'raw_documents'):
-            documents = st.session_state.raw_documents
-        else:
-            # Reconstruct documents from titled_documents for cache-loaded analyses
-            titled_documents = st.session_state.titled_documents
-            documents = [{"id": doc.id, "text": doc.text} for doc in titled_documents]
+        claims_per_doc = config.claims_per_doc
+        selected_model = config.model
+        topic = config.topic
+        documents = config.documents
         
         # Show analysis header with document info and reset button
         col1, col2 = st.columns([3, 1])
         with col1:
-            st.markdown(f"### 📊 Analysis Results")
+            # st.markdown(f"### 📊 Analysis Results")
             topic_text = f" • Topic: {topic}" if topic else ""
             st.markdown(f"**{num_docs} documents • {claims_per_doc} claims each{topic_text}**")
             # Show cache hash for debugging
-            current_hash = generate_unified_hash_from_config(documents, claims_per_doc, topic=topic)
+            current_hash = config.generate_cache_hash()
             st.code(f"Cache Hash: {current_hash}", language=None)
         with col2:
             if st.button("🔄 New Analysis", type="secondary", use_container_width=True):
                 # Clear session state to start fresh
-                for key in ['all_claims', 'coherence_results', 'fact_checks', 'num_docs', 'claims_per_doc', 'titled_documents', 'raw_documents', 'selected_model', 'topic', 'analysis_started']:
+                for key in ['config', 'all_claims', 'coherence_results', 'fact_checks', 'num_docs', 'claims_per_doc', 'titled_documents', 'raw_documents', 'selected_model', 'topic', 'analysis_started']:
                     if key in st.session_state:
                         del st.session_state[key]
                 st.rerun()
         
-        # Run the complete 4-step analysis pipeline
-        run_analysis_pipeline(documents, selected_model, claims_per_doc, topic)
+        # Run the complete 4-step analysis pipeline with config
+        run_analysis_pipeline(config)
 
 
 if __name__ == "__main__":

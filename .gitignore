@@ -10,7 +10,6 @@ wheels/
 .venv
 
 .env
-CLAUDE.md
 
 data/*
 !data/cache/
@@ -18,3 +17,4 @@ data/cache/*
 !data/cache/db6ed1d90088/
 
 substack_api_readme.md
+./CLAUDE.md
