@@ -7,7 +7,7 @@ import hashlib
 from dotenv import load_dotenv
 from concurrent.futures import ThreadPoolExecutor
 from cache_utils import generate_unified_hash_from_config
-from models import ExtractedClaim
+from models import ExtractedClaim, TitledDocument
 
 client = OpenAI()
 
@@ -38,14 +38,14 @@ Here is the text to parse:
 """
 
 
-def _extract_claims(doc: str, doc_id: str, n: int, unified_hash: str, model: str = "gpt-5-mini") -> list[ExtractedClaim]:
+def _extract_claims(titled_doc: TitledDocument, n: int, unified_hash: str, model: str = "gpt-5-mini") -> list[ExtractedClaim]:
     """Extract the N most central claims from a single document.
     
     Args:
-        doc: Document text to analyze
-        doc_id: Unique identifier for this document
+        titled_doc: TitledDocument with text, id, and title
         n: Number of top claims to extract
         unified_hash: Pre-computed unified hash for this analysis
+        model: Model to use for extraction
         
     Returns:
         List of ExtractedClaim objects
@@ -53,18 +53,18 @@ def _extract_claims(doc: str, doc_id: str, n: int, unified_hash: str, model: str
     # Use provided unified cache key
     cache_dir = Path("data/cache") / unified_hash / "claims"
     cache_dir.mkdir(parents=True, exist_ok=True)
-    cache_file = cache_dir / f"{doc_id}.json"
+    cache_file = cache_dir / f"{titled_doc.id}.json"
     
     if cache_file.exists():
-        print(f"Loading cached claims for {doc_id}")
+        print(f"Loading cached claims for {titled_doc.title}")
         claims_data = json.loads(cache_file.read_text())
         return [ExtractedClaim(**claim) for claim in claims_data]
     
-    print(f"Extracting top {n} claims from document '{doc_id}' using model: {model}")
+    print(f"Extracting top {n} claims from document '{titled_doc.title}' using model: {model}")
     response = client.chat.completions.create(
         model=model,
         messages=[
-            {"role": "user", "content": PROMPT_CLAIM_EXTRACTION.format(n=n, text=doc)}
+            {"role": "user", "content": PROMPT_CLAIM_EXTRACTION.format(n=n, text=titled_doc.text)}
         ]
     )
     raw_content = response.choices[0].message.content
@@ -83,10 +83,11 @@ def _extract_claims(doc: str, doc_id: str, n: int, unified_hash: str, model: str
     
     for idx, (key, claim_text) in enumerate(claims_json.items()):
         claim = ExtractedClaim(
-            doc_id=doc_id,
+            doc_id=titled_doc.id,
+            doc_title=titled_doc.title,
             claim_idx=idx,
             claim=claim_text,
-            document_text=doc
+            document_text=titled_doc.text
         )
         claims.append(claim)
     
@@ -97,18 +98,22 @@ def _extract_claims(doc: str, doc_id: str, n: int, unified_hash: str, model: str
     return claims
 
 
-def extract_claims_for_docs(documents: list[dict], claims_per_doc: int = 10, model: str = "gpt-5-mini") -> list[ExtractedClaim]:
+def extract_claims_for_docs(titled_documents: list[TitledDocument], claims_per_doc: int = 10, model: str = "gpt-5-mini") -> list[ExtractedClaim]:
     """Extract claims from multiple documents using multithreading.
     
     Args:
-        documents: List of document dicts with 'id' and 'text' fields
+        titled_documents: List of TitledDocument objects
         claims_per_doc: Number of claims to extract per document
+        model: Model to use for extraction
         
     Returns:
         List of ExtractedClaim objects from all documents
     """
+    # Convert TitledDocuments to dicts for hashing (backward compatibility)
+    documents_for_hash = [{"id": doc.id, "text": doc.text} for doc in titled_documents]
+    
     # Generate unified hash for ALL documents (used by all modules)
-    unified_hash = generate_unified_hash_from_config(documents, claims_per_doc)
+    unified_hash = generate_unified_hash_from_config(documents_for_hash, claims_per_doc)
     print(f"Using unified hash: {unified_hash}")
     
     all_claims = []
@@ -117,8 +122,8 @@ def extract_claims_for_docs(documents: list[dict], claims_per_doc: int = 10, mod
     with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
         # Submit all extraction tasks
         future_to_doc = {
-            executor.submit(_extract_claims, doc["text"], doc["id"], claims_per_doc, unified_hash, model): doc 
-            for doc in documents
+            executor.submit(_extract_claims, doc, claims_per_doc, unified_hash, model): doc 
+            for doc in titled_documents
         }
         
         # Collect results as they complete

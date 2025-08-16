@@ -19,8 +19,9 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from claim_extractor import extract_claims_for_docs
 from claim_coherence import analyze_coherence, coherence_to_matrix
 from external_fact_checking import check_facts, get_fact_check_summary
-from models import ExtractedClaim
+from models import ExtractedClaim, TitledDocument
 from utils import get_conflict_metrics, get_top_load_bearing_claims, get_top_load_bearing_claims_filtered
+from doc_titler import title_documents
 
 
 # Page config
@@ -422,23 +423,29 @@ def main():
                     if all_claims:
                         # Store in session state
                         st.session_state.all_claims = all_claims
-                        # Create mock documents structure for compatibility
+                        # Create mock TitledDocument structure for compatibility
                         docs_by_id = {}
+                        doc_titles = {}
                         for claim in all_claims:
                             if claim.doc_id not in docs_by_id:
                                 docs_by_id[claim.doc_id] = claim.document_text
+                                # Use doc_title if available, otherwise fallback to doc_id
+                                doc_titles[claim.doc_id] = getattr(claim, 'doc_title', claim.doc_id)
                         
-                        documents = [{"id": doc_id, "text": text} for doc_id, text in docs_by_id.items()]
-                        st.session_state.documents = documents
-                        st.session_state.num_docs = len(documents)
-                        st.session_state.claims_per_doc = len([c for c in all_claims if c.doc_id == documents[0]["id"]])
+                        titled_docs = [
+                            TitledDocument(id=doc_id, text=text, title=doc_titles[doc_id])
+                            for doc_id, text in docs_by_id.items()
+                        ]
+                        st.session_state.titled_documents = titled_docs
+                        st.session_state.num_docs = len(titled_docs)
+                        st.session_state.claims_per_doc = len([c for c in all_claims if c.doc_id == titled_docs[0].id])
                         
                         st.success(f"✅ Loaded example analysis")
                         st.rerun()
     
     # Check if we're in analysis mode (session state indicates analysis has started)
     analysis_started = any(key in st.session_state and st.session_state[key] is not None 
-                          for key in ['all_claims', 'coherence_results', 'fact_checks', 'documents'])
+                          for key in ['all_claims', 'coherence_results', 'fact_checks', 'titled_documents'])
     
     if not analysis_started:
         # Debug hash loading option
@@ -477,16 +484,22 @@ def main():
                         if all_claims:
                             # Store in session state
                             st.session_state.all_claims = all_claims
-                            # Create mock documents structure for compatibility
+                            # Create mock TitledDocument structure for compatibility
                             docs_by_id = {}
+                            doc_titles = {}
                             for claim in all_claims:
                                 if claim.doc_id not in docs_by_id:
                                     docs_by_id[claim.doc_id] = claim.document_text
+                                    # Use doc_title if available, otherwise fallback to doc_id
+                                    doc_titles[claim.doc_id] = getattr(claim, 'doc_title', claim.doc_id)
                             
-                            documents = [{"id": doc_id, "text": text} for doc_id, text in docs_by_id.items()]
-                            st.session_state.documents = documents
-                            st.session_state.num_docs = len(documents)
-                            st.session_state.claims_per_doc = len([c for c in all_claims if c.doc_id == documents[0]["id"]])
+                            titled_docs = [
+                                TitledDocument(id=doc_id, text=text, title=doc_titles[doc_id])
+                                for doc_id, text in docs_by_id.items()
+                            ]
+                            st.session_state.titled_documents = titled_docs
+                            st.session_state.num_docs = len(titled_docs)
+                            st.session_state.claims_per_doc = len([c for c in all_claims if c.doc_id == titled_docs[0].id])
                             
                             st.success(f"✅ Loaded {len(all_claims)} claims from cache hash {cache_hash.strip()}")
                             st.rerun()
@@ -547,18 +560,25 @@ def main():
         if not analyze_clicked:
             return
         
+        # Title documents first
+        with st.spinner("📝 Generating document titles..."):
+            titled_docs = title_documents(documents)
+        
         # Store configuration in session state when analysis starts
         st.session_state.num_docs = num_docs
         st.session_state.claims_per_doc = claims_per_doc
-        st.session_state.documents = documents
+        st.session_state.titled_documents = titled_docs
         st.session_state.selected_model = selected_model
     
     else:
         # We're in analysis mode - retrieve stored configuration
         num_docs = st.session_state.num_docs
         claims_per_doc = st.session_state.claims_per_doc
-        documents = st.session_state.documents
+        titled_documents = st.session_state.titled_documents
         selected_model = st.session_state.get('selected_model', 'gpt-5-mini')
+        
+        # Convert to old format for backward compatibility with coherence/fact checking
+        documents = [{"id": doc.id, "text": doc.text} for doc in titled_documents]
         
         # Show analysis header with document info and reset button
         col1, col2 = st.columns([3, 1])
@@ -572,17 +592,17 @@ def main():
         with col2:
             if st.button("🔄 New Analysis", type="secondary", use_container_width=True):
                 # Clear session state to start fresh
-                for key in ['all_claims', 'coherence_results', 'fact_checks', 'num_docs', 'claims_per_doc', 'documents']:
+                for key in ['all_claims', 'coherence_results', 'fact_checks', 'num_docs', 'claims_per_doc', 'titled_documents']:
                     if key in st.session_state:
                         del st.session_state[key]
                 st.rerun()
         
-        # Show compact document preview
+        # Show compact document preview with titles
         with st.expander("📄 Document Summary", expanded=False):
-            for i, doc in enumerate(documents):
-                preview = doc["text"][:200] + "..." if len(doc["text"]) > 200 else doc["text"]
-                st.markdown(f"**{doc['id'].upper()}:** {preview}")
-                if i < len(documents) - 1:  # Add separator except for last item
+            for i, doc in enumerate(titled_documents):
+                preview = doc.text[:200] + "..." if len(doc.text) > 200 else doc.text
+                st.markdown(f"**{doc.title}:** {preview}")
+                if i < len(titled_documents) - 1:  # Add separator except for last item
                     st.markdown("---")
         
         # Initialize session state for incremental results
@@ -597,7 +617,7 @@ def main():
         if st.session_state.all_claims is None:
             with st.spinner("🔍 Extracting claims from documents..."):
                 # Extract claims from all documents using multithreading
-                all_claims = extract_claims_for_docs(documents, claims_per_doc, model=selected_model)
+                all_claims = extract_claims_for_docs(titled_documents, claims_per_doc, model=selected_model)
                 
                 if not all_claims:
                     st.error("No claims could be extracted from the documents")
@@ -610,16 +630,16 @@ def main():
         # Show extracted claims immediately
         st.markdown("## ✅ Claims Extracted")
         
-        # Group claims by document
+        # Group claims by document title
         claims_by_doc = {}
         for claim in all_claims:
-            if claim.doc_id not in claims_by_doc:
-                claims_by_doc[claim.doc_id] = []
-            claims_by_doc[claim.doc_id].append(claim)
+            if claim.doc_title not in claims_by_doc:
+                claims_by_doc[claim.doc_title] = []
+            claims_by_doc[claim.doc_title].append(claim)
         
         # Display claims grouped by document
-        for doc_id, doc_claims in claims_by_doc.items():
-            with st.expander(f"📋 {doc_id.upper()} CLAIMS ({len(doc_claims)})", expanded=True):
+        for doc_title, doc_claims in claims_by_doc.items():
+            with st.expander(f"📋 {doc_title.upper()} ({len(doc_claims)} claims)", expanded=True):
                 for i, claim in enumerate(doc_claims):
                     st.markdown(f"**{i+1}. {claim.claim}**")
                     st.markdown("")
