@@ -7,6 +7,7 @@ from external_fact_checking import check_facts, get_fact_check_summary
 from .utils import get_conflict_metrics, get_top_load_bearing_claims_filtered, get_most_contradicted_claims
 from doc_titler import title_documents
 from .visualizations import create_coherence_matrix, create_veracity_buckets
+from .navigation_panel import render_navigation_panel, render_load_bearing_claim, render_contradicted_claim, render_validated_claim
 
 
 def run_title_generation_step(documents, claims_per_doc):
@@ -134,8 +135,8 @@ def render_coherence_section(coherence_results, all_claims):
             
             # Calculate metrics with filtered data
             conflict_metrics = get_conflict_metrics(filtered_coherence, filtered_claims)
-            load_bearing = get_top_load_bearing_claims_filtered(filtered_coherence, all_claims, filtered_claims, n=3)
-            contradicted = get_most_contradicted_claims(filtered_coherence, all_claims, filtered_claims, n=3)
+            load_bearing = get_top_load_bearing_claims_filtered(filtered_coherence, all_claims, filtered_claims)
+            contradicted = get_most_contradicted_claims(filtered_coherence, all_claims, filtered_claims)
             
             st.markdown("### Conflict Metrics")
             st.write(f"- **Prevalence**: {conflict_metrics['conflict_prevalence']:.1%} of relationships are negative")
@@ -152,22 +153,22 @@ def render_coherence_section(coherence_results, all_claims):
             else:
                 st.info("Matrix visualization requires at least one coherence relationship.")
             
-            st.markdown("### Top Load-Bearing Claims")
-            st.write('-'*100)
-            for i, claim_info in enumerate(load_bearing[:3]):
-                st.write(f"**{claim_info['doc_title'].split('.')[1]}** (Doc {claim_info['doc_title'].split('.')[0]})")
-                st.write(f"Claim {claim_info['claim_idx'] + 1}: _{claim_info['claim']}_")
-                st.write(f"Avg impact: {claim_info['avg_impact']:.2f} ")
-                st.write('-'*100)
+            # Load-bearing claims panel
+            render_navigation_panel(
+                load_bearing, 
+                "Top Load-Bearing Claims",
+                "load_bearing_index",
+                render_load_bearing_claim
+            )
             
+            # Contradicted claims panel
             if contradicted:
-                st.markdown("### Most Contradicted Claims")
-                st.write('-'*100)
-                for i, claim_info in enumerate(contradicted[:3]):
-                    st.write(f"**{claim_info['doc_title'].split('.')[1]}** (Doc {claim_info['doc_title'].split('.')[0]})")
-                    st.write(f"Claim {claim_info['claim_idx'] + 1}: _{claim_info['claim']}_")
-                    st.write(f"({claim_info['num_contradictions']} claims oppose this with an average contradiction of {claim_info['avg_contradiction']:.2f}")
-                    st.write('-'*100)
+                render_navigation_panel(
+                    contradicted,
+                    "Most Contradicted Claims", 
+                    "contradicted_index",
+                    render_contradicted_claim
+                )
             else:
                 st.markdown("### Most Contradicted Claims")
                 st.write("No contradictions found - all claims are mutually supportive or neutral.")
@@ -247,25 +248,23 @@ def render_fact_checking_section(fact_checks, all_claims):
             st.markdown(f"### Summary")
             st.write(f"**Average Validation Score**: {fact_summary['average_veracity']:.1f}/100")
             
+            # Most validated claims panel
             if fact_summary.get('most_accurate_claims'):
-                st.markdown("### Most Validated Claims")
-                st.write('-'*100)
-                for claim_info in fact_summary['most_accurate_claims'][:3]:
-                    st.write(f"**{claim_info['doc_title'].split('.')[1]}** (Doc {claim_info['doc_title'].split('.')[0]})")
-                    st.write(f"Claim {claim_info['claim_idx'] + 1}: _{claim_info['claim']}_")
-                    st.write(f"Validation score: {claim_info['veracity']}/100")
-                    st.write(f"_{claim_info['explanation']}_")
-                    st.write('-'*100)
+                render_navigation_panel(
+                    fact_summary['most_accurate_claims'],
+                    "Most Validated Claims",
+                    "most_validated_index", 
+                    render_validated_claim
+                )
             
+            # Least validated claims panel
             if fact_summary.get('least_accurate_claims'):
-                st.markdown("### Least Validated Claims")
-                st.write('-'*100)
-                for claim_info in fact_summary['least_accurate_claims'][:3]:
-                    st.write(f"**{claim_info['doc_title'].split('.')[1]}** (Doc {claim_info['doc_title'].split('.')[0]})")
-                    st.write(f"Claim {claim_info['claim_idx'] + 1}: _{claim_info['claim']}_")
-                    st.write(f"Validation score: {claim_info['veracity']}/100")
-                    st.write(f"_{claim_info['explanation']}_")
-                    st.write('-'*100)
+                render_navigation_panel(
+                    fact_summary['least_accurate_claims'],
+                    "Least Validated Claims",
+                    "least_validated_index",
+                    render_validated_claim
+                )
         else:
             st.warning("Please select at least one document to analyze.")
 

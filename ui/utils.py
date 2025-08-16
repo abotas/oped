@@ -45,7 +45,7 @@ def get_top_load_bearing_claims(coherence_results, claims, n=3):
     ]
 
 
-def get_most_contradicted_claims(coherence_results, all_claims, filtered_claims, n=3):
+def get_most_contradicted_claims(coherence_results, all_claims, filtered_claims):
     """Get claims that are most contradicted by other claims (most negative impact received).
     
     This finds the claims that are made LESS likely when other claims are true.
@@ -74,7 +74,7 @@ def get_most_contradicted_claims(coherence_results, all_claims, filtered_claims,
                         for idx in contradiction_scores}
     
     # Sort by total contradiction (most contradicted first)
-    top_indices = sorted(contradiction_scores.items(), key=lambda x: x[1], reverse=True)[:n]
+    top_indices = sorted(contradiction_scores.items(), key=lambda x: x[1], reverse=True)
     
     return [
         {
@@ -89,8 +89,8 @@ def get_most_contradicted_claims(coherence_results, all_claims, filtered_claims,
         for idx, score in top_indices
     ]
 
-def get_top_load_bearing_claims_filtered(coherence_results, all_claims, filtered_claims, n=3):
-    """Get claims with highest total impact from filtered coherence results."""
+def get_top_load_bearing_claims_filtered(coherence_results, all_claims, filtered_claims):
+    """Get all claims sorted by highest total impact from filtered coherence results."""
     impact_scores = {}
     impact_counts = {}
     
@@ -102,7 +102,7 @@ def get_top_load_bearing_claims_filtered(coherence_results, all_claims, filtered
         impact_counts[c.claim_i_idx] += 1
     
     avg_impact = {idx: impact_scores[idx] / impact_counts[idx] for idx in impact_scores}
-    top_indices = sorted(avg_impact.items(), key=lambda x: x[1], reverse=True)[:n]
+    top_indices = sorted(avg_impact.items(), key=lambda x: x[1], reverse=True)
     
     return [
         {
@@ -118,7 +118,7 @@ def get_top_load_bearing_claims_filtered(coherence_results, all_claims, filtered
     ]
 
 
-def get_most_contradicted_claims(coherence_results, all_claims, filtered_claims, n=3):
+def get_most_contradicted_claims(coherence_results, all_claims, filtered_claims):
     """Get claims that are most contradicted by other claims (most negative impact received).
     
     This finds the claims that are made LESS likely when other claims are true.
@@ -147,7 +147,7 @@ def get_most_contradicted_claims(coherence_results, all_claims, filtered_claims,
                         for idx in contradiction_scores}
     
     # Sort by total contradiction (most contradicted first)
-    top_indices = sorted(contradiction_scores.items(), key=lambda x: x[1], reverse=True)[:n]
+    top_indices = sorted(contradiction_scores.items(), key=lambda x: x[1], reverse=True)
     
     return [
         {

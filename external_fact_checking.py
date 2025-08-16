@@ -137,7 +137,7 @@ def get_fact_check_summary(fact_checks: list[FactCheck]) -> dict:
     # Sort by veracity
     sorted_checks = sorted(fact_checks, key=lambda x: x.veracity, reverse=True)
     
-    # Most accurate claims (top 3, regardless of absolute score)
+    # Most accurate claims (all claims sorted by highest veracity)
     summary["most_accurate_claims"] = [
         {
             "claim": fc.claim,
@@ -146,10 +146,10 @@ def get_fact_check_summary(fact_checks: list[FactCheck]) -> dict:
             "doc_title": fc.doc_title,
             "claim_idx": fc.claim_idx
         }
-        for fc in sorted_checks[:3]  # Top 3 items (highest scores)
+        for fc in sorted_checks  # All claims from highest to lowest score
     ]
     
-    # Least accurate claims (bottom 3, regardless of absolute score)
+    # Least accurate claims (all claims sorted by lowest veracity)
     summary["least_accurate_claims"] = [
         {
             "claim": fc.claim,
@@ -158,8 +158,8 @@ def get_fact_check_summary(fact_checks: list[FactCheck]) -> dict:
             "doc_title": fc.doc_title,
             "claim_idx": fc.claim_idx
         }
-        for fc in sorted_checks[-3:]  # Last 3 items (lowest scores)
-    ][::-1]  # Reverse to show lowest first
+        for fc in reversed(sorted_checks)  # All claims from lowest to highest score
+    ]
     
     # Claims most at odds with reality (veracity < 50)
     summary["claims_at_odds_with_reality"] = [
